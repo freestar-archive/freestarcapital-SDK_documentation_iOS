@@ -1,14 +1,27 @@
 //
 //  ViewController.h
-//  FreestarOBJCSample
+//  ChocolateOBJCSample
 //
-//  Created by Vdopia Developer on 3/13/20.
-//  Copyright © 2020 Freestar. All rights reserved.
+//  Created by Lev Trubov on 9/30/19.
+//  Copyright © 2019 Lev Trubov. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+@import AVKit;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSString *appName; //for logging
+    NSMutableArray<NSNumber *> *adTypeLoadedStates;
+    UIView *inviewAdContainer;
+    
+    AVPlayerViewController *publisherVideo;
+    UISwitch *prerollFullscreenToggle;
+    NSArray *chosenPartners;
+
+    UITextField *placement;
+}
+
+-(void)adjustUIForAdState;
 
 
 @end

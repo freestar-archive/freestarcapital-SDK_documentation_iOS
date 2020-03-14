@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		96C859FD241C53E4009BD9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C859FC241C53E4009BD9FB /* Assets.xcassets */; };
 		96C85A00241C53E4009BD9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C859FE241C53E4009BD9FB /* LaunchScreen.storyboard */; };
 		96C85A03241C53E4009BD9FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A02241C53E4009BD9FB /* main.m */; };
+		96C85A0F241C5AFD009BD9FB /* ViewController+FreestarAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A09241C5AFC009BD9FB /* ViewController+FreestarAds.m */; };
+		96C85A10241C5AFD009BD9FB /* PartnerChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */; };
+		96C85A11241C5AFD009BD9FB /* PartnerSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */; };
+		DCC23F6B06D31FA77B7EFFF0 /* libPods-FreestarOBJCSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BD2085B5C0390B05D6916 /* libPods-FreestarOBJCSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.release.xcconfig"; sourceTree = "<group>"; };
+		188BD2085B5C0390B05D6916 /* libPods-FreestarOBJCSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarOBJCSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.debug.xcconfig"; sourceTree = "<group>"; };
 		96C859ED241C53E1009BD9FB /* FreestarOBJCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarOBJCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C859F0241C53E1009BD9FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96C859F1241C53E1009BD9FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,12 @@
 		96C859FF241C53E4009BD9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96C85A01241C53E4009BD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C85A02241C53E4009BD9FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96C85A09241C5AFC009BD9FB /* ViewController+FreestarAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+FreestarAds.m"; sourceTree = "<group>"; };
+		96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnerChoice.m; sourceTree = "<group>"; };
+		96C85A0B241C5AFD009BD9FB /* ViewController+FreestarAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+FreestarAds.h"; sourceTree = "<group>"; };
+		96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnerSelectionTableViewController.m; sourceTree = "<group>"; };
+		96C85A0D241C5AFD009BD9FB /* PartnerChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerChoice.h; sourceTree = "<group>"; };
+		96C85A0E241C5AFD009BD9FB /* PartnerSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerSelectionTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC23F6B06D31FA77B7EFFF0 /* libPods-FreestarOBJCSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,8 @@
 			children = (
 				96C859EF241C53E1009BD9FB /* FreestarOBJCSample */,
 				96C859EE241C53E1009BD9FB /* Products */,
+				98A862637BB8A7DD6BE356BE /* Pods */,
+				9F53B4BDB3D277B1FEE46B7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,12 @@
 				96C859F1241C53E1009BD9FB /* AppDelegate.m */,
 				96C859F6241C53E1009BD9FB /* ViewController.h */,
 				96C859F7241C53E1009BD9FB /* ViewController.m */,
+				96C85A0D241C5AFD009BD9FB /* PartnerChoice.h */,
+				96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */,
+				96C85A0E241C5AFD009BD9FB /* PartnerSelectionTableViewController.h */,
+				96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */,
+				96C85A0B241C5AFD009BD9FB /* ViewController+FreestarAds.h */,
+				96C85A09241C5AFC009BD9FB /* ViewController+FreestarAds.m */,
 				96C859F9241C53E1009BD9FB /* Main.storyboard */,
 				96C859FC241C53E4009BD9FB /* Assets.xcassets */,
 				96C859FE241C53E4009BD9FB /* LaunchScreen.storyboard */,
@@ -71,6 +93,23 @@
 			path = FreestarOBJCSample;
 			sourceTree = "<group>";
 		};
+		98A862637BB8A7DD6BE356BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */,
+				0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F53B4BDB3D277B1FEE46B7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188BD2085B5C0390B05D6916 /* libPods-FreestarOBJCSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96C85A06241C53E4009BD9FB /* Build configuration list for PBXNativeTarget "FreestarOBJCSample" */;
 			buildPhases = (
+				14CF03639FAB4BBE25567B9B /* [CP] Check Pods Manifest.lock */,
 				96C859E9241C53E1009BD9FB /* Sources */,
 				96C859EA241C53E1009BD9FB /* Frameworks */,
 				96C859EB241C53E1009BD9FB /* Resources */,
+				BAE3842AC8C976E2D4DD77EE /* [CP] Embed Pods Frameworks */,
+				8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,14 +178,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CF03639FAB4BBE25567B9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreestarOBJCSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE3842AC8C976E2D4DD77EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96C859E9241C53E1009BD9FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				96C859F8241C53E1009BD9FB /* ViewController.m in Sources */,
+				96C85A0F241C5AFD009BD9FB /* ViewController+FreestarAds.m in Sources */,
 				96C859F2241C53E1009BD9FB /* AppDelegate.m in Sources */,
 				96C85A03241C53E4009BD9FB /* main.m in Sources */,
+				96C85A10241C5AFD009BD9FB /* PartnerChoice.m in Sources */,
+				96C85A11241C5AFD009BD9FB /* PartnerSelectionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +385,7 @@
 		};
 		96C85A07241C53E4009BD9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +403,7 @@
 		};
 		96C85A08241C53E4009BD9FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
