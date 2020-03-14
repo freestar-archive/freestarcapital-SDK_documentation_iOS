@@ -16,6 +16,7 @@
 		96C85A0F241C5AFD009BD9FB /* ViewController+FreestarAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A09241C5AFC009BD9FB /* ViewController+FreestarAds.m */; };
 		96C85A10241C5AFD009BD9FB /* PartnerChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */; };
 		96C85A11241C5AFD009BD9FB /* PartnerSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */; };
+		96C85A13241C5F6E009BD9FB /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96C85A12241C5CF7009BD9FB /* bunny.mp4 */; };
 		DCC23F6B06D31FA77B7EFFF0 /* libPods-FreestarOBJCSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BD2085B5C0390B05D6916 /* libPods-FreestarOBJCSample.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnerSelectionTableViewController.m; sourceTree = "<group>"; };
 		96C85A0D241C5AFD009BD9FB /* PartnerChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerChoice.h; sourceTree = "<group>"; };
 		96C85A0E241C5AFD009BD9FB /* PartnerSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerSelectionTableViewController.h; sourceTree = "<group>"; };
+		96C85A12241C5CF7009BD9FB /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				96C859FE241C53E4009BD9FB /* LaunchScreen.storyboard */,
 				96C85A01241C53E4009BD9FB /* Info.plist */,
 				96C85A02241C53E4009BD9FB /* main.m */,
+				96C85A12241C5CF7009BD9FB /* bunny.mp4 */,
 			);
 			path = FreestarOBJCSample;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C85A13241C5F6E009BD9FB /* bunny.mp4 in Resources */,
 				96C85A00241C53E4009BD9FB /* LaunchScreen.storyboard in Resources */,
 				96C859FD241C53E4009BD9FB /* Assets.xcassets in Resources */,
 				96C859FB241C53E1009BD9FB /* Main.storyboard in Resources */,

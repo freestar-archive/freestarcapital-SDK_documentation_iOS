@@ -310,13 +310,9 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
         [self showInterstitialAd];
     } else if([adType isEqualToString:@"Rewarded"]) {
         [self showRewardAd];
-    }else if([adType isEqualToString:@"Banner"]) {
-        [self showBannerAd];
     } else if([adType isEqualToString:@"Preroll"]) {
         [self showPrerollAd];
-    } else if([adType isEqualToString:@"Small Banner"]) {
-        [self showSmallBannerAd];
-    }
+    } 
 }
 
 #pragma mark - UI correctness

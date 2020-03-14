@@ -21,7 +21,7 @@ static UIView *previousBanner = nil;
 
 -(void)loadInterstitialAd {
     [FreestarInterstitialAd selectPartners:chosenPartners];
-    [FreestarInterstitialAd loadWithDelegate:self];
+    [FreestarInterstitialAd loadWithDelegate:self forPlacement:placement.text];
 }
 
 -(void)showInterstitialAd {
@@ -34,7 +34,7 @@ static UIView *previousBanner = nil;
     rew.rewardAmount = 1000;
     
     [FreestarRewardedAd selectPartners:chosenPartners];
-    [FreestarRewardedAd loadWithDelegate:self andReward:rew];
+    [FreestarRewardedAd loadWithDelegate:self andReward:rew forPlacement:placement.text];
 }
 
 -(void)showRewardAd {
@@ -53,17 +53,15 @@ static UIView *previousBanner = nil;
     
     banner = [[FreestarBannerAd alloc] initWithFrame:CGRectMake(0, 0, 300, 250)];
     banner.delegate = self;
-    //banner.refreshInterval = 30;
+    banner.placement = placement.text;
     CGPoint pos = CGPointMake(inviewAdContainer.center.x, inviewAdContainer.center.y + 10);
     
     banner.center = [self.view convertPoint:pos toView:inviewAdContainer];
     [inviewAdContainer addSubview:banner];
 }
 
--(void)showBannerAd {}
-
 -(void)loadPrerollAd {
-    preroll = [[FreestarPrerollAd alloc] init];
+    preroll = [[FreestarPrerollAd alloc] initWithPlacement:placement.text];
     preroll.delegate = self;
 }
 
@@ -94,15 +92,10 @@ static UIView *previousBanner = nil;
     
     smallBanner = [[FreestarBannerAd alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     smallBanner.delegate = self;
+    smallBanner.placement = placement.text;
     
     banner.center = [self.view convertPoint:inviewAdContainer.center toView:inviewAdContainer];
     [inviewAdContainer addSubview:smallBanner];
-}
-
--(void)showSmallBannerAd {
-//    adTypeLoadedStates[4] = @NO;
-//    [self adjustUIForAdState];
-//    [smallBanner showIn:inviewAdContainer at:[self.view convertPoint:inviewAdContainer.center toView:inviewAdContainer]];
 }
 
 #pragma mark - FreestarInterstitialDelegate
@@ -169,13 +162,15 @@ static UIView *previousBanner = nil;
 # pragma mark - FreestarBannerAdDelegate
 
 -(void)freestarBannerLoaded:(FreestarBannerAd *)ad {
-    adTypeLoadedStates[ad == banner ? 2 : 4] = @YES;
-    [self adjustUIForAdState];
+    NSLog(@"%@ banner loaded", ad == banner ? @"large" : @"small");
+    //adTypeLoadedStates[ad == banner ? 2 : 4] = @YES;
+    //[self adjustUIForAdState];
 }
 
 -(void)freestarBannerFailed:(FreestarBannerAd *)ad because:(FreestarNoAdReason)reason {
-    adTypeLoadedStates[ad == banner ? 2 : 4] = @NO;
-    [self adjustUIForAdState];
+    NSLog(@"%@ banner failed", ad == banner ? @"large" : @"small");
+//    adTypeLoadedStates[ad == banner ? 2 : 4] = @NO;
+//    [self adjustUIForAdState];
 }
 
 -(void)freestarBannerShown:(FreestarBannerAd *)ad {
@@ -187,9 +182,9 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarBannerClosed:(FreestarBannerAd *)ad {
-    
-    adTypeLoadedStates[ad == banner ? 2 : 4] = @NO;
-    [self adjustUIForAdState];
+    NSLog(@"%@ banner closed", ad == banner ? @"large" : @"small");
+//    adTypeLoadedStates[ad == banner ? 2 : 4] = @NO;
+//    [self adjustUIForAdState];
 }
 
 #pragma mark - FreestarPrerollAdDelegate
