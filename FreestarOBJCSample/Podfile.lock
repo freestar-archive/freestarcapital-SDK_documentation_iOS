@@ -11,7 +11,7 @@ PODS:
   - ChocolatePlatform-SDK-AppLovin (3.2.0):
     - AppLovinSDK (~> 6.11.1)
     - ChocolatePlatform-SDK-Core (~> 3.0)
-  - ChocolatePlatform-SDK-Core (3.2.0)
+  - ChocolatePlatform-SDK-Core (3.2.1)
   - ChocolatePlatform-SDK-Criteo (1.0.0):
     - ChocolatePlatform-SDK-Core (~> 3.0)
     - CriteoPublisherSdk (~> 3.2)
@@ -117,7 +117,7 @@ SPEC CHECKSUMS:
   ChocolatePlatform-SDK-AdColony: aef41b20abec0a527d94ba1757236338689794be
   ChocolatePlatform-SDK-Amazon: b43d381e84070a3ec39fc8ff9d12f53e5646e000
   ChocolatePlatform-SDK-AppLovin: 7e0d28229b8650bc2c6371de08b415163a2a4138
-  ChocolatePlatform-SDK-Core: 14264e47a781524815ee23d42802ece43de5dd7f
+  ChocolatePlatform-SDK-Core: a35d0d42ece5fa0e8dd4b498469e5ff72b13d9ef
   ChocolatePlatform-SDK-Criteo: 8b00fb1cc6735aea65f1aa5fd34021b8bd8b6b43
   ChocolatePlatform-SDK-GAM: 50ca1213a9d0be2cc3f2062f6d210d0f862774d8
   ChocolatePlatform-SDK-Google: c4cbdb21f61a911a9c9872ee3c4ae17eee9a6b71
