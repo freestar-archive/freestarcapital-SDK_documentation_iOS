@@ -42,18 +42,18 @@ target 'FreestarOBJCSample' do # app name
   pod 'FreestarAds', '~> 3.2' # required
 
   # Only specify the partners for which you want to run ads
-  pod 'ChocolatePlatform-SDK-AdColony', '~> 3.1'
-  pod 'ChocolatePlatform-SDK-AppLovin', '~> 3.2'
-  pod 'ChocolatePlatform-SDK-Googleadmob', '~> 2.2'
-  pod 'ChocolatePlatform-SDK-Tapjoy', '~> 3.1'
-  pod 'ChocolatePlatform-SDK-Unity', '~> 4.1'
-  pod 'ChocolatePlatform-SDK-Vungle', '~> 3.1'
-  pod 'ChocolatePlatform-SDK-Amazon', '~> 2.1'
-  pod 'ChocolatePlatform-SDK-Google', '~> 3.0'
-  pod 'ChocolatePlatform-SDK-Criteo', '~> 1.0'
-  pod 'ChocolatePlatform-SDK-GAM', '~> 1.0'
-  pod 'ChocolatePlatform-SDK-Facebook', '~> 3.1'
-  pod 'ChocolatePlatform-SDK-Mopub', '~> 3.2'
+  pod 'FreestarAds-AdColony', '~> 3.1'
+  pod 'FreestarAds-AppLovin', '~> 3.2'
+  pod 'FreestarAds-Googleadmob', '~> 2.2'
+  pod 'FreestarAds-Tapjoy', '~> 3.1'
+  pod 'FreestarAds-Unity', '~> 4.1'
+  pod 'FreestarAds-Vungle', '~> 3.1'
+  pod 'FreestarAds-Amazon', '~> 2.1'
+  pod 'FreestarAds-Google', '~> 3.0'
+  pod 'FreestarAds-Criteo', '~> 1.0'
+  pod 'FreestarAds-GAM', '~> 1.0'
+  pod 'FreestarAds-Facebook', '~> 3.1'
+  pod 'FreestarAds-Mopub', '~> 3.2'
 
 end
 ```
