@@ -73,7 +73,9 @@
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
-            [[PartnerChoice alloc] initWithName:@"Criteo"]
+            [[PartnerChoice alloc] initWithName:@"Criteo"],
+            [[PartnerChoice alloc] initWithName:@"AppLovin"],
+            [[PartnerChoice alloc] initWithName:@"Unity"]
         ];
     }
     
