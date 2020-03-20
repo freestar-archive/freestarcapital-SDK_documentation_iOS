@@ -19,7 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)loadRewardAd;
 -(void)showRewardAd;
 -(void)loadBannerAd;
+-(void)showBannerAd;
 -(void)loadSmallBannerAd;
+-(void)showSmallBannerAd;
 -(void)loadPrerollAd;
 -(void)showPrerollAd;
 

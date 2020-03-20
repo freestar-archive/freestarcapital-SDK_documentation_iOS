@@ -1,4 +1,15 @@
 # FreeStar Ads Mediation SDK
+
+## Changelog
+
+##### 2020-03-20
+Version 3.2.1: modifications to API for convenience
+1. Fullscreen ads (interstitial and rewarded) are now instance objects, and multiple instances can be created within the same app session, rather than being called by static methods. One should, however, be careful to only display one fullscreen ad at a time.
+2. An explicit `loadPlacement:` method has been added to the banner ad, and can be called before adding the banner ad to the app's view hierarchy. In case the ad has been added to the view hierarchy before it is loaded, there is also an explicit `show` method that can be invoked once the ad is loaded.
+3. All ads now have the `winningPartnerName` method that can be used to retrieve the ad auction winner, if the ad has a fill.
+
+## Overview
+
 FreeStar provides an effective ad mediation solution.  The FreeStar mediation method is universal auction, not the traditional waterfall.  Universal auction is more sophisticated than waterfall and provides, by far, the best eCPM.
 This document describes how to integrate the FreeStar SDK into your native iOS app quickly and easily.  This repo is a fully integrated iOS sample app.  Feel free to clone it, install the appropriate Cocoapods, open with Xcode and run it on a device.
 
@@ -126,22 +137,22 @@ static NSString* const FREESTAR_API_KEY = @"P8RIA3";
 Implement the `FreestarInterstitialDelegate` protocol in one of your classes:
 
 ```
--(void)freestarInterstitialLoaded:(NSString *)winningPartner {}
--(void)freestarInterstitialFailed:(FreestarNoAdReason)reason {}
--(void)freestarInterstitialShown {}
--(void)freestarInterstitialClicked {}
--(void)freestarInterstitialClosed {}
+-(void)freestarInterstitialLoaded:(FreestarInterstitialAd *)ad {}
+-(void)freestarInterstitialFailed:(FreestarInterstitialAd *)ad because:(FreestarNoAdReason)reason {}
+-(void)freestarInterstitialShown:(FreestarInterstitialAd *)ad {}
+-(void)freestarInterstitialClicked:(FreestarInterstitialAd *)ad {}
+-(void)freestarInterstitialClosed:(FreestarInterstitialAd *)ad {}
 ```
 
 This allows your app to listen to ad events and act appropriately. You will pass an instance of this object to the Freestar SDK when loading interstitial ad. In the current sample app, the class implementing this protocol is the `ViewController`, and the implementation is located in  <a href="https://github.com/freestarcapital/SDK_documentation_iOS/blob/master/FreestarOBJCSample/FreestarOBJCSample/ViewController+FreestarAds.m">ViewController+FreestarAds.m</a>
 
 ```
 //self is the object that implements FreestarInterstitialDelegate
-[FreestarInterstitialAd loadWithDelegate:self];
+self.interstitial = [[FreestarInterstitialAd alloc] initWithDelegate:self];
 
-//You can also load associated to a placement as follows
-//[FreestarInterstitialAd loadWithDelegate:self     
-                              forPlacement:@"interstitial_p1"];
+//You can load associated to a placement as follows, or pass in
+//nil for the default placement
+[interstitial loadPlacement:@"interstitial_p1"];
 ```
 
 <blockquote>
@@ -154,8 +165,7 @@ as follows:
 
 For example, let us
 assume you are using 2 interstitial ad placements in your game or app.  The first placement would be
-the default placement; simply do not specifiy a placement name by using the <strong>[FreestarInterstitialAd loadWithDelegate:]</strong> method without
-the placement parameter.  The second placement would be, for example,  "my_search_screen_p1".  The ending
+the default placement; simply do not specify a placement name by calling the <strong>loadPlacement:</strong> method with nil as the argument.  The second placement would be, for example,  "my_search_screen_p1".  The ending
 "p1" tells the SDK to use the second placement you created in our web dashboard for the interstitial ad unit.
 
 This placement format is the same for all the other ad units, such as rewarded ads and banner ads.
@@ -164,12 +174,9 @@ This placement format is the same for all the other ad units, such as rewarded a
 When the interstitial ad is ready, the <strong>freestarInterstitialLoaded:</strong> callback will occur.
 
 ```
--(void)freestarInterstitialLoaded:(NSString *)winningPartner {
+-(void)freestarInterstitialLoaded:(FreestarInterstitialAd *)ad {
   //self in this case should be an instance of UIViewController
-  [FreestarInterstitialAd showFrom:self];  //You can display the ad now OR show it later; your choice.
-
-  //Note: Placement will be null if not specified in the original
-  //loadWithDelegate request.
+  [ad showFrom:self];  //You can display the ad now OR show it later; your choice.
 }
 ```
 
@@ -177,7 +184,7 @@ There are other callbacks that will occur in other events, such as in the rare e
 does not result in a fill.  Please see the <a href="https://github.com/freestarcapital/SDK_documentation_iOS/blob/master/FreestarOBJCSample/FreestarOBJCSample/ViewController+FreestarAds.m">ViewController+FreestarAds.m</a> on this sample for those details.
 
 <blockquote>
-❗⚠Warning: Attempting to load a new ad from the <code>freestarInterstitialFailed:</code> method is <strong>strongly</strong> discouraged. If you must load an ad from <code>freestarInterstitialFailed:</code>, limit ad load retries to avoid continuous failed ad requests in situations such as limited network connectivity.
+❗⚠Warning: Attempting to load a new ad from the <code>freestarInterstitialFailed:because:</code> method is <strong>strongly</strong> discouraged. If you must load an ad from <code>freestarInterstitialFailed:because:</code>, limit ad load retries to avoid continuous failed ad requests in situations such as limited network connectivity.
 </blockquote>
 
 
@@ -187,18 +194,10 @@ FreeStar supports <strong>300x250</strong> and <strong>320x50</strong> banner ad
 control the refresh intervals remotely.
 
 ```
-    smallBanner = [[FreestarBannerAd alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    smallBanner.delegate = self;
-    smallBanner.placement = @"my_banner_placement_p1";
-
-    smallBanner.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
-    [self.view addSubview:smallBanner];
-
-    //Note: 'placement' is OPTIONAL and only if
-    //you plan to have more than one Banner placement.
+    smallBanner = [[FreestarBannerAd alloc] initWithDelegate:self     
+      andSize:FreestarBanner320x50];
+    [smallBanner loadPlacement:nil]; //or pass in specific placement
 ```
-
-The ad will automatically load and display upon being added to the view hierarchy. Thus, to make sure the correct placement is loaded, the `placement` property needs to be set before adding the `FreestarBannerAd` object to the view hierarchy.
 
 When the banner ad is ready, the <strong>freestarBannerLoaded:</strong> callback will occur.
 
@@ -208,7 +207,15 @@ When the banner ad is ready, the <strong>freestarBannerLoaded:</strong> callback
 }
 ```
 
-Banner ads can also be specified in Interface Builder layout and will be automatically loaded. The view size should be set to either `300x250` or `320x50` points, depending on the desired ad size.
+If you insert the banner ad into the view hierarchy at this point, the ad will display automatically. If you already inserted the ad into the view hierarchy, you should call the `show` method to display it:
+
+```
+-(void)freestarBannerLoaded:(FreestarBannerAd *)ad {
+  [ad show];
+}
+```
+
+Banner ads can also be specified in Interface Builder layout and will be automatically loaded. If you do this, however, you will need to set the `size` and `delegate` properties on the ad object, and call the `show` method after receiving the `freestarBannerLoaded:` callback.
 
 <h2>Rewarded Ad</h2>
 
@@ -221,12 +228,12 @@ Banner ads can also be specified in Interface Builder layout and will be automat
 Implement the `FreestarRewardedDelegate` protocol in one of your classes:
 
 ```
--(void)freestarRewardedLoaded:(NSString *)winningPartner {}
--(void)freestarRewardedFailed:(FreestarNoAdReason)reason {}
--(void)freestarRewardedShown {}
--(void)freestarRewardedClosed {}
--(void)freestarRewardedFailedToStart:(FreestarNoAdReason)reason {}
--(void)freestarRewardedReceived:(NSString *)rewardName {} amount:(NSInteger)rewardAmount {}
+-(void)freestarRewardedLoaded:(FreestarRewardedAd *)ad {}
+-(void)freestarRewardedFailed:(FreestarRewardedAd *)ad because:(FreestarNoAdReason)reason {}
+-(void)freestarRewardedShown:(FreestarRewardedAd *)ad {}
+-(void)freestarRewardedClosed:(FreestarRewardedAd *)ad {}
+-(void)freestarRewardedFailedToStart:(FreestarRewardedAd *)ad because:(FreestarNoAdReason)reason {}
+-(void)freestarRewardedAd:(FreestarRewardedAd *)ad received:(NSString *)rewardName amount:(NSInteger)rewardAmount {}
 ```
 
 This allows your app to listen to ad events and act appropriately. You will pass an instance of this object to the Freestar SDK when loading rewarded ad. In the current sample app, the class implementing this protocol is the `ViewController`, and the implementation is located in  <a href="https://github.com/freestarcapital/SDK_documentation_iOS/blob/master/FreestarOBJCSample/FreestarOBJCSample/ViewController+FreestarAds.m">ViewController+FreestarAds.m</a>
@@ -238,30 +245,24 @@ rew.rewardName = @"Coins";
 rew.rewardAmount = 1000;
 
 //self is the object that implements FreestarRewardedDelegate
-[FreestarRewardedAd loadWithDelegate:self andReward:rew];
-
-//You can also load associated to a placement as follows
-//[FreestarRewardedAd loadWithDelegate:self
-                             andReward:rew
-                          forPlacement:@"rewarded_p1"];
+self.rewarded = [[FreestarRewardedAd alloc] initWithDelegate:self
+  andReward:rew];
+[rewarded loadPlacement:@"rewarded_p1"]; //or pass in nil for default
 ```
 
 When the rewarded ad is ready, the <strong>freestarRewardedLoaded:</strong> callback will occur.
 
 ```
--(void)freestarRewardedLoaded:(NSString *)winningPartner {
+-(void)freestarRewardedLoaded:(FreestarRewardedAd *)ad {
   //self in this case should be an instance of UIViewController
-  [FreestarRewardedAd showFrom:self];  //You can display the ad now OR show it later; your choice.
-
-  //Note: Placement will be null if not specified in the original
-  //loadWithDelegate request.
+  [ad showFrom:self];  //You can display the ad now OR show it later; your choice.
 }
 ```
 
 When the user has fully watched the rewarded ad (or when the given ad partner determines sufficient watch time for the reward), the following callback will occur:
 
 ```
--(void)freestarRewardedReceived:(NSString *)rewardName {} amount:(NSInteger)rewardAmount {
+-(void)freestarRewardedAd:(FreestarRewardedAd*)ad received:(NSString *)rewardName {} amount:(NSInteger)rewardAmount {
   //allow user to proceed to app content or next level in app/game
   //can use the name/amount to show change in UI
 }
@@ -275,7 +276,7 @@ When the user has closed the rewarded ad, the following callback will occur:
 ```
 
 <blockquote>
-  If the user does not watch the rewarded ad thru to completion, <strong>freestarRewardedReceived:</strong> will not occur.
+  If the user does not watch the rewarded ad thru to completion, <strong>freestarRewardedAd:received:amount:</strong> will not occur.
   However, the <strong>freestarRewardedClosed</strong> will always occur when the rewarded ad is dismissed
   regardless if the user watched the entire rewarded ad or not.
 </blockquote>
