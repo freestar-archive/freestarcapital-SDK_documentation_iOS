@@ -4,9 +4,9 @@ using UIKit;
 
 namespace FreestarXamarinSample
 {
-    public partial class SecondViewController : UIViewController
+    public partial class BannerViewController : UIViewController
     {
-        public SecondViewController(IntPtr handle) : base(handle)
+        public BannerViewController(IntPtr handle) : base(handle)
         {
         }
 
