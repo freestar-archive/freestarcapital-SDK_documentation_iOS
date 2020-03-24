@@ -73,9 +73,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1931" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="97" y="89" width="81" height="30"/>
                                 <state key="normal" title="Load"/>
-                                <connections>
-                                    <action selector="UIButton1931_TouchUpInside:" destination="8rJ-Kc-sve" id="1941" eventType="touchUpInside"/>
-                                </connections>
+                                <connections/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1932" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="236" y="89" width="70" height="30"/>

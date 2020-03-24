@@ -10,10 +10,18 @@ namespace FreestarXamarinSample
         {
         }
 
+        private FreestarBannerAdListener sl; //small banners
+        private FreestarBannerAdListener ll; //large banners
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+            sl = new FreestarBannerAdListener(SmallBannerLoadBtn, SmallBannerShowBtn, SmallBannerContainer);
+            ll = new FreestarBannerAdListener(LargeBannerLoadBtn, LargeBannerShowBtn, LargeBannerContainer);
+
+            sl.SetupSmallBanner();
+            ll.SetupLargeBanner();
         }
 
         public override void DidReceiveMemoryWarning()

@@ -37,10 +37,6 @@ namespace FreestarXamarinSample
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton SmallBannerShowBtn { get; set; }
 
-        [Action ("UIButton1931_TouchUpInside:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton1931_TouchUpInside (UIKit.UIButton sender);
-
         void ReleaseDesignerOutlets ()
         {
             if (LargeBannerContainer != null) {
