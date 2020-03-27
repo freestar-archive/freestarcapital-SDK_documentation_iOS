@@ -1,6 +1,6 @@
 ﻿using System;
-
 using UIKit;
+using FreestarAds;
 
 namespace FreestarXamarinSample
 {
@@ -17,11 +17,19 @@ namespace FreestarXamarinSample
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-            sl = new FreestarBannerAdListener(SmallBannerLoadBtn, SmallBannerShowBtn, SmallBannerContainer);
-            ll = new FreestarBannerAdListener(LargeBannerLoadBtn, LargeBannerShowBtn, LargeBannerContainer);
+            sl = new FreestarBannerAdListener(
+                SmallBannerLoadBtn,
+                SmallBannerShowBtn,
+                SmallBannerContainer,
+                FreestarBannerAdSize.FreestarBanner320x50);
+            ll = new FreestarBannerAdListener(
+                LargeBannerLoadBtn,
+                LargeBannerShowBtn,
+                LargeBannerContainer,
+                FreestarBannerAdSize.FreestarBanner300x250);
 
-            sl.SetupSmallBanner();
-            ll.SetupLargeBanner();
+            //sl.SetupSmallBanner();
+            //ll.SetupLargeBanner();
         }
 
         public override void DidReceiveMemoryWarning()

@@ -11,11 +11,13 @@ namespace FreestarXamarinSample
         private UIButton showButton;
         private FreestarBannerAd ad;
         private UIView adContainer;
+        private FreestarBannerAdSize requestedSize;
 
         public FreestarBannerAdListener(
             UIButton _load,
             UIButton _show,
-            UIView _cont)
+            UIView _cont,
+            FreestarBannerAdSize _requestedSize)
         {
             this.loadButton = _load;
             this.showButton = _show;
@@ -26,22 +28,27 @@ namespace FreestarXamarinSample
             this.showButton.Enabled = false;
 
             this.adContainer = _cont;
+            this.requestedSize = _requestedSize;
         }
 
-        public void SetupSmallBanner()
-        {
-            this.ad = new FreestarBannerAd(
-                this, FreestarBannerAdSize.FreestarBanner320x50);
-        }
+        //public void SetupSmallBanner()
+        //{
+        //    this.ad = new FreestarBannerAd(
+        //        this, FreestarBannerAdSize.FreestarBanner320x50);
+        //}
 
-        public void SetupLargeBanner()
-        {
-            this.ad = new FreestarBannerAd(this, FreestarBannerAdSize.FreestarBanner300x250);
-        }
+        //public void SetupLargeBanner()
+        //{
+        //    this.ad = new FreestarBannerAd(this, FreestarBannerAdSize.FreestarBanner300x250);
+        //}
 
         private void LoadAd()
         {
-            this.ad.RemoveFromSuperview();
+            if (this.ad != null)
+            {
+                this.ad.RemoveFromSuperview();
+            }
+            this.ad = new FreestarBannerAd(this, this.requestedSize);
             this.ad.LoadPlacement(null);
         }
 
