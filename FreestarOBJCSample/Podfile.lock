@@ -2,10 +2,10 @@ PODS:
   - AdColony (4.1.4)
   - AmazonAd (3.0.0)
   - AppLovinSDK (6.11.6)
-  - ChocolatePlatform-SDK-Core (3.2.1)
+  - ChocolatePlatform-SDK-Core (3.2.4)
   - CriteoPublisherSdk (3.2.0)
-  - FreestarAds (3.2.1):
-    - ChocolatePlatform-SDK-Core (~> 3.2)
+  - FreestarAds (3.2.4):
+    - ChocolatePlatform-SDK-Core (~> 3.2.4)
   - FreestarAds-AdColony (3.1.0):
     - AdColony (~> 4.1.2)
     - FreestarAds (~> 3.2)
@@ -114,9 +114,9 @@ SPEC CHECKSUMS:
   AdColony: fc02f429d6c4591567c7ae1426ebfcecb704b11f
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
   AppLovinSDK: 818e22271b3f875c150faf356f65c59463deb653
-  ChocolatePlatform-SDK-Core: a35d0d42ece5fa0e8dd4b498469e5ff72b13d9ef
+  ChocolatePlatform-SDK-Core: 905db9b02d3861f085c79b5acc968d75efd60618
   CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
-  FreestarAds: d2cafbf1899581c5c91cea892d226a5ddc79e3e5
+  FreestarAds: f65eedae1db020179367e2307272be114d049b76
   FreestarAds-AdColony: 8db58dddce177ab0ce7116559f39855b120e8e42
   FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
   FreestarAds-AppLovin: 8712e59b06f30819ab4407d227355b830cbec534
