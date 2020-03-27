@@ -7,8 +7,9 @@ https://github.com/freestarcapital/SDK_documentation_iOS/wiki
 ## Changelog
 
 ##### 2020-03-26
-Version 3.2.4: bug fixes for banner ads, app archiving
-Wiki now includes a page for integrating Freestar ads into a Xamarin iOS app. 
+Version 3.2.4: bug fixes for banner ads, app archiving.
+
+Wiki now includes a page for integrating Freestar ads into a Xamarin iOS app.
 
 ##### 2020-03-20
 Version 3.2.1: modifications to API for convenience
