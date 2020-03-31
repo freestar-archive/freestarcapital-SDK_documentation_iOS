@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,21 @@
 		96006410242EA20D00A3212E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* ViewController.swift */; };
 		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
 		96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96006416242EA20F00A3212E /* LaunchScreen.storyboard */; };
+		96006420242EB5BC00A3212E /* ViewController+FreestarBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */; };
+		ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96006408242EA20D00A3212E /* FreestarSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9600640F242EA20D00A3212E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96006414242EA20F00A3212E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96006417242EA20F00A3212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96006419242EA20F00A3212E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FreestarBanners.swift"; sourceTree = "<group>"; };
+		E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FF828191980196AA5797F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */,
+				E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		960063FF242EA20D00A3212E = {
 			isa = PBXGroup;
 			children = (
 				9600640A242EA20D00A3212E /* FreestarSwiftSample */,
 				96006409242EA20D00A3212E /* Products */,
+				6FF828191980196AA5797F6B /* Pods */,
+				99B0E3D801DC71FB1DC7ECBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +75,17 @@
 				96006414242EA20F00A3212E /* Assets.xcassets */,
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
+				9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */,
 			);
 			path = FreestarSwiftSample;
+			sourceTree = "<group>";
+		};
+		99B0E3D801DC71FB1DC7ECBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9600641C242EA20F00A3212E /* Build configuration list for PBXNativeTarget "FreestarSwiftSample" */;
 			buildPhases = (
+				AAF854F9756BB6307CD9C469 /* [CP] Check Pods Manifest.lock */,
 				96006404242EA20D00A3212E /* Sources */,
 				96006405242EA20D00A3212E /* Frameworks */,
 				96006406242EA20D00A3212E /* Resources */,
+				322B37C722A2DF6F45DB09F1 /* [CP] Embed Pods Frameworks */,
+				DCA3E2EEF5257184425471B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		322B37C722A2DF6F45DB09F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF854F9756BB6307CD9C469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreestarSwiftSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA3E2EEF5257184425471B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96006404242EA20D00A3212E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96006420242EB5BC00A3212E /* ViewController+FreestarBanners.swift in Sources */,
 				96006410242EA20D00A3212E /* ViewController.swift in Sources */,
 				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,
 			);
@@ -266,6 +356,7 @@
 		};
 		9600641D242EA20F00A3212E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +374,7 @@
 		};
 		9600641E242EA20F00A3212E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

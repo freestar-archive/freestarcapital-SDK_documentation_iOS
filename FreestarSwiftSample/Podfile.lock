@@ -1,0 +1,141 @@
+PODS:
+  - AdColony (4.1.4)
+  - AmazonAd (3.0.0)
+  - AppLovinSDK (6.11.6)
+  - ChocolatePlatform-SDK-Core (3.2.5)
+  - CriteoPublisherSdk (3.2.0)
+  - FreestarAds (3.2.5):
+    - ChocolatePlatform-SDK-Core (~> 3.2.5)
+  - FreestarAds-AdColony (3.1.0):
+    - AdColony (~> 4.1.2)
+    - FreestarAds (~> 3.2)
+  - FreestarAds-Amazon (2.1.0):
+    - AmazonAd (~> 3.0.0)
+    - FreestarAds (~> 3.2)
+  - FreestarAds-AppLovin (3.2.0):
+    - AppLovinSDK (~> 6.11.1)
+    - FreestarAds (~> 3.2)
+  - FreestarAds-Criteo (1.0.0):
+    - CriteoPublisherSdk (~> 3.2.0)
+    - FreestarAds (~> 3.2)
+  - FreestarAds-GAM (1.0.0):
+    - FreestarAds (~> 3.2)
+    - Google-Mobile-Ads-SDK (~> 7.53.1)
+  - FreestarAds-Google (3.0.1):
+    - FreestarAds (~> 3.2)
+    - GoogleAds-IMA-iOS-SDK (~> 3.11.1)
+  - FreestarAds-Googleadmob (2.2.0):
+    - FreestarAds (~> 3.2)
+    - Google-Mobile-Ads-SDK (~> 7.53.1)
+  - FreestarAds-Tapjoy (3.1.0):
+    - FreestarAds (~> 3.2)
+    - TapjoySDK (~> 12.4.0)
+  - FreestarAds-Unity (4.1.0):
+    - FreestarAds (~> 3.2)
+    - UnityAds (~> 3.4.0)
+  - FreestarAds-Vungle (3.1.0):
+    - FreestarAds (~> 3.2)
+    - VungleSDK-iOS (~> 6.4.6)
+  - Google-Mobile-Ads-SDK (7.53.1):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAds-IMA-iOS-SDK (3.11.3)
+  - GoogleAppMeasurement (6.3.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.5.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.5.2)
+  - GoogleUtilities/Logger (6.5.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.5.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.5.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.5.2)"
+  - GoogleUtilities/Reachability (6.5.2):
+    - GoogleUtilities/Logger
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - TapjoySDK (12.4.2)
+  - UnityAds (3.4.2)
+  - VungleSDK-iOS (6.4.6)
+
+DEPENDENCIES:
+  - FreestarAds (~> 3.2)
+  - FreestarAds-AdColony (~> 3.0)
+  - FreestarAds-Amazon (~> 2.0)
+  - FreestarAds-AppLovin (~> 3.0)
+  - FreestarAds-Criteo (~> 1.0)
+  - FreestarAds-GAM (~> 1.0)
+  - FreestarAds-Google (~> 3.0)
+  - FreestarAds-Googleadmob (~> 2.0)
+  - FreestarAds-Tapjoy (~> 3.0)
+  - FreestarAds-Unity (~> 4.0)
+  - FreestarAds-Vungle (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - AdColony
+    - AmazonAd
+    - AppLovinSDK
+    - ChocolatePlatform-SDK-Core
+    - CriteoPublisherSdk
+    - FreestarAds
+    - FreestarAds-AdColony
+    - FreestarAds-Amazon
+    - FreestarAds-AppLovin
+    - FreestarAds-Criteo
+    - FreestarAds-GAM
+    - FreestarAds-Google
+    - FreestarAds-Googleadmob
+    - FreestarAds-Tapjoy
+    - FreestarAds-Unity
+    - FreestarAds-Vungle
+    - Google-Mobile-Ads-SDK
+    - GoogleAds-IMA-iOS-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - nanopb
+    - TapjoySDK
+    - UnityAds
+    - VungleSDK-iOS
+
+SPEC CHECKSUMS:
+  AdColony: fc02f429d6c4591567c7ae1426ebfcecb704b11f
+  AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
+  AppLovinSDK: 818e22271b3f875c150faf356f65c59463deb653
+  ChocolatePlatform-SDK-Core: 7488159b8c7de9a3fc2dc37f0cd6b4c3575d5daa
+  CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
+  FreestarAds: 6f791faeb915eb9eb1bb1dbda207a547a55f0325
+  FreestarAds-AdColony: 8db58dddce177ab0ce7116559f39855b120e8e42
+  FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
+  FreestarAds-AppLovin: 8712e59b06f30819ab4407d227355b830cbec534
+  FreestarAds-Criteo: 876c48533dc744b5dc5b9d213292ac4e3a5a23aa
+  FreestarAds-GAM: 9ee07c01ca41233fb87b69c4d8f71a19123e5322
+  FreestarAds-Google: ef71762d773aeb63c9602d7054be64bd15534960
+  FreestarAds-Googleadmob: 5ace3a4512de663dd614bfcf16a4379308d51290
+  FreestarAds-Tapjoy: 65bfdd2c9d5fd0127fe7e54e3301ae072cb5d42a
+  FreestarAds-Unity: dd78cf6d288b5a84ed5d82bcb3fe32428c6d8c6c
+  FreestarAds-Vungle: ef60f64b3fd8c021d88e1de4a3035318e397290c
+  Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
+  GoogleAds-IMA-iOS-SDK: 134b35758455576aaa6b3d2d3146699dcf8af4f1
+  GoogleAppMeasurement: c29d405ff76e18551b5d158eaba6753fda8c7542
+  GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  TapjoySDK: c8d73f291cfe922cb8bb2c3ae09b5af0b2863841
+  UnityAds: db0da29fa3a7e519bceea56693909df0dd83caa5
+  VungleSDK-iOS: 6bf8b4fef32afc169acbc1291485560c81ceb293
+
+PODFILE CHECKSUM: a8f510d63d3fc0cd1684d4442b1b8f1ed29e08a3
+
+COCOAPODS: 1.9.1
