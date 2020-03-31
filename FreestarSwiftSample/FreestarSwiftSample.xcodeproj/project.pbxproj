@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
-		96006410242EA20D00A3212E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* ViewController.swift */; };
+		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
 		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
 		96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96006416242EA20F00A3212E /* LaunchScreen.storyboard */; };
-		96006420242EB5BC00A3212E /* ViewController+FreestarBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */; };
+		960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064252432F46A00A3212E /* FullscreenAdViewController.swift */; };
+		960064282432F5B900A3212E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064272432F5B900A3212E /* AdViewController.swift */; };
+		9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */; };
+		9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600642B2433E74700A3212E /* PrerollAdViewController.swift */; };
 		ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +22,14 @@
 		8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96006408242EA20D00A3212E /* FreestarSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9600640F242EA20D00A3212E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9600640F242EA20D00A3212E /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
 		96006414242EA20F00A3212E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96006417242EA20F00A3212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96006419242EA20F00A3212E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FreestarBanners.swift"; sourceTree = "<group>"; };
+		960064252432F46A00A3212E /* FullscreenAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenAdViewController.swift; sourceTree = "<group>"; };
+		960064272432F5B900A3212E /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewController.swift; sourceTree = "<group>"; };
+		9600642B2433E74700A3212E /* PrerollAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrerollAdViewController.swift; sourceTree = "<group>"; };
 		E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,11 +77,14 @@
 			isa = PBXGroup;
 			children = (
 				9600640B242EA20D00A3212E /* AppDelegate.swift */,
-				9600640F242EA20D00A3212E /* ViewController.swift */,
+				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
-				9600641F242EB5BC00A3212E /* ViewController+FreestarBanners.swift */,
+				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,
+				960064272432F5B900A3212E /* AdViewController.swift */,
+				960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */,
+				9600642B2433E74700A3212E /* PrerollAdViewController.swift */,
 			);
 			path = FreestarSwiftSample;
 			sourceTree = "<group>";
@@ -220,9 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96006420242EB5BC00A3212E /* ViewController+FreestarBanners.swift in Sources */,
-				96006410242EA20D00A3212E /* ViewController.swift in Sources */,
+				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
+				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
+				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
+				960064282432F5B900A3212E /* AdViewController.swift in Sources */,
 				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,
+				9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

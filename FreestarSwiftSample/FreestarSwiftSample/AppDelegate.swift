@@ -21,10 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Freestar.initWithAdUnitID(AppDelegate.FREESTAR_API_KEY)
         
+        let tabVC = UITabBarController()
+        
+        let fsVC = FullscreenAdViewController()
+        fsVC.title = "Fullscreen"
+        
+        let bVC = BannerAdViewController()
+        bVC.title = "Banner"
+        
+        let pVC = PrerollAdViewController()
+        pVC.title = "Preroll"
+        
+        tabVC.viewControllers = [
+            UINavigationController(rootViewController: fsVC),
+            UINavigationController(rootViewController: bVC),
+            UINavigationController(rootViewController: pVC)
+        ]
+        
         window = UIWindow()
         window?.frame = UIScreen.main.bounds
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = tabVC
         
         return true
     }
