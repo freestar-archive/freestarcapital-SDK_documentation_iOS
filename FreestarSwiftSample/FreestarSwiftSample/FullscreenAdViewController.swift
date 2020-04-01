@@ -25,14 +25,14 @@ class FullscreenAdViewController: AdViewController {
             updateShowButton()
         }
     }
+    
+    var rewardAlert : UIAlertController? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        concreteAdTypeSelector.addTarget(self,
-                                         action: #selector(FullscreenAdViewController.updateShowButton),
-                                         for: .valueChanged)
+        
     }
     
     // MARK: - data for common elements
@@ -63,21 +63,22 @@ class FullscreenAdViewController: AdViewController {
 
     // MARK: - controlling UI
     
-    @objc func updateShowButton() {
+    @objc override func updateShowButton() {
         showButton.isEnabled =
             (self.concreteAdTypeSelector.selectedSegmentIndex == 0 && interstitialAdReady) ||
             (self.concreteAdTypeSelector.selectedSegmentIndex == 1 && rewardedAdReady)
     }
-
 }
 
 extension FullscreenAdViewController : FreestarInterstitialDelegate {
     func loadInterstitialAd() {
-        
+        self.interstitialAd = FreestarInterstitialAd(delegate: self)
+        self.interstitialAd?.selectPartners(self.chosenPartners)
+        self.interstitialAd?.loadPlacement(placementField.text)
     }
     
     func showInterstitialAd() {
-        
+        interstitialAd?.show(from: self)
     }
     
     func freestarInterstitialLoaded(_ ad: FreestarInterstitialAd) {
@@ -97,25 +98,30 @@ extension FullscreenAdViewController : FreestarInterstitialDelegate {
     }
     
     func freestarInterstitialClosed(_ ad: FreestarInterstitialAd) {
-        
+        self.interstitialAdReady = false
     }
 }
 
 extension FullscreenAdViewController : FreestarRewardedDelegate {
     func loadRewardedAd() {
-        
+        let rew = FreestarReward.blank()
+        rew.rewardName = "Coins"
+        rew.rewardAmount = 1000
+        self.rewardedAd = FreestarRewardedAd(delegate: self, andReward: rew)
+        self.rewardedAd?.selectPartners(self.chosenPartners)
+        self.rewardedAd?.loadPlacement(placementField.text)
     }
     
     func showRewardedAd() {
-        
+        rewardedAd?.show(from: self)
     }
     
     func freestarRewardedLoaded(_ ad: FreestarRewardedAd) {
-        
+        self.rewardedAdReady = true
     }
     
     func freestarRewardedFailed(_ ad: FreestarRewardedAd, because reason: FreestarNoAdReason) {
-        
+        self.rewardedAdReady = false
     }
     
     func freestarRewardedShown(_ ad: FreestarRewardedAd) {
@@ -123,7 +129,10 @@ extension FullscreenAdViewController : FreestarRewardedDelegate {
     }
     
     func freestarRewardedClosed(_ ad: FreestarRewardedAd) {
+        self.rewardedAdReady = false
         
+        guard let ra = rewardAlert else { return }
+        self.present(ra, animated: true, completion: nil)
     }
     
     func freestarRewardedFailed(toStart ad: FreestarRewardedAd, because reason: FreestarNoAdReason) {
@@ -131,8 +140,12 @@ extension FullscreenAdViewController : FreestarRewardedDelegate {
     }
     
     func freestarRewardedAd(_ ad: FreestarRewardedAd, received rewardName: String, amount rewardAmount: Int) {
-        
+        rewardAlert = UIAlertController(
+            title: "Reward Ad Done!",
+            message: "You've received \(rewardAmount) \(rewardName)!",
+            preferredStyle: .alert)
+        rewardAlert?.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (_ UIAlertAction) in
+            self.rewardAlert = nil
+        }))
     }
-    
-    
 }

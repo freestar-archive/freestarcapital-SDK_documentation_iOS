@@ -49,7 +49,7 @@ class BannerAdViewController: AdViewController {
         if concreteAdTypeSelector.selectedSegmentIndex == 0 {
             loadSmallBannerAd()
         } else {
-            loadBannerAd()
+            loadLargeBannerAd()
         }
     }
     
@@ -57,7 +57,7 @@ class BannerAdViewController: AdViewController {
         if concreteAdTypeSelector.selectedSegmentIndex == 0 {
             showSmallBannerAd()
         } else {
-            showBannerAd()
+            showLargeBannerAd()
         }
     }
 
@@ -94,7 +94,7 @@ class BannerAdViewController: AdViewController {
 extension BannerAdViewController : FreestarBannerAdDelegate {
     
     
-    func loadBannerAd() {
+    func loadLargeBannerAd() {
         
     }
     
@@ -104,7 +104,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         smallBanner?.loadPlacement(nil)
     }
     
-    func showBannerAd() {
+    func showLargeBannerAd() {
         
     }
     

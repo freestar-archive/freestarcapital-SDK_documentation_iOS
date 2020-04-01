@@ -67,6 +67,10 @@ class AdViewController : UIViewController, UITextFieldDelegate {
             concreteAdTypeSelector.setTitle(element, forSegmentAt: index)
         }
         
+        concreteAdTypeSelector.addTarget(self,
+            action: #selector(AdViewController.updateShowButton),
+            for: .valueChanged)
+        
         self.view.addSubview(concreteAdTypeSelector)
         concreteAdTypeSelector.translatesAutoresizingMaskIntoConstraints = false
         concreteAdTypeSelector.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 10).isActive = true
@@ -120,7 +124,9 @@ class AdViewController : UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc func showAd() {}
+    @objc func showAd() {
+        showChosenAd()
+    }
     
     // MARK: - methods to override in subclasses
     func loadChosenAd() {}
@@ -129,6 +135,8 @@ class AdViewController : UIViewController, UITextFieldDelegate {
     func selectedAdType() -> FreestarAdType {
         return .None
     }
+    
+    @objc func updateShowButton() {}
     
     func concreteAdTypes() -> [String] { return [] }
     
