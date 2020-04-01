@@ -32,7 +32,8 @@ class FullscreenAdViewController: AdViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
+        self.enablePartnerSelection = true
+
     }
     
     // MARK: - data for common elements

@@ -18,7 +18,7 @@ enum FreestarAdType {
     case Preroll
 }
 
-class AdViewController : UIViewController, UITextFieldDelegate {
+class AdViewController : UIViewController, UITextFieldDelegate, PartnerSelectionViewControllerDelegate {
     
     let placementField = UITextField()
     
@@ -30,6 +30,13 @@ class AdViewController : UIViewController, UITextFieldDelegate {
     let showButton = UIButton(type: .system)
     
     var chosenPartners = [String]()
+    
+    var enablePartnerSelection = false {
+        didSet {
+            partnerSelectionToggle.isHidden = !enablePartnerSelection
+            partnerSelectionPrompt.isHidden = !enablePartnerSelection
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +51,6 @@ class AdViewController : UIViewController, UITextFieldDelegate {
         setupPlacementField()
         setupLoadSelectionUI()
         setupLoadAndShowButtons()
-        
     }
     
     // MARK: - UI Setup
@@ -117,7 +123,7 @@ class AdViewController : UIViewController, UITextFieldDelegate {
     
     @objc func loadAd() {
         if partnerSelectionToggle.isOn {
-            self.navigationController?.pushViewController(PartnerSelectionTableViewController(adType: self.selectedAdType()), animated: true)
+            self.navigationController?.pushViewController(PartnerSelectionTableViewController(adType: self.selectedAdType(), delegate: self), animated: true)
         } else {
             chosenPartners = []
             loadChosenAd()
@@ -145,5 +151,12 @@ class AdViewController : UIViewController, UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    //MARK: - PartnerSelectionViewControllerDelegate
+    
+    func partnersSelected(_ partners: [String]) {
+        self.chosenPartners = partners
+        loadChosenAd()
     }
 }

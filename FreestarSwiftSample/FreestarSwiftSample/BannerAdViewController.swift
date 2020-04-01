@@ -18,14 +18,27 @@ class BannerAdViewController: AdViewController {
     var bannerContainerLandscapeXPos : NSLayoutConstraint!
     var bannerContainerLandscapeYPos : NSLayoutConstraint!
     
-    var smallBanner : FreestarBannerAd?
+    var smallBanner: FreestarBannerAd?
+    var largeBanner: FreestarBannerAd?
+    
+    var smallBannerAdReady = false {
+        didSet {
+            updateShowButton()
+        }
+    }
+    
+    var largeBannerAdReady = false {
+        didSet {
+            updateShowButton()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         setupBannerContainer()
-        
+        self.enablePartnerSelection = false
     }
     
     func setupBannerContainer() {
@@ -70,7 +83,14 @@ class BannerAdViewController: AdViewController {
         return ["Small Banner", "Large Banner"]
     }
     
-    // MARK: - Orientation change
+    // MARK: - controlling UI
+    
+    @objc override func updateShowButton() {
+        showButton.isEnabled =
+            (self.concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
+            (self.concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: { (_ context: UIViewControllerTransitionCoordinatorContext) in
             let orient = UIApplication.shared.statusBarOrientation
@@ -92,25 +112,36 @@ class BannerAdViewController: AdViewController {
 }
 
 extension BannerAdViewController : FreestarBannerAdDelegate {
-    
+    func closeExistingBanners() {
+        self.smallBanner?.removeFromSuperview()
+        self.smallBanner = nil
+        self.largeBanner?.removeFromSuperview()
+        self.largeBanner = nil
+    }
     
     func loadLargeBannerAd() {
+        closeExistingBanners()
+        self.largeBannerAdReady = false
+        largeBanner = FreestarBannerAd(delegate: self, andSize: .banner300x250)
         
+        largeBanner?.loadPlacement(placementField.text)
     }
     
     func loadSmallBannerAd() {
-        smallBanner?.removeFromSuperview()
+        closeExistingBanners()
+        self.smallBannerAdReady = false
         smallBanner = FreestarBannerAd(delegate: self, andSize: .banner320x50)
-        smallBanner?.loadPlacement(nil)
+        smallBanner?.loadPlacement(placementField.text)
     }
     
     func showLargeBannerAd() {
-        
+        self.largeBannerAdReady = false
+        largeBanner?.center = CGPoint(x: bannerAdContainer.bounds.midX, y: bannerAdContainer.bounds.midY)
+        bannerAdContainer.addSubview(largeBanner!)
     }
     
     func showSmallBannerAd() {
-        loadButton.isEnabled = true
-        showButton.isEnabled = false
+        self.smallBannerAdReady = false
         smallBanner?.center = CGPoint(x: bannerAdContainer.bounds.midX, y: bannerAdContainer.bounds.midY)
         bannerAdContainer.addSubview(smallBanner!)
     }
@@ -118,11 +149,19 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
     // - Banner Delegate
     
     func freestarBannerLoaded(_ ad: FreestarBannerAd) {
-        showButton.isEnabled = true
+        if ad == smallBanner {
+            self.smallBannerAdReady = true
+        } else {
+            self.largeBannerAdReady = true
+        }
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
-        
+        if ad == smallBanner {
+            self.smallBannerAdReady = false
+        } else {
+            self.largeBannerAdReady = false
+        }
     }
     
     func freestarBannerShown(_ ad: FreestarBannerAd) {
@@ -134,7 +173,11 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
     }
     
     func freestarBannerClosed(_ ad: FreestarBannerAd) {
-        showButton.isEnabled = false
+        if ad == smallBanner {
+            self.smallBannerAdReady = false
+        } else {
+            self.largeBannerAdReady = false
+        }
     }
     
 }
