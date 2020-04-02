@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  FreestarSwiftSample
 //
-//  Created by Vdopia Developer on 3/27/20.
 //  Copyright © 2020 Freestar. All rights reserved.
 //
 
