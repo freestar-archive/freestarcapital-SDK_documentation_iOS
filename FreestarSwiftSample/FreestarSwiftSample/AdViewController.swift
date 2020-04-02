@@ -2,7 +2,6 @@
 //  UIViewController+FreestarUISetup.swift
 //  FreestarSwiftSample
 //
-//  Created by Vdopia Developer on 3/30/20.
 //  Copyright © 2020 Freestar. All rights reserved.
 //
 
