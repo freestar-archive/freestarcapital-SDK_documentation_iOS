@@ -15,6 +15,7 @@
 		960064282432F5B900A3212E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064272432F5B900A3212E /* AdViewController.swift */; };
 		9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */; };
 		9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600642B2433E74700A3212E /* PrerollAdViewController.swift */; };
+		9600642E2435941B00A3212E /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9600642D2435890800A3212E /* bunny.mp4 */; };
 		ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		960064272432F5B900A3212E /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewController.swift; sourceTree = "<group>"; };
 		9600642B2433E74700A3212E /* PrerollAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrerollAdViewController.swift; sourceTree = "<group>"; };
+		9600642D2435890800A3212E /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
 		E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				960064272432F5B900A3212E /* AdViewController.swift */,
 				960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */,
 				9600642B2433E74700A3212E /* PrerollAdViewController.swift */,
+				9600642D2435890800A3212E /* bunny.mp4 */,
 			);
 			path = FreestarSwiftSample;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
 				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
+				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
