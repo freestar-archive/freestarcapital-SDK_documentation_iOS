@@ -2,7 +2,6 @@
 //  PrerollAdViewController.swift
 //  FreestarSwiftSample
 //
-//  Created by Vdopia Developer on 3/31/20.
 //  Copyright © 2020 Freestar. All rights reserved.
 //
 
