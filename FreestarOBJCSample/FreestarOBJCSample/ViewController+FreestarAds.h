@@ -1,7 +1,4 @@
 //
-//  ViewController+ChocolateAd.h
-//  ChocolateOBJCSample
-//
 //  Created by Lev Trubov on 11/8/19.
 //  Copyright © 2019 Lev Trubov. All rights reserved.
 //

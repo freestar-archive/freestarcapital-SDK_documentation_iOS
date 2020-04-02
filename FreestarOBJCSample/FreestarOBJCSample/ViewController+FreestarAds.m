@@ -1,7 +1,4 @@
 //
-//  ViewController+ChocolateAd.m
-//  ChocolateOBJCSample
-//
 //  Created by Lev Trubov on 11/8/19.
 //  Copyright © 2019 Lev Trubov. All rights reserved.
 //
@@ -36,7 +33,7 @@ static UIView *previousBanner = nil;
     FreestarReward *rew = [FreestarReward blankReward];
     rew.rewardName = @"Coins";
     rew.rewardAmount = 1000;
-    
+
     rewarded = [[FreestarRewardedAd alloc] initWithDelegate:self andReward:rew];
     [rewarded selectPartners:chosenPartners];
     [rewarded loadPlacement: placement.text];
@@ -49,13 +46,13 @@ static UIView *previousBanner = nil;
 -(void)loadBannerAd {
     adTypeLoadedStates[2] = @NO;
     [self adjustUIForAdState];
-    
+
     [banner removeFromSuperview];
     banner = nil;
-    
+
     [smallBanner removeFromSuperview];
     smallBanner = nil;
-    
+
 //    banner = [[FreestarBannerAd alloc] initWithFrame:CGRectMake(0, 0, 300, 250)];
     banner = [[FreestarBannerAd alloc] initWithDelegate:self andSize:FreestarBanner300x250];
     [banner loadPlacement:placement.text];
@@ -64,7 +61,7 @@ static UIView *previousBanner = nil;
 -(void)showBannerAd {
     adTypeLoadedStates[2] = @NO;
     [self adjustUIForAdState];
-    
+
     CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
     banner.center = pos;
     [inviewAdContainer addSubview:banner];
@@ -93,13 +90,13 @@ static UIView *previousBanner = nil;
 -(void)loadSmallBannerAd {
     adTypeLoadedStates[4] = @NO;
     [self adjustUIForAdState];
-    
+
     [banner removeFromSuperview];
     banner = nil;
-    
+
     [smallBanner removeFromSuperview];
     smallBanner = nil;
-    
+
     smallBanner = [[FreestarBannerAd alloc] initWithDelegate:self andSize:FreestarBanner320x50];
     [smallBanner loadPlacement:placement.text];
 }
@@ -107,7 +104,7 @@ static UIView *previousBanner = nil;
 -(void)showSmallBannerAd {
     adTypeLoadedStates[4] = @NO;
     [self adjustUIForAdState];
-    
+
     CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
     smallBanner.center = pos;
     [inviewAdContainer addSubview:smallBanner];
@@ -126,11 +123,11 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarInterstitialShown:(FreestarRewardedAd *)ad {
-    
+
 }
 
 -(void)freestarInterstitialClicked:(FreestarRewardedAd *)ad {
-    
+
 }
 
 -(void)freestarInterstitialClosed:(FreestarRewardedAd *)ad {
@@ -152,7 +149,7 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarRewardedShown:(FreestarRewardedAd *)ad {
-    
+
 }
 
 -(void)freestarRewardedClosed:(FreestarRewardedAd *)ad {
@@ -164,7 +161,7 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarRewardedFailedToStart:(FreestarRewardedAd *)ad because:(FreestarNoAdReason)reason {
-    
+
 }
 
 -(void)freestarRewardedAd:(FreestarRewardedAd *)ad received:(NSString *)rewardName amount:(NSInteger)rewardAmount {
@@ -189,11 +186,11 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarBannerShown:(FreestarBannerAd *)ad {
-    
+
 }
 
 -(void)freestarBannerClicked:(FreestarBannerAd *)ad {
-    
+
 }
 
 -(void)freestarBannerClosed:(FreestarBannerAd *)ad {
@@ -215,11 +212,11 @@ static UIView *previousBanner = nil;
 }
 
 -(void)freestarPrerollShown:(FreestarPrerollAd *)ad {
-    
+
 }
 
 -(void)freestarPrerollClicked:(FreestarPrerollAd *)ad {
-    
+
 }
 
 -(void)freestarPrerollClosed:(FreestarPrerollAd *)ad {

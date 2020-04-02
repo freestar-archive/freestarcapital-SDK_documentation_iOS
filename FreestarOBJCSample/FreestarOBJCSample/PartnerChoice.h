@@ -1,6 +1,5 @@
 //
 //  PartnerChoice.h
-//  ChocolateOBJCSample
 //
 //  Created by Lev Trubov on 10/15/19.
 //  Copyright © 2019 Lev Trubov. All rights reserved.

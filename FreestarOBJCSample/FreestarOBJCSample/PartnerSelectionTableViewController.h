@@ -1,6 +1,5 @@
 //
 //  PartnerSelectionTableViewController.h
-//  ChocolateOBJCSample
 //
 //  Created by Lev Trubov on 10/8/19.
 //  Copyright © 2019 Lev Trubov. All rights reserved.
@@ -10,11 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString* const ChocolateSelectedNotification = @"ChocolatePartnersSelectedNotification";
+@protocol PartnerSelectionViewControllerDelegate
+-(void)partnersSelected:(NSArray<NSString *>*)partners;
+@end
 
 @interface PartnerSelectionTableViewController : UITableViewController
 
--(instancetype)initWithAdType:(NSString *)adType;
+-(instancetype)initWithAdType:(NSString *)adType
+                  andDelegate:(id<PartnerSelectionViewControllerDelegate>)delegate;
 
 @end
 
