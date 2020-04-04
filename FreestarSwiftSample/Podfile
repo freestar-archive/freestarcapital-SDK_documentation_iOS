@@ -15,4 +15,5 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Google', '~> 3.0'
   pod 'FreestarAds-Criteo', '~> 1.0'
   pod 'FreestarAds-GAM', '~> 1.0'
+  pod 'FreestarAds-Facebook', '~> 3.1'
 end

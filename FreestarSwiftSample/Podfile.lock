@@ -4,6 +4,9 @@ PODS:
   - AppLovinSDK (6.11.6)
   - ChocolatePlatform-SDK-Core (3.2.5)
   - CriteoPublisherSdk (3.2.0)
+  - FBAudienceNetwork (5.8.0):
+    - FBSDKCoreKit/Basics (>= 5.6.0)
+  - FBSDKCoreKit/Basics (6.3.0)
   - FreestarAds (3.2.5):
     - ChocolatePlatform-SDK-Core (~> 3.2.5)
   - FreestarAds-AdColony (3.1.0):
@@ -17,6 +20,9 @@ PODS:
     - FreestarAds (~> 3.2)
   - FreestarAds-Criteo (1.0.0):
     - CriteoPublisherSdk (~> 3.2.0)
+    - FreestarAds (~> 3.2)
+  - FreestarAds-Facebook (3.1.0):
+    - FBAudienceNetwork (~> 5.3)
     - FreestarAds (~> 3.2)
   - FreestarAds-GAM (1.0.0):
     - FreestarAds (~> 3.2)
@@ -76,6 +82,7 @@ DEPENDENCIES:
   - FreestarAds-Amazon (~> 2.0)
   - FreestarAds-AppLovin (~> 3.0)
   - FreestarAds-Criteo (~> 1.0)
+  - FreestarAds-Facebook (~> 3.1)
   - FreestarAds-GAM (~> 1.0)
   - FreestarAds-Google (~> 3.0)
   - FreestarAds-Googleadmob (~> 2.0)
@@ -90,11 +97,14 @@ SPEC REPOS:
     - AppLovinSDK
     - ChocolatePlatform-SDK-Core
     - CriteoPublisherSdk
+    - FBAudienceNetwork
+    - FBSDKCoreKit
     - FreestarAds
     - FreestarAds-AdColony
     - FreestarAds-Amazon
     - FreestarAds-AppLovin
     - FreestarAds-Criteo
+    - FreestarAds-Facebook
     - FreestarAds-GAM
     - FreestarAds-Google
     - FreestarAds-Googleadmob
@@ -116,11 +126,14 @@ SPEC CHECKSUMS:
   AppLovinSDK: 818e22271b3f875c150faf356f65c59463deb653
   ChocolatePlatform-SDK-Core: 7488159b8c7de9a3fc2dc37f0cd6b4c3575d5daa
   CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
+  FBAudienceNetwork: 98c125767300048ad46c756680644f4ecb7c4040
+  FBSDKCoreKit: 5d55c8f3007c9c49b793617b9102e46355fc7e17
   FreestarAds: 6f791faeb915eb9eb1bb1dbda207a547a55f0325
   FreestarAds-AdColony: 8db58dddce177ab0ce7116559f39855b120e8e42
   FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
   FreestarAds-AppLovin: 8712e59b06f30819ab4407d227355b830cbec534
   FreestarAds-Criteo: 876c48533dc744b5dc5b9d213292ac4e3a5a23aa
+  FreestarAds-Facebook: 426b5946be2014ac6ccc048bf641600a39a496d0
   FreestarAds-GAM: 9ee07c01ca41233fb87b69c4d8f71a19123e5322
   FreestarAds-Google: ef71762d773aeb63c9602d7054be64bd15534960
   FreestarAds-Googleadmob: 5ace3a4512de663dd614bfcf16a4379308d51290
@@ -136,6 +149,6 @@ SPEC CHECKSUMS:
   UnityAds: db0da29fa3a7e519bceea56693909df0dd83caa5
   VungleSDK-iOS: 6bf8b4fef32afc169acbc1291485560c81ceb293
 
-PODFILE CHECKSUM: a8f510d63d3fc0cd1684d4442b1b8f1ed29e08a3
+PODFILE CHECKSUM: 3e0cf504cf1a0390fd6ee6db334cee5b774176fb
 
 COCOAPODS: 1.9.1
