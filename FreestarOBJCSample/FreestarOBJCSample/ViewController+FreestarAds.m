@@ -68,8 +68,9 @@ static UIView *previousBanner = nil;
 }
 
 -(void)loadPrerollAd {
-    preroll = [[FreestarPrerollAd alloc] initWithPlacement:placement.text];
-    preroll.delegate = self;
+    preroll = [[FreestarPrerollAd alloc] initWithDelegate:self];
+    [preroll addCustomTargeting:@"interests" as:@"sports"];
+    [preroll loadPlacement:placement.text];
 }
 
 -(void)showPrerollAd {

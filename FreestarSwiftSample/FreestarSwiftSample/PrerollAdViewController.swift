@@ -103,8 +103,9 @@ class PrerollAdViewController: AdViewController {
 
 extension PrerollAdViewController : FreestarPrerollAdDelegate {
     func loadPrerollAd() {
-        self.prerollAd = FreestarPrerollAd(placement: placementField.text)
-        prerollAd?.delegate = self
+        self.prerollAd = FreestarPrerollAd(delegate: self)
+        self.prerollAd?.addCustomTargeting("occupation", as: "finance")
+        self.prerollAd?.loadPlacement(placementField.text)
     }
     
     func showPrerollAd() {
