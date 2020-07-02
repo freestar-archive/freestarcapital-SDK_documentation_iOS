@@ -70,6 +70,7 @@ static UIView *previousBanner = nil;
 -(void)loadPrerollAd {
     preroll = [[FreestarPrerollAd alloc] initWithDelegate:self];
     [preroll addCustomTargeting:@"interests" as:@"sports"];
+    preroll.size = FreestarPrerollMREC;
     [preroll loadPlacement:placement.text];
 }
 

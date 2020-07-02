@@ -36,7 +36,8 @@
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Vungle"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
-            [[PartnerChoice alloc] initWithName:@"Criteo"]
+            [[PartnerChoice alloc] initWithName:@"Criteo"],
+            [[PartnerChoice alloc] initWithName:@"Google"]
         ];
     } else if([adType isEqualToString:@"Rewarded"]) {
         return @[
@@ -61,7 +62,8 @@
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
             [[PartnerChoice alloc] initWithName:@"Yahoo"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
-            [[PartnerChoice alloc] initWithName:@"Criteo"]
+            [[PartnerChoice alloc] initWithName:@"Criteo"],
+            [[PartnerChoice alloc] initWithName:@"Google"]
         ];
     } else if([adType isEqualToString:@"Preroll"]) {
         return @[
@@ -77,7 +79,9 @@
             [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
-            [[PartnerChoice alloc] initWithName:@"Unity"]
+            [[PartnerChoice alloc] initWithName:@"Unity"],
+            [[PartnerChoice alloc] initWithName:@"Google"]
+
         ];
     }
     
