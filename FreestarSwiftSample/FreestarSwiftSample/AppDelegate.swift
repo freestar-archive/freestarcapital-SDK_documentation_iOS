@@ -31,10 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let pVC = PrerollAdViewController()
         pVC.title = "Preroll"
         
+        let feedVC = FeedAdViewController()
+        feedVC.title = "Feed"
+        
         tabVC.viewControllers = [
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
-            UINavigationController(rootViewController: pVC)
+            UINavigationController(rootViewController: pVC),
+            UINavigationController(rootViewController: feedVC)
         ]
         
         window = UIWindow()

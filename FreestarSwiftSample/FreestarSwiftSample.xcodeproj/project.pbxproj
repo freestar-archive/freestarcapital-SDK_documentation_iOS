@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66FC846DC8F6A160D93334AE /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */; };
 		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
 		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
 		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
@@ -16,11 +17,15 @@
 		9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */; };
 		9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600642B2433E74700A3212E /* PrerollAdViewController.swift */; };
 		9600642E2435941B00A3212E /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9600642D2435890800A3212E /* bunny.mp4 */; };
-		ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */; };
+		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
+		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
+		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96006408242EA20D00A3212E /* FreestarSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9600640F242EA20D00A3212E /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
@@ -32,8 +37,9 @@
 		960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewController.swift; sourceTree = "<group>"; };
 		9600642B2433E74700A3212E /* PrerollAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrerollAdViewController.swift; sourceTree = "<group>"; };
 		9600642D2435890800A3212E /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
-		E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
-		E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
+		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +47,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDD7F326C8B7CE932208A2B /* libPods-FreestarSwiftSample.a in Frameworks */,
+				66FC846DC8F6A160D93334AE /* Pods_FreestarSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E644C57AEE76F4A142D80DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6FF828191980196AA5797F6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */,
-				E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */,
+				27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */,
+				562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -63,7 +77,7 @@
 				9600640A242EA20D00A3212E /* FreestarSwiftSample */,
 				96006409242EA20D00A3212E /* Products */,
 				6FF828191980196AA5797F6B /* Pods */,
-				99B0E3D801DC71FB1DC7ECBB /* Frameworks */,
+				4E644C57AEE76F4A142D80DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,16 +102,11 @@
 				960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */,
 				9600642B2433E74700A3212E /* PrerollAdViewController.swift */,
 				9600642D2435890800A3212E /* bunny.mp4 */,
+				FD1179A424CB8D7000547873 /* FeedAdViewController.swift */,
+				FD1179A624CB935600547873 /* SpinnerViewController.swift */,
+				FD1179A824CB96F700547873 /* FeedConstants.swift */,
 			);
 			path = FreestarSwiftSample;
-			sourceTree = "<group>";
-		};
-		99B0E3D801DC71FB1DC7ECBB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8278E7655F045E1E52CFC02E /* libPods-FreestarSwiftSample.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9600641C242EA20F00A3212E /* Build configuration list for PBXNativeTarget "FreestarSwiftSample" */;
 			buildPhases = (
-				AAF854F9756BB6307CD9C469 /* [CP] Check Pods Manifest.lock */,
+				BFD7DB85F2AE0588C91BD4FD /* [CP] Check Pods Manifest.lock */,
 				96006404242EA20D00A3212E /* Sources */,
 				96006405242EA20D00A3212E /* Frameworks */,
 				96006406242EA20D00A3212E /* Resources */,
-				322B37C722A2DF6F45DB09F1 /* [CP] Embed Pods Frameworks */,
-				DCA3E2EEF5257184425471B0 /* [CP] Copy Pods Resources */,
+				61CBB2C7956C94BE4A056B34 /* [CP] Embed Pods Frameworks */,
+				05A7C232826E63C5CA868E46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,7 +179,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		322B37C722A2DF6F45DB09F1 /* [CP] Embed Pods Frameworks */ = {
+		05A7C232826E63C5CA868E46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61CBB2C7956C94BE4A056B34 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,7 +213,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AAF854F9756BB6307CD9C469 /* [CP] Check Pods Manifest.lock */ = {
+		BFD7DB85F2AE0588C91BD4FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,23 +235,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCA3E2EEF5257184425471B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,10 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
+				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
 				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
+				FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */,
 				960064282432F5B900A3212E /* AdViewController.swift in Sources */,
 				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,
+				FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */,
 				9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,11 +384,30 @@
 		};
 		9600641D242EA20F00A3212E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E66AB8F9820E05F8150669AD /* Pods-FreestarSwiftSample.debug.xcconfig */;
+			baseConfigurationReference = 27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AdColony\"",
+					"\"${PODS_ROOT}/AmazonAd/AmazonMobileAds-ios-3.0.0-SDK\"",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.6\"",
+					"\"${PODS_ROOT}/ChocolatePlatform-SDK-Core/SDK\"",
+					"\"${PODS_ROOT}/CriteoPublisherSdk\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/FreestarAds/SDK\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"$(PODS_ROOT)/AdColony\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+				);
 				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,11 +421,30 @@
 		};
 		9600641E242EA20F00A3212E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B4F94C12BFF6D87259F132 /* Pods-FreestarSwiftSample.release.xcconfig */;
+			baseConfigurationReference = 562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AdColony\"",
+					"\"${PODS_ROOT}/AmazonAd/AmazonMobileAds-ios-3.0.0-SDK\"",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.6\"",
+					"\"${PODS_ROOT}/ChocolatePlatform-SDK-Core/SDK\"",
+					"\"${PODS_ROOT}/CriteoPublisherSdk\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/FreestarAds/SDK\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"$(PODS_ROOT)/AdColony\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+				);
 				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
