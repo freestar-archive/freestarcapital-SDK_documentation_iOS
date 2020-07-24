@@ -75,8 +75,6 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: ArticleCellIdentifier)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -254,7 +252,8 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
             }
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) as UITableViewCell?
+            let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
+            
             guard let article = article else { return cell! }
             cell?.textLabel?.text = article.title
             cell?.detailTextLabel?.text = "\(article.score!) points by \(article.by!) [\(article.email!)]"
