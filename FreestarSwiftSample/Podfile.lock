@@ -2,13 +2,11 @@ PODS:
   - AdColony (4.1.5)
   - AmazonAd (3.0.0)
   - AppLovinSDK (6.11.6)
-  - ChocolatePlatform-SDK-Core (3.4.2)
   - CriteoPublisherSdk (3.2.0)
   - FBAudienceNetwork (5.10.1):
     - FBSDKCoreKit/Basics (>= 5.6.0)
   - FBSDKCoreKit/Basics (7.1.1)
-  - FreestarAds (3.4.2):
-    - ChocolatePlatform-SDK-Core (= 3.4.2)
+  - FreestarAds (3.4.3-beta3)
   - FreestarAds-AdColony (3.1.1):
     - AdColony (~> 4.1.5)
     - FreestarAds (~> 3.2)
@@ -46,12 +44,12 @@ PODS:
     - GoogleAppMeasurement (~> 6.0)
     - GoogleUserMessagingPlatform (~> 1.1)
   - GoogleAds-IMA-iOS-SDK (3.11.4)
-  - GoogleAppMeasurement (6.7.2):
+  - GoogleAppMeasurement (6.8.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
     - GoogleUtilities/Network (~> 6.7)
     - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30905.0)
+    - nanopb (~> 1.30906.0)
   - GoogleUserMessagingPlatform (1.1.0)
   - GoogleUtilities/AppDelegateSwizzler (6.7.2):
     - GoogleUtilities/Environment
@@ -71,11 +69,11 @@ PODS:
   - GoogleUtilities/Reachability (6.7.2):
     - GoogleUtilities/Logger
   - LoremIpsum (1.0.0)
-  - nanopb (1.30905.0):
-    - nanopb/decode (= 1.30905.0)
-    - nanopb/encode (= 1.30905.0)
-  - nanopb/decode (1.30905.0)
-  - nanopb/encode (1.30905.0)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
   - SnapKit (5.0.1)
   - TapjoySDK (12.4.2)
@@ -83,7 +81,7 @@ PODS:
   - VungleSDK-iOS (6.5.3)
 
 DEPENDENCIES:
-  - FreestarAds (~> 3.2)
+  - FreestarAds (~> 3.4-beta)
   - FreestarAds-AdColony (~> 3.0)
   - FreestarAds-Amazon (~> 2.0)
   - FreestarAds-AppLovin (~> 3.0)
@@ -103,7 +101,6 @@ SPEC REPOS:
     - AdColony
     - AmazonAd
     - AppLovinSDK
-    - ChocolatePlatform-SDK-Core
     - CriteoPublisherSdk
     - FBAudienceNetwork
     - FBSDKCoreKit
@@ -136,11 +133,10 @@ SPEC CHECKSUMS:
   AdColony: 7d81ec360d5f14b2ab7569d482f6529a7c0bf457
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
   AppLovinSDK: 818e22271b3f875c150faf356f65c59463deb653
-  ChocolatePlatform-SDK-Core: e6b0eabd99fb946d425451a6b23dc50866101099
   CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
   FBAudienceNetwork: 6cdcc40aa475e8045ab14398e181a3dc90a5014e
   FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
-  FreestarAds: c62905672575303a9e8fae795a1945ce842e92e7
+  FreestarAds: 96f73bc133e11b0ef63cb009b1a2a59731734ec5
   FreestarAds-AdColony: fd561d4abb5922778a9d443f8bca158cd34b6717
   FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
   FreestarAds-AppLovin: 8712e59b06f30819ab4407d227355b830cbec534
@@ -154,17 +150,17 @@ SPEC CHECKSUMS:
   FreestarAds-Vungle: 4df298b754aae9feebc0ba30c489fd91983f2b07
   Google-Mobile-Ads-SDK: aec52559ce73ddf1e6478d1904dd71a741f1bc61
   GoogleAds-IMA-iOS-SDK: 7f5b78b31ce97ec1f515866ed54118922004f987
-  GoogleAppMeasurement: 3def7652b1f5b5a576178dc332e2a36a260fbef6
+  GoogleAppMeasurement: ecc30d0ab5b66d7d18e85ce1b8e2b345db60626d
   GoogleUserMessagingPlatform: 9dc714d2e1f0aa727b9cc52d266dc1b155f4c3f2
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: c8d73f291cfe922cb8bb2c3ae09b5af0b2863841
   UnityAds: 729ce6e485d5ae45df03ad13e440cde6967feee3
   VungleSDK-iOS: f54778abc3ebe6542e1000e5a83e5e35716e0d09
 
-PODFILE CHECKSUM: 3e4dea9e49919f23fd8d284ff2061ac11c541894
+PODFILE CHECKSUM: ec6ef90cf630ddbaf495fe7d0b10e3f095e6f241
 
 COCOAPODS: 1.9.3

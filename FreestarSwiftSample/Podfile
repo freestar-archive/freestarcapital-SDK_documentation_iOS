@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod 'FreestarAds', '~> 3.2'
+  pod 'FreestarAds', '~> 3.4-beta'
   pod 'FreestarAds-AdColony', '~> 3.0'
   pod 'FreestarAds-AppLovin', '~> 3.0'
   pod 'FreestarAds-Googleadmob', '~> 2.0'
@@ -20,5 +20,9 @@ target 'FreestarSwiftSample' do
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
+  
+#  pod 'Google-Mobile-Ads-SDK', '~> 7.61'
+#  pod 'AppLovinSDK', '~> 6.11.1'
+#  pod 'AmazonAd', '~> 3.0.0'
 
 end
