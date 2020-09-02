@@ -12,10 +12,10 @@ class BannerAdViewController: AdViewController {
     
     let bannerAdContainer = UIView()
     
-    var bannerContainerPortraitXPos : NSLayoutConstraint!
-    var bannerContainerPortraitYPos : NSLayoutConstraint!
-    var bannerContainerLandscapeXPos : NSLayoutConstraint!
-    var bannerContainerLandscapeYPos : NSLayoutConstraint!
+    var bannerContainerPortraitXPos : NSLayoutConstraint?
+    var bannerContainerPortraitYPos : NSLayoutConstraint?
+    var bannerContainerLandscapeXPos : NSLayoutConstraint?
+    var bannerContainerLandscapeYPos : NSLayoutConstraint?
     
     var smallBanner: FreestarBannerAd?
     var largeBanner: FreestarBannerAd?
@@ -50,8 +50,8 @@ class BannerAdViewController: AdViewController {
         bannerContainerPortraitYPos = bannerAdContainer.topAnchor.constraint(equalTo: loadButton.bottomAnchor, constant: 20)
         bannerContainerLandscapeYPos = bannerAdContainer.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         
-        bannerContainerPortraitXPos.isActive = true
-        bannerContainerPortraitYPos.isActive = true
+        bannerContainerPortraitXPos?.isActive = true
+        bannerContainerPortraitYPos?.isActive = true
         
         bannerAdContainer.widthAnchor.constraint(equalToConstant: 330).isActive = true
         bannerAdContainer.heightAnchor.constraint(equalToConstant: 300).isActive = true
@@ -94,15 +94,15 @@ class BannerAdViewController: AdViewController {
         coordinator.animate(alongsideTransition: { (_ context: UIViewControllerTransitionCoordinatorContext) in
             let orient = UIApplication.shared.statusBarOrientation
             if orient == .portrait {
-                self.bannerContainerLandscapeXPos.isActive = false
-                self.bannerContainerLandscapeYPos.isActive = false
-                self.bannerContainerPortraitXPos.isActive = true
-                self.bannerContainerPortraitYPos.isActive = true
+                self.bannerContainerLandscapeXPos?.isActive = false
+                self.bannerContainerLandscapeYPos?.isActive = false
+                self.bannerContainerPortraitXPos?.isActive = true
+                self.bannerContainerPortraitYPos?.isActive = true
             } else {
-                self.bannerContainerPortraitXPos.isActive = false
-                self.bannerContainerPortraitYPos.isActive = false
-                self.bannerContainerLandscapeXPos.isActive = true
-                self.bannerContainerLandscapeYPos.isActive = true
+                self.bannerContainerPortraitXPos?.isActive = false
+                self.bannerContainerPortraitYPos?.isActive = false
+                self.bannerContainerLandscapeXPos?.isActive = true
+                self.bannerContainerLandscapeYPos?.isActive = true
             }
         }, completion: nil)
         

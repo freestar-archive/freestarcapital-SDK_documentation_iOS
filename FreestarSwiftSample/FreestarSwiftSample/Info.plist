@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CHP_ENABLE_PARTNER_SELECTION</key>
 	<string>true</string>
 	<key>CHP_LOGGING_ENABLE</key>

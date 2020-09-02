@@ -6,7 +6,7 @@ PODS:
   - FBAudienceNetwork (5.10.1):
     - FBSDKCoreKit/Basics (>= 5.6.0)
   - FBSDKCoreKit/Basics (7.1.1)
-  - FreestarAds (3.4.3-beta3)
+  - FreestarAds (3.4.3)
   - FreestarAds-AdColony (3.1.1):
     - AdColony (~> 4.1.5)
     - FreestarAds (~> 3.2)
@@ -136,7 +136,7 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
   FBAudienceNetwork: 6cdcc40aa475e8045ab14398e181a3dc90a5014e
   FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
-  FreestarAds: 96f73bc133e11b0ef63cb009b1a2a59731734ec5
+  FreestarAds: c829ad513819e60c2b5f0b899dd1950a0a40fc61
   FreestarAds-AdColony: fd561d4abb5922778a9d443f8bca158cd34b6717
   FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
   FreestarAds-AppLovin: 8712e59b06f30819ab4407d227355b830cbec534
