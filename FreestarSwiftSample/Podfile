@@ -21,8 +21,7 @@ target 'FreestarSwiftSample' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
   
-#  pod 'Google-Mobile-Ads-SDK', '~> 7.61'
-#  pod 'AppLovinSDK', '~> 6.11.1'
-#  pod 'AmazonAd', '~> 3.0.0'
-
+  target 'FreestarAdsTests' do
+      inherit! :search_paths
+  end
 end
