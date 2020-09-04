@@ -5,17 +5,17 @@ use_frameworks!
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
   pod 'FreestarAds', '~> 3.4-beta'
-  pod 'FreestarAds-AdColony', '~> 3.0'
-  pod 'FreestarAds-AppLovin', '~> 3.0'
-  pod 'FreestarAds-Googleadmob', '~> 2.0'
-  pod 'FreestarAds-Tapjoy', '~> 3.0'
-  pod 'FreestarAds-Unity', '~> 4.0'
-  pod 'FreestarAds-Vungle', '~> 3.0'
-  pod 'FreestarAds-Amazon', '~> 2.0'
-  pod 'FreestarAds-Google', '~> 3.0'
-  pod 'FreestarAds-Criteo', '~> 1.0'
-  pod 'FreestarAds-GAM', '~> 1.0'
-  pod 'FreestarAds-Facebook', '~> 3.1'
+  pod 'FreestarAds-AdColony', '~> 3.0-beta'
+  pod 'FreestarAds-AppLovin', '~> 3.0-beta'
+  pod 'FreestarAds-Googleadmob', '~> 2.0-beta'
+  pod 'FreestarAds-Tapjoy', '~> 3.0-beta'
+  pod 'FreestarAds-Unity', '~> 4.0-beta'
+  pod 'FreestarAds-Vungle', '~> 3.0-beta'
+  pod 'FreestarAds-Amazon', '~> 2.0-beta'
+  pod 'FreestarAds-Google', '~> 3.0-beta'
+  pod 'FreestarAds-Criteo', '~> 1.0-beta'
+  pod 'FreestarAds-GAM', '~> 1.0-beta'
+  pod 'FreestarAds-Facebook', '~> 3.1-beta'
   
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
