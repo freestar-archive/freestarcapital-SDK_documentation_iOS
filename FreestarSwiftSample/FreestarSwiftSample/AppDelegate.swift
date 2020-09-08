@@ -34,11 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let feedVC = FeedAdViewController()
         feedVC.title = "Feed"
         
+        let bsVC = BannerScrollViewController()
+        bsVC.title = "Banner Scroll"
+        
         tabVC.viewControllers = [
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
             UINavigationController(rootViewController: pVC),
-            UINavigationController(rootViewController: feedVC)
+            UINavigationController(rootViewController: feedVC),
+            UINavigationController(rootViewController: bsVC)
         ]
         
         window = UIWindow()
