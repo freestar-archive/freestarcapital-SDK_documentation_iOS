@@ -40,11 +40,11 @@ PODS:
   - FreestarAds-Vungle (3.1.1):
     - FreestarAds (~> 3.2)
     - VungleSDK-iOS (~> 6.5.3)
-  - Google-Mobile-Ads-SDK (7.64.0):
+  - Google-Mobile-Ads-SDK (7.65.0):
     - GoogleAppMeasurement (~> 6.0)
     - GoogleUserMessagingPlatform (~> 1.1)
   - GoogleAds-IMA-iOS-SDK (3.11.4)
-  - GoogleAppMeasurement (6.8.0):
+  - GoogleAppMeasurement (6.8.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
     - GoogleUtilities/Network (~> 6.7)
@@ -81,7 +81,7 @@ PODS:
   - VungleSDK-iOS (6.5.3)
 
 DEPENDENCIES:
-  - FreestarAds (~> 3.4-beta)
+  - FreestarAds (~> 3.4)
   - FreestarAds-AdColony (~> 3.0)
   - FreestarAds-Amazon (~> 2.0)
   - FreestarAds-AppLovin (~> 3.0)
@@ -148,9 +148,9 @@ SPEC CHECKSUMS:
   FreestarAds-Tapjoy: 65bfdd2c9d5fd0127fe7e54e3301ae072cb5d42a
   FreestarAds-Unity: dd78cf6d288b5a84ed5d82bcb3fe32428c6d8c6c
   FreestarAds-Vungle: 4df298b754aae9feebc0ba30c489fd91983f2b07
-  Google-Mobile-Ads-SDK: aec52559ce73ddf1e6478d1904dd71a741f1bc61
+  Google-Mobile-Ads-SDK: af735e001ee534d9dd2ce0a87cd8c355b19844b5
   GoogleAds-IMA-iOS-SDK: 7f5b78b31ce97ec1f515866ed54118922004f987
-  GoogleAppMeasurement: ecc30d0ab5b66d7d18e85ce1b8e2b345db60626d
+  GoogleAppMeasurement: e3618c6e9f5166a6b320b03b759da3b04ec2a101
   GoogleUserMessagingPlatform: 9dc714d2e1f0aa727b9cc52d266dc1b155f4c3f2
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
@@ -161,6 +161,6 @@ SPEC CHECKSUMS:
   UnityAds: 729ce6e485d5ae45df03ad13e440cde6967feee3
   VungleSDK-iOS: f54778abc3ebe6542e1000e5a83e5e35716e0d09
 
-PODFILE CHECKSUM: ec6ef90cf630ddbaf495fe7d0b10e3f095e6f241
+PODFILE CHECKSUM: c6a912c5e1c9d613dff328a0d46fef74db256ed6
 
 COCOAPODS: 1.9.3
