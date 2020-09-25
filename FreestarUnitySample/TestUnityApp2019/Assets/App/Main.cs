@@ -14,6 +14,8 @@ public class Main : MonoBehaviour,
   Button buttonLoadReward;
   Button buttonShowReward;
 
+  Button buttonLargeBanner;
+
   bool[] buttonState = {true,false,true,false};
   bool buttonStateChanged = false;
 
@@ -90,11 +92,16 @@ public class Main : MonoBehaviour,
 	buttonShowReward.onClick.AddListener(buttonShowRewardClicked);
 
 	Button buttonSmallBanner = GameObject.Find ("SmallBanner").GetComponent<Button> ();
-	Button buttonLargeBanner = GameObject.Find ("LargeBanner").GetComponent<Button> ();
+	buttonLargeBanner = GameObject.Find ("LargeBanner").GetComponent<Button> ();
 	buttonSmallBanner.onClick.AddListener(showSmallBanner);
 	buttonLargeBanner.onClick.AddListener(showLargeBanner);
 	sbPos = 0;
 	lbPos = 0;
+
+	Button noButton = GameObject.Find ("ButtonNo").GetComponent<Button> ();
+	Button yesButton = GameObject.Find ("ButtonYes").GetComponent<Button> ();
+	noButton.onClick.AddListener(NoClicked);
+	yesButton.onClick.AddListener(YesClicked);
   }
 
   void SetupListener() {
@@ -215,13 +222,20 @@ public class Main : MonoBehaviour,
 	}
 
 	public void showLargeBanner() {
+		if (lbPos == FreestarConstants.BANNER_AD_POSITION_TOP) {
+			StartCoroutine(CloseLargeBanner(60));
+		} 
 		FreestarUnityBridge.CloseBannerAd("", FreestarConstants.BANNER_AD_SIZE_300x250);
 		FreestarUnityBridge.ShowBannerAd("", FreestarConstants.BANNER_AD_SIZE_300x250, lbPos);
 		lbPos++;
 		lbPos %= 3;
 	}
 
-
+	//closes the large banner after delay (because when it's on top, the "LB" button is covered up)
+	IEnumerator CloseLargeBanner(float time) {
+		yield return new WaitForSeconds(time);
+		FreestarUnityBridge.CloseBannerAd("", FreestarConstants.BANNER_AD_SIZE_300x250);
+	}
 
 	public void YesClicked ()
 	{

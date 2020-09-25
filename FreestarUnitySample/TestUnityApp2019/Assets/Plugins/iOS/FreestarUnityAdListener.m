@@ -113,11 +113,11 @@
     
     CGFloat vPos;
     if (self.adPosition == 0) { //bottom
-        vPos = ad.bounds.size.height/2;
+        vPos = kw.bounds.size.height - ad.bounds.size.height/2;
     } else if (self.adPosition == 1) { //middle
         vPos = CGRectGetMidY(kw.bounds);
     } else { //top
-        vPos = kw.bounds.size.height - ad.bounds.size.height/2;
+        vPos = ad.bounds.size.height/2;
     }
     
     ad.center = CGPointMake(CGRectGetMidX(kw.bounds), vPos);

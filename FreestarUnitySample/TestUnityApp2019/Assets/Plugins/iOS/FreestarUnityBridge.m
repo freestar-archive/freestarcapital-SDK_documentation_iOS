@@ -106,7 +106,7 @@ void _showRewardedAd(char* placement, int rewardAmount,char* rewardName, char* u
     rew.secretKey = [NSString stringWithCString:secretKey encoding:NSASCIIStringEncoding];
     
     NSString *placementString = [NSString stringWithCString:placement encoding:NSASCIIStringEncoding];
-    FreestarUnityRewardAdListener *listener = interstitialListeners[placementString];
+    FreestarUnityRewardAdListener *listener = rewardListeners[placementString];
     listener.ad.reward = rew;
     [listener.ad showFrom:topViewController()];
 }
