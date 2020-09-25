@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copy this file to YOUR_UNITY_PROJECT/Assets/Plugins/Android folder.
+ *
+ * NOTE: If you have an existing AndroidManifest.xml in the Android folder
+ * you may merge the contents.
+ * Important: APPLICATION_ID (below) must be replaced before going live.
+ */
+-->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application name="android.support.multidex.MultiDexApplication">
+
+        <activity
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true"/>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
+             Chocolate Solutions team will provide a new APPLICATION_ID
+             before going live. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="qwFfGU-34yfW7sQ0boTdLe5GOlb6TG1HAHxRnwUrs8M&#45;&#45;o-aZSCv5IAT1naV1bnCuidec6UTFsSEdRqCv15_JG" />
+
+    </application>
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <!-- REMOVES the following permissions. -->
+    <!-- Some third party libraries may be including these permissions even though -->
+    <!-- you may not require them. -->
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove"/>
+
+</manifest>
