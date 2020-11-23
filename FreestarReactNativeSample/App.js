@@ -76,7 +76,7 @@ function FullscreenAds() {
     }
   });
 
-  FreestarReactBridge.subscribeToRewardCallbacks((eventName, rewardName = '', rewardAmount = 0) => {
+  FreestarReactBridge.subscribeToRewardCallbacks((eventName, placement = "", rewardName = '', rewardAmount = 0) => {
     if (eventName === "onRewardedFailed") {
       Alert.alert('Reward Ad not available');
       state.rewardedReady = false;
@@ -88,6 +88,7 @@ function FullscreenAds() {
       state.rewardedReady = true;
       setCanShowFullscreen(enableShowFullscreen(fullscreenSelection));
     } else if (eventName === "onRewardedCompleted") {
+      console.log("reward placement done: " + placement)
       console.log("reward ad completed: awarded " + rewardAmount + ' ' + rewardName);
     } else if (eventName === "onRewardedShown") {
 
@@ -138,7 +139,7 @@ function FullscreenAds() {
             if(fullscreenSelection === 0) { //interstitial
               FreestarReactBridge.showInterstitialAd();
             } else { //rewarded
-              FreestarReactBridge.showRewardAd("Coins", 50, "myuserId", "12345678");
+              FreestarReactBridge.showRewardAd(null, "Coins", 50, "myuserId", "12345678");
             }
           }}
         />
