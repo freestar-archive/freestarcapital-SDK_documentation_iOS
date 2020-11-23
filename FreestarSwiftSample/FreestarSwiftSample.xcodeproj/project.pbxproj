@@ -20,6 +20,7 @@
 		9600642E2435941B00A3212E /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9600642D2435890800A3212E /* bunny.mp4 */; };
 		DF0FC5B62507D2AA002210EE /* BannerScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0FC5B52507D2AA002210EE /* BannerScrollViewController.swift */; };
 		DF4A1A032500351700965D7E /* FreestarAdsLaunchAndDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4A1A022500351700965D7E /* FreestarAdsLaunchAndDataTests.m */; };
+		DF5A7B4E256C752400A00182 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A7B4D256C752400A00182 /* NativeAdViewController.swift */; };
 		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
 		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
@@ -56,6 +57,7 @@
 		DF4A1A002500351700965D7E /* FreestarAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreestarAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4A1A022500351700965D7E /* FreestarAdsLaunchAndDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreestarAdsLaunchAndDataTests.m; sourceTree = "<group>"; };
 		DF4A1A042500351700965D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5A7B4D256C752400A00182 /* NativeAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
 		E61248DBC0DD6D10D5B23F21 /* Pods-FreestarAdsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarAdsTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarAdsTests/Pods-FreestarAdsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				FD1179A424CB8D7000547873 /* FeedAdViewController.swift */,
 				FD1179A624CB935600547873 /* SpinnerViewController.swift */,
 				FD1179A824CB96F700547873 /* FeedConstants.swift */,
+				DF5A7B4D256C752400A00182 /* NativeAdViewController.swift */,
 				DF0FC5B52507D2AA002210EE /* BannerScrollViewController.swift */,
 			);
 			path = FreestarSwiftSample;
@@ -343,6 +346,7 @@
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
 				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
 				DF0FC5B62507D2AA002210EE /* BannerScrollViewController.swift in Sources */,
+				DF5A7B4E256C752400A00182 /* NativeAdViewController.swift in Sources */,
 				FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */,
 				960064282432F5B900A3212E /* AdViewController.swift in Sources */,
 				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,
@@ -501,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = FLA943DDZ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,7 +535,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 3.5.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -553,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = FLA943DDZ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -583,7 +587,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 3.5.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

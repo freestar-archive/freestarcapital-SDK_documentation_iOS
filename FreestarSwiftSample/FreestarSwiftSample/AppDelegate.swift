@@ -37,12 +37,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bsVC = BannerScrollViewController()
         bsVC.title = "Banner Scroll"
         
+        let nativeVC = NativeAdViewController()
+        nativeVC.title = "Native"
+        
         tabVC.viewControllers = [
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
             UINavigationController(rootViewController: pVC),
             UINavigationController(rootViewController: feedVC),
-            UINavigationController(rootViewController: bsVC)
+            UINavigationController(rootViewController: bsVC),
+            UINavigationController(rootViewController: nativeVC)
         ]
         
         window = UIWindow()
