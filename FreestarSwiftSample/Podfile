@@ -4,25 +4,21 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod 'FreestarAds', '~> 3.4'
+  pod 'FreestarAds', :podspec => "#{File.expand_path(File.dirname(__FILE__))}/../local-podspecs/FreestarAds.podspec"
   pod 'FreestarAds-AdColony', '~> 3.0'
   pod 'FreestarAds-AppLovin', '~> 3.0'
-  pod 'FreestarAds-Googleadmob', '~> 2.0'
+  pod 'FreestarAds-Googleadmob', :podspec => "#{File.expand_path(File.dirname(__FILE__))}/../local-podspecs/FreestarAds-Googleadmob.podspec"
   pod 'FreestarAds-Tapjoy', '~> 3.0'
   pod 'FreestarAds-Unity', '~> 4.0'
   pod 'FreestarAds-Vungle', '~> 3.0'
   pod 'FreestarAds-Amazon', '~> 2.0'
   pod 'FreestarAds-Google', '~> 3.0'
   pod 'FreestarAds-Criteo', '~> 1.0'
-  pod 'FreestarAds-GAM', '~> 1.0'
+  pod 'FreestarAds-GAM', :podspec => "#{File.expand_path(File.dirname(__FILE__))}/../local-podspecs/FreestarAds-GAM.podspec"
   pod 'FreestarAds-Facebook', '~> 3.1'
   
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
-  
-#  pod 'Google-Mobile-Ads-SDK', '~> 7.61'
-#  pod 'AppLovinSDK', '~> 6.11.1'
-#  pod 'AmazonAd', '~> 3.0.0'
 
 end

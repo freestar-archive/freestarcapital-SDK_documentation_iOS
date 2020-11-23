@@ -1,12 +1,12 @@
 PODS:
   - AdColony (4.4.1.1)
   - AmazonAd (3.0.0)
-  - AppLovinSDK (6.14.8)
+  - AppLovinSDK (6.14.9)
   - CriteoPublisherSdk (3.2.0)
   - FBAudienceNetwork (6.2.0):
     - FBSDKCoreKit/Basics (>= 7.0.1)
-  - FBSDKCoreKit/Basics (8.1.0)
-  - FreestarAds (3.4.4)
+  - FBSDKCoreKit/Basics (8.2.0)
+  - FreestarAds (3.5.0.1)
   - FreestarAds-AdColony (3.1.3):
     - AdColony (~> 4.4)
     - FreestarAds (~> 3.2)
@@ -22,14 +22,14 @@ PODS:
   - FreestarAds-Facebook (3.2.1):
     - FBAudienceNetwork (~> 6.2)
     - FreestarAds (~> 3.4)
-  - FreestarAds-GAM (1.1.4):
+  - FreestarAds-GAM (1.2.0):
     - FreestarAds (~> 3.4)
     - Google-Mobile-Ads-SDK (~> 7.67)
   - FreestarAds-Google (3.1.3):
     - FreestarAds (~> 3.2)
     - GoogleAds-IMA-iOS-SDK (~> 3.13)
-  - FreestarAds-Googleadmob (2.2.4):
-    - FreestarAds (~> 3.4)
+  - FreestarAds-Googleadmob (2.3.0.1):
+    - FreestarAds (~> 3.5)
     - Google-Mobile-Ads-SDK (~> 7.67)
   - FreestarAds-Tapjoy (3.1.0):
     - FreestarAds (~> 3.2)
@@ -51,22 +51,22 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
     - nanopb (~> 2.30906.0)
   - GoogleUserMessagingPlatform (1.3.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.1.0):
+  - GoogleUtilities/AppDelegateSwizzler (7.1.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.1.0):
+  - GoogleUtilities/Environment (7.1.1):
     - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (7.1.0):
+  - GoogleUtilities/Logger (7.1.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.1.0):
+  - GoogleUtilities/MethodSwizzler (7.1.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.1.0):
+  - GoogleUtilities/Network (7.1.1):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.1.0)"
-  - GoogleUtilities/Reachability (7.1.0):
+  - "GoogleUtilities/NSData+zlib (7.1.1)"
+  - GoogleUtilities/Reachability (7.1.1):
     - GoogleUtilities/Logger
   - LoremIpsum (1.0.0)
   - nanopb (2.30906.0):
@@ -81,15 +81,15 @@ PODS:
   - VungleSDK-iOS (6.8.1)
 
 DEPENDENCIES:
-  - FreestarAds (~> 3.4)
+  - FreestarAds (from `/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds.podspec`)
   - FreestarAds-AdColony (~> 3.0)
   - FreestarAds-Amazon (~> 2.0)
   - FreestarAds-AppLovin (~> 3.0)
   - FreestarAds-Criteo (~> 1.0)
   - FreestarAds-Facebook (~> 3.1)
-  - FreestarAds-GAM (~> 1.0)
+  - FreestarAds-GAM (from `/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds-GAM.podspec`)
   - FreestarAds-Google (~> 3.0)
-  - FreestarAds-Googleadmob (~> 2.0)
+  - FreestarAds-Googleadmob (from `/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds-Googleadmob.podspec`)
   - FreestarAds-Tapjoy (~> 3.0)
   - FreestarAds-Unity (~> 4.0)
   - FreestarAds-Vungle (~> 3.0)
@@ -104,15 +104,12 @@ SPEC REPOS:
     - CriteoPublisherSdk
     - FBAudienceNetwork
     - FBSDKCoreKit
-    - FreestarAds
     - FreestarAds-AdColony
     - FreestarAds-Amazon
     - FreestarAds-AppLovin
     - FreestarAds-Criteo
     - FreestarAds-Facebook
-    - FreestarAds-GAM
     - FreestarAds-Google
-    - FreestarAds-Googleadmob
     - FreestarAds-Tapjoy
     - FreestarAds-Unity
     - FreestarAds-Vungle
@@ -129,22 +126,41 @@ SPEC REPOS:
     - UnityAds
     - VungleSDK-iOS
 
+EXTERNAL SOURCES:
+  FreestarAds:
+    :podspec: "/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds.podspec"
+  FreestarAds-GAM:
+    :podspec: "/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds-GAM.podspec"
+  FreestarAds-Googleadmob:
+    :podspec: "/Users/lev/work/SDK_documentation_iOS/FreestarSwiftSample/../local-podspecs/FreestarAds-Googleadmob.podspec"
+
+CHECKOUT OPTIONS:
+  FreestarAds:
+    :commit: d8761ed964a2a14fbe666a1b642223b47b684c4b
+    :git: https://gitlab.com/freestar/freestar-ios-binaries.git
+  FreestarAds-GAM:
+    :commit: 1b7bbbf744222070ea6ec59d221a2937e65da47e
+    :git: https://gitlab.com/freestar/freestar-ios-binaries.git
+  FreestarAds-Googleadmob:
+    :commit: 01d2355c7d911e88aaf1a950bc250c286bfe2af2
+    :git: https://gitlab.com/freestar/freestar-ios-binaries.git
+
 SPEC CHECKSUMS:
   AdColony: a655685ae4a62eb8d6ddffa5fc1436858872a9e7
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
-  AppLovinSDK: 688001bd8d1763672f0ca763467ffeba6c654718
+  AppLovinSDK: c307abff8023aa4776f863226cbe42e7a90b3364
   CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
   FBAudienceNetwork: 69193f0362accc40305703fb3265342416971446
-  FBSDKCoreKit: b3ca27e124dae67122d3bb47c8f96800b39986a6
-  FreestarAds: 2d5590df7d242cf2cb2f89b0ec80af058670d122
+  FBSDKCoreKit: 4afd6ff53d8133a433dbcda44451c9498f8c6ce4
+  FreestarAds: d23e44668b1f97ab1bacde00424e41871d26add7
   FreestarAds-AdColony: 1f8921eaa2f2ba171b71b977e598b833e4a98150
   FreestarAds-Amazon: f0e464137792cc9644754ab2cf7ee7d40f8baf7b
   FreestarAds-AppLovin: 920afd7906a2671c091ac50d50748d9e37a891e4
   FreestarAds-Criteo: 3cdc9282cf22225c99985d1daf2c206444cb779b
   FreestarAds-Facebook: 58dec256231b3d33661943385c3e8d742bd6f086
-  FreestarAds-GAM: 5521d5ccf0b73ce5c617dd7fe43542ac1d3e3428
+  FreestarAds-GAM: 63a9aa118c25cfe68b778ab9f6acc4e65671e9e8
   FreestarAds-Google: ec41b3f2e9572046d70fb68ea6ff3b771bf109af
-  FreestarAds-Googleadmob: 0c8ac7f8e345ec2170f22eed220fdf0de30a28fb
+  FreestarAds-Googleadmob: 12af8828ab080699bf90ec046cc90d93376dbbbd
   FreestarAds-Tapjoy: 65bfdd2c9d5fd0127fe7e54e3301ae072cb5d42a
   FreestarAds-Unity: 366111ddb3ede7297565445da19938510b42f661
   FreestarAds-Vungle: eaaabd41215804a02215477cbc2677b7415b010a
@@ -152,7 +168,7 @@ SPEC CHECKSUMS:
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: 89e1a64593f968713b0506ba1b53b38a154bf9a5
   GoogleUserMessagingPlatform: 1d4b6946710d18cec34742054092e2c2bddae61f
-  GoogleUtilities: f734da554aade8cc7928a31c2f3311897933a1bd
+  GoogleUtilities: 3dc4ff0d5e4840e2fa8eef0889620e8c33d4218c
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
@@ -161,6 +177,6 @@ SPEC CHECKSUMS:
   UnityAds: 5cf7348607675db42414a1625f88c2d560f1164c
   VungleSDK-iOS: 0405589c8626b2511dd57214a17e0d65e0d2f424
 
-PODFILE CHECKSUM: c6a912c5e1c9d613dff328a0d46fef74db256ed6
+PODFILE CHECKSUM: 32cae34945a56fbff3db8f5afce76599ce305760
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
