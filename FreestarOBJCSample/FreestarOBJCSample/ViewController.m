@@ -41,9 +41,15 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
 - (void)viewDidLoad {
     [super viewDidLoad];
     appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
-    adTypeLoadedStates = [@[@NO,@NO,@NO,@NO,@NO] mutableCopy];
+    adTypeLoadedStates = [@[@NO,@NO,@NO,@NO,@NO,@NO,@NO] mutableCopy];
 
-    adTypes = @[@"Interstitial", @"Rewarded", @"Banner", @"Preroll", @"Small Banner"];
+    adTypes = @[@"Interstitial",
+                @"Rewarded",
+                @"Banner",
+                @"Preroll",
+                @"Small Banner",
+                @"Medium Native",
+                @"Small Native"];
 
     CGFloat nativePortraitWidth = UIScreen.mainScreen.nativeBounds.size.width/UIScreen.mainScreen.scale;
 
@@ -220,7 +226,7 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return 5;
+    return 7;
 }
 
 #pragma mark - Picker Delegate
@@ -243,7 +249,9 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
     }
 
     if([adTypes[row] isEqualToString:@"Banner"] ||
-       [adTypes[row] isEqualToString:@"Small Banner"]) {
+       [adTypes[row] isEqualToString:@"Small Banner"] ||
+       [adTypes[row] isEqualToString:@"Medium Native"] ||
+       [adTypes[row] isEqualToString:@"Small Native"]) {
         inviewAdContainer.hidden = NO;
         [self bannerViewHidden:NO];
     } else {
@@ -297,6 +305,10 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
         [self loadPrerollAd];
     } else if([adType isEqualToString:@"Small Banner"]) {
         [self loadSmallBannerAd];
+    } else if([adType isEqualToString:@"Medium Native"]) {
+        [self loadMediumNativeAd];
+    } else if([adType isEqualToString:@"Small Native"]) {
+        [self loadSmallNativeAd];
     }
 }
 
@@ -313,6 +325,10 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
         [self showBannerAd];
     } else if([adType isEqualToString:@"Small Banner"]) {
         [self showSmallBannerAd];
+    } else if([adType isEqualToString:@"Medium Native"]) {
+        [self showMediumNativeAd];
+    } else if([adType isEqualToString:@"Small Native"]) {
+        [self showSmallNativeAd];
     }
 }
 

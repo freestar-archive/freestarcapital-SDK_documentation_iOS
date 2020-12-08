@@ -17,6 +17,9 @@ static UIViewController *fullscreenAdContainer = nil;
 
 static UIView *previousBanner = nil;
 
+static FreestarNativeAd *smallNative = nil;
+static FreestarNativeAd *mediumNative = nil;
+
 @implementation ViewController (FreestarAds)
 
 -(void)loadInterstitialAd {
@@ -53,7 +56,6 @@ static UIView *previousBanner = nil;
     [smallBanner removeFromSuperview];
     smallBanner = nil;
 
-//    banner = [[FreestarBannerAd alloc] initWithFrame:CGRectMake(0, 0, 300, 250)];
     banner = [[FreestarBannerAd alloc] initWithDelegate:self andSize:FreestarBanner300x250];
     [banner loadPlacement:placement.text];
 }
@@ -110,6 +112,52 @@ static UIView *previousBanner = nil;
     CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
     smallBanner.center = pos;
     [inviewAdContainer addSubview:smallBanner];
+}
+
+-(void)loadMediumNativeAd {
+    adTypeLoadedStates[5] = @NO;
+    [self adjustUIForAdState];
+
+    [mediumNative removeFromSuperview];
+    mediumNative = nil;
+
+    [smallNative removeFromSuperview];
+    mediumNative = nil;
+
+    mediumNative = [[FreestarNativeAd alloc] initWithDelegate:self andSize:FreestarNativeMedium];
+    [mediumNative loadPlacement:placement.text];
+}
+
+-(void)showMediumNativeAd {
+    adTypeLoadedStates[5] = @NO;
+    [self adjustUIForAdState];
+
+    CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
+    mediumNative.center = pos;
+    [inviewAdContainer addSubview:mediumNative];
+}
+
+-(void)loadSmallNativeAd {
+    adTypeLoadedStates[6] = @NO;
+    [self adjustUIForAdState];
+
+    [mediumNative removeFromSuperview];
+    mediumNative = nil;
+
+    [smallNative removeFromSuperview];
+    mediumNative = nil;
+
+    smallNative = [[FreestarNativeAd alloc] initWithDelegate:self andSize:FreestarNativeSmall];
+    [smallNative loadPlacement:placement.text];
+}
+
+-(void)showSmallNativeAd {
+    adTypeLoadedStates[6] = @NO;
+    [self adjustUIForAdState];
+
+    CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
+    smallNative.center = pos;
+    [inviewAdContainer addSubview:smallNative];
 }
 
 #pragma mark - FreestarInterstitialDelegate
@@ -187,13 +235,8 @@ static UIView *previousBanner = nil;
     [self adjustUIForAdState];
 }
 
--(void)freestarBannerShown:(FreestarBannerAd *)ad {
-
-}
-
--(void)freestarBannerClicked:(FreestarBannerAd *)ad {
-
-}
+-(void)freestarBannerShown:(FreestarBannerAd *)ad {}
+-(void)freestarBannerClicked:(FreestarBannerAd *)ad {}
 
 -(void)freestarBannerClosed:(FreestarBannerAd *)ad {
     NSLog(@"%@ banner closed", ad == banner ? @"large" : @"small");
@@ -213,13 +256,8 @@ static UIView *previousBanner = nil;
     [self adjustUIForAdState];
 }
 
--(void)freestarPrerollShown:(FreestarPrerollAd *)ad {
-
-}
-
--(void)freestarPrerollClicked:(FreestarPrerollAd *)ad {
-
-}
+-(void)freestarPrerollShown:(FreestarPrerollAd *)ad {}
+-(void)freestarPrerollClicked:(FreestarPrerollAd *)ad {}
 
 -(void)freestarPrerollClosed:(FreestarPrerollAd *)ad {
     adTypeLoadedStates[3] = @NO;
@@ -245,6 +283,12 @@ static UIView *previousBanner = nil;
         } else if (smallBanner.superview) {
             previousBanner = smallBanner;
             [smallBanner removeFromSuperview];
+        }else if (mediumNative.superview) {
+            previousBanner = mediumNative;
+            [mediumNative removeFromSuperview];
+        }else if (smallNative.superview) {
+            previousBanner = smallNative;
+            [smallNative removeFromSuperview];
         } else {
             previousBanner = nil;
         }
@@ -256,5 +300,27 @@ static UIView *previousBanner = nil;
     }
 }
 
+#pragma mark - FreestarNativeAdDelegate
+
+-(void)freestarNativeLoaded:(FreestarNativeAd *)ad {
+    NSLog(@"%@ native loaded", ad == mediumNative ? @"medium" : @"small");
+    adTypeLoadedStates[ad == mediumNative ? 5 : 6] = @YES;
+    [self adjustUIForAdState];
+}
+
+-(void)freestarNativeFailed:(FreestarNativeAd *)ad because:(FreestarNoAdReason)reason {
+    NSLog(@"%@ native failed", ad == mediumNative ? @"medium" : @"small");
+    adTypeLoadedStates[ad == mediumNative ? 5 : 6] = @NO;
+    [self adjustUIForAdState];
+}
+
+-(void)freestarNativeShown:(FreestarNativeAd *)ad {}
+-(void)freestarNativeClicked:(FreestarNativeAd *)ad {}
+
+-(void)freestarNativeClosed:(FreestarNativeAd *)ad {
+    NSLog(@"%@ native closed", ad == mediumNative ? @"medium" : @"small");
+    adTypeLoadedStates[ad == mediumNative ? 5 : 6] = @NO;
+    [self adjustUIForAdState];
+}
 
 @end

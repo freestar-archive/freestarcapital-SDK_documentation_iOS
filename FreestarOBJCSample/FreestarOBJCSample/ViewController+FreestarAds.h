@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController (FreestarAds) <FreestarInterstitialDelegate, FreestarRewardedDelegate, FreestarBannerAdDelegate, FreestarPrerollAdDelegate>
+@interface ViewController (FreestarAds) <FreestarInterstitialDelegate, FreestarRewardedDelegate, FreestarBannerAdDelegate, FreestarPrerollAdDelegate, FreestarNativeAdDelegate>
 
 -(void)loadInterstitialAd;
 -(void)showInterstitialAd;
@@ -21,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)showSmallBannerAd;
 -(void)loadPrerollAd;
 -(void)showPrerollAd;
+
+-(void)loadMediumNativeAd;
+-(void)showMediumNativeAd;
+-(void)loadSmallNativeAd;
+-(void)showSmallNativeAd;
 
 -(void)bannerViewHidden:(BOOL)hidden;
 

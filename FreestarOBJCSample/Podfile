@@ -4,7 +4,7 @@ platform :ios, '10.0'
 target 'FreestarOBJCSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'FreestarAds', '~> 3.2'
+  pod 'FreestarAds', '~> 3.5'
   pod 'FreestarAds-AdColony', '~> 3.0'
   pod 'FreestarAds-AppLovin', '~> 3.0'
   pod 'FreestarAds-Googleadmob', '~> 2.0'
