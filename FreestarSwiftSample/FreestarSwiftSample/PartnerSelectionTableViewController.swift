@@ -39,7 +39,9 @@ class PartnerSelectionTableViewController: UITableViewController {
                 "Vungle",
                 "Amazon",
                 "Criteo",
-                "Google" ].map { PartnerChoice(name: $0) }
+                "Google",
+                "Nimbus"
+        ].map { PartnerChoice(name: $0) }
         case .Rewarded: return [PartnerChoice(name: "All", selected: true)] + [
                 "Chocolate",
                 "AdColony",
@@ -50,20 +52,26 @@ class PartnerSelectionTableViewController: UITableViewController {
                 "Amazon",
                 "Criteo",
                 "Google",
-                "Tapjoy" ].map { PartnerChoice(name: $0) }
+                "Tapjoy",
+                "Nimbus"
+        ].map { PartnerChoice(name: $0) }
         case .LargeBanner: return [PartnerChoice(name: "All", selected: true)] + [
                 "Chocolate",
                 "AppLovin",
                 "GoogleAdmob",
                 "Amazon",
                 "Criteo",
-                "Google" ].map { PartnerChoice(name: $0) }
+                "Google",
+                "Nimbus"
+        ].map { PartnerChoice(name: $0) }
         case .SmallBanner: return [PartnerChoice(name: "All", selected: true)] + [
                 "GoogleAdmob",
                 "Amazon",
                 "Criteo",
                 "AppLovin",
-                "Unity" ].map { PartnerChoice(name: $0) }
+                "Unity",
+                "Nimbus"
+        ].map { PartnerChoice(name: $0) }
         case .Preroll: return [PartnerChoice(name: "All", selected: true)] + [
                 "Chocolate",
                 "Google",
