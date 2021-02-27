@@ -10,7 +10,7 @@
 
 @import FreestarAds;
 
-static NSString* const FREESTAR_API_KEY = @"P8RIA3";
+static NSString* const FREESTAR_API_KEY = @"X4mdFv";
 
 @interface AppDelegate ()
 @end

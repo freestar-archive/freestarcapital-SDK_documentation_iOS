@@ -37,7 +37,8 @@
             [[PartnerChoice alloc] initWithName:@"Vungle"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
-            [[PartnerChoice alloc] initWithName:@"Google"]
+            [[PartnerChoice alloc] initWithName:@"Google"],
+            [[PartnerChoice alloc] initWithName:@"Nimbus"]
         ];
     } else if([adType isEqualToString:@"Rewarded"]) {
         return @[
@@ -51,7 +52,8 @@
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Tapjoy"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
-            [[PartnerChoice alloc] initWithName:@"Criteo"]
+            [[PartnerChoice alloc] initWithName:@"Criteo"],
+            [[PartnerChoice alloc] initWithName:@"Nimbus"]
         ];
     } else if([adType isEqualToString:@"Banner"]) {
         return @[
@@ -63,7 +65,8 @@
             [[PartnerChoice alloc] initWithName:@"Yahoo"],
             [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
-            [[PartnerChoice alloc] initWithName:@"Google"]
+            [[PartnerChoice alloc] initWithName:@"Google"],
+            [[PartnerChoice alloc] initWithName:@"Nimbus"]
         ];
     } else if([adType isEqualToString:@"Preroll"]) {
         return @[
@@ -80,8 +83,17 @@
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Unity"],
-            [[PartnerChoice alloc] initWithName:@"Google"]
+            [[PartnerChoice alloc] initWithName:@"Google"],
+            [[PartnerChoice alloc] initWithName:@"Nimbus"]
 
+        ];
+    } else if([adType isEqualToString:@"Medium Native"]) {
+        return @[
+            [[PartnerChoice alloc] initWithName:@"All" andSelected:YES]
+        ];
+    } else if([adType isEqualToString:@"Small Native"]) {
+        return @[
+            [[PartnerChoice alloc] initWithName:@"All" andSelected:YES]
         ];
     }
     

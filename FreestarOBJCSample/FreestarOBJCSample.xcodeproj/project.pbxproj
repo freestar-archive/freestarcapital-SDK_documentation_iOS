@@ -142,7 +142,7 @@
 		96C859E5241C53E1009BD9FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Freestar;
 				TargetAttributes = {
 					96C859EC241C53E1009BD9FB = {
