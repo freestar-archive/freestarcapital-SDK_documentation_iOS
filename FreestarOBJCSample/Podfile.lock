@@ -2,7 +2,9 @@ PODS:
   - AdColony (4.5.0)
   - AmazonAd (3.0.0)
   - AppLovinSDK (6.15.2)
-  - CriteoPublisherSdk (3.2.0)
+  - CriteoPublisherSdk (4.3.1):
+    - CriteoPublisherSdk/Sdk (= 4.3.1)
+  - CriteoPublisherSdk/Sdk (4.3.1)
   - FBAudienceNetwork (6.3.0):
     - FBSDKCoreKit/Basics (>= 7.0.1)
   - FBSDKCoreKit/Basics (9.1.0)
@@ -17,9 +19,9 @@ PODS:
   - FreestarAds-AppLovin (3.3.0):
     - AppLovinSDK (~> 6.14)
     - FreestarAds (~> 3.6)
-  - FreestarAds-Criteo (1.1.0):
-    - CriteoPublisherSdk (~> 3.2.0)
-    - FreestarAds (~> 3.6)
+  - FreestarAds-Criteo (1.2.0-beta-1):
+    - CriteoPublisherSdk (~> 4.3)
+    - FreestarAds (~> 3.6-alpha)
   - FreestarAds-Facebook (3.3.0):
     - FBAudienceNetwork (~> 6.2)
     - FreestarAds (~> 3.5-beta)
@@ -81,7 +83,7 @@ PODS:
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
   - TapjoySDK (12.4.2)
-  - UnityAds (3.6.0)
+  - UnityAds (3.7.0)
   - VungleSDK-iOS (6.9.1)
 
 DEPENDENCIES:
@@ -89,7 +91,7 @@ DEPENDENCIES:
   - FreestarAds-AdColony (~> 3.0)
   - FreestarAds-Amazon (~> 2.0)
   - FreestarAds-AppLovin (~> 3.0)
-  - FreestarAds-Criteo (~> 1.0)
+  - FreestarAds-Criteo (~> 1.0-alpha)
   - FreestarAds-Facebook (~> 3.1)
   - FreestarAds-GAM (~> 1.0)
   - FreestarAds-Google (~> 3.0)
@@ -136,7 +138,7 @@ SPEC CHECKSUMS:
   AdColony: e54ee1d060491410135a5a1c9b010bcb4a171dab
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
   AppLovinSDK: fc91aca5b6b529cae7181a43f63633363dddbe3b
-  CriteoPublisherSdk: 4697cb44768aa99aa0347d920826a1d24a9e044f
+  CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 58b4d0f2359783e5bc9ee59f138b4fda43173ac4
   FBSDKCoreKit: a00fe2efd780c195a5e09201bf51c56106245b40
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
@@ -144,7 +146,7 @@ SPEC CHECKSUMS:
   FreestarAds-AdColony: 83feb676866277b23850af60fa58046d3e4fb99e
   FreestarAds-Amazon: 47cade583b4619139feab2224ff36d5187d4d27b
   FreestarAds-AppLovin: b61f294d8b71db51638bdf439bf4d3c771c29117
-  FreestarAds-Criteo: c5dd697e5c19507e23e61c6e24019d9d36439b9e
+  FreestarAds-Criteo: 53df4d1d0b9c4b384bf861c27136957bb08a602d
   FreestarAds-Facebook: 08d7a82aed54d0928d014c27056c74ac2f15fd98
   FreestarAds-GAM: afd1481270ab1746e0211ed1a5b1486442287d03
   FreestarAds-Google: ec41b3f2e9572046d70fb68ea6ff3b771bf109af
@@ -161,9 +163,9 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   TapjoySDK: c8d73f291cfe922cb8bb2c3ae09b5af0b2863841
-  UnityAds: 3f88cf3d3b11991de1025fcf0e3109fd86035fba
+  UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: 09abfadbcc04e0748ce33c6bd02282e9961125ba
 
-PODFILE CHECKSUM: 01ce81ab82cd20e00c80b379ca2d31be4eab7b93
+PODFILE CHECKSUM: d0958f7eff1a945d953dc5e916df5b870a56654c
 
 COCOAPODS: 1.10.1

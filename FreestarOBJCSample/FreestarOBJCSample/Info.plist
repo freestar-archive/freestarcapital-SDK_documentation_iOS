@@ -25,7 +25,7 @@
 	<key>CHP_TEST_ADS</key>
 	<string>enable</string>
 	<key>CHP_STAGING_SERVER</key>
-	<true/>
+	<false/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -69,5 +69,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>AppLovinSdkKey</key>
+	<string>hO52kFtMvEo_AoeRzED0_XXfS1B1VQp9GW50yudJO</string>
 </dict>
 </plist>
