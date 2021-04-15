@@ -1,6 +1,7 @@
 PODS:
   - AdColony (4.6.0)
   - AmazonAd (3.0.0)
+  - AppLovinSDK (10.1.1)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -14,6 +15,9 @@ PODS:
   - FreestarAds-Amazon-PreRelease (2.3.0-beta-1):
     - AmazonAd (~> 3.0.0)
     - FreestarAds-PreRelease (~> 3.6-alpha)
+  - FreestarAds-AppLovin-PreRelease (3.4.0-beta-1):
+    - AppLovinSDK (= 10.1.1)
+    - FreestarAds-PreRelease (~> 3.6-alpha)
   - FreestarAds-Criteo-PreRelease (1.3.0-beta-2):
     - CriteoPublisherSdk (~> 4.3)
     - FreestarAds-PreRelease (~> 3.6-alpha)
@@ -26,6 +30,9 @@ PODS:
   - FreestarAds-Googleadmob-PreRelease (2.5.0-beta-2):
     - FreestarAds-PreRelease (~> 3.6-alpha)
     - Google-Mobile-Ads-SDK (~> 7.68)
+  - FreestarAds-Mopub-PreRelease (3.5.0-beta-1):
+    - FreestarAds-PreRelease (~> 3.6-alpha)
+    - mopub-ios-sdk (= 5.16.2)
   - FreestarAds-Nimbus-PreRelease (1.1.0-beta-1):
     - FBAudienceNetwork (~> 6.2)
     - Freestar-Nimbus-SDK (~> 1.8)
@@ -69,6 +76,14 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.3.1)"
   - GoogleUtilities/Reachability (7.3.1):
     - GoogleUtilities/Logger
+  - mopub-ios-sdk (5.16.2):
+    - mopub-ios-sdk/MoPubSDK (= 5.16.2)
+  - mopub-ios-sdk/Core (5.16.2)
+  - mopub-ios-sdk/MoPubSDK (5.16.2):
+    - mopub-ios-sdk/Core
+    - mopub-ios-sdk/NativeAds
+  - mopub-ios-sdk/NativeAds (5.16.2):
+    - mopub-ios-sdk/Core
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -82,10 +97,12 @@ PODS:
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 3.0-alpha)
   - FreestarAds-Amazon-PreRelease (~> 2.0-alpha)
+  - FreestarAds-AppLovin-PreRelease (~> 3.4-alpha)
   - FreestarAds-Criteo-PreRelease (~> 1.0-alpha)
   - FreestarAds-GAM-PreRelease (~> 1.0-alpha)
   - FreestarAds-Google-PreRelease (~> 3.0-alpha)
   - FreestarAds-Googleadmob-PreRelease (~> 2.0-alpha)
+  - FreestarAds-Mopub-PreRelease (~> 3.5-alpha)
   - FreestarAds-Nimbus-PreRelease (~> 1.0-alpha)
   - FreestarAds-PreRelease (~> 3.7-alpha)
   - FreestarAds-Tapjoy-PreRelease (~> 3.0-alpha)
@@ -96,16 +113,19 @@ SPEC REPOS:
   trunk:
     - AdColony
     - AmazonAd
+    - AppLovinSDK
     - CriteoPublisherSdk
     - FBAudienceNetwork
     - FBSDKCoreKit
     - Freestar-Nimbus-SDK
     - FreestarAds-AdColony-PreRelease
     - FreestarAds-Amazon-PreRelease
+    - FreestarAds-AppLovin-PreRelease
     - FreestarAds-Criteo-PreRelease
     - FreestarAds-GAM-PreRelease
     - FreestarAds-Google-PreRelease
     - FreestarAds-Googleadmob-PreRelease
+    - FreestarAds-Mopub-PreRelease
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-PreRelease
     - FreestarAds-Tapjoy-PreRelease
@@ -116,6 +136,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - mopub-ios-sdk
     - nanopb
     - PromisesObjC
     - TapjoySDK
@@ -125,16 +146,19 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: a79d5e46d893a94f35edadfde3d08f5d8ae55bf9
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
+  AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 443e9c5e717e2d80c0253535a57e2681d34d9571
   FBSDKCoreKit: dace5abafc2fd9272733e6d027bcf18102712117
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
   FreestarAds-AdColony-PreRelease: aea13847a224b900de1107f7592f7cf80f245032
   FreestarAds-Amazon-PreRelease: 9357625cca44cfdbf3451fe954cf6263d2f11304
+  FreestarAds-AppLovin-PreRelease: f86f57e0bea099f3f5f4376ec0e52f260240aa62
   FreestarAds-Criteo-PreRelease: 5f6cc3391edee14ff4ea0e04be93fe4448afdf2d
   FreestarAds-GAM-PreRelease: b3bdb0bad7762dfdaa045b1308b7f0ee58297c0a
   FreestarAds-Google-PreRelease: a0a617405c4335d2183d729edd92166a167065e5
   FreestarAds-Googleadmob-PreRelease: 4d3d8037c5ee528dada5f6703a68879e454457d4
+  FreestarAds-Mopub-PreRelease: 4984013aba1dbe1ab8b0d0fd695c01401a2b8aee
   FreestarAds-Nimbus-PreRelease: 361fc404fc50e4e4bb194054394e0f7f0b083742
   FreestarAds-PreRelease: fbcc1dce7b0a98a471a9bf7cda2bf3c88691b50c
   FreestarAds-Tapjoy-PreRelease: 9f6f2b8d5212002322d5959799d3c41400b4d152
@@ -145,12 +169,13 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 1c863b1161fc3c8cf614a7460d1be6a7c262aab3
   GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
+  mopub-ios-sdk: ce5aa12abe59d42cb8866b1297bdff7b6a42e273
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   TapjoySDK: c8d73f291cfe922cb8bb2c3ae09b5af0b2863841
   UnityAds: 5b17b608ddb50ec7705b17e7884aa516be118938
   VungleSDK-iOS: 09abfadbcc04e0748ce33c6bd02282e9961125ba
 
-PODFILE CHECKSUM: a3290919f8906ba83513e22dc7388cd39f9d57ff
+PODFILE CHECKSUM: 8856ac7ff9095ee7f8da2d4d6c01422a039cc083
 
 COCOAPODS: 1.10.1

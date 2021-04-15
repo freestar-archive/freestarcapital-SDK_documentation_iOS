@@ -6,7 +6,6 @@ target 'FreestarOBJCSample' do
   # use_frameworks!
   pod 'FreestarAds-PreRelease', '~> 3.7-alpha'
   pod 'FreestarAds-AdColony-PreRelease', '~> 3.0-alpha'
-  #pod 'FreestarAds-AppLovin', '~> 3.0'
   pod 'FreestarAds-Googleadmob-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 3.0-alpha'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.0-alpha'
@@ -17,4 +16,6 @@ target 'FreestarOBJCSample' do
   pod 'FreestarAds-GAM-PreRelease', '~> 1.0-alpha'
   #pod 'FreestarAds-Facebook', '~> 3.1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 1.0-alpha'
+  pod 'FreestarAds-Mopub-PreRelease', '~> 3.5-alpha'
+  pod 'FreestarAds-AppLovin-PreRelease', '~> 3.4-alpha'
 end
