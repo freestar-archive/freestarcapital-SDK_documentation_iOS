@@ -4,20 +4,20 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod 'FreestarAds-PreRelease', '~> 3.7-alpha'
-  pod 'FreestarAds-AdColony-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-AppLovin-PreRelease', '~> 3.4-alpha'
-  pod 'FreestarAds-Mopub-PreRelease', '~> 3.5-alpha'
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 2.0-alpha'
-  pod 'FreestarAds-Tapjoy-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-Unity-PreRelease', '~> 4.0-alpha'
-  pod 'FreestarAds-Vungle-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-Amazon-PreRelease', '~> 2.0-alpha'
-  pod 'FreestarAds-Google-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-Criteo-PreRelease', '~> 1.0-alpha'
-  pod 'FreestarAds-GAM-PreRelease', '~> 1.0-alpha'
+  pod 'FreestarAds-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-AdColony-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-AppLovin-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-Mopub-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-Googleadmob-PreRelease', '~> 3.0-alpha'
+  pod 'FreestarAds-Tapjoy-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-Unity-PreRelease', '~> 5.0-alpha'
+  pod 'FreestarAds-Vungle-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-Amazon-PreRelease', '~> 3.0-alpha'
+  pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-Criteo-PreRelease', '~> 2.0-alpha'
+  pod 'FreestarAds-GAM-PreRelease', '~> 2.0-alpha'
   #pod 'FreestarAds-Facebook', '~> 3.1'
-  pod 'FreestarAds-Nimbus-PreRelease', '~> 1.0-alpha'
+  pod 'FreestarAds-Nimbus-PreRelease', '~> 2.0-alpha'
   
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
