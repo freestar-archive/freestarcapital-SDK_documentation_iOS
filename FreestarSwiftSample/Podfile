@@ -8,7 +8,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-AdColony', '~> 3.0'
   pod 'FreestarAds-AppLovin', '~> 3.0'
   pod 'FreestarAds-Googleadmob', '~> 2.0'
-  pod 'FreestarAds-Tapjoy', '~> 3.0'
+  #pod 'FreestarAds-Tapjoy', '~> 3.0'
   pod 'FreestarAds-Unity', '~> 4.0'
   pod 'FreestarAds-Vungle', '~> 3.0'
   pod 'FreestarAds-Amazon', '~> 2.0'
@@ -22,5 +22,4 @@ target 'FreestarSwiftSample' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
   
-
 end
