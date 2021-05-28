@@ -64,6 +64,7 @@
 		C05721106DB0AC04C473B791 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C59169A37BD4D9F3B270E581 /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2F91D3FD7481FE4583F2F8 /* Pods-FreestarReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
+		DFF83EEF26617A8300C1AD20 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F9F89BBA6210A758ECC1F83B /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +162,6 @@
 				C59169A37BD4D9F3B270E581 /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */,
 				6F4DA401FF787B5E202B0869 /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +175,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DFF83EEF26617A8300C1AD20 /* Dummy.swift */,
 				13B07FAE1A68108700A75B9A /* FreestarReactNativeSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FreestarReactNativeSampleTests */,
@@ -296,7 +297,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -408,17 +409,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.6/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-10.1.1/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Medium.xib",
+				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Small.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk/MoPubResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MoPubResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,11 +450,25 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DTBiOSSDK/DTBiOSSDK.framework/DTBiOSSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusKit/NimbusKit.framework/NimbusKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,17 +483,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.6/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-10.1.1/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Medium.xib",
+				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Small.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.4.2/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk/MoPubResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MoPubResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,11 +554,25 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DTBiOSSDK/DTBiOSSDK.framework/DTBiOSSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusKit/NimbusKit.framework/NimbusKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +762,69 @@
 				);
 				INFOPLIST_FILE = FreestarReactNativeSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CriteoPublisherSdk\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBReactNativeSpec\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Boost-iOSX\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Fmt\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-Glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-PeerTalk\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Flipper-RSocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlipperKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNScreens\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-perflogger\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/freestar-plugin-react\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/libevent\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-safe-area-context\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-segmented-control\"",
+					"\"${PODS_ROOT}/FreestarAds-AdColony/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Amazon/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-AppLovin/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Criteo/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-GAM/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Google/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Googleadmob/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Mopub/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Nimbus/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-TAM/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Tapjoy/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Unity/SDK\"",
+					"\"${PODS_ROOT}/FreestarAds-Vungle/SDK\"",
+					"\"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Viewability/OMSDK\"",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -927,11 +1021,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -981,10 +1075,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
