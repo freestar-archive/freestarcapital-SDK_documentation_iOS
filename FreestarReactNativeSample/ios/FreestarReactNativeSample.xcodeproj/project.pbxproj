@@ -64,7 +64,6 @@
 		C05721106DB0AC04C473B791 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C59169A37BD4D9F3B270E581 /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2F91D3FD7481FE4583F2F8 /* Pods-FreestarReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
-		DFF83EEF26617A8300C1AD20 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F9F89BBA6210A758ECC1F83B /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +174,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				DFF83EEF26617A8300C1AD20 /* Dummy.swift */,
 				13B07FAE1A68108700A75B9A /* FreestarReactNativeSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FreestarReactNativeSampleTests */,

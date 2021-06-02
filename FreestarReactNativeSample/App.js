@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { Alert } from 'react-native';
-import FreestarReactBridge from 'freestar-plugin-react';
-import BannerAd from 'freestar-plugin-react/BannerAd';
+import FreestarReactBridge, { MrecBannerAd2 } from '@freestar/freestar-plugin-react-native';
+import BannerAd from '@freestar/freestar-plugin-react-native/BannerAd';
+import MrecBannerAd from '@freestar/freestar-plugin-react-native/BannerAd';
+import MrecBannerAd3 from '@freestar/freestar-plugin-react-native/BannerAd';
+import SmallNativeAd from '@freestar/freestar-plugin-react-native/SmallNativeAd';
+import MediumNativeAd2 from '@freestar/freestar-plugin-react-native/MediumNativeAd2';
 
+// import { MrecBannerAd, MrecBannerAd2, MrecBannerAd3, MrecBannerAd4 } from '@freestar/freestar-plugin-react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SegmentedControl from '@react-native-community/segmented-control';
@@ -14,9 +19,6 @@ var state = {
   placementID: "",
   interstitialReady: false,
   rewardedReady: false,
-  // bannerSelection: 0,
-  // smallBannerReady: false,
-  // largeBannerReady: false
 };
 
 const styles = StyleSheet.create({
@@ -148,56 +150,13 @@ function FullscreenAds() {
   );
 }
 
-// function enableShowBanner() {
-//   return (state.bannerSelection === 0 && state.smallBannerReady) || 
-//          (state.bannerSelection === 1 && state.largeBannerReady);
-// }
-
 function BannerAds() {
-  const [canShowBanner, setCanShowBanner] = useState(false);
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Freestar on ReactNative</Text>
 
-      {/* <TextInput
-      style={[styles.label, styles.border]}
-      placeholder='Placement ID'
-      onChangeText={(pid) => state.placementID = pid }/>
-
       <View style={{ flexDirection: 'row', paddingTop: 10}}>
-        <SegmentedControl style={styles.border}
-          values={["Small Banner", "Large Banner"]}
-          selectedIndex={state.bannerSelection}
-          onChange={(event) => {
-            state.bannerSelection = event.nativeEvent.selectedSegmentIndex}}
-        />
-        
-      </View>
-      <View style={{ flexDirection: 'row', paddingTop: 10}}>
-        <Button
-          title="Load"
-          titleStyle={{fontSize: 36}}
-          onPress={() => {
-            if(state.bannerSelection === 0) { //small banner
-            } else { //large banner
-            }
-          }}
-        />
-        <View style={{width: 10}} />
-        <Button
-          disabled={!canShowBanner}
-          title="Show"
-          onPress={() => {
-            if(state.fullscreenSelection === 0) { //small banner
-            } else { //large banner
-            }
-          }}
-        />
-      </View>
-       */}
-      <View style={{ flexDirection: 'row', paddingTop: 10}}>
-      <BannerAd
+      <MrecBannerAd3
          style={{width: 300, height: 250}}
          requestOptions={
             {
@@ -213,6 +172,23 @@ function BannerAds() {
          }
          onBannerAdLoaded={bannerLoaded}
          onBannerAdFailedToLoad={bannerFailed}
+      />
+      </View>
+      
+      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+      <MrecBannerAd
+        style={{width: 300, height: 250}}
+        requestOptions={
+          { 
+            targetingParams: {
+              'someparam1': 'somevalue1',
+              'someparam2': 'somevalue2',
+              'someparam3': 'somevalue3',
+            }
+          }
+        }
+        onBannerAdLoaded={bannerLoaded}
+        onBannerAdFailedToLoad={bannerFailed}
       />
       </View>
 
@@ -239,6 +215,44 @@ function bannerFailed({ nativeEvent }) {
   Alert.alert('failed ' + nativeEvent.errorDesc + ' ' + nativeEvent.size + ' placement: ' + nativeEvent.placement);
 }
 
+function NativeAds() {
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Freestar on ReactNative</Text>
+
+      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+      <MediumNativeAd2
+         style={{width: 300, height: 250}}
+         requestOptions={
+            {
+               size:'MREC',
+               isCoppaEnabled: false,
+               targetingParams: {
+                     'someparam1': 'somevalue1',
+                     'someparam2': 'somevalue2',
+                     'someparam3': 'somevalue3',
+               },
+               testDeviceIds: ['deviceId1','deviceId2', 'deviceId3']
+            }
+         }
+         onBannerAdLoaded={bannerLoaded}
+         onBannerAdFailedToLoad={bannerFailed}
+      />
+      </View>
+      
+      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+      <SmallNativeAd
+        onBannerAdLoaded={bannerLoaded}
+        onBannerAdFailedToLoad={bannerFailed}
+      />
+      </View>
+    </View>
+
+    
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 export default function App(props) {
@@ -249,6 +263,7 @@ export default function App(props) {
       <Tab.Navigator>
         <Tab.Screen name="Fullscreen" component={FullscreenAds} />
         <Tab.Screen name="Banner" component={BannerAds} />
+        <Tab.Screen name="Native" component={NativeAds} />
       </Tab.Navigator>
     </NavigationContainer>
   );

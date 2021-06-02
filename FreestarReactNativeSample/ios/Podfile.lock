@@ -84,7 +84,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - Freestar-Nimbus-SDK (1.8.2)
-  - freestar-plugin-react (1.1.4):
+  - freestar-plugin-react-native (1.1.9):
     - FreestarAds (~> 4.0)
     - React
   - FreestarAds (4.0.1)
@@ -475,7 +475,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitReactPlugin (~> 0.91.0)
   - FlipperKit/FlipperKitUserDefaultsPlugin (~> 0.91.0)
   - FlipperKit/SKIOSNetworkPlugin (~> 0.91.0)
-  - freestar-plugin-react (from `../node_modules/freestar-plugin-react`)
+  - "freestar-plugin-react-native (from `../node_modules/@freestar/freestar-plugin-react-native`)"
   - FreestarAds-AdColony (~> 4.0)
   - FreestarAds-Amazon (~> 3.0)
   - FreestarAds-AppLovin (~> 4.0)
@@ -578,8 +578,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
     :path: "../node_modules/react-native/React/FBReactNativeSpec"
-  freestar-plugin-react:
-    :path: "../node_modules/freestar-plugin-react"
+  freestar-plugin-react-native:
+    :path: "../node_modules/@freestar/freestar-plugin-react-native"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   RCT-Folly:
@@ -661,7 +661,7 @@ SPEC CHECKSUMS:
   FlipperKit: ceac080c9cc3d99fb7d44da8337f844459cc3d2a
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
-  freestar-plugin-react: c0d919a44232880b4aa2af8dcbea289a0a716cde
+  freestar-plugin-react-native: 1f7d2934502a4ae3511223394d413d708e2748d5
   FreestarAds: 6ad4e0f4dc20b7466e37897ef2d7482c210c6798
   FreestarAds-AdColony: 00274697a0b9604e97faf51ebfd6dd4b33ecf906
   FreestarAds-Amazon: c6805dd8a04913d10045e82582548bd0ae55dcb9
