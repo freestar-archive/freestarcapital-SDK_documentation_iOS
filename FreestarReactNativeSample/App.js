@@ -215,19 +215,27 @@ function bannerFailed({ nativeEvent }) {
   Alert.alert('failed ' + nativeEvent.errorDesc + ' ' + nativeEvent.size + ' placement: ' + nativeEvent.placement);
 }
 
+function nativeLoaded({ nativeEvent }) {
+  console.log('loaded ' + nativeEvent.size + ' placement: ' + nativeEvent.placement);
+}
+
+function nativeFailed({ nativeEvent }) {
+  console.log('failed ' + nativeEvent.errorDesc + ' ' + nativeEvent.size + ' placement: ' + nativeEvent.placement);
+  Alert.alert('failed ' + nativeEvent.errorDesc + ' ' + nativeEvent.size + ' placement: ' + nativeEvent.placement);
+}
+
+
 function NativeAds() {
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Freestar on ReactNative</Text>
 
-      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+      <View style={{ flexDirection: 'row', paddingTop: 30}}>
       <MediumNativeAd2
          style={{width: 300, height: 250}}
          requestOptions={
             {
-               size:'MREC',
-               isCoppaEnabled: false,
                targetingParams: {
                      'someparam1': 'somevalue1',
                      'someparam2': 'somevalue2',
@@ -236,15 +244,17 @@ function NativeAds() {
                testDeviceIds: ['deviceId1','deviceId2', 'deviceId3']
             }
          }
-         onBannerAdLoaded={bannerLoaded}
-         onBannerAdFailedToLoad={bannerFailed}
+         onNativeAdLoaded={nativeLoaded}
+         onNativeAdFailedToLoad={nativeFailed}
       />
       </View>
       
       <View style={{ flexDirection: 'row', paddingTop: 10}}>
       <SmallNativeAd
-        onBannerAdLoaded={bannerLoaded}
-        onBannerAdFailedToLoad={bannerFailed}
+        style={{width: 320, height: 50}}
+        requestOptions={{}}
+        onNativeAdLoaded={nativeLoaded}
+        onNativeAdFailedToLoad={nativeFailed}
       />
       </View>
     </View>
