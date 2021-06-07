@@ -84,7 +84,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - Freestar-Nimbus-SDK (1.8.2)
-  - freestar-plugin-react-native (1.1.9):
+  - freestar-plugin-react-native (1.2.0-beta.2):
     - FreestarAds (~> 4.0)
     - React
   - FreestarAds (4.0.1)
@@ -661,7 +661,7 @@ SPEC CHECKSUMS:
   FlipperKit: ceac080c9cc3d99fb7d44da8337f844459cc3d2a
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
-  freestar-plugin-react-native: 1f7d2934502a4ae3511223394d413d708e2748d5
+  freestar-plugin-react-native: c33a0b883b0605857f9db71673ff5d8068c3406a
   FreestarAds: 6ad4e0f4dc20b7466e37897ef2d7482c210c6798
   FreestarAds-AdColony: 00274697a0b9604e97faf51ebfd6dd4b33ecf906
   FreestarAds-Amazon: c6805dd8a04913d10045e82582548bd0ae55dcb9
