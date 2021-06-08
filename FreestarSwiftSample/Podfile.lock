@@ -1,6 +1,7 @@
 PODS:
   - AdColony (4.6.0)
   - AmazonAd (3.0.0)
+  - AmazonPublisherServicesSDK (4.0.0)
   - AppLovinSDK (10.1.1)
   - CriteoPublisherSdk (4.3.2):
     - CriteoPublisherSdk/Sdk (= 4.3.2)
@@ -8,6 +9,9 @@ PODS:
   - FBAudienceNetwork (6.4.1):
     - FBSDKCoreKit/Basics (>= 7.0.1)
   - FBSDKCoreKit/Basics (9.2.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Freestar-Nimbus-SDK (1.8.2)
   - FreestarAds-AdColony-PreRelease (4.0.0-beta-1):
     - AdColony (= 4.6.0)
@@ -39,6 +43,10 @@ PODS:
     - FreestarAds-PreRelease (~> 4.0-alpha)
     - GoogleAds-IMA-iOS-SDK (~> 3.13)
   - FreestarAds-PreRelease (4.0.0-beta-1)
+  - FreestarAds-TAM-PreRelease (0.1.0-alpha-3):
+    - AmazonPublisherServicesSDK (= 4.0.0)
+    - FMDB (= 2.7.5)
+    - FreestarAds-PreRelease (~> 4.0-alpha)
   - FreestarAds-Tapjoy-PreRelease (4.0.0-beta-1):
     - FreestarAds-PreRelease (~> 4.0-alpha)
     - TapjoySDK (~> 12.4.0)
@@ -114,6 +122,7 @@ DEPENDENCIES:
   - FreestarAds-Mopub-PreRelease (~> 4.0-alpha)
   - FreestarAds-Nimbus-PreRelease (~> 2.0-alpha)
   - FreestarAds-PreRelease (~> 4.0-alpha)
+  - FreestarAds-TAM-PreRelease (~> 0.0-alpha)
   - FreestarAds-Tapjoy-PreRelease (~> 4.0-alpha)
   - FreestarAds-Unity-PreRelease (~> 5.0-alpha)
   - FreestarAds-Vungle-PreRelease (~> 4.0-alpha)
@@ -124,10 +133,12 @@ SPEC REPOS:
   trunk:
     - AdColony
     - AmazonAd
+    - AmazonPublisherServicesSDK
     - AppLovinSDK
     - CriteoPublisherSdk
     - FBAudienceNetwork
     - FBSDKCoreKit
+    - FMDB
     - Freestar-Nimbus-SDK
     - FreestarAds-AdColony-PreRelease
     - FreestarAds-Amazon-PreRelease
@@ -139,6 +150,7 @@ SPEC REPOS:
     - FreestarAds-Mopub-PreRelease
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-PreRelease
+    - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Unity-PreRelease
     - FreestarAds-Vungle-PreRelease
@@ -159,10 +171,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: a79d5e46d893a94f35edadfde3d08f5d8ae55bf9
   AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
+  AmazonPublisherServicesSDK: f73e281872525d1b929dca506c3a0332d4f902fa
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 412594a298aa29b8b0b015298abfa67312d9f7e1
   FBAudienceNetwork: 1974ec59ef88102f284c29941d73d0cbec3f2874
   FBSDKCoreKit: dace5abafc2fd9272733e6d027bcf18102712117
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
   FreestarAds-AdColony-PreRelease: 42cacf2bb715e79cb23020b5372280101382358a
   FreestarAds-Amazon-PreRelease: afb75699ff5b8a929623ced73921c9d18d2f7774
@@ -174,6 +188,7 @@ SPEC CHECKSUMS:
   FreestarAds-Mopub-PreRelease: a7e1da59bf770a1c80279e611900ac5a3aad8ae6
   FreestarAds-Nimbus-PreRelease: e35be13ba4f594bffc8c146588316b8ca0af0295
   FreestarAds-PreRelease: 0d932b88e70a4bb1bde7ad9d3d19bbc933dac00d
+  FreestarAds-TAM-PreRelease: eed6e556e5199cabbd451d5ed02347c981a5979c
   FreestarAds-Tapjoy-PreRelease: 5ea6af5302bf07293d0b5d4a0ecb735a4024a912
   FreestarAds-Unity-PreRelease: cd3c9918d059de851052acfc3f566d63c7f955cd
   FreestarAds-Vungle-PreRelease: 286c2aaab119e9796ccc4981ca197f5c3fb378d9
@@ -191,6 +206,6 @@ SPEC CHECKSUMS:
   UnityAds: 5b17b608ddb50ec7705b17e7884aa516be118938
   VungleSDK-iOS: f9dbcb5dde6036d424c29fbdd43159b1be19bdbd
 
-PODFILE CHECKSUM: bf45b63350f4f125221bc8a067eae98f17c909fb
+PODFILE CHECKSUM: dfdde3ab20e47237a3db366af381b85895080825
 
 COCOAPODS: 1.10.1

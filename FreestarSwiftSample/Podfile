@@ -16,9 +16,8 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha'
   pod 'FreestarAds-Criteo-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '~> 2.0-alpha'
-  #pod 'FreestarAds-Facebook', '~> 3.1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.0-alpha'
-  
+  pod 'FreestarAds-TAM-PreRelease', '~> 0.0-alpha' 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'

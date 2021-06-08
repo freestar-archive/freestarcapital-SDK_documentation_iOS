@@ -14,8 +14,8 @@ target 'FreestarOBJCSample' do
   pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha'
   pod 'FreestarAds-Criteo-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '~> 2.0-alpha'
-  #pod 'FreestarAds-Facebook', '~> 3.1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-Mopub-PreRelease', '~> 4.0-alpha'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 4.0-alpha'
+  pod 'FreestarAds-TAM-PreRelease', '~> 0.0-alpha'
 end
