@@ -13,7 +13,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Unity-PreRelease', '~> 5.0-alpha'
   pod 'FreestarAds-Vungle-PreRelease', '~> 4.0-alpha'
   pod 'FreestarAds-Amazon-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha'
+  # pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimbus
   pod 'FreestarAds-Criteo-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.0-alpha'
@@ -21,6 +21,6 @@ target 'FreestarSwiftSample' do
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
-  
+  pod 'NimbusSDK/NimbusRenderVideoKit', '1.10.2'  
 
 end
