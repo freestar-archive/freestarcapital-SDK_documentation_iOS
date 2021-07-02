@@ -21,6 +21,5 @@ target 'FreestarSwiftSample' do
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
-  pod 'NimbusSDK/NimbusRenderVideoKit', '1.10.2'  
 
 end
