@@ -29,62 +29,56 @@
     if([adType isEqualToString:@"Interstitial"]) {
         return @[
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
-            [[PartnerChoice alloc] initWithName:@"Chocolate"],
             [[PartnerChoice alloc] initWithName:@"AdColony"],
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
             [[PartnerChoice alloc] initWithName:@"Unity"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Vungle"],
-            [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"Google"],
-            [[PartnerChoice alloc] initWithName:@"Nimbus"]
+            [[PartnerChoice alloc] initWithName:@"Nimbus"],
+            [[PartnerChoice alloc] initWithName:@"TAM"]
         ];
     } else if([adType isEqualToString:@"Rewarded"]) {
         return @[
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
             [[PartnerChoice alloc] initWithName:@"Auction"],
-            [[PartnerChoice alloc] initWithName:@"Chocolate"],
             [[PartnerChoice alloc] initWithName:@"Vungle"],
             [[PartnerChoice alloc] initWithName:@"AdColony"],
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
             [[PartnerChoice alloc] initWithName:@"Unity"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Tapjoy"],
-            [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"Nimbus"]
         ];
     } else if([adType isEqualToString:@"Banner"]) {
         return @[
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
-            [[PartnerChoice alloc] initWithName:@"Chocolate"],
             [[PartnerChoice alloc] initWithName:@"AdColony"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
-            [[PartnerChoice alloc] initWithName:@"Yahoo"],
-            [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"Google"],
-            [[PartnerChoice alloc] initWithName:@"Nimbus"]
+            [[PartnerChoice alloc] initWithName:@"Nimbus"],
+            [[PartnerChoice alloc] initWithName:@"TAM"]
         ];
     } else if([adType isEqualToString:@"Preroll"]) {
         return @[
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
-            [[PartnerChoice alloc] initWithName:@"Chocolate"],
             [[PartnerChoice alloc] initWithName:@"Google"],
-            [[PartnerChoice alloc] initWithName:@"Amazon"]
+            [[PartnerChoice alloc] initWithName:@"Nimbus"]
         ];
     } else if([adType isEqualToString:@"Small Banner"]) {
         return @[
             [[PartnerChoice alloc] initWithName:@"All" andSelected:YES],
             [[PartnerChoice alloc] initWithName:@"GoogleAdmob"],
-            [[PartnerChoice alloc] initWithName:@"Amazon"],
             [[PartnerChoice alloc] initWithName:@"Criteo"],
             [[PartnerChoice alloc] initWithName:@"AppLovin"],
             [[PartnerChoice alloc] initWithName:@"Unity"],
             [[PartnerChoice alloc] initWithName:@"Google"],
-            [[PartnerChoice alloc] initWithName:@"Nimbus"]
+            [[PartnerChoice alloc] initWithName:@"Nimbus"],
+            [[PartnerChoice alloc] initWithName:@"TAM"]
 
         ];
     } else if([adType isEqualToString:@"Medium Native"]) {

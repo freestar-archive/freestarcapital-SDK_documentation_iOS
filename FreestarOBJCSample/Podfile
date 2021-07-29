@@ -10,7 +10,6 @@ target 'FreestarOBJCSample' do
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 4.0-alpha'
   pod 'FreestarAds-Unity-PreRelease', '~> 5.0-alpha'
   pod 'FreestarAds-Vungle-PreRelease', '~> 4.0-alpha'
-  pod 'FreestarAds-Amazon-PreRelease', '~> 3.0-alpha'
   # pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimubs
   pod 'FreestarAds-Criteo-PreRelease', '~> 2.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '~> 2.0-alpha'

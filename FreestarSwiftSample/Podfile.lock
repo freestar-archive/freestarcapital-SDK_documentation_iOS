@@ -1,6 +1,5 @@
 PODS:
   - AdColony (4.6.0)
-  - AmazonAd (3.0.0)
   - AmazonPublisherServicesSDK (4.0.0)
   - AppLovinSDK (10.1.1)
   - CriteoPublisherSdk (4.3.1):
@@ -14,9 +13,6 @@ PODS:
   - FMDB/standard (2.7.5)
   - FreestarAds-AdColony-PreRelease (4.0.0-beta-1):
     - AdColony (= 4.6.0)
-    - FreestarAds-PreRelease (~> 4.0-alpha)
-  - FreestarAds-Amazon-PreRelease (3.0.0-beta-1):
-    - AmazonAd (~> 3.0.0)
     - FreestarAds-PreRelease (~> 4.0-alpha)
   - FreestarAds-AppLovin-PreRelease (4.0.0-beta-1):
     - AppLovinSDK (= 10.1.1)
@@ -125,7 +121,6 @@ PODS:
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 4.0-alpha)
-  - FreestarAds-Amazon-PreRelease (~> 3.0-alpha)
   - FreestarAds-AppLovin-PreRelease (~> 4.0-alpha)
   - FreestarAds-Criteo-PreRelease (~> 2.0-alpha)
   - FreestarAds-GAM-PreRelease (~> 2.0-alpha)
@@ -143,7 +138,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AdColony
-    - AmazonAd
     - AmazonPublisherServicesSDK
     - AppLovinSDK
     - CriteoPublisherSdk
@@ -151,7 +145,6 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FMDB
     - FreestarAds-AdColony-PreRelease
-    - FreestarAds-Amazon-PreRelease
     - FreestarAds-AppLovin-PreRelease
     - FreestarAds-Criteo-PreRelease
     - FreestarAds-GAM-PreRelease
@@ -180,7 +173,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AdColony: a79d5e46d893a94f35edadfde3d08f5d8ae55bf9
-  AmazonAd: a2df415176ef57ff05d56ee7ec3dd3c993eb8e5a
   AmazonPublisherServicesSDK: f73e281872525d1b929dca506c3a0332d4f902fa
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
@@ -188,7 +180,6 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 0d1ae58388a458b8222f72025804cdc84eb5d0c3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 42cacf2bb715e79cb23020b5372280101382358a
-  FreestarAds-Amazon-PreRelease: afb75699ff5b8a929623ced73921c9d18d2f7774
   FreestarAds-AppLovin-PreRelease: b30a29cb18fff36658271ca5b4cd60f9ceeb61dc
   FreestarAds-Criteo-PreRelease: 96b5b760a895ff8c118ba56f86affb9e73a8f870
   FreestarAds-GAM-PreRelease: 4f387e6100e464667df41f22e3e06fc3b233910a
@@ -215,6 +206,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: f9dbcb5dde6036d424c29fbdd43159b1be19bdbd
 
-PODFILE CHECKSUM: 9de6eb27cd510989941c708259365070ccd34fbe
+PODFILE CHECKSUM: c5fecca7dad663a034de323ec752d48efea8e891
 
 COCOAPODS: 1.10.1

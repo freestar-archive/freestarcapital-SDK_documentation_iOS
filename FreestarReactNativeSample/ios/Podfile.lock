@@ -1,6 +1,5 @@
 PODS:
   - AdColony (4.6.0)
-  - AmazonAd (3.1.0)
   - AmazonPublisherServicesSDK (4.0.0)
   - AppLovinSDK (10.1.1)
   - boost-for-react-native (1.63.0)
@@ -84,15 +83,12 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - Freestar-Nimbus-SDK (1.8.2)
-  - freestar-plugin-react-native (1.2.0-beta.2):
+  - freestar-plugin-react-native (1.2.0):
     - FreestarAds (~> 4.0)
     - React
   - FreestarAds (4.0.1)
   - FreestarAds-AdColony (4.0.0):
     - AdColony (= 4.6.0)
-    - FreestarAds (~> 4.0)
-  - FreestarAds-Amazon (3.0.0):
-    - AmazonAd (= 3.1.0)
     - FreestarAds (~> 4.0)
   - FreestarAds-AppLovin (4.0.0):
     - AppLovinSDK (= 10.1.1)
@@ -477,7 +473,6 @@ DEPENDENCIES:
   - FlipperKit/SKIOSNetworkPlugin (~> 0.91.0)
   - "freestar-plugin-react-native (from `../node_modules/@freestar/freestar-plugin-react-native`)"
   - FreestarAds-AdColony (~> 4.0)
-  - FreestarAds-Amazon (~> 3.0)
   - FreestarAds-AppLovin (~> 4.0)
   - FreestarAds-Criteo (~> 2.0)
   - FreestarAds-GAM (~> 2.0)
@@ -523,7 +518,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AdColony
-    - AmazonAd
     - AmazonPublisherServicesSDK
     - AppLovinSDK
     - boost-for-react-native
@@ -544,7 +538,6 @@ SPEC REPOS:
     - Freestar-Nimbus-SDK
     - FreestarAds
     - FreestarAds-AdColony
-    - FreestarAds-Amazon
     - FreestarAds-AppLovin
     - FreestarAds-Criteo
     - FreestarAds-GAM
@@ -639,7 +632,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AdColony: a79d5e46d893a94f35edadfde3d08f5d8ae55bf9
-  AmazonAd: 9adf416ea36ca2325ce2040c0cf124f071089904
   AmazonPublisherServicesSDK: f73e281872525d1b929dca506c3a0332d4f902fa
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -661,10 +653,9 @@ SPEC CHECKSUMS:
   FlipperKit: ceac080c9cc3d99fb7d44da8337f844459cc3d2a
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Freestar-Nimbus-SDK: 86d954da312ebfbf5d518e339df322375ceb3210
-  freestar-plugin-react-native: c33a0b883b0605857f9db71673ff5d8068c3406a
+  freestar-plugin-react-native: 66b8fd759a3262e84f5ebd425877c2c2e9396aaf
   FreestarAds: 6ad4e0f4dc20b7466e37897ef2d7482c210c6798
   FreestarAds-AdColony: 00274697a0b9604e97faf51ebfd6dd4b33ecf906
-  FreestarAds-Amazon: c6805dd8a04913d10045e82582548bd0ae55dcb9
   FreestarAds-AppLovin: fcffdd2611ee45a69808fc3974f9f2da3fd706a6
   FreestarAds-Criteo: b3fa53952e2e09cc543140236d7e02e97c8f6519
   FreestarAds-GAM: 1ed5a831e691a14309fe5a35b7308b4d34f3113b
@@ -719,6 +710,6 @@ SPEC CHECKSUMS:
   Yoga: a7de31c64fe738607e7a3803e3f591a4b1df7393
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 9373877e7ddd59afc43b6995215613bc844210bd
+PODFILE CHECKSUM: 2cbebe0b80b696cf853841cffd759d7660d9e63c
 
 COCOAPODS: 1.10.1
