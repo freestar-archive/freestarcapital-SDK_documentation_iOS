@@ -31,45 +31,40 @@ class PartnerSelectionTableViewController: UITableViewController {
         switch type {
         case .None: return []
         case .Interstitial: return [PartnerChoice(name: "All", selected: true)] + [
-                "Chocolate",
                 "AdColony",
                 "GoogleAdmob",
                 "Unity",
                 "AppLovin",
                 "Vungle",
-                "Amazon",
                 "Criteo",
                 "Google",
+                "TAM",
                 "Nimbus"].map { PartnerChoice(name: $0) }
         case .Rewarded: return [PartnerChoice(name: "All", selected: true)] + [
-                "Chocolate",
                 "AdColony",
                 "GoogleAdmob",
                 "Unity",
                 "AppLovin",
                 "Vungle",
-                "Amazon",
                 "Criteo",
                 "Google",
                 "Tapjoy",
                 "Nimbus" ].map { PartnerChoice(name: $0) }
         case .LargeBanner: return [PartnerChoice(name: "All", selected: true)] + [
-                "Chocolate",
                 "AppLovin",
                 "GoogleAdmob",
-                "Amazon",
+                "Nimbus",
                 "Criteo",
+                "TAM",
                 "Google" ].map { PartnerChoice(name: $0) }
         case .SmallBanner: return [PartnerChoice(name: "All", selected: true)] + [
                 "GoogleAdmob",
-                "Amazon",
                 "Criteo",
                 "AppLovin",
                 "Unity" ].map { PartnerChoice(name: $0) }
         case .Preroll: return [PartnerChoice(name: "All", selected: true)] + [
-                "Chocolate",
                 "Google",
-                "Amazon" ].map { PartnerChoice(name: $0) }
+                "Nimbus" ].map { PartnerChoice(name: $0) }
         }
     }
 

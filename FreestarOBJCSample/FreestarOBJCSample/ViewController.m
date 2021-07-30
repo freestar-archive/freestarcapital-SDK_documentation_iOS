@@ -60,7 +60,7 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
         // Fallback on earlier versions
         self.view.backgroundColor = UIColor.whiteColor;
     }
-    self.title = @"Chocolate";
+    self.title = @"Freestar";
 
     prompt = [[UILabel alloc] init];
     prompt.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle3];
