@@ -11,10 +11,10 @@ import FreestarAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static let FREESTAR_API_KEY = "X4mdFv"
+    static let FREESTAR_API_KEY = "d5xtxZ"
     
-    var window : UIWindow?
-    
+    var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -45,10 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationController(rootViewController: nativeVC)
         ]
         
-        window = UIWindow()
-        window?.frame = UIScreen.main.bounds
-        window?.makeKeyAndVisible()
         window?.rootViewController = tabVC
+        window?.makeKeyAndVisible()
         
         return true
     }
