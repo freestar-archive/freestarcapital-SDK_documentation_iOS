@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Freestar.initWithAdUnitID(AppDelegate.FREESTAR_API_KEY)
+        Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         
         let tabVC = UITabBarController()
         

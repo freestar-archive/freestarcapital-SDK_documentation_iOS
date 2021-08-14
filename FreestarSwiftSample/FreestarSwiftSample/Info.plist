@@ -18,13 +18,13 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>CHP_ENABLE_PARTNER_SELECTION</key>
-	<string>true</string>
-	<key>CHP_LOGGING_ENABLE</key>
-	<string>true</string>
-	<key>CHP_TEST_ADS</key>
-	<string>enable</string>
-	<key>CHP_STAGING_SERVER</key>
+	<key>FSTR_ENABLE_PARTNER_SELECTION</key>
+	<true/>
+	<key>FSTR_LOGGING_ENABLE</key>
+	<true/>
+	<key>FSTR_TEST_ADS</key>
+	<true/>
+	<key>FSTR_STAGING_SERVER</key>
 	<true/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
