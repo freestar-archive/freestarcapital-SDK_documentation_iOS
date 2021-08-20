@@ -11,16 +11,14 @@ import FreestarAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static let FREESTAR_API_KEY = "P8RIA3"
-    
-    var window : UIWindow?
-    
+    static let FREESTAR_APP_KEY = "P8RIA3"
+        
     var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
         
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
+        Freestar.initWithAppKey(AppDelegate.FREESTAR_APP_KEY)
         
         let tabVC = UITabBarController()
         
