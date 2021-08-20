@@ -21,7 +21,7 @@ static NSString* const FREESTAR_API_KEY = @"XqjhRR";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [Freestar initWithAdUnitID:FREESTAR_API_KEY];
+    [Freestar initWithAppKey:FREESTAR_API_KEY];
 
     self.window = [[UIWindow alloc] init];
     self.window.frame = UIScreen.mainScreen.bounds;

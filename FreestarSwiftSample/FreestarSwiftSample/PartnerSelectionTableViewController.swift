@@ -53,18 +53,20 @@ class PartnerSelectionTableViewController: UITableViewController {
         case .LargeBanner: return [PartnerChoice(name: "All", selected: true)] + [
                 "AppLovin",
                 "GoogleAdmob",
-                "Nimbus",
                 "Criteo",
                 "TAM",
+                "Nimbus",
                 "Google" ].map { PartnerChoice(name: $0) }
         case .SmallBanner: return [PartnerChoice(name: "All", selected: true)] + [
                 "GoogleAdmob",
                 "Criteo",
                 "AppLovin",
+                "TAM",
+                "Nimbus",
                 "Unity" ].map { PartnerChoice(name: $0) }
         case .Preroll: return [PartnerChoice(name: "All", selected: true)] + [
-                "Google",
-                "Nimbus" ].map { PartnerChoice(name: $0) }
+                "Nimbus",
+                "Google" ].map { PartnerChoice(name: $0) }
         }
     }
 
