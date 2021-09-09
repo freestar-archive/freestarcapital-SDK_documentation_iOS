@@ -1,20 +1,21 @@
+#source 'https://github.com/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 use_frameworks!
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod 'FreestarAds-PreRelease', '~> 5.0-alpha'
+  pod 'FreestarAds-PreRelease', '5.1.0-alpha-3'
   pod 'FreestarAds-AdColony-PreRelease', '~> 5.0-alpha'
-  pod 'FreestarAds-AppLovin-PreRelease', '~> 5.0-alpha'
+  pod 'FreestarAds-AppLovin-PreRelease', '5.1.0-alpha-1'
   pod 'FreestarAds-Mopub-PreRelease', '~> 5.0-alpha'
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 6.0-alpha'
+  pod 'FreestarAds-Googleadmob-PreRelease', '6.1.0-alpha-1'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 5.0-alpha'
   pod 'FreestarAds-Unity-PreRelease', '~> 6.0-alpha'
   pod 'FreestarAds-Vungle-PreRelease', '~> 5.0-alpha'
   # pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimbus
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.0-alpha'
-  pod 'FreestarAds-GAM-PreRelease', '~> 5.0-alpha'
+  pod 'FreestarAds-GAM-PreRelease', '5.1.0-alpha-1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 3.0-alpha'
   pod 'FreestarAds-TAM-PreRelease', '~> 2.0-alpha' 
   pod 'FreestarAds-Pangle-PreRelease', '~> 1.0-alpha'

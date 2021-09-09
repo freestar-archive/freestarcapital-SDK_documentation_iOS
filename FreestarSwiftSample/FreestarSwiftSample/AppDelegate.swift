@@ -17,7 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        Freestar.setLoggingEnabled(true)
+        Freestar.setTestModeEnabled(true)
+        Freestar.setAdaptiveBannerEnabledIfAvailable(false)
+        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         
         let tabVC = UITabBarController()

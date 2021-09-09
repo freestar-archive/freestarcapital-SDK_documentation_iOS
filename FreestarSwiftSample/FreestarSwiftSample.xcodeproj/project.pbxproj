@@ -94,9 +94,9 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				9600640B242EA20D00A3212E /* AppDelegate.swift */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
+				9600640B242EA20D00A3212E /* AppDelegate.swift */,
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
 				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,

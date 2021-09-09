@@ -12,10 +12,11 @@ class BannerAdViewController: AdViewController {
     
     let bannerAdContainer = UIView()
     
-    var bannerContainerPortraitXPos : NSLayoutConstraint?
-    var bannerContainerPortraitYPos : NSLayoutConstraint?
-    var bannerContainerLandscapeXPos : NSLayoutConstraint?
-    var bannerContainerLandscapeYPos : NSLayoutConstraint?
+    var bannerContainerXPos : NSLayoutConstraint?
+    var bannerContainerYPos : NSLayoutConstraint?
+    var bannerContainerWidth : NSLayoutConstraint?
+    var bannerContainerHeight : NSLayoutConstraint?
+    var adaptiveBannerContainerWidth : NSLayoutConstraint?
     
     var smallBanner: FreestarBannerAd?
     var largeBanner: FreestarBannerAd?
@@ -44,17 +45,47 @@ class BannerAdViewController: AdViewController {
         bannerAdContainer.backgroundColor = .lightGray;
         self.view.addSubview(bannerAdContainer)
         bannerAdContainer.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func disableAllConstraints() {
+        bannerContainerXPos?.isActive = false
+        bannerContainerYPos?.isActive = false
+        bannerContainerWidth?.isActive = false
+        bannerContainerHeight?.isActive = false
+        adaptiveBannerContainerWidth?.isActive = false
+    }
+    
+    func updateBannerContainerContraints(size: CGSize, isAdaptive: Bool) {
+        disableAllConstraints()
         
-        bannerContainerPortraitXPos = bannerAdContainer.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-        bannerContainerLandscapeXPos = bannerAdContainer.rightAnchor.constraint(equalTo: self.view.rightAnchor)
-        bannerContainerPortraitYPos = bannerAdContainer.topAnchor.constraint(equalTo: loadButton.bottomAnchor, constant: 20)
-        bannerContainerLandscapeYPos = bannerAdContainer.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        bannerContainerXPos = bannerAdContainer.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        bannerContainerYPos = bannerAdContainer.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         
-        bannerContainerPortraitXPos?.isActive = true
-        bannerContainerPortraitYPos?.isActive = true
-        
-        bannerAdContainer.widthAnchor.constraint(equalToConstant: 330).isActive = true
-        bannerAdContainer.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        bannerContainerXPos?.isActive = true
+        bannerContainerYPos?.isActive = true
+
+        if (isAdaptive == true) {
+            adaptiveBannerContainerWidth = bannerAdContainer.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth())
+            adaptiveBannerContainerWidth?.isActive = true
+        } else {
+            bannerContainerWidth = bannerAdContainer.widthAnchor.constraint(equalToConstant: size.width)
+            bannerContainerWidth?.isActive = true
+        }
+        bannerContainerHeight = bannerAdContainer.heightAnchor.constraint(equalToConstant: size.height)
+        bannerContainerHeight?.isActive = true
+    }
+    
+    func calculateAdaptiveViewWidth() -> CGFloat {
+        let frame = { () -> CGRect in
+          // Here safe area is taken into account, hence the view frame is used
+          // after the view has been laid out.
+          if #available(iOS 11.0, *) {
+            return view.frame.inset(by: view.safeAreaInsets)
+          } else {
+            return view.frame
+          }
+        }()
+        return frame.size.width
     }
     
     override func loadChosenAd() {
@@ -88,25 +119,6 @@ class BannerAdViewController: AdViewController {
         showButton.isEnabled =
             (self.concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
             (self.concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
-    }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animate(alongsideTransition: { (_ context: UIViewControllerTransitionCoordinatorContext) in
-            let orient = UIApplication.shared.statusBarOrientation
-            if orient == .portrait {
-                self.bannerContainerLandscapeXPos?.isActive = false
-                self.bannerContainerLandscapeYPos?.isActive = false
-                self.bannerContainerPortraitXPos?.isActive = true
-                self.bannerContainerPortraitYPos?.isActive = true
-            } else {
-                self.bannerContainerPortraitXPos?.isActive = false
-                self.bannerContainerPortraitYPos?.isActive = false
-                self.bannerContainerLandscapeXPos?.isActive = true
-                self.bannerContainerLandscapeYPos?.isActive = true
-            }
-        }, completion: nil)
-        
-        super.viewWillTransition(to: size, with: coordinator)
     }
 }
 
@@ -153,6 +165,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         } else {
             self.largeBannerAdReady = true
         }
+        updateBannerContainerContraints(size:ad.frame.size, isAdaptive: ad.isAdaptive)
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
