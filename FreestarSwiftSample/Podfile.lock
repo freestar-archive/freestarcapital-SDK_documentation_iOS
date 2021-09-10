@@ -36,12 +36,12 @@ PODS:
   - FreestarAds-Mopub-PreRelease (5.0.0-beta-1):
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - mopub-ios-sdk (= 5.16.2)
-  - FreestarAds-Nimbus-PreRelease (3.0.0-beta-1):
+  - FreestarAds-Nimbus-PreRelease (3.1.0-beta-1):
     - FBAudienceNetwork (= 6.3.1)
     - FreestarAds-PreRelease (~> 5.0-alpha)
-    - NimbusSDK (= 1.10.2)
-    - NimbusSDK/NimbusRenderStaticKit (= 1.10.2)
-    - NimbusSDK/NimbusRenderVideoKit (= 1.10.2)
+    - NimbusSDK (= 1.10.4)
+    - NimbusSDK/NimbusRenderStaticKit (= 1.10.4)
+    - NimbusSDK/NimbusRenderVideoKit (= 1.10.4)
   - FreestarAds-Pangle-PreRelease (1.0.0-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.0-alpha)
@@ -108,20 +108,20 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - NimbusSDK (1.10.2):
-    - NimbusSDK/NimbusKit (= 1.10.2)
-  - NimbusSDK/NimbusCoreKit (1.10.2)
-  - NimbusSDK/NimbusKit (1.10.2):
+  - NimbusSDK (1.10.4):
+    - NimbusSDK/NimbusKit (= 1.10.4)
+  - NimbusSDK/NimbusCoreKit (1.10.4)
+  - NimbusSDK/NimbusKit (1.10.4):
     - NimbusSDK/NimbusRenderKit
     - NimbusSDK/NimbusRequestKit
-  - NimbusSDK/NimbusRenderKit (1.10.2):
+  - NimbusSDK/NimbusRenderKit (1.10.4):
     - NimbusSDK/NimbusCoreKit
-  - NimbusSDK/NimbusRenderStaticKit (1.10.2):
+  - NimbusSDK/NimbusRenderStaticKit (1.10.4):
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRenderVideoKit (1.10.2):
+  - NimbusSDK/NimbusRenderVideoKit (1.10.4):
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRequestKit (1.10.2):
+  - NimbusSDK/NimbusRequestKit (1.10.4):
     - NimbusSDK/NimbusCoreKit
   - PromisesObjC (2.0.0)
   - SnapKit (5.0.1)
@@ -136,7 +136,7 @@ DEPENDENCIES:
   - FreestarAds-GAM-PreRelease (= 5.1.0-alpha-1)
   - FreestarAds-Googleadmob-PreRelease (= 6.1.0-alpha-1)
   - FreestarAds-Mopub-PreRelease (~> 5.0-alpha)
-  - FreestarAds-Nimbus-PreRelease (~> 3.0-alpha)
+  - FreestarAds-Nimbus-PreRelease (= 3.1.0-beta-1)
   - FreestarAds-Pangle-PreRelease (~> 1.0-alpha)
   - FreestarAds-PreRelease (= 5.1.0-alpha-3)
   - FreestarAds-TAM-PreRelease (~> 2.0-alpha)
@@ -147,7 +147,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - AdColony
     - Ads-Global
     - AmazonPublisherServicesSDK
@@ -199,7 +199,7 @@ SPEC CHECKSUMS:
   FreestarAds-GAM-PreRelease: 27cc5701465c16e04b068003e907c135573f2bce
   FreestarAds-Googleadmob-PreRelease: 92b86094f37f3949bbe37b12a845d3defbdf49d0
   FreestarAds-Mopub-PreRelease: 657a1a441ce2d99184d4981094d8a2ee00ee109a
-  FreestarAds-Nimbus-PreRelease: 22f9b38f1889f808092d848bf7602c4348ca4119
+  FreestarAds-Nimbus-PreRelease: 9301bac27a2de50f0eca81839bfa609127b72268
   FreestarAds-Pangle-PreRelease: 376b416b4b38ad450737d39fbdf74dd20eae46c0
   FreestarAds-PreRelease: d5e481e8cf0ff261cff7ec8e67f4b71cc16c4573
   FreestarAds-TAM-PreRelease: 9f4faf993ae504b1538760af0a1cc3ab245fa527
@@ -214,13 +214,13 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   mopub-ios-sdk: ce5aa12abe59d42cb8866b1297bdff7b6a42e273
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  NimbusSDK: 58e6367c57a7bb5d199b9d11ad4e3af72418c654
+  NimbusSDK: 06191456e9917469fb1d0f2686948a70f6755327
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: 09abfadbcc04e0748ce33c6bd02282e9961125ba
 
-PODFILE CHECKSUM: 773fe4751ae25368865f06ec101d42dffd6ac899
+PODFILE CHECKSUM: ebe60f2490c314f5f110c9615a0fc6fc247bb8fa
 
 COCOAPODS: 1.10.1
