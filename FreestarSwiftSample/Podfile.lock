@@ -36,7 +36,7 @@ PODS:
   - FreestarAds-Mopub-PreRelease (5.0.0-beta-1):
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - mopub-ios-sdk (= 5.16.2)
-  - FreestarAds-Nimbus-PreRelease (3.1.0-beta-1):
+  - FreestarAds-Nimbus-PreRelease (3.1.0-beta-2):
     - FBAudienceNetwork (= 6.3.1)
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - NimbusSDK (= 1.10.4)
@@ -136,7 +136,7 @@ DEPENDENCIES:
   - FreestarAds-GAM-PreRelease (= 5.1.0-alpha-1)
   - FreestarAds-Googleadmob-PreRelease (= 6.1.0-alpha-1)
   - FreestarAds-Mopub-PreRelease (~> 5.0-alpha)
-  - FreestarAds-Nimbus-PreRelease (= 3.1.0-beta-1)
+  - FreestarAds-Nimbus-PreRelease (= 3.1.0-beta-2)
   - FreestarAds-Pangle-PreRelease (~> 1.0-alpha)
   - FreestarAds-PreRelease (= 5.1.0-alpha-3)
   - FreestarAds-TAM-PreRelease (~> 2.0-alpha)
@@ -199,7 +199,7 @@ SPEC CHECKSUMS:
   FreestarAds-GAM-PreRelease: 27cc5701465c16e04b068003e907c135573f2bce
   FreestarAds-Googleadmob-PreRelease: 92b86094f37f3949bbe37b12a845d3defbdf49d0
   FreestarAds-Mopub-PreRelease: 657a1a441ce2d99184d4981094d8a2ee00ee109a
-  FreestarAds-Nimbus-PreRelease: 9301bac27a2de50f0eca81839bfa609127b72268
+  FreestarAds-Nimbus-PreRelease: 365adde5dc04108f44fa7d8999b4fff3ca9e7d4e
   FreestarAds-Pangle-PreRelease: 376b416b4b38ad450737d39fbdf74dd20eae46c0
   FreestarAds-PreRelease: d5e481e8cf0ff261cff7ec8e67f4b71cc16c4573
   FreestarAds-TAM-PreRelease: 9f4faf993ae504b1538760af0a1cc3ab245fa527
@@ -221,6 +221,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: 09abfadbcc04e0748ce33c6bd02282e9961125ba
 
-PODFILE CHECKSUM: ebe60f2490c314f5f110c9615a0fc6fc247bb8fa
+PODFILE CHECKSUM: 5fa2f21d57de144fb7f4f51ba508f995d4af33b0
 
 COCOAPODS: 1.10.1
