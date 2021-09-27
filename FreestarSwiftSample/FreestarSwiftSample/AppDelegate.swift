@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Freestar.setLoggingEnabled(true)
         Freestar.setTestModeEnabled(true)
-//        Freestar.setAdaptiveBannerEnabledIfAvailable(false)
+        Freestar.setAdaptiveBannerEnabledIfAvailable(true)
 //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         

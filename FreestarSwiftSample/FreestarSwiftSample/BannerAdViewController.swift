@@ -10,16 +10,20 @@ import FreestarAds
 
 class BannerAdViewController: AdViewController {
     
-    let bannerAdContainer = UIView()
-    
-    var bannerContainerXPos : NSLayoutConstraint?
-    var bannerContainerYPos : NSLayoutConstraint?
-    var bannerContainerWidth : NSLayoutConstraint?
-    var bannerContainerHeight : NSLayoutConstraint?
-    var adaptiveBannerContainerWidth : NSLayoutConstraint?
-    
-    var smallBanner: FreestarBannerAd?
-    var largeBanner: FreestarBannerAd?
+    @IBOutlet var container: UIView?
+        
+    lazy var smallBanner: FreestarBannerAd = {
+        let banner = FreestarBannerAd(delegate: self, andSize: .banner320x50)
+        banner.adaptiveBannerWidth = calculateAdaptiveViewWidth()
+        banner.translatesAutoresizingMaskIntoConstraints = false
+        return banner
+    }()
+    lazy var largeBanner: FreestarBannerAd = {
+        let banner = FreestarBannerAd(delegate: self, andSize: .banner300x250)
+        banner.adaptiveBannerWidth = calculateAdaptiveViewWidth()
+        banner.translatesAutoresizingMaskIntoConstraints = false
+        return banner
+    }()
     
     var smallBannerAdReady = false {
         didSet {
@@ -35,44 +39,7 @@ class BannerAdViewController: AdViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        setupBannerContainer()
-        self.enablePartnerSelection = false
-    }
-    
-    func setupBannerContainer() {
-        bannerAdContainer.backgroundColor = .lightGray;
-        self.view.addSubview(bannerAdContainer)
-        bannerAdContainer.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
-    func disableAllConstraints() {
-        bannerContainerXPos?.isActive = false
-        bannerContainerYPos?.isActive = false
-        bannerContainerWidth?.isActive = false
-        bannerContainerHeight?.isActive = false
-        adaptiveBannerContainerWidth?.isActive = false
-    }
-    
-    func updateBannerContainerContraints(size: CGSize, isAdaptive: Bool) {
-        disableAllConstraints()
-        
-        bannerContainerXPos = bannerAdContainer.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-        bannerContainerYPos = bannerAdContainer.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-        
-        bannerContainerXPos?.isActive = true
-        bannerContainerYPos?.isActive = true
-
-        if (isAdaptive == true) {
-            adaptiveBannerContainerWidth = bannerAdContainer.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth())
-            adaptiveBannerContainerWidth?.isActive = true
-        } else {
-            bannerContainerWidth = bannerAdContainer.widthAnchor.constraint(equalToConstant: size.width)
-            bannerContainerWidth?.isActive = true
-        }
-        bannerContainerHeight = bannerAdContainer.heightAnchor.constraint(equalToConstant: size.height)
-        bannerContainerHeight?.isActive = true
+        enablePartnerSelection = false
     }
     
     func calculateAdaptiveViewWidth() -> CGFloat {
@@ -98,9 +65,11 @@ class BannerAdViewController: AdViewController {
     
     override func showChosenAd() {
         if concreteAdTypeSelector.selectedSegmentIndex == 0 {
-            showSmallBannerAd()
+            smallBannerAdReady = false
+            showBanner(banner: smallBanner)
         } else {
-            showLargeBannerAd()
+            largeBannerAdReady = false
+            showBanner(banner: largeBanner)
         }
     }
 
@@ -117,62 +86,55 @@ class BannerAdViewController: AdViewController {
     
     @objc override func updateShowButton() {
         showButton.isEnabled =
-            (self.concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
-            (self.concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
+            (concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
+            (concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
     }
 }
 
 extension BannerAdViewController : FreestarBannerAdDelegate {
-    func closeExistingBanners() {
-        self.smallBanner?.removeFromSuperview()
-        self.smallBanner = nil
-        self.largeBanner?.removeFromSuperview()
-        self.largeBanner = nil
-    }
-    
     func loadLargeBannerAd() {
-        closeExistingBanners()
-        self.largeBannerAdReady = false
-        largeBanner = FreestarBannerAd(delegate: self, andSize: .banner300x250)
-        
-        largeBanner?.loadPlacement(placementField.text)
+        largeBannerAdReady = false
+        largeBanner.loadPlacement(placementField.text)
     }
     
-    func loadSmallBannerAd() {
-        closeExistingBanners()
-        self.smallBannerAdReady = false
-        smallBanner = FreestarBannerAd(delegate: self, andSize: .banner320x50)
-        smallBanner?.loadPlacement(placementField.text)
+    func loadSmallBannerAd() {        
+        smallBannerAdReady = false
+        smallBanner.loadPlacement(placementField.text)
     }
     
-    func showLargeBannerAd() {
-        self.largeBannerAdReady = false
-        largeBanner?.center = CGPoint(x: bannerAdContainer.bounds.midX, y: bannerAdContainer.bounds.midY)
-        bannerAdContainer.addSubview(largeBanner!)
-    }
-    
-    func showSmallBannerAd() {
-        self.smallBannerAdReady = false
-        smallBanner?.center = CGPoint(x: bannerAdContainer.bounds.midX, y: bannerAdContainer.bounds.midY)
-        bannerAdContainer.addSubview(smallBanner!)
+    func showBanner(banner: FreestarBannerAd) {
+        guard let container = container else {
+            return
+        }
+        container.subviews.forEach({ $0.removeFromSuperview() })
+        container.addSubview(banner)
+                
+        banner.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        banner.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
+        if (banner.isAdaptive) {
+            banner.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth()).isActive = true
+        } else {
+            banner.widthAnchor.constraint(equalToConstant: banner.frame.width).isActive = true
+            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = true
+        }        
     }
     
     // - Banner Delegate
     
     func freestarBannerLoaded(_ ad: FreestarBannerAd) {
         if ad == smallBanner {
-            self.smallBannerAdReady = true
+            smallBannerAdReady = true
         } else {
-            self.largeBannerAdReady = true
+            largeBannerAdReady = true
         }
-        updateBannerContainerContraints(size:ad.frame.size, isAdaptive: ad.isAdaptive)
+//        updateBannerContainerContraints(size:ad.frame.size, isAdaptive: ad.isAdaptive)
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
         if ad == smallBanner {
-            self.smallBannerAdReady = false
+            smallBannerAdReady = false
         } else {
-            self.largeBannerAdReady = false
+            largeBannerAdReady = false
         }
     }
     
@@ -186,9 +148,9 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
     
     func freestarBannerClosed(_ ad: FreestarBannerAd) {
         if ad == smallBanner {
-            self.smallBannerAdReady = false
+            smallBannerAdReady = false
         } else {
-            self.largeBannerAdReady = false
+            largeBannerAdReady = false
         }
     }
     
