@@ -109,14 +109,23 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         container.subviews.forEach({ $0.removeFromSuperview() })
         container.addSubview(banner)
                 
+        setAnchorConstraints(banner)
+    }
+    
+    func setAnchorConstraints(_ banner: FreestarBannerAd) {
+        guard let container = banner.superview else {
+            return
+        }
+                
         banner.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         banner.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         if (banner.isAdaptive) {
             banner.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth()).isActive = true
+            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = false
         } else {
             banner.widthAnchor.constraint(equalToConstant: banner.frame.width).isActive = true
             banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = true
-        }        
+        }
     }
     
     // - Banner Delegate
@@ -126,8 +135,8 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
             smallBannerAdReady = true
         } else {
             largeBannerAdReady = true
-        }
-//        updateBannerContainerContraints(size:ad.frame.size, isAdaptive: ad.isAdaptive)
+        }        
+        setAnchorConstraints(ad)
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
