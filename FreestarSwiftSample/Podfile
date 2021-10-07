@@ -17,7 +17,7 @@ target 'FreestarSwiftSample' do
 #   pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimbus
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '5.1.0-beta-4'
-  pod 'FreestarAds-Nimbus-PreRelease', '3.1.0-beta-3'
+  pod 'FreestarAds-Nimbus-PreRelease', '3.1.0-beta-4'
   pod 'FreestarAds-TAM-PreRelease', '2.1.0-beta-1'
   pod 'FreestarAds-Pangle-PreRelease', '1.1.0-beta-1'
 
