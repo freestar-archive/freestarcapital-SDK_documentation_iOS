@@ -18,7 +18,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '5.1.0-beta-6'
   pod 'FreestarAds-Nimbus-PreRelease', '3.1.0-beta-8'
-  pod 'FreestarAds-TAM-PreRelease', '2.1.0-beta-4'
+  pod 'FreestarAds-TAM-PreRelease', '2.1.0-beta-5'
   pod 'FreestarAds-Pangle-PreRelease', '1.1.0-beta-4'
 
   # helper frameworks for feed view

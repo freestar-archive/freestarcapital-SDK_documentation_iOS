@@ -46,7 +46,7 @@ PODS:
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.0-alpha)
   - FreestarAds-PreRelease (5.1.0-beta-5)
-  - FreestarAds-TAM-PreRelease (2.1.0-beta-4):
+  - FreestarAds-TAM-PreRelease (2.1.0-beta-5):
     - AmazonPublisherServicesSDK (= 4.0.0)
     - FMDB (= 2.7.5)
     - FreestarAds-PreRelease (~> 5.0-alpha)
@@ -146,7 +146,7 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (= 3.1.0-beta-8)
   - FreestarAds-Pangle-PreRelease (= 1.1.0-beta-4)
   - FreestarAds-PreRelease (= 5.1.0-beta-5)
-  - FreestarAds-TAM-PreRelease (= 2.1.0-beta-4)
+  - FreestarAds-TAM-PreRelease (= 2.1.0-beta-5)
   - FreestarAds-Tapjoy-PreRelease (~> 5.0-alpha)
   - FreestarAds-Unity-PreRelease (~> 6.0-alpha)
   - FreestarAds-Vungle-PreRelease (~> 5.1.0-beta-3)
@@ -209,7 +209,7 @@ SPEC CHECKSUMS:
   FreestarAds-Nimbus-PreRelease: a256695f482a18c0da8c6add7f27328c5e0e4521
   FreestarAds-Pangle-PreRelease: 22e08d93b4bbefd60cfb7f35d95031e902fcab19
   FreestarAds-PreRelease: 7163fc96367d61c6f72f2f5c10351718be8f0829
-  FreestarAds-TAM-PreRelease: f96dce6cda67f9a663c6c3f29793c86cbe8d5a7e
+  FreestarAds-TAM-PreRelease: 9d695ed60e2693f5053c35f9151919f8656c014f
   FreestarAds-Tapjoy-PreRelease: c35510d52b01e872e3ed4705562221a59a026808
   FreestarAds-Unity-PreRelease: f4a48f39a9f4d51024b467540035e8bccaaa93e8
   FreestarAds-Vungle-PreRelease: 8ddfb968df59c96dc410b6e171036b2b20d7dce4
@@ -228,6 +228,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 6b4be9bafad077c779c6ebae5a9b0df7e50d656b
+PODFILE CHECKSUM: 5d7c58562388b8065aa68d737486486020c7c848
 
 COCOAPODS: 1.11.2
