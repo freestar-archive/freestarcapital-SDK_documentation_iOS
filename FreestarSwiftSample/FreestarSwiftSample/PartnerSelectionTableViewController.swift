@@ -12,7 +12,7 @@ struct PartnerChoice {
     var selected = false
 }
 
-protocol PartnerSelectionViewControllerDelegate: class {
+protocol PartnerSelectionViewControllerDelegate: AnyObject {
     func partnersSelected(_ partners: [String])
 }
 

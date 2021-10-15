@@ -21,6 +21,7 @@
 		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
 		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
+		FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
+		FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerAdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,10 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				9600640B242EA20D00A3212E /* AppDelegate.swift */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
+				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
+				9600640B242EA20D00A3212E /* AppDelegate.swift */,
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
 				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
+				FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */,
 				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
 				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
 			);
