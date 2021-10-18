@@ -14,7 +14,7 @@ PODS:
   - CriteoPublisherSdk/Sdk (4.3.1)
   - FBAudienceNetwork (6.6.0):
     - FBSDKCoreKit_Basics
-  - FBSDKCoreKit_Basics (12.0.0)
+  - FBSDKCoreKit_Basics (12.0.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -33,6 +33,9 @@ PODS:
   - FreestarAds-Googleadmob-PreRelease (6.1.1-beta-1):
     - FreestarAds-PreRelease (~> 5.1-alpha)
     - Google-Mobile-Ads-SDK (= 8.9.0)
+  - FreestarAds-Hyprmx-PreRelease (1.0.0-alpha-1):
+    - FreestarAds-PreRelease (~> 5.0-alpha)
+    - HyprMX (= 6.0.0)
   - FreestarAds-Mopub-PreRelease (5.0.0-beta-1):
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - mopub-ios-sdk (= 5.16.2)
@@ -101,6 +104,16 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.5.2)"
   - GoogleUtilities/Reachability (7.5.2):
     - GoogleUtilities/Logger
+  - HyprMX (6.0.0):
+    - HyprMX/HyprMX-SDK (= 6.0.0)
+  - HyprMX-Mraid (6.0.0)
+  - HyprMX/Core (6.0.0)
+  - HyprMX/HyprMX-SDK (6.0.0):
+    - HyprMX/Core
+    - HyprMX/MRAID
+  - HyprMX/MRAID (6.0.0):
+    - HyprMX-Mraid
+    - HyprMX/Core
   - LoremIpsum (1.0.0)
   - mopub-ios-sdk (5.16.2):
     - mopub-ios-sdk/MoPubSDK (= 5.16.2)
@@ -142,6 +155,7 @@ DEPENDENCIES:
   - FreestarAds-Criteo-PreRelease (~> 3.0-alpha)
   - FreestarAds-GAM-PreRelease (~> 5.1.1-beta-1)
   - FreestarAds-Googleadmob-PreRelease (~> 6.1.1-beta-1)
+  - FreestarAds-Hyprmx-PreRelease (~> 1.0-alpha-1)
   - FreestarAds-Mopub-PreRelease (~> 5.0-alpha)
   - FreestarAds-Nimbus-PreRelease (~> 3.1.1-beta-1)
   - FreestarAds-Pangle-PreRelease (~> 1.1.1-beta-1)
@@ -168,6 +182,7 @@ SPEC REPOS:
     - FreestarAds-Criteo-PreRelease
     - FreestarAds-GAM-PreRelease
     - FreestarAds-Googleadmob-PreRelease
+    - FreestarAds-Hyprmx-PreRelease
     - FreestarAds-Mopub-PreRelease
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-Pangle-PreRelease
@@ -181,6 +196,8 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - HyprMX
+    - HyprMX-Mraid
     - LoremIpsum
     - mopub-ios-sdk
     - nanopb
@@ -198,13 +215,14 @@ SPEC CHECKSUMS:
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 9226b1e415de489e80bb5f83b3b8b61cbf75efde
-  FBSDKCoreKit_Basics: 99ca5885c4fe153462ae3370edd60077394911c1
+  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: ac1aa02060069d669d821cd440fd8248c0e2b644
   FreestarAds-AppLovin-PreRelease: b9ba4736506303800b8f265a11ebbf12f55f560d
   FreestarAds-Criteo-PreRelease: 229011bc7174333fc1dcfd9581df4c511eb0340e
   FreestarAds-GAM-PreRelease: 2b841985493b69eb0fe05b3620a2ac2a21176c2d
   FreestarAds-Googleadmob-PreRelease: 4c92454fdd72dc76a969354ef1c70d69d070430d
+  FreestarAds-Hyprmx-PreRelease: e4f1068841a01fc0b0f20b0b5d59889673d5ca1d
   FreestarAds-Mopub-PreRelease: 657a1a441ce2d99184d4981094d8a2ee00ee109a
   FreestarAds-Nimbus-PreRelease: ba821a15ba69b01171dbd6b03faa867f8f625411
   FreestarAds-Pangle-PreRelease: 9c193833e50f1ef04d9a631752f6ecbec9d0b404
@@ -218,6 +236,8 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 5ba1164e3c844ba84272555e916d0a6d3d977e91
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
+  HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
+  HyprMX-Mraid: 274a03a40b59e25fd23d2351b8378736334639bf
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   mopub-ios-sdk: ce5aa12abe59d42cb8866b1297bdff7b6a42e273
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -228,6 +248,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 989e9483c1edf0fe06b2515ac69d3b657772a849
+PODFILE CHECKSUM: da6ca2afb01a1ff8bf0a7ce56a7679a467eec64b
 
 COCOAPODS: 1.11.2
