@@ -14,11 +14,11 @@ PODS:
   - CriteoPublisherSdk/Sdk (4.3.1)
   - FBAudienceNetwork (6.6.0):
     - FBSDKCoreKit_Basics
-  - FBSDKCoreKit_Basics (12.0.0)
+  - FBSDKCoreKit_Basics (12.0.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.1.0)
+  - FreestarAds (5.2.0)
   - FreestarAds-AdColony (5.0.0):
     - AdColony (= 4.6.0)
     - FreestarAds (~> 5.0)
@@ -34,9 +34,13 @@ PODS:
   - FreestarAds-Googleadmob (6.1.0):
     - FreestarAds (~> 5.1)
     - Google-Mobile-Ads-SDK (= 8.9.0)
-  - FreestarAds-Mopub (5.0.0):
-    - FreestarAds (~> 5.0)
-    - mopub-ios-sdk (= 5.16.2)
+  - FreestarAds-Hyprmx (1.0.0):
+    - FreestarAds (~> 5.2)
+    - HyprMX (= 6.0.0)
+  - FreestarAds-Mopub (5.1.0):
+    - FreestarAds (~> 5.2)
+    - MoPub-FacebookAudienceNetwork-Adapters (= 6.6.0.0)
+    - mopub-ios-sdk (= 5.18.2)
   - FreestarAds-Nimbus (3.1.0):
     - FBAudienceNetwork (= 6.6.0)
     - FreestarAds (~> 5.0)
@@ -84,31 +88,51 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.5.2):
+  - GoogleUtilities/AppDelegateSwizzler (7.6.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.5.2):
+  - GoogleUtilities/Environment (7.6.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.5.2):
+  - GoogleUtilities/Logger (7.6.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.5.2):
+  - GoogleUtilities/MethodSwizzler (7.6.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.5.2):
+  - GoogleUtilities/Network (7.6.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.5.2)"
-  - GoogleUtilities/Reachability (7.5.2):
+  - "GoogleUtilities/NSData+zlib (7.6.0)"
+  - GoogleUtilities/Reachability (7.6.0):
     - GoogleUtilities/Logger
+  - HyprMX (6.0.0):
+    - HyprMX/HyprMX-SDK (= 6.0.0)
+  - HyprMX-Mraid (6.0.0)
+  - HyprMX/Core (6.0.0)
+  - HyprMX/HyprMX-SDK (6.0.0):
+    - HyprMX/Core
+    - HyprMX/MRAID
+  - HyprMX/MRAID (6.0.0):
+    - HyprMX-Mraid
+    - HyprMX/Core
   - LoremIpsum (1.0.0)
-  - mopub-ios-sdk (5.16.2):
-    - mopub-ios-sdk/MoPubSDK (= 5.16.2)
-  - mopub-ios-sdk/Core (5.16.2)
-  - mopub-ios-sdk/MoPubSDK (5.16.2):
+  - MoPub-FacebookAudienceNetwork-Adapters (6.6.0.0):
+    - MoPub-FacebookAudienceNetwork-Adapters/MoPub (= 6.6.0.0)
+    - MoPub-FacebookAudienceNetwork-Adapters/Network (= 6.6.0.0)
+  - MoPub-FacebookAudienceNetwork-Adapters/MoPub (6.6.0.0):
+    - mopub-ios-sdk/Core (~> 5.17)
+    - mopub-ios-sdk/NativeAds (~> 5.17)
+  - MoPub-FacebookAudienceNetwork-Adapters/Network (6.6.0.0):
+    - FBAudienceNetwork (= 6.6.0)
+    - mopub-ios-sdk/Core (~> 5.17)
+    - mopub-ios-sdk/NativeAds (~> 5.17)
+  - mopub-ios-sdk (5.18.2):
+    - mopub-ios-sdk/MoPubSDK (= 5.18.2)
+  - mopub-ios-sdk/Core (5.18.2)
+  - mopub-ios-sdk/MoPubSDK (5.18.2):
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/NativeAds
-  - mopub-ios-sdk/NativeAds (5.16.2):
+  - mopub-ios-sdk/NativeAds (5.18.2):
     - mopub-ios-sdk/Core
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -137,13 +161,14 @@ PODS:
   - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.1)
+  - FreestarAds (~> 5.2)
   - FreestarAds-AdColony (~> 5.0)
   - FreestarAds-AppLovin (~> 5.1)
   - FreestarAds-Criteo (~> 3.0)
   - FreestarAds-GAM (~> 5.1)
   - FreestarAds-Googleadmob (~> 6.1)
-  - FreestarAds-Mopub (~> 5.0)
+  - FreestarAds-Hyprmx (~> 1.0)
+  - FreestarAds-Mopub (~> 5.1)
   - FreestarAds-Nimbus (~> 3.1)
   - FreestarAds-Pangle (~> 1.1)
   - FreestarAds-TAM (~> 2.1)
@@ -169,6 +194,7 @@ SPEC REPOS:
     - FreestarAds-Criteo
     - FreestarAds-GAM
     - FreestarAds-Googleadmob
+    - FreestarAds-Hyprmx
     - FreestarAds-Mopub
     - FreestarAds-Nimbus
     - FreestarAds-Pangle
@@ -181,7 +207,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - HyprMX
+    - HyprMX-Mraid
     - LoremIpsum
+    - MoPub-FacebookAudienceNetwork-Adapters
     - mopub-ios-sdk
     - nanopb
     - NimbusSDK
@@ -198,15 +227,16 @@ SPEC CHECKSUMS:
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 9226b1e415de489e80bb5f83b3b8b61cbf75efde
-  FBSDKCoreKit_Basics: 99ca5885c4fe153462ae3370edd60077394911c1
+  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 0b611157d712502e733f8068ac1590c89994270a
+  FreestarAds: 898f39a8e73918a0ceed8ef6a1f98d7a8b09c143
   FreestarAds-AdColony: 97a04d7607801c882f42fb7c8b3d0611dad310f2
   FreestarAds-AppLovin: ad432ac318bcc0294a84a179c895f41d04939226
   FreestarAds-Criteo: d6043ef7ccfd9dd04d8493baa7fd4a5b950cfbb0
   FreestarAds-GAM: c0f873115002b09c7c69408e66bdf1675e718d7f
   FreestarAds-Googleadmob: 33faad50e0b567ca282654c3ea55d4cb9019576b
-  FreestarAds-Mopub: 3b2e4de60b5c73532b5ee98e9e238fa96faf8791
+  FreestarAds-Hyprmx: 1cd54c440bb9f611b17d5734c4655c19b36d8536
+  FreestarAds-Mopub: bc2d605ec6a254c38ee99d3853664955be3b7bb8
   FreestarAds-Nimbus: d9f381e9dc6ab3b82f86cda5f5e0d55ee3621166
   FreestarAds-Pangle: a775feb586a779bd033133cdbe584cf9ac525c3f
   FreestarAds-TAM: fe8fdb234558bbac4e614a94e077f00af368bd79
@@ -217,9 +247,12 @@ SPEC CHECKSUMS:
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: 5ba1164e3c844ba84272555e916d0a6d3d977e91
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
-  GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
+  GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
+  HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
+  HyprMX-Mraid: 274a03a40b59e25fd23d2351b8378736334639bf
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  mopub-ios-sdk: ce5aa12abe59d42cb8866b1297bdff7b6a42e273
+  MoPub-FacebookAudienceNetwork-Adapters: e1ed61568b72acaafd5a5daac4d5a077b343ca54
+  mopub-ios-sdk: 39dd404dc791e543979b91aa8e3b27197af91377
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
@@ -228,6 +261,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 443452acc70f5cb4f42e653c23a7d794402baa58
+PODFILE CHECKSUM: ca8761a6e6b9ac9872f5caba3c6a8e5f514b4d00
 
 COCOAPODS: 1.11.2
