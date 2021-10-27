@@ -91,6 +91,14 @@ static FreestarNativeAd *mediumNative = nil;
     }
 }
 
+- (CGFloat)calculateAdaptiveBannerWidth {
+     CGRect frame = self.view.frame;
+     if (@available(iOS 11.0, *)) {
+       frame = UIEdgeInsetsInsetRect(self.view.frame, self.view.safeAreaInsets);
+     }
+     return frame.size.width;
+}
+
 -(void)loadSmallBannerAd {
     adTypeLoadedStates[4] = @NO;
     [self adjustUIForAdState];
@@ -102,6 +110,7 @@ static FreestarNativeAd *mediumNative = nil;
     smallBanner = nil;
 
     smallBanner = [[FreestarBannerAd alloc] initWithDelegate:self andSize:FreestarBanner320x50];
+    smallBanner.adaptiveBannerWidth = [self calculateAdaptiveBannerWidth];
     [smallBanner loadPlacement:placement.text];
 }
 
