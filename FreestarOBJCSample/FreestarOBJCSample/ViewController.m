@@ -199,7 +199,7 @@ static NSString *CONTENT = @"https://www.sample-videos.com/video123/mp4/720/big_
     inviewContainerPortraitXPox.active = YES;
     inviewContainerPortraitYPos.active = YES;
 
-    [inviewAdContainer.widthAnchor constraintEqualToConstant:330].active = YES;
+    [inviewAdContainer.widthAnchor constraintEqualToConstant:self.view.frame.size.width].active = YES;
     [inviewAdContainer.heightAnchor constraintEqualToConstant:300].active = YES;
 
 

@@ -10,7 +10,7 @@
 
 @import FreestarAds;
 
-static NSString* const FREESTAR_APP_KEY = @"XqjhRR";
+static NSString* const FREESTAR_API_KEY = @"XqjhRR";
 
 @interface AppDelegate ()
 @end
@@ -21,7 +21,9 @@ static NSString* const FREESTAR_APP_KEY = @"XqjhRR";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [Freestar initWithAppKey:FREESTAR_APP_KEY];
+    [Freestar setLoggingEnabled:YES];
+    [Freestar setAdaptiveBannerEnabledIfAvailable:YES];
+    [Freestar initWithAppKey:FREESTAR_API_KEY];
 
     self.window = [[UIWindow alloc] init];
     self.window.frame = UIScreen.mainScreen.bounds;
