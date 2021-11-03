@@ -1,5 +1,5 @@
 PODS:
-  - AdColony (4.6.0)
+  - AdColony (4.7.2)
   - Ads-Global (3.7.0.8):
     - Ads-Global/BUAdSDK (= 3.7.0.8)
   - Ads-Global/BUAdSDK (3.7.0.8):
@@ -14,12 +14,12 @@ PODS:
   - CriteoPublisherSdk/Sdk (4.3.1)
   - FBAudienceNetwork (6.6.0):
     - FBSDKCoreKit_Basics
-  - FBSDKCoreKit_Basics (12.0.2)
+  - FBSDKCoreKit_Basics (12.1.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds-AdColony-PreRelease (5.0.0-beta-1):
-    - AdColony (= 4.6.0)
+  - FreestarAds-AdColony-PreRelease (5.1.0-alpha-1):
+    - AdColony (= 4.7.2)
     - FreestarAds-PreRelease (~> 5.0-alpha)
   - FreestarAds-AppLovin-PreRelease (5.1.1-beta-1):
     - AppLovinSDK (= 10.1.1)
@@ -60,28 +60,28 @@ PODS:
   - FreestarAds-Unity-PreRelease (6.0.0-beta-1):
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - UnityAds (= 3.7.0)
-  - FreestarAds-Vungle-PreRelease (5.2.0-alpha-1):
+  - FreestarAds-Vungle-PreRelease (5.2.0-alpha-2):
     - FreestarAds-PreRelease (~> 5.1-alpha)
     - VungleSDK-iOS (= 6.10.3)
   - Google-Mobile-Ads-SDK (8.9.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAds-IMA-iOS-SDK (3.13.0)
-  - GoogleAppMeasurement (8.9.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.9.0)
+  - GoogleAppMeasurement (8.9.1):
+    - GoogleAppMeasurement/AdIdSupport (= 8.9.1)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
     - GoogleUtilities/MethodSwizzler (~> 7.6)
     - GoogleUtilities/Network (~> 7.6)
     - "GoogleUtilities/NSData+zlib (~> 7.6)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.9.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.9.0)
+  - GoogleAppMeasurement/AdIdSupport (8.9.1):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.9.1)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
     - GoogleUtilities/MethodSwizzler (~> 7.6)
     - GoogleUtilities/Network (~> 7.6)
     - "GoogleUtilities/NSData+zlib (~> 7.6)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.9.0):
+  - GoogleAppMeasurement/WithoutAdIdSupport (8.9.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
     - GoogleUtilities/MethodSwizzler (~> 7.6)
     - GoogleUtilities/Network (~> 7.6)
@@ -161,7 +161,7 @@ PODS:
   - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
-  - FreestarAds-AdColony-PreRelease (~> 5.0-alpha)
+  - FreestarAds-AdColony-PreRelease (~> 5.1-alpha-1)
   - FreestarAds-AppLovin-PreRelease (~> 5.1.1-beta-1)
   - FreestarAds-Criteo-PreRelease (~> 3.0-alpha)
   - FreestarAds-GAM-PreRelease (~> 5.1.1-beta-1)
@@ -174,7 +174,7 @@ DEPENDENCIES:
   - FreestarAds-TAM-PreRelease (~> 2.1.1-beta-1)
   - FreestarAds-Tapjoy-PreRelease (~> 5.0-alpha)
   - FreestarAds-Unity-PreRelease (~> 6.0-alpha)
-  - FreestarAds-Vungle-PreRelease (~> 5.2.0-alpha-1)
+  - FreestarAds-Vungle-PreRelease (~> 5.2-alpha-2)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
@@ -221,15 +221,15 @@ SPEC REPOS:
     - VungleSDK-iOS
 
 SPEC CHECKSUMS:
-  AdColony: a79d5e46d893a94f35edadfde3d08f5d8ae55bf9
+  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: f73e281872525d1b929dca506c3a0332d4f902fa
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 9226b1e415de489e80bb5f83b3b8b61cbf75efde
-  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
+  FBSDKCoreKit_Basics: 39865aff97e5f6951a78fb3e89dc4460e35e1895
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds-AdColony-PreRelease: ac1aa02060069d669d821cd440fd8248c0e2b644
+  FreestarAds-AdColony-PreRelease: 2bc2453378aaf541f5f6292506fa22676b06c528
   FreestarAds-AppLovin-PreRelease: b9ba4736506303800b8f265a11ebbf12f55f560d
   FreestarAds-Criteo-PreRelease: 229011bc7174333fc1dcfd9581df4c511eb0340e
   FreestarAds-GAM-PreRelease: 2b841985493b69eb0fe05b3620a2ac2a21176c2d
@@ -242,10 +242,10 @@ SPEC CHECKSUMS:
   FreestarAds-TAM-PreRelease: 42e7e92e91444b68a3c58fd86cd185c2b32abaa0
   FreestarAds-Tapjoy-PreRelease: c35510d52b01e872e3ed4705562221a59a026808
   FreestarAds-Unity-PreRelease: f4a48f39a9f4d51024b467540035e8bccaaa93e8
-  FreestarAds-Vungle-PreRelease: 7787bde1f0f21664d3521d99ed88e253ceb1ca92
+  FreestarAds-Vungle-PreRelease: e55e51cb55521a2c573882dba6b3ba3573f3f403
   Google-Mobile-Ads-SDK: 8494046b4d339275a381f6bcfafbff7adb2f515f
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
-  GoogleAppMeasurement: b54a857d347703d67c7a6f23713760c9bcfe9008
+  GoogleAppMeasurement: 837649ad3987936c232f6717c5680216f6243d24
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
   HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
@@ -261,6 +261,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 506f79a0c3c87bc1e4f4c811c89778bff5236da5
+PODFILE CHECKSUM: 9275e71bd9aa0d5b7ad5a9e0e51f16cc38a6eb22
 
 COCOAPODS: 1.11.2

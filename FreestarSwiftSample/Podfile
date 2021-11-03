@@ -7,13 +7,13 @@ use_frameworks!
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
   pod 'FreestarAds-PreRelease', '5.2.0-beta-1'
-  pod 'FreestarAds-AdColony-PreRelease', '~> 5.0-alpha'
+  pod 'FreestarAds-AdColony-PreRelease', '~> 5.1-alpha-1'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 5.1.1-beta-1'
   pod 'FreestarAds-Mopub-PreRelease', '5.1.0-beta-1'
   pod 'FreestarAds-Googleadmob-PreRelease', '~> 6.1.1-beta-1'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 5.0-alpha'
   pod 'FreestarAds-Unity-PreRelease', '~> 6.0-alpha'
-  pod 'FreestarAds-Vungle-PreRelease', '~> 5.2.0-alpha-1'
+  pod 'FreestarAds-Vungle-PreRelease', '~> 5.2-alpha-2'
 #   pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimbus
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.0-alpha'
   pod 'FreestarAds-GAM-PreRelease', '~> 5.1.1-beta-1'
