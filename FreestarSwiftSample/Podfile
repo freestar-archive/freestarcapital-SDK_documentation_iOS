@@ -16,11 +16,11 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Vungle-PreRelease', '~> 5.3.0-beta-1'
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.1.0-beta-1'
   pod 'FreestarAds-GAM-PreRelease', '~> 5.2.0-beta-1'
-  pod 'FreestarAds-Nimbus-PreRelease', '~> 3.3.0-beta-1'
+#  pod 'FreestarAds-Nimbus-PreRelease', '~> 3.3.0-beta-1'
   pod 'FreestarAds-TAM-PreRelease', '~> 2.3.0-beta-1'
   pod 'FreestarAds-Pangle-PreRelease', '~> 1.2.0-beta-1'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 1.1.0-beta-1'
-  #   pod 'FreestarAds-Google-PreRelease', '~> 4.0-alpha' #incompatible with latest nimbus
+  pod 'FreestarAds-Google-PreRelease', '~> 5.0-alpha' #incompatible with latest nimbus
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
