@@ -6,7 +6,7 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod 'FreestarAds-PreRelease', '5.4.0-beta-1'
+  pod 'FreestarAds-PreRelease', '5.4.0-beta-2'
   pod 'FreestarAds-AdColony-PreRelease', '~> 5.2.0-beta-1'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 5.2.0-beta-1'
   pod 'FreestarAds-Mopub-PreRelease', '~> 5.2.0-beta-1'
