@@ -53,6 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = tabVC
         
+        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { (placement, event, _) in 
+            print(event)
+        }
+        
         return true
     }
 

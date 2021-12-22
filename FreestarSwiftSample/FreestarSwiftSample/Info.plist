@@ -20,6 +20,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FSTR_ENABLE_PARTNER_SELECTION</key>
 	<true/>
+	<key>FSTR_DEV_SKIP_PRELOAD_REWARD</key>
+	<false/>
+	<key>FSTR_DEV_SKIP_PRELOAD_INTERSTITIAL</key>
+	<false/>
 	<key>FSTR_LOGGING_ENABLE</key>
 	<true/>
 	<key>FSTR_TEST_ADS</key>
