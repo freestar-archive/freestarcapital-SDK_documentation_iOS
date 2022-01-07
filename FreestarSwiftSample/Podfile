@@ -16,7 +16,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Vungle-PreRelease', '~> 5.4.0-alpha-1'
   pod 'FreestarAds-Criteo-PreRelease', '~> 3.2.0-alpha-1'
   pod 'FreestarAds-GAM-PreRelease', '~> 5.3.0-beta-2'
-  pod 'FreestarAds-Nimbus-PreRelease', '~> 3.4.0-beta-2'
+  pod 'FreestarAds-Nimbus-PreRelease', '~> 3.4.0-beta-3'
   pod 'FreestarAds-TAM-PreRelease', '~> 2.4.0-alpha-1'
   pod 'FreestarAds-Pangle-PreRelease', '~> 1.3.0-alpha-1'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 1.2.0-alpha-1'
