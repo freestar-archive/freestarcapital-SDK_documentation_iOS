@@ -14,15 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let FREESTAR_API_KEY = "P8RIA3"
     
     var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Freestar.setLoggingEnabled(true)
         Freestar.setTestModeEnabled(true)
         Freestar.setAdaptiveBannerEnabledIfAvailable(true)
-//        Freestar.setServingMode(.admobGam)
-        Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
+        //        Freestar.setServingMode(.admobGam)
+        Freestar.initWithAdUnitID(AppDelegate.FREESTAR_API_KEY)
         
         let tabVC = UITabBarController()
         
@@ -54,10 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = tabVC
         
+        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { placement, event, error in
+            guard let error = error else {
+                print(event)
+                return
+            }
+            print("\(error)")
+        }
+        
         return true
     }
-
     
-
+    
+    
 }
 
