@@ -11,7 +11,7 @@ import FreestarAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static let FREESTAR_API_KEY = "P8RIA3"
+    static let FREESTAR_API_KEY = "XqjhRR"
     
     var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Freestar.setTestModeEnabled(true)
         Freestar.setAdaptiveBannerEnabledIfAvailable(true)
         //        Freestar.setServingMode(.admobGam)
-        Freestar.initWithAdUnitID(AppDelegate.FREESTAR_API_KEY)
+        Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         
         let tabVC = UITabBarController()
         

@@ -7,7 +7,7 @@ PODS:
     - Ads-Global/International
   - Ads-Global/BUFoundation (3.7.0.8)
   - Ads-Global/International (3.7.0.8)
-  - AmazonPublisherServicesSDK (4.0.0)
+  - AmazonPublisherServicesSDK (4.3.0)
   - AppLovinSDK (10.1.1)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
@@ -18,7 +18,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.5.0)
+  - FreestarAds (5.6.0)
   - FreestarAds-AdColony (5.2.0):
     - AdColony (= 4.7.2)
     - FreestarAds (~> 5.0)
@@ -53,8 +53,8 @@ PODS:
   - FreestarAds-Pangle (1.2.0):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds (~> 5.0)
-  - FreestarAds-TAM (2.3.0):
-    - AmazonPublisherServicesSDK (= 4.0.0)
+  - FreestarAds-TAM (2.4.0):
+    - AmazonPublisherServicesSDK (= 4.3.0)
     - FMDB (= 2.7.5)
     - FreestarAds (~> 5.3)
   - FreestarAds-Tapjoy (5.1.0):
@@ -164,7 +164,7 @@ PODS:
   - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.5)
+  - FreestarAds (~> 5.6)
   - FreestarAds-AdColony (~> 5.1)
   - FreestarAds-AppLovin (~> 5.1)
   - FreestarAds-Criteo (~> 3.0)
@@ -175,7 +175,7 @@ DEPENDENCIES:
   - FreestarAds-Mopub (~> 5.1)
   - FreestarAds-Nimbus (~> 3.5)
   - FreestarAds-Pangle (~> 1.1)
-  - FreestarAds-TAM (~> 2.2)
+  - FreestarAds-TAM (~> 2.4)
   - FreestarAds-Tapjoy (~> 5.0)
   - FreestarAds-Unity (~> 6.0)
   - FreestarAds-Vungle (~> 5.2)
@@ -228,13 +228,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
-  AmazonPublisherServicesSDK: f73e281872525d1b929dca506c3a0332d4f902fa
+  AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
   AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 9226b1e415de489e80bb5f83b3b8b61cbf75efde
   FBSDKCoreKit_Basics: a6a92ca628e05f86f458a4721574c5ddfb058ba3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: fd09e75272c5ee1a47693d70c0075f45fee8099c
+  FreestarAds: 7e70a739942c601823b940a890d5254edc0727e9
   FreestarAds-AdColony: e1c3e3fb8a9748cf4e1cacb7f6e4b39c16def775
   FreestarAds-AppLovin: 57dd3ec73828698ba98836ea7b6927a404d5e4a6
   FreestarAds-Criteo: 34db2af123c160403228bdaaab5452bb2e1f5cae
@@ -245,7 +245,7 @@ SPEC CHECKSUMS:
   FreestarAds-Mopub: e8c3a097f2c5b7a125660f467ca7c53fbd25f01f
   FreestarAds-Nimbus: 47fe6fe63fcafd6b7fcd8e9f212fd708f3950764
   FreestarAds-Pangle: f4e1550a7cc03c3e8d6c3c50f868ec97d336cfb4
-  FreestarAds-TAM: cf9f63a3b457530edf1fc01ee15f06b6d16e83c2
+  FreestarAds-TAM: e9ec3bda67ce63662f89a92df7f2cdb6081baccc
   FreestarAds-Tapjoy: fff4c04d57128024b0b98f935c356be2b0a3d61e
   FreestarAds-Unity: 662c5e355899aad992e2a7441cd47b3fedc9f454
   FreestarAds-Vungle: 1887d97d7a860c5d9889bcd6adb668daaf155604
@@ -267,6 +267,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: ba8fc1dabc35a5e1467ae0a818cbf84acb7d89ee
+PODFILE CHECKSUM: f4a7bb2f74e9e17d8a8ad5c0af96799765e6fca3
 
 COCOAPODS: 1.11.2
