@@ -125,6 +125,7 @@
 				96C859EA241C53E1009BD9FB /* Frameworks */,
 				96C859EB241C53E1009BD9FB /* Resources */,
 				8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */,
+				AB416B7E1FD07FC8CE41C5DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +220,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB416B7E1FD07FC8CE41C5DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
