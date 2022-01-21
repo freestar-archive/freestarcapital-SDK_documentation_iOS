@@ -29,6 +29,15 @@ static NSString* const FREESTAR_API_KEY = @"XqjhRR";
     self.window.frame = UIScreen.mainScreen.bounds;
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
+    [Freestar requestAppOpenAdsWithPlacement:@"interstitial_p1"
+                                  waitScreen:YES
+                                  completion:^(NSString * _Nonnull placement, FreestarAppOpenAdEvent event, NSError * _Nullable error) {
+        NSLog(@"%ld", event);
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
 
     return YES;
 }
