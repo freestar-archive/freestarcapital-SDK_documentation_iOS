@@ -31,7 +31,7 @@
 	<key>FSTR_STAGING_SERVER</key>
 	<true/>
 	<key>FSTR_SERVER_ENDPOINT_QUERY_STRING</key>
-	<string>?useV3=true</string>
+	<string></string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSRequiresIPhoneOS</key>
