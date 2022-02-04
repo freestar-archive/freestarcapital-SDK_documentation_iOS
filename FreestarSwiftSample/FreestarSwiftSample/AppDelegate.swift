@@ -11,7 +11,7 @@ import FreestarAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static let FREESTAR_API_KEY = "XqjhRR"
+    static let FREESTAR_API_KEY = "ef05da0e-1c5f-4595-b835-74ecedf048dd"
     
     var window : UIWindow?
     
