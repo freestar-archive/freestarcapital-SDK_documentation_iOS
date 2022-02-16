@@ -12,7 +12,7 @@ target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
   pod "FreestarAds#{POD_TAGS[:name_tag]}", "~> 5.7#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-AdColony#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Googleadmob#{POD_TAGS[:name_tag]}", "~> 6.4#{POD_TAGS[:version_tag]}"
+  pod "FreestarAds-Googleadmob#{POD_TAGS[:name_tag]}", "~> 6.5#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Tapjoy#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Unity#{POD_TAGS[:name_tag]}", "~> 6.0#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Vungle#{POD_TAGS[:name_tag]}", "~> 5.2#{POD_TAGS[:version_tag]}"
