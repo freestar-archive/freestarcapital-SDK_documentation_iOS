@@ -10,7 +10,7 @@ POD_TAGS = USE_PREPROD ?
 
 target 'FreestarSwiftSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod "FreestarAds#{POD_TAGS[:name_tag]}", "~> 5.6#{POD_TAGS[:version_tag]}"
+  pod "FreestarAds#{POD_TAGS[:name_tag]}", "~> 5.7#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-AdColony#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Googleadmob#{POD_TAGS[:name_tag]}", "~> 6.4#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Tapjoy#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
@@ -18,9 +18,9 @@ target 'FreestarSwiftSample' do
   pod "FreestarAds-Vungle#{POD_TAGS[:name_tag]}", "~> 5.2#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Google#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Criteo#{POD_TAGS[:name_tag]}", "~> 3.0#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-GAM#{POD_TAGS[:name_tag]}", "~> 5.4#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Nimbus#{POD_TAGS[:name_tag]}", "~> 3.5#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Mopub#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
+  pod "FreestarAds-GAM#{POD_TAGS[:name_tag]}", "~> 5.5#{POD_TAGS[:version_tag]}"
+  pod "FreestarAds-Nimbus#{POD_TAGS[:name_tag]}", "~> 3.6#{POD_TAGS[:version_tag]}"
+  pod "FreestarAds-Mopub#{POD_TAGS[:name_tag]}", "~> 5.3#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-AppLovin#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-TAM#{POD_TAGS[:name_tag]}", "~> 2.4#{POD_TAGS[:version_tag]}"
   pod "FreestarAds-Pangle#{POD_TAGS[:name_tag]}", "~> 1.1#{POD_TAGS[:version_tag]}"
