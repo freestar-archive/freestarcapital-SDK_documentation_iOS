@@ -8,7 +8,7 @@ PODS:
   - Ads-Global/BUFoundation (3.7.0.8)
   - Ads-Global/International (3.7.0.8)
   - AmazonPublisherServicesSDK (4.3.0)
-  - AppLovinSDK (10.1.1)
+  - AppLovinSDK (11.1.0)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -19,9 +19,9 @@ PODS:
   - FreestarAds-AdColony-PreRelease (5.3.0-alpha-1):
     - AdColony (= 4.7.2)
     - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-AppLovin-PreRelease (5.3.0-alpha-1):
-    - AppLovinSDK (= 10.1.1)
-    - FreestarAds-PreRelease (~> 5.4-alpha)
+  - FreestarAds-AppLovinMax-PreRelease (11.1.0.7-beta-2):
+    - AppLovinSDK (= 11.1.0)
+    - FreestarAds-PreRelease (~> 5.7)
   - FreestarAds-Criteo-PreRelease (3.2.0-alpha-1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.0-alpha)
@@ -51,7 +51,7 @@ PODS:
   - FreestarAds-Pangle-PreRelease (1.3.0-alpha-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-PreRelease (5.7.0-beta-2)
+  - FreestarAds-PreRelease (5.8.0)
   - FreestarAds-TAM-PreRelease (2.4.0-beta-1):
     - AmazonPublisherServicesSDK (= 4.3.0)
     - FMDB (= 2.7.5)
@@ -167,7 +167,7 @@ PODS:
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 5.3.0-alpha-1)
-  - FreestarAds-AppLovin-PreRelease (~> 5.3.0-alpha-1)
+  - FreestarAds-AppLovinMax-PreRelease (~> 11.1.0.7-beta-2)
   - FreestarAds-Criteo-PreRelease (~> 3.2.0-alpha-1)
   - FreestarAds-GAM-PreRelease (~> 5.5.0-beta-2)
   - FreestarAds-Google-PreRelease (~> 5.1.0-beta-1)
@@ -176,7 +176,7 @@ DEPENDENCIES:
   - FreestarAds-Mopub-PreRelease (~> 5.3.0-beta-2)
   - FreestarAds-Nimbus-PreRelease (~> 3.6.0-beta-2)
   - FreestarAds-Pangle-PreRelease (~> 1.3.0-alpha-1)
-  - FreestarAds-PreRelease (= 5.7.0-beta-2)
+  - FreestarAds-PreRelease (~> 5.8)
   - FreestarAds-TAM-PreRelease (~> 2.4.0-beta-1)
   - FreestarAds-Tapjoy-PreRelease (~> 5.2.0-alpha-1)
   - FreestarAds-Unity-PreRelease (~> 6.2.0-alpha-1)
@@ -194,7 +194,7 @@ SPEC REPOS:
     - FBAudienceNetwork
     - FMDB
     - FreestarAds-AdColony-PreRelease
-    - FreestarAds-AppLovin-PreRelease
+    - FreestarAds-AppLovinMax-PreRelease
     - FreestarAds-Criteo-PreRelease
     - FreestarAds-GAM-PreRelease
     - FreestarAds-Google-PreRelease
@@ -231,12 +231,12 @@ SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
-  AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
+  AppLovinSDK: 4b08424675a995548344ea482c60416803ff2d5d
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 7d6166f8d16fb6bb3d46363ed4e4f6462eae09ca
-  FreestarAds-AppLovin-PreRelease: 902c64ff59f4eba67fc1dad2950bfb7fca027ec2
+  FreestarAds-AppLovinMax-PreRelease: 922502a614ec6e6dc434f6604706a1baa5e0c614
   FreestarAds-Criteo-PreRelease: ddb13183be26e61da7c3089e7e8a31277c4cbb83
   FreestarAds-GAM-PreRelease: 386a114cfb30bd98f6574bbe0873d9bca6a08732
   FreestarAds-Google-PreRelease: 06c6b40a53eb265a9c0ac9caf6e7c52ddaf00e3b
@@ -245,7 +245,7 @@ SPEC CHECKSUMS:
   FreestarAds-Mopub-PreRelease: cbdc4129d917f29e0bd4503a625bf55e5a8a8348
   FreestarAds-Nimbus-PreRelease: 01bc1ae94585aa4445a870ae4425343fe586ce76
   FreestarAds-Pangle-PreRelease: 2ccddb411fa5d0dd6a51fd9989fd36e97669fbd9
-  FreestarAds-PreRelease: e4bb2c28142d4b74e6b85976ae6cec9216670b53
+  FreestarAds-PreRelease: 1d736a7d48ada16c35b39d163c1a4893c0c368f2
   FreestarAds-TAM-PreRelease: 0a988af1a08c429244b1248069ebac4f1c7792e2
   FreestarAds-Tapjoy-PreRelease: 4728cc4cd3beb1b2423b5c890f11434d73df9e78
   FreestarAds-Unity-PreRelease: 58509e85dfc1ca326b0b4031ff03d55194708ecc
@@ -269,6 +269,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 520529f3d612f1a9774a23f77f3c2d79e84a80eb
+PODFILE CHECKSUM: def2a9985475d57fe4ba75bf98af77a040b288db
 
 COCOAPODS: 1.11.2
