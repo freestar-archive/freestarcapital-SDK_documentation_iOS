@@ -20,8 +20,8 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Nimbus-PreRelease', '~> 3.6.0-beta-2'
   pod 'FreestarAds-TAM-PreRelease', '~> 2.4.0-beta-1'
   pod 'FreestarAds-Pangle-PreRelease', '~> 1.3.0-alpha-1'
-  pod 'FreestarAds-Hyprmx-PreRelease', '6.0.0.0-beta-1'
-  pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '6.0.0.0-beta-1'
+  pod 'FreestarAds-Hyprmx-PreRelease', '6.0.0.0-beta-2'
+  pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '6.0.0.0-beta-2'
   pod 'FreestarAds-Google-PreRelease', '~> 5.1.0-beta-1'
 
   # helper frameworks for feed view
