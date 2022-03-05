@@ -19,7 +19,7 @@ PODS:
   - FreestarAds-AdColony-PreRelease (5.3.0-alpha-1):
     - AdColony (= 4.7.2)
     - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-AppLovin-PreRelease (5.3.0-beta-1):
+  - FreestarAds-AppLovin-PreRelease (5.3.0-beta-3):
     - AppLovinSDK (= 11.0.0)
     - FreestarAds-PreRelease (~> 5.4-alpha)
   - FreestarAds-AppLovinMax-PreRelease (11.0.0.7-beta-3):
@@ -28,7 +28,7 @@ PODS:
   - FreestarAds-Criteo-PreRelease (3.2.0-alpha-1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-GAM-PreRelease (5.6.0-beta-1):
+  - FreestarAds-GAM-PreRelease (5.6.0-beta-3):
     - FreestarAds-PreRelease (~> 5.5-alpha)
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
@@ -37,7 +37,7 @@ PODS:
   - FreestarAds-Google-PreRelease (5.1.0-beta-1):
     - FreestarAds-PreRelease (~> 5.0-alpha)
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob-PreRelease (6.6.0-beta-1):
+  - FreestarAds-Googleadmob-PreRelease (6.6.0-beta-3):
     - FreestarAds-PreRelease (~> 5.5-alpha)
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
@@ -179,12 +179,12 @@ PODS:
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 5.3.0-alpha-1)
-  - FreestarAds-AppLovin-PreRelease (~> 5.3.0-beta-1)
+  - FreestarAds-AppLovin-PreRelease (~> 5.3.0-beta-3)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0.0.7-beta-3)
   - FreestarAds-Criteo-PreRelease (~> 3.2.0-alpha-1)
-  - FreestarAds-GAM-PreRelease (~> 5.6.0-beta-1)
+  - FreestarAds-GAM-PreRelease (~> 5.6.0-beta-3)
   - FreestarAds-Google-PreRelease (~> 5.1.0-beta-1)
-  - FreestarAds-Googleadmob-PreRelease (~> 6.6.0-beta-1)
+  - FreestarAds-Googleadmob-PreRelease (~> 6.6.0-beta-3)
   - FreestarAds-Hyprmx-PreRelease (= 6.0.0.0-beta-2)
   - FreestarAds-Hyprmx-PreRelease/MRAID (= 6.0.0.0-beta-2)
   - FreestarAds-Mopub-PreRelease (~> 5.3.0-beta-2)
@@ -253,12 +253,12 @@ SPEC CHECKSUMS:
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 7d6166f8d16fb6bb3d46363ed4e4f6462eae09ca
-  FreestarAds-AppLovin-PreRelease: 92d0aed226317a19f43ff0928e171e55202bee7e
+  FreestarAds-AppLovin-PreRelease: 42aeebe8a8128dcda9287f18c0df733a719f3884
   FreestarAds-AppLovinMax-PreRelease: bcbcc53f9ebd6363e02a957f97b25639602ac6c4
   FreestarAds-Criteo-PreRelease: ddb13183be26e61da7c3089e7e8a31277c4cbb83
-  FreestarAds-GAM-PreRelease: 18dd7a6eca4d83b8872d046bc82dda8fe315603b
+  FreestarAds-GAM-PreRelease: 64092ecb6c69bbacf659e9727b02b80338a86989
   FreestarAds-Google-PreRelease: 06c6b40a53eb265a9c0ac9caf6e7c52ddaf00e3b
-  FreestarAds-Googleadmob-PreRelease: 7a19a22470e2fea815e6d584b0b1d08444947f82
+  FreestarAds-Googleadmob-PreRelease: 5a69121c631046e183d3ceff156f831d57e15975
   FreestarAds-Hyprmx-PreRelease: c8b8a4459abf470a8d55b39f2804266c88ea1b93
   FreestarAds-Mopub-PreRelease: cbdc4129d917f29e0bd4503a625bf55e5a8a8348
   FreestarAds-Nimbus-PreRelease: 01bc1ae94585aa4445a870ae4425343fe586ce76
@@ -289,6 +289,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 30dd29793355e0d369b4bf257f7b84384abef383
+PODFILE CHECKSUM: 38514942d8ca9e57accb9f791ef9e0994b0918be
 
 COCOAPODS: 1.11.2
