@@ -8,7 +8,7 @@ PODS:
   - Ads-Global/BUFoundation (3.7.0.8)
   - Ads-Global/International (3.7.0.8)
   - AmazonPublisherServicesSDK (4.3.0)
-  - AppLovinSDK (10.1.1)
+  - AppLovinSDK (11.0.0)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -16,30 +16,37 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.7.0)
+  - FreestarAds (5.8.0)
   - FreestarAds-AdColony (5.2.0):
     - AdColony (= 4.7.2)
     - FreestarAds (~> 5.0)
-  - FreestarAds-AppLovin (5.2.0):
-    - AppLovinSDK (= 10.1.1)
+  - FreestarAds-AppLovin (5.3.0):
+    - AppLovinSDK (= 11.0.0)
     - FreestarAds (~> 5.4)
+  - FreestarAds-AppLovinMax (11.0.0.1):
+    - AppLovinSDK (= 11.0.0)
+    - FreestarAds (~> 5.7)
   - FreestarAds-Criteo (3.1.0):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds (~> 5.0)
-  - FreestarAds-GAM (5.5.0):
+  - FreestarAds-GAM (5.6.0):
     - FreestarAds (~> 5.5)
     - Google-Mobile-Ads-SDK (= 8.12.0)
+    - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
+    - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
   - FreestarAds-Google (5.1.0):
     - FreestarAds (~> 5.0)
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob (6.5.0):
+  - FreestarAds-Googleadmob (6.6.0):
     - FreestarAds (~> 5.5)
     - Google-Mobile-Ads-SDK (= 8.12.0)
+    - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
+    - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
-  - FreestarAds-Hyprmx (1.1.0):
-    - FreestarAds (~> 5.2)
-    - HyprMX (= 6.0.0)
+  - FreestarAds-Hyprmx (6.0.0.2):
+    - FreestarAds (~> 5.7)
+    - HyprMX/Core (= 6.0.0)
   - FreestarAds-Mopub (5.3.0):
     - FreestarAds (~> 5.2)
     - MoPub-FacebookAudienceNetwork-Adapters (= 6.7.0.1)
@@ -89,6 +96,12 @@ PODS:
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
     - nanopb (~> 2.30908.0)
+  - GoogleMobileAdsMediationAdColony (4.7.2.0):
+    - AdColony (= 4.7.2.0)
+    - Google-Mobile-Ads-SDK (~> 8.0)
+  - GoogleMobileAdsMediationAppLovin (11.0.0.0):
+    - AppLovinSDK (= 11.0.0)
+    - Google-Mobile-Ads-SDK (~> 8.0)
   - GoogleMobileAdsMediationFacebook (6.9.0.0):
     - FBAudienceNetwork (= 6.9.0)
     - Google-Mobile-Ads-SDK (~> 8.0)
@@ -110,16 +123,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.7.0)"
   - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
-  - HyprMX (6.0.0):
-    - HyprMX/HyprMX-SDK (= 6.0.0)
-  - HyprMX-Mraid (6.0.1)
   - HyprMX/Core (6.0.0)
-  - HyprMX/HyprMX-SDK (6.0.0):
-    - HyprMX/Core
-    - HyprMX/MRAID
-  - HyprMX/MRAID (6.0.0):
-    - HyprMX-Mraid
-    - HyprMX/Core
   - LoremIpsum (1.0.0)
   - MoPub-FacebookAudienceNetwork-Adapters (6.7.0.1):
     - MoPub-FacebookAudienceNetwork-Adapters/MoPub (= 6.7.0.1)
@@ -166,14 +170,15 @@ PODS:
   - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.7)
+  - FreestarAds (~> 5.8)
   - FreestarAds-AdColony (~> 5.1)
-  - FreestarAds-AppLovin (~> 5.1)
+  - FreestarAds-AppLovin (~> 5.3)
+  - FreestarAds-AppLovinMax (~> 11.0.0)
   - FreestarAds-Criteo (~> 3.0)
-  - FreestarAds-GAM (~> 5.5)
+  - FreestarAds-GAM (~> 5.6)
   - FreestarAds-Google (~> 5.0)
-  - FreestarAds-Googleadmob (~> 6.5)
-  - FreestarAds-Hyprmx (~> 1.0)
+  - FreestarAds-Googleadmob (~> 6.6)
+  - FreestarAds-Hyprmx (~> 6.0.0)
   - FreestarAds-Mopub (~> 5.3)
   - FreestarAds-Nimbus (~> 3.6)
   - FreestarAds-Pangle (~> 1.1)
@@ -196,6 +201,7 @@ SPEC REPOS:
     - FreestarAds
     - FreestarAds-AdColony
     - FreestarAds-AppLovin
+    - FreestarAds-AppLovinMax
     - FreestarAds-Criteo
     - FreestarAds-GAM
     - FreestarAds-Google
@@ -211,11 +217,12 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAds-IMA-iOS-SDK
     - GoogleAppMeasurement
+    - GoogleMobileAdsMediationAdColony
+    - GoogleMobileAdsMediationAppLovin
     - GoogleMobileAdsMediationFacebook
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - HyprMX
-    - HyprMX-Mraid
     - LoremIpsum
     - MoPub-FacebookAudienceNetwork-Adapters
     - mopub-ios-sdk
@@ -231,18 +238,19 @@ SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
-  AppLovinSDK: 575c3c64158878fdd445ea3d48f4fd2233633336
+  AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: eedf0a567991bdb9fa481b9b3cbff409ad5b7a5d
+  FreestarAds: 6bcc17e0962b2a7ba3a91e278be31757fb296fbb
   FreestarAds-AdColony: e1c3e3fb8a9748cf4e1cacb7f6e4b39c16def775
-  FreestarAds-AppLovin: 57dd3ec73828698ba98836ea7b6927a404d5e4a6
+  FreestarAds-AppLovin: 0d499fdd702d5a86f44e2925e6082fb4ff0f75b7
+  FreestarAds-AppLovinMax: 1e063657445fe61a81b42f8c60bc3e020b390efc
   FreestarAds-Criteo: 34db2af123c160403228bdaaab5452bb2e1f5cae
-  FreestarAds-GAM: c65550782de6f175403e7f9eff1997d8296e4709
+  FreestarAds-GAM: c2765cc52f1dccb8bdbd596ea3fb2baeecfd6254
   FreestarAds-Google: 1c5bf45eedffcc24d967aff8a427fcd03b0e7b68
-  FreestarAds-Googleadmob: 4230411443f3fb8f076767ab33769f5a1fbeea8a
-  FreestarAds-Hyprmx: 4393924392ef3f0c44e25aa96dd4f466741388e8
+  FreestarAds-Googleadmob: 20e7db15656a4971363015f749a84adb186cbfd0
+  FreestarAds-Hyprmx: cba357a7c74d5fd3fd233e3e70594b7d4a9ed92d
   FreestarAds-Mopub: 047f90e5965c80a8ca230fc805ff98d22f8777f2
   FreestarAds-Nimbus: 5bdebd99512fddfb39617ae4e744d73a8c9eef87
   FreestarAds-Pangle: f4e1550a7cc03c3e8d6c3c50f868ec97d336cfb4
@@ -253,11 +261,12 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: fb31b6ef68ef352b551ee29585cd9ceb07230cd0
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: ae033c3aad67e68294369373056b4d74cc8ae0d6
+  GoogleMobileAdsMediationAdColony: 9fdd5b256c350cb94d89400f9a2e86bbcc2967fa
+  GoogleMobileAdsMediationAppLovin: bbbec746ec3f9bb1f4dd7b30fc903231b6b036ee
   GoogleMobileAdsMediationFacebook: 74a727b7e4b2113d1203e771ff750a298169bf7e
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
-  HyprMX-Mraid: ca10b241c7fa31983ce219d9a81b47ef6166e355
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   MoPub-FacebookAudienceNetwork-Adapters: 3c84a1119dee5a10d18a7e96c539a88dd996941a
   mopub-ios-sdk: 39dd404dc791e543979b91aa8e3b27197af91377
@@ -269,6 +278,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: a8c338455717aa6354feeb201b762d0311c186e3
+PODFILE CHECKSUM: 8d508abcf691fad79c26564514416a8b9ec7a8ca
 
 COCOAPODS: 1.11.2
