@@ -17,10 +17,10 @@ target 'FreestarSwiftSample' do
   pod "FreestarAds-Nimbus", "~> 3.6"
   pod "FreestarAds-Mopub", "~> 5.3"
   pod "FreestarAds-AppLovin", "~> 5.3"
-  pod "FreestarAds-AppLovinMax", "~> 11.0.0"
+  pod "FreestarAds-AppLovinMax", "~> 11.0"
   pod "FreestarAds-TAM", "~> 2.4"
   pod "FreestarAds-Pangle", "~> 1.1"
-  pod "FreestarAds-Hyprmx", "~> 6.0.0"
+  pod "FreestarAds-Hyprmx", "~> 6.0"
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'

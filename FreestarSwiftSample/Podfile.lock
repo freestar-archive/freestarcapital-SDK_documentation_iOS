@@ -173,12 +173,12 @@ DEPENDENCIES:
   - FreestarAds (~> 5.8)
   - FreestarAds-AdColony (~> 5.1)
   - FreestarAds-AppLovin (~> 5.3)
-  - FreestarAds-AppLovinMax (~> 11.0.0)
+  - FreestarAds-AppLovinMax (~> 11.0)
   - FreestarAds-Criteo (~> 3.0)
   - FreestarAds-GAM (~> 5.6)
   - FreestarAds-Google (~> 5.0)
   - FreestarAds-Googleadmob (~> 6.6)
-  - FreestarAds-Hyprmx (~> 6.0.0)
+  - FreestarAds-Hyprmx (~> 6.0)
   - FreestarAds-Mopub (~> 5.3)
   - FreestarAds-Nimbus (~> 3.6)
   - FreestarAds-Pangle (~> 1.1)
@@ -278,6 +278,6 @@ SPEC CHECKSUMS:
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 8d508abcf691fad79c26564514416a8b9ec7a8ca
+PODFILE CHECKSUM: d28fd2f7736c9122de772018cc14136c7a930939
 
 COCOAPODS: 1.11.2
