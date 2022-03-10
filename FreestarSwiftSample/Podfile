@@ -23,6 +23,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Hyprmx-PreRelease', '6.0.0.0-beta-2'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '6.0.0.0-beta-2'
   pod 'FreestarAds-Google-PreRelease', '~> 5.1.0-beta-1'
+  pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.2.1-beta'
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'

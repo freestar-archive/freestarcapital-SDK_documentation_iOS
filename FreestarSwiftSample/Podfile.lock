@@ -76,6 +76,9 @@ PODS:
   - FreestarAds-Vungle-PreRelease (5.4.0-alpha-1):
     - FreestarAds-PreRelease (~> 5.4-alpha)
     - VungleSDK-iOS (= 6.10.3)
+  - FreestarAds-Yahoo-PreRelease (1.14.2.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Verizon-Ads-StandardEdition (= 1.14.2)
   - Google-Mobile-Ads-SDK (8.12.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -175,6 +178,82 @@ PODS:
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
   - UnityAds (3.7.0)
+  - Verizon-Ads-Core (2.8.2)
+  - Verizon-Ads-InlinePlacement (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-InlineWebAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InlinePlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebController (~> 1.7)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-InterstitialPlacement (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-InterstitialVASTAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InterstitialPlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-VASTController (~> 1.10)
+  - Verizon-Ads-InterstitialWebAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InterstitialPlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebController (~> 1.7)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-NativePlacement (1.14.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-NativeVerizonNativeAdapter (2.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-NativePlacement (~> 1.14)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-VerizonNativeController (~> 2.15)
+  - Verizon-Ads-OMSDK (1.10.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-StandardEdition (1.14.2):
+    - Verizon-Ads-Core (= 2.8.2)
+    - Verizon-Ads-InlinePlacement (= 1.8.0)
+    - Verizon-Ads-InlineWebAdapter (= 1.8.0)
+    - Verizon-Ads-InterstitialPlacement (= 1.8.0)
+    - Verizon-Ads-InterstitialVASTAdapter (= 1.8.0)
+    - Verizon-Ads-InterstitialWebAdapter (= 1.8.0)
+    - Verizon-Ads-NativePlacement (= 1.14.0)
+    - Verizon-Ads-NativeVerizonNativeAdapter (= 2.9.0)
+    - Verizon-Ads-OMSDK (= 1.10.0)
+    - Verizon-Ads-Support (= 1.15.0)
+    - Verizon-Ads-URIExperience (= 2.9.0)
+    - Verizon-Ads-VASTController (= 1.10.1)
+    - Verizon-Ads-VerizonNativeController (= 2.15.0)
+    - Verizon-Ads-VideoPlayer (= 1.9.0)
+    - Verizon-Ads-WebController (= 1.7.0)
+    - Verizon-Ads-WebView (= 1.10.0)
+  - Verizon-Ads-Support (1.15.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-URIExperience (2.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VASTController (1.10.1):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VerizonNativeController (2.15.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VideoPlayer (1.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-WebController (1.7.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-WebView (1.10.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
   - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
@@ -195,6 +274,7 @@ DEPENDENCIES:
   - FreestarAds-Tapjoy-PreRelease (~> 5.2.0-alpha-1)
   - FreestarAds-Unity-PreRelease (~> 6.2.0-alpha-1)
   - FreestarAds-Vungle-PreRelease (~> 5.4.0-alpha-1)
+  - FreestarAds-Yahoo-PreRelease (~> 1.14.2.1-beta)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
@@ -223,6 +303,7 @@ SPEC REPOS:
     - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Unity-PreRelease
     - FreestarAds-Vungle-PreRelease
+    - FreestarAds-Yahoo-PreRelease
     - Google-Mobile-Ads-SDK
     - GoogleAds-IMA-iOS-SDK
     - GoogleAppMeasurement
@@ -242,6 +323,23 @@ SPEC REPOS:
     - SnapKit
     - TapjoySDK
     - UnityAds
+    - Verizon-Ads-Core
+    - Verizon-Ads-InlinePlacement
+    - Verizon-Ads-InlineWebAdapter
+    - Verizon-Ads-InterstitialPlacement
+    - Verizon-Ads-InterstitialVASTAdapter
+    - Verizon-Ads-InterstitialWebAdapter
+    - Verizon-Ads-NativePlacement
+    - Verizon-Ads-NativeVerizonNativeAdapter
+    - Verizon-Ads-OMSDK
+    - Verizon-Ads-StandardEdition
+    - Verizon-Ads-Support
+    - Verizon-Ads-URIExperience
+    - Verizon-Ads-VASTController
+    - Verizon-Ads-VerizonNativeController
+    - Verizon-Ads-VideoPlayer
+    - Verizon-Ads-WebController
+    - Verizon-Ads-WebView
     - VungleSDK-iOS
 
 SPEC CHECKSUMS:
@@ -268,6 +366,7 @@ SPEC CHECKSUMS:
   FreestarAds-Tapjoy-PreRelease: 4728cc4cd3beb1b2423b5c890f11434d73df9e78
   FreestarAds-Unity-PreRelease: 58509e85dfc1ca326b0b4031ff03d55194708ecc
   FreestarAds-Vungle-PreRelease: ea09ae07a611e49959a2a9973d53139ba3ef1c1a
+  FreestarAds-Yahoo-PreRelease: b06cae735fcac90bb09e862e5659081ba67e954f
   Google-Mobile-Ads-SDK: fb31b6ef68ef352b551ee29585cd9ceb07230cd0
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: ae033c3aad67e68294369373056b4d74cc8ae0d6
@@ -287,8 +386,25 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
+  Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
+  Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
+  Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
+  Verizon-Ads-InterstitialPlacement: 2d4f5be86641b64970cbe6d2d1917eb245252fca
+  Verizon-Ads-InterstitialVASTAdapter: 135651b0535778f63f0d2adff4a7eb37c9e5e016
+  Verizon-Ads-InterstitialWebAdapter: cbdaffd6ab36908d3877b923d6820b493dea9937
+  Verizon-Ads-NativePlacement: 6102f0665a4b243eb2c50941814f9c7285c8ab43
+  Verizon-Ads-NativeVerizonNativeAdapter: 0d39f50875750691f0551e619be819156c4002cf
+  Verizon-Ads-OMSDK: 910be89c7ffdc442ec989d0bc1f4f3e57121fb3b
+  Verizon-Ads-StandardEdition: 6537599052748e40c294a3394947010febc6daea
+  Verizon-Ads-Support: edce32ca3a90c206775444724d54bbb7bde593d3
+  Verizon-Ads-URIExperience: 56d3bfd162780b7ee44574d26794ae873e8c3f4e
+  Verizon-Ads-VASTController: c82f96e74790807c18197dbcb9bc27715a1b9d23
+  Verizon-Ads-VerizonNativeController: 7a6a7fb1dbd8c81d320505b46e1e5d43b5321d61
+  Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
+  Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
+  Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 38514942d8ca9e57accb9f791ef9e0994b0918be
+PODFILE CHECKSUM: 49bf330baba54ffbf2bf1209fc99d8a5139c7b18
 
 COCOAPODS: 1.11.2
