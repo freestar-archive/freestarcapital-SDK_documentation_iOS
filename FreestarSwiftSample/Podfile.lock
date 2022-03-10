@@ -1,48 +1,8 @@
 PODS:
-  - AdColony (4.7.2)
-  - Ads-Global (3.7.0.8):
-    - Ads-Global/BUAdSDK (= 3.7.0.8)
-  - Ads-Global/BUAdSDK (3.7.0.8):
-    - Ads-Global/BUFoundation
-    - Ads-Global/International
-  - Ads-Global/BUFoundation (3.7.0.8)
-  - Ads-Global/International (3.7.0.8)
-  - AmazonPublisherServicesSDK (4.3.0)
   - AppLovinSDK (11.0.0)
-  - CriteoPublisherSdk (4.3.1):
-    - CriteoPublisherSdk/Sdk (= 4.3.1)
-  - CriteoPublisherSdk/Sdk (4.3.1)
-  - FBAudienceNetwork (6.9.0)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
-  - FreestarAds-AdColony-PreRelease (5.3.0-alpha-1):
-    - AdColony (= 4.7.2)
-    - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-AppLovin-PreRelease (5.3.0-beta-3):
-    - AppLovinSDK (= 11.0.0)
-    - FreestarAds-PreRelease (~> 5.4-alpha)
   - FreestarAds-AppLovinMax-PreRelease (11.0.0.7-beta-3):
     - AppLovinSDK (= 11.0.0)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Criteo-PreRelease (3.2.0-alpha-1):
-    - CriteoPublisherSdk (= 4.3.1)
-    - FreestarAds-PreRelease (~> 5.0-alpha)
-  - FreestarAds-GAM-PreRelease (5.6.0-beta-3):
-    - FreestarAds-PreRelease (~> 5.5-alpha)
-    - Google-Mobile-Ads-SDK (= 8.12.0)
-    - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
-    - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
-    - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
-  - FreestarAds-Google-PreRelease (5.1.0-beta-1):
-    - FreestarAds-PreRelease (~> 5.0-alpha)
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob-PreRelease (6.6.0-beta-3):
-    - FreestarAds-PreRelease (~> 5.5-alpha)
-    - Google-Mobile-Ads-SDK (= 8.12.0)
-    - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
-    - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
-    - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
   - FreestarAds-Hyprmx-PreRelease (6.0.0.0-beta-2):
     - FreestarAds-PreRelease (~> 5.7)
     - HyprMX/Core (= 6.0.0)
@@ -50,134 +10,17 @@ PODS:
     - FreestarAds-PreRelease (~> 5.7)
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
-  - FreestarAds-Mopub-PreRelease (5.3.0-beta-2):
-    - FreestarAds-PreRelease (~> 5.2-alpha)
-    - MoPub-FacebookAudienceNetwork-Adapters (= 6.7.0.1)
-    - mopub-ios-sdk (= 5.18.2)
-  - FreestarAds-Nimbus-PreRelease (3.6.0-beta-2):
-    - FreestarAds-PreRelease (~> 5.5-alpha)
-    - NimbusSDK (= 1.10.5)
-    - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
-    - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
-  - FreestarAds-Pangle-PreRelease (1.3.0-alpha-1):
-    - Ads-Global (= 3.7.0.8)
-    - FreestarAds-PreRelease (~> 5.0-alpha)
   - FreestarAds-PreRelease (5.8.0-beta-3)
-  - FreestarAds-TAM-PreRelease (2.4.0-beta-1):
-    - AmazonPublisherServicesSDK (= 4.3.0)
-    - FMDB (= 2.7.5)
-    - FreestarAds-PreRelease (~> 5.3-alpha)
-  - FreestarAds-Tapjoy-PreRelease (5.2.0-alpha-1):
-    - FreestarAds-PreRelease (~> 5.0-alpha)
-    - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity-PreRelease (6.2.0-alpha-1):
-    - FreestarAds-PreRelease (~> 5.0-alpha)
-    - UnityAds (= 3.7.0)
-  - FreestarAds-Vungle-PreRelease (5.4.0-alpha-1):
-    - FreestarAds-PreRelease (~> 5.4-alpha)
-    - VungleSDK-iOS (= 6.10.3)
-  - FreestarAds-Yahoo-PreRelease (1.14.2.1-beta-2):
+  - FreestarAds-Yahoo-PreRelease (1.14.2.1-beta-3):
     - FreestarAds-PreRelease (~> 5.7)
     - Verizon-Ads-StandardEdition (= 1.14.2)
-  - Google-Mobile-Ads-SDK (8.12.0):
-    - GoogleAppMeasurement (< 9.0, >= 7.0)
-    - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAds-IMA-iOS-SDK (3.13.0)
-  - GoogleAppMeasurement (8.12.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.12.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.12.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.12.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.12.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleMobileAdsMediationAdColony (4.7.2.0):
-    - AdColony (= 4.7.2.0)
-    - Google-Mobile-Ads-SDK (~> 8.0)
-  - GoogleMobileAdsMediationAppLovin (11.0.0.0):
-    - AppLovinSDK (= 11.0.0)
-    - Google-Mobile-Ads-SDK (~> 8.0)
-  - GoogleMobileAdsMediationFacebook (6.9.0.0):
-    - FBAudienceNetwork (= 6.9.0)
-    - Google-Mobile-Ads-SDK (~> 8.0)
-  - GoogleUserMessagingPlatform (2.0.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.7.0):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.7.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.7.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.7.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.7.0)"
-  - GoogleUtilities/Reachability (7.7.0):
-    - GoogleUtilities/Logger
   - HyprMX-Mraid (6.0.1)
   - HyprMX/Core (6.0.0)
   - HyprMX/MRAID (6.0.0):
     - HyprMX-Mraid
     - HyprMX/Core
   - LoremIpsum (1.0.0)
-  - MoPub-FacebookAudienceNetwork-Adapters (6.7.0.1):
-    - MoPub-FacebookAudienceNetwork-Adapters/MoPub (= 6.7.0.1)
-    - MoPub-FacebookAudienceNetwork-Adapters/Network (= 6.7.0.1)
-  - MoPub-FacebookAudienceNetwork-Adapters/MoPub (6.7.0.1):
-    - mopub-ios-sdk/Core (~> 5.17)
-    - mopub-ios-sdk/NativeAds (~> 5.17)
-  - MoPub-FacebookAudienceNetwork-Adapters/Network (6.7.0.1):
-    - FBAudienceNetwork (~> 6.7)
-    - mopub-ios-sdk/Core (~> 5.17)
-    - mopub-ios-sdk/NativeAds (~> 5.17)
-  - mopub-ios-sdk (5.18.2):
-    - mopub-ios-sdk/MoPubSDK (= 5.18.2)
-  - mopub-ios-sdk/Core (5.18.2)
-  - mopub-ios-sdk/MoPubSDK (5.18.2):
-    - mopub-ios-sdk/Core
-    - mopub-ios-sdk/NativeAds
-  - mopub-ios-sdk/NativeAds (5.18.2):
-    - mopub-ios-sdk/Core
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - NimbusSDK (1.10.5):
-    - NimbusSDK/NimbusKit (= 1.10.5)
-  - NimbusSDK/NimbusCoreKit (1.10.5)
-  - NimbusSDK/NimbusKit (1.10.5):
-    - NimbusSDK/NimbusRenderKit
-    - NimbusSDK/NimbusRequestKit
-  - NimbusSDK/NimbusRenderKit (1.10.5):
-    - NimbusSDK/NimbusCoreKit
-  - NimbusSDK/NimbusRenderStaticKit (1.10.5):
-    - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRenderVideoKit (1.10.5):
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-    - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRequestKit (1.10.5):
-    - NimbusSDK/NimbusCoreKit
-  - PromisesObjC (2.0.0)
   - SnapKit (5.0.1)
-  - TapjoySDK (12.8.0)
-  - UnityAds (3.7.0)
   - Verizon-Ads-Core (2.8.2)
   - Verizon-Ads-InlinePlacement (1.8.0):
     - Verizon-Ads-Core (~> 2.8)
@@ -254,75 +97,27 @@ PODS:
     - Verizon-Ads-Core (~> 2.8)
     - Verizon-Ads-OMSDK (~> 1.10)
     - Verizon-Ads-Support (~> 1.15)
-  - VungleSDK-iOS (6.10.3)
 
 DEPENDENCIES:
-  - FreestarAds-AdColony-PreRelease (~> 5.3.0-alpha-1)
-  - FreestarAds-AppLovin-PreRelease (~> 5.3.0-beta-3)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0.0.7-beta-3)
-  - FreestarAds-Criteo-PreRelease (~> 3.2.0-alpha-1)
-  - FreestarAds-GAM-PreRelease (~> 5.6.0-beta-3)
-  - FreestarAds-Google-PreRelease (~> 5.1.0-beta-1)
-  - FreestarAds-Googleadmob-PreRelease (~> 6.6.0-beta-3)
   - FreestarAds-Hyprmx-PreRelease (= 6.0.0.0-beta-2)
   - FreestarAds-Hyprmx-PreRelease/MRAID (= 6.0.0.0-beta-2)
-  - FreestarAds-Mopub-PreRelease (~> 5.3.0-beta-2)
-  - FreestarAds-Nimbus-PreRelease (~> 3.6.0-beta-2)
-  - FreestarAds-Pangle-PreRelease (~> 1.3.0-alpha-1)
   - FreestarAds-PreRelease (= 5.8.0-beta-3)
-  - FreestarAds-TAM-PreRelease (~> 2.4.0-beta-1)
-  - FreestarAds-Tapjoy-PreRelease (~> 5.2.0-alpha-1)
-  - FreestarAds-Unity-PreRelease (~> 6.2.0-alpha-1)
-  - FreestarAds-Vungle-PreRelease (~> 5.4.0-alpha-1)
   - FreestarAds-Yahoo-PreRelease (~> 1.14.2.1-beta)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AdColony
-    - Ads-Global
-    - AmazonPublisherServicesSDK
     - AppLovinSDK
-    - CriteoPublisherSdk
-    - FBAudienceNetwork
-    - FMDB
-    - FreestarAds-AdColony-PreRelease
-    - FreestarAds-AppLovin-PreRelease
     - FreestarAds-AppLovinMax-PreRelease
-    - FreestarAds-Criteo-PreRelease
-    - FreestarAds-GAM-PreRelease
-    - FreestarAds-Google-PreRelease
-    - FreestarAds-Googleadmob-PreRelease
     - FreestarAds-Hyprmx-PreRelease
-    - FreestarAds-Mopub-PreRelease
-    - FreestarAds-Nimbus-PreRelease
-    - FreestarAds-Pangle-PreRelease
     - FreestarAds-PreRelease
-    - FreestarAds-TAM-PreRelease
-    - FreestarAds-Tapjoy-PreRelease
-    - FreestarAds-Unity-PreRelease
-    - FreestarAds-Vungle-PreRelease
     - FreestarAds-Yahoo-PreRelease
-    - Google-Mobile-Ads-SDK
-    - GoogleAds-IMA-iOS-SDK
-    - GoogleAppMeasurement
-    - GoogleMobileAdsMediationAdColony
-    - GoogleMobileAdsMediationAppLovin
-    - GoogleMobileAdsMediationFacebook
-    - GoogleUserMessagingPlatform
-    - GoogleUtilities
     - HyprMX
     - HyprMX-Mraid
     - LoremIpsum
-    - MoPub-FacebookAudienceNetwork-Adapters
-    - mopub-ios-sdk
-    - nanopb
-    - NimbusSDK
-    - PromisesObjC
     - SnapKit
-    - TapjoySDK
-    - UnityAds
     - Verizon-Ads-Core
     - Verizon-Ads-InlinePlacement
     - Verizon-Ads-InlineWebAdapter
@@ -340,52 +135,17 @@ SPEC REPOS:
     - Verizon-Ads-VideoPlayer
     - Verizon-Ads-WebController
     - Verizon-Ads-WebView
-    - VungleSDK-iOS
 
 SPEC CHECKSUMS:
-  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
-  AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
-  CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds-AdColony-PreRelease: 7d6166f8d16fb6bb3d46363ed4e4f6462eae09ca
-  FreestarAds-AppLovin-PreRelease: 42aeebe8a8128dcda9287f18c0df733a719f3884
   FreestarAds-AppLovinMax-PreRelease: bcbcc53f9ebd6363e02a957f97b25639602ac6c4
-  FreestarAds-Criteo-PreRelease: ddb13183be26e61da7c3089e7e8a31277c4cbb83
-  FreestarAds-GAM-PreRelease: 64092ecb6c69bbacf659e9727b02b80338a86989
-  FreestarAds-Google-PreRelease: 06c6b40a53eb265a9c0ac9caf6e7c52ddaf00e3b
-  FreestarAds-Googleadmob-PreRelease: 5a69121c631046e183d3ceff156f831d57e15975
   FreestarAds-Hyprmx-PreRelease: c8b8a4459abf470a8d55b39f2804266c88ea1b93
-  FreestarAds-Mopub-PreRelease: cbdc4129d917f29e0bd4503a625bf55e5a8a8348
-  FreestarAds-Nimbus-PreRelease: 01bc1ae94585aa4445a870ae4425343fe586ce76
-  FreestarAds-Pangle-PreRelease: 2ccddb411fa5d0dd6a51fd9989fd36e97669fbd9
   FreestarAds-PreRelease: a267e2ac5031612b8a2c4419caa0481e8ae75f55
-  FreestarAds-TAM-PreRelease: 0a988af1a08c429244b1248069ebac4f1c7792e2
-  FreestarAds-Tapjoy-PreRelease: 4728cc4cd3beb1b2423b5c890f11434d73df9e78
-  FreestarAds-Unity-PreRelease: 58509e85dfc1ca326b0b4031ff03d55194708ecc
-  FreestarAds-Vungle-PreRelease: ea09ae07a611e49959a2a9973d53139ba3ef1c1a
-  FreestarAds-Yahoo-PreRelease: b06cae735fcac90bb09e862e5659081ba67e954f
-  Google-Mobile-Ads-SDK: fb31b6ef68ef352b551ee29585cd9ceb07230cd0
-  GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
-  GoogleAppMeasurement: ae033c3aad67e68294369373056b4d74cc8ae0d6
-  GoogleMobileAdsMediationAdColony: 9fdd5b256c350cb94d89400f9a2e86bbcc2967fa
-  GoogleMobileAdsMediationAppLovin: bbbec746ec3f9bb1f4dd7b30fc903231b6b036ee
-  GoogleMobileAdsMediationFacebook: 74a727b7e4b2113d1203e771ff750a298169bf7e
-  GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  FreestarAds-Yahoo-PreRelease: c00e374e8dd61548f39dc1f953f01df9204455c8
   HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
   HyprMX-Mraid: ca10b241c7fa31983ce219d9a81b47ef6166e355
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  MoPub-FacebookAudienceNetwork-Adapters: 3c84a1119dee5a10d18a7e96c539a88dd996941a
-  mopub-ios-sdk: 39dd404dc791e543979b91aa8e3b27197af91377
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
-  UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
   Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
   Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
   Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
@@ -403,8 +163,7 @@ SPEC CHECKSUMS:
   Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
-  VungleSDK-iOS: b370edd2e5787ecb25fc9332941deb1e1ca8176e
 
-PODFILE CHECKSUM: 49bf330baba54ffbf2bf1209fc99d8a5139c7b18
+PODFILE CHECKSUM: 0f4487eae38311c921a4347dfb0f0bf13ea84996
 
 COCOAPODS: 1.11.2
