@@ -1,7 +1,24 @@
 PODS:
+  - AdColony (4.7.2)
+  - AmazonPublisherServicesSDK (4.3.0)
   - AppLovinSDK (11.0.0)
-  - FreestarAds-AppLovinMax-PreRelease (11.0.0.7-beta-3):
+  - CriteoPublisherSdk (4.3.1):
+    - CriteoPublisherSdk/Sdk (= 4.3.1)
+  - CriteoPublisherSdk/Sdk (4.3.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FreestarAds-AdColony-PreRelease (4.7.2.1-beta-1):
+    - AdColony (= 4.7.2)
+    - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-AppLovin-PreRelease (11.0.0.1-beta-1):
     - AppLovinSDK (= 11.0.0)
+    - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-AppLovinMax-PreRelease (11.0.0.7-beta-4):
+    - AppLovinSDK (= 11.0.0)
+    - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-Criteo-PreRelease (4.3.1.1-beta-1):
+    - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.7)
   - FreestarAds-Hyprmx-PreRelease (6.0.0.0-beta-2):
     - FreestarAds-PreRelease (~> 5.7)
@@ -11,6 +28,13 @@ PODS:
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
   - FreestarAds-PreRelease (5.8.0-beta-3)
+  - FreestarAds-TAM-PreRelease (4.3.0.1-beta-1):
+    - AmazonPublisherServicesSDK (= 4.3.0)
+    - FMDB (= 2.7.5)
+    - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-Tapjoy-PreRelease (12.8.0.1-beta-1):
+    - FreestarAds-PreRelease (~> 5.7)
+    - TapjoySDK (= 12.8.0)
   - FreestarAds-Yahoo-PreRelease (1.14.2.1-beta-3):
     - FreestarAds-PreRelease (~> 5.7)
     - Verizon-Ads-StandardEdition (= 1.14.2)
@@ -21,6 +45,7 @@ PODS:
     - HyprMX/Core
   - LoremIpsum (1.0.0)
   - SnapKit (5.0.1)
+  - TapjoySDK (12.8.0)
   - Verizon-Ads-Core (2.8.2)
   - Verizon-Ads-InlinePlacement (1.8.0):
     - Verizon-Ads-Core (~> 2.8)
@@ -99,25 +124,40 @@ PODS:
     - Verizon-Ads-Support (~> 1.15)
 
 DEPENDENCIES:
-  - FreestarAds-AppLovinMax-PreRelease (~> 11.0.0.7-beta-3)
-  - FreestarAds-Hyprmx-PreRelease (= 6.0.0.0-beta-2)
-  - FreestarAds-Hyprmx-PreRelease/MRAID (= 6.0.0.0-beta-2)
+  - FreestarAds-AdColony-PreRelease (~> 4.7.2.1-beta)
+  - FreestarAds-AppLovin-PreRelease (~> 11.0.0.1-beta)
+  - FreestarAds-AppLovinMax-PreRelease (~> 11.0.0.7-beta-4)
+  - FreestarAds-Criteo-PreRelease (~> 4.3.1.1-beta)
+  - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
+  - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
   - FreestarAds-PreRelease (= 5.8.0-beta-3)
+  - FreestarAds-TAM-PreRelease (~> 4.3.0.1-beta)
+  - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
   - FreestarAds-Yahoo-PreRelease (~> 1.14.2.1-beta)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AdColony
+    - AmazonPublisherServicesSDK
     - AppLovinSDK
+    - CriteoPublisherSdk
+    - FMDB
+    - FreestarAds-AdColony-PreRelease
+    - FreestarAds-AppLovin-PreRelease
     - FreestarAds-AppLovinMax-PreRelease
+    - FreestarAds-Criteo-PreRelease
     - FreestarAds-Hyprmx-PreRelease
     - FreestarAds-PreRelease
+    - FreestarAds-TAM-PreRelease
+    - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Yahoo-PreRelease
     - HyprMX
     - HyprMX-Mraid
     - LoremIpsum
     - SnapKit
+    - TapjoySDK
     - Verizon-Ads-Core
     - Verizon-Ads-InlinePlacement
     - Verizon-Ads-InlineWebAdapter
@@ -137,15 +177,25 @@ SPEC REPOS:
     - Verizon-Ads-WebView
 
 SPEC CHECKSUMS:
+  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
+  AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
-  FreestarAds-AppLovinMax-PreRelease: bcbcc53f9ebd6363e02a957f97b25639602ac6c4
+  CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FreestarAds-AdColony-PreRelease: 0fef60a98f88dc76fc08f40d8662f31ea601996d
+  FreestarAds-AppLovin-PreRelease: 6c369519e936bb431d3e1e92f18cb5d67a383257
+  FreestarAds-AppLovinMax-PreRelease: 5dbeae7b8c624b24372aaec1a3df32a48abd33d1
+  FreestarAds-Criteo-PreRelease: aaba4aa30506b7aeb84944184c6f1b6f41fad7c9
   FreestarAds-Hyprmx-PreRelease: c8b8a4459abf470a8d55b39f2804266c88ea1b93
   FreestarAds-PreRelease: a267e2ac5031612b8a2c4419caa0481e8ae75f55
+  FreestarAds-TAM-PreRelease: b41523f969b272c2a753511ba222ab77de2218ad
+  FreestarAds-Tapjoy-PreRelease: a94ca37220806eba176344739e7fb3a8848bfb41
   FreestarAds-Yahoo-PreRelease: c00e374e8dd61548f39dc1f953f01df9204455c8
   HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
   HyprMX-Mraid: ca10b241c7fa31983ce219d9a81b47ef6166e355
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
   Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
   Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
@@ -164,6 +214,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 0f4487eae38311c921a4347dfb0f0bf13ea84996
+PODFILE CHECKSUM: 7c71b6afb1996bade811d36324fe8d7b9e548ea4
 
 COCOAPODS: 1.11.2
