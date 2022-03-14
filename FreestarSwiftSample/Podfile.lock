@@ -50,7 +50,7 @@ PODS:
     - FreestarAds-PreRelease (~> 5.7)
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
-  - FreestarAds-Nimbus-PreRelease (1.10.5.1-beta-1):
+  - FreestarAds-Nimbus-PreRelease (1.10.5.1-beta-3):
     - FreestarAds-PreRelease (~> 5.7)
     - NimbusSDK (= 1.10.5)
     - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
@@ -332,7 +332,7 @@ SPEC CHECKSUMS:
   FreestarAds-Google-PreRelease: 62a1ce94a6615b65ecc7d88ba553f349f9d42480
   FreestarAds-Googleadmob-PreRelease: b504b19436e76640ffcff6cf47f3afb45e013f69
   FreestarAds-Hyprmx-PreRelease: c8b8a4459abf470a8d55b39f2804266c88ea1b93
-  FreestarAds-Nimbus-PreRelease: 22bf8baff4c32ce95d935e0824e2306c5090db54
+  FreestarAds-Nimbus-PreRelease: 3c0d47a6e00f1ce9df54fc0471f4d20c053c3e33
   FreestarAds-Pangle-PreRelease: 66d6bf03ebdb1d760b70a4cd81f81ff441d79d3f
   FreestarAds-PreRelease: a267e2ac5031612b8a2c4419caa0481e8ae75f55
   FreestarAds-TAM-PreRelease: b41523f969b272c2a753511ba222ab77de2218ad
