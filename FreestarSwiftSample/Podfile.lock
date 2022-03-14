@@ -28,20 +28,38 @@ PODS:
   - FreestarAds-Criteo-PreRelease (4.3.1.1-beta-1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-GAM-PreRelease (8.12.0.1-beta-1):
+  - FreestarAds-GAM-PreRelease (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
+  - FreestarAds-GAM-PreRelease/AdColony (8.12.0.1-beta-2):
     - FreestarAds-PreRelease (~> 5.7)
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
+  - FreestarAds-GAM-PreRelease/AppLovin (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
+  - FreestarAds-GAM-PreRelease/Facebook (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
   - FreestarAds-Google-PreRelease (3.13.0.1-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob-PreRelease (8.12.0.1-beta-1):
+  - FreestarAds-Googleadmob-PreRelease (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
+  - FreestarAds-Googleadmob-PreRelease/AdColony (8.12.0.1-beta-2):
     - FreestarAds-PreRelease (~> 5.7)
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAdColony (= 4.7.2.0)
+  - FreestarAds-Googleadmob-PreRelease/AppLovin (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationAppLovin (= 11.0.0.0)
+  - FreestarAds-Googleadmob-PreRelease/Facebook (8.12.0.1-beta-2):
+    - FreestarAds-PreRelease (~> 5.7)
+    - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
   - FreestarAds-Hyprmx-PreRelease (6.0.0.0-beta-2):
     - FreestarAds-PreRelease (~> 5.7)
@@ -239,9 +257,15 @@ DEPENDENCIES:
   - FreestarAds-AppLovin-PreRelease (~> 11.0.0.1-beta)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0.0.7-beta-4)
   - FreestarAds-Criteo-PreRelease (~> 4.3.1.1-beta)
-  - FreestarAds-GAM-PreRelease (~> 8.12.0.1-beta)
+  - FreestarAds-GAM-PreRelease (~> 8.12.0.1-beta-2)
+  - FreestarAds-GAM-PreRelease/AdColony (~> 8.12.0.1-beta-2)
+  - FreestarAds-GAM-PreRelease/AppLovin (~> 8.12.0.1-beta-2)
+  - FreestarAds-GAM-PreRelease/Facebook (~> 8.12.0.1-beta-2)
   - FreestarAds-Google-PreRelease (~> 3.13.0.1-beta)
-  - FreestarAds-Googleadmob-PreRelease (~> 8.12.0.1-beta)
+  - FreestarAds-Googleadmob-PreRelease (~> 8.12.0.1-beta-2)
+  - FreestarAds-Googleadmob-PreRelease/AdColony (~> 8.12.0.1-beta-2)
+  - FreestarAds-Googleadmob-PreRelease/AppLovin (~> 8.12.0.1-beta-2)
+  - FreestarAds-Googleadmob-PreRelease/Facebook (~> 8.12.0.1-beta-2)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 1.10.5.1-beta)
@@ -328,9 +352,9 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin-PreRelease: 6c369519e936bb431d3e1e92f18cb5d67a383257
   FreestarAds-AppLovinMax-PreRelease: 5dbeae7b8c624b24372aaec1a3df32a48abd33d1
   FreestarAds-Criteo-PreRelease: aaba4aa30506b7aeb84944184c6f1b6f41fad7c9
-  FreestarAds-GAM-PreRelease: 5be02e0a818822199fa6405641423db1f3a9600b
+  FreestarAds-GAM-PreRelease: 6af985f1230ae0ad597aafeca2b95ed4b957489c
   FreestarAds-Google-PreRelease: 62a1ce94a6615b65ecc7d88ba553f349f9d42480
-  FreestarAds-Googleadmob-PreRelease: b504b19436e76640ffcff6cf47f3afb45e013f69
+  FreestarAds-Googleadmob-PreRelease: b7c93e4e018ea90dda33ee63285ef3dd29f93a1b
   FreestarAds-Hyprmx-PreRelease: c8b8a4459abf470a8d55b39f2804266c88ea1b93
   FreestarAds-Nimbus-PreRelease: 3c0d47a6e00f1ce9df54fc0471f4d20c053c3e33
   FreestarAds-Pangle-PreRelease: 66d6bf03ebdb1d760b70a4cd81f81ff441d79d3f
@@ -376,6 +400,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: a0d7ef8e11ac50ab6bf8f82faeb6960f4c527499
+PODFILE CHECKSUM: f4a14da2b4fc24eff287824dae9ae183a48975c1
 
 COCOAPODS: 1.11.2
