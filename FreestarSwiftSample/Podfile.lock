@@ -23,7 +23,7 @@ PODS:
   - FreestarAds-AppLovin (11.0.0.1):
     - AppLovinSDK (= 11.0.0)
     - FreestarAds (~> 5.7)
-  - FreestarAds-AppLovinMax (11.0.0.1):
+  - FreestarAds-AppLovinMax (11.0.0.2):
     - AppLovinSDK (= 11.0.0)
     - FreestarAds (~> 5.7)
   - FreestarAds-Criteo (4.3.1.1):
@@ -62,7 +62,7 @@ PODS:
     - FreestarAds (~> 5.7)
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.0)
-  - FreestarAds-Hyprmx (6.0.0.2):
+  - FreestarAds-Hyprmx (6.0.0.3):
     - FreestarAds (~> 5.7)
     - HyprMX/Core (= 6.0.0)
   - FreestarAds-Nimbus (1.10.5.1):
@@ -341,12 +341,12 @@ SPEC CHECKSUMS:
   FreestarAds: 29f8203cd98c7f3628f6fa5a68988d6b4455cd22
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
-  FreestarAds-AppLovinMax: 1e063657445fe61a81b42f8c60bc3e020b390efc
+  FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-GAM: 7ea7a578020fb2be4880417bb84eb64fcbb3a4c8
   FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
   FreestarAds-Googleadmob: 7ef6a88894599b1b23867e49ae831892ba7f95f4
-  FreestarAds-Hyprmx: cba357a7c74d5fd3fd233e3e70594b7d4a9ed92d
+  FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-TAM: 127d4ad8ec623dafb02a56fc39197f75e24260bd
