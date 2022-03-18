@@ -4,23 +4,31 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'FreestarSwiftSample' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
-  pod "FreestarAds", "~> 5.8"
-  pod "FreestarAds-AdColony", "~> 5.1"
-  pod "FreestarAds-Googleadmob", "~> 6.6"
-  pod "FreestarAds-Tapjoy", "~> 5.0"
-  pod "FreestarAds-Unity", "~> 6.0"
-  pod "FreestarAds-Vungle", "~> 5.2"
-  pod "FreestarAds-Google", "~> 5.0"
-  pod "FreestarAds-Criteo", "~> 3.0"
-  pod "FreestarAds-GAM", "~> 5.6"
-  pod "FreestarAds-Nimbus", "~> 3.6"
-  pod "FreestarAds-Mopub", "~> 5.3"
-  pod "FreestarAds-AppLovin", "~> 5.3"
+  # M1 compatible
+  pod "FreestarAds", "~> 5.9"
+  pod "FreestarAds-AdColony", "~> 4.7"
+  pod "FreestarAds-Tapjoy", "~> 12.8"
+  pod "FreestarAds-Criteo", "~> 4.3"
+  pod "FreestarAds-AppLovin", "~> 11.0"
   pod "FreestarAds-AppLovinMax", "~> 11.0"
-  pod "FreestarAds-TAM", "~> 2.4"
-  pod "FreestarAds-Pangle", "~> 1.1"
+  pod "FreestarAds-TAM", "~> 4.3"
   pod "FreestarAds-Hyprmx", "~> 6.0"
+  pod "FreestarAds-Yahoo", "~> 1.14"
+  
+  # Not M1 compatible pods
+  pod 'FreestarAds-Googleadmob', '~> 8.12'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 8.12'
+  pod 'FreestarAds-Googleadmob/AdColony', '~> 8.12'
+  pod 'FreestarAds-Googleadmob/AppLovin', '~> 8.12'
+  pod 'FreestarAds-GAM', '~> 8.12'
+  pod 'FreestarAds-GAM/Facebook', '~> 8.12'
+  pod 'FreestarAds-GAM/AdColony', '~> 8.12'
+  pod 'FreestarAds-GAM/AppLovin', '~> 8.12'
+  pod "FreestarAds-Unity", "~> 3.7"
+  pod "FreestarAds-Vungle", "~> 6.10"
+  pod "FreestarAds-Nimbus", "~> 1.10"
+  pod "FreestarAds-Google", "~> 3.13"
+  pod "FreestarAds-Pangle", "~> 3.7"
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
