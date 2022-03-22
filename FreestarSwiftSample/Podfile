@@ -1,13 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://cdn.cocoapods.org/'
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'FreestarSwiftSample' do
   
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '5.8.1-beta-1'
+  pod 'FreestarAds-PreRelease', '~> 5.10-beta'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0.0.7-beta-4'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.1-beta'
   pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.1-beta'
@@ -17,16 +17,12 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0.0.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0.0.0-beta'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.2.1-beta'
+  pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.2-beta'
+  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 9.2-beta'
+  pod 'FreestarAds-GAM-PreRelease', '~> 9.2-beta'
+  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.2-beta'
 
   # Not M1 compatible
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-Googleadmob-PreRelease/AdColony', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-Googleadmob-PreRelease/AppLovin', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-GAM-PreRelease', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-GAM-PreRelease/AdColony', '~> 8.12.0.1-beta-2'
-  pod 'FreestarAds-GAM-PreRelease/AppLovin', '~> 8.12.0.1-beta-2'
   pod 'FreestarAds-Unity-PreRelease', '~> 3.7.0.1-beta'
   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.1-beta'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 1.10.5.1-beta'
