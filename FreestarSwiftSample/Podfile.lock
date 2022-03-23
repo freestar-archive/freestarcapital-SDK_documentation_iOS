@@ -68,8 +68,8 @@ PODS:
   - FreestarAds-Tapjoy-PreRelease (12.8.0.1-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity-PreRelease (3.7.0.1-beta-1):
-    - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-Unity-PreRelease (3.7.0.2-beta-2):
+    - FreestarAds-PreRelease (~> 5.10-beta)
     - UnityAds (= 3.7.0)
   - FreestarAds-Vungle-PreRelease (6.10.6.1-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
@@ -247,7 +247,7 @@ DEPENDENCIES:
   - FreestarAds-PreRelease (~> 5.10-beta)
   - FreestarAds-TAM-PreRelease (~> 4.3.0.1-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
-  - FreestarAds-Unity-PreRelease (~> 3.7.0.1-beta)
+  - FreestarAds-Unity-PreRelease (~> 3.7.0.2-beta)
   - FreestarAds-Vungle-PreRelease (~> 6.10.6.1-beta)
   - FreestarAds-Yahoo-PreRelease (~> 1.14.2.1-beta)
   - LoremIpsum (~> 1.0)
@@ -333,7 +333,7 @@ SPEC CHECKSUMS:
   FreestarAds-PreRelease: 760774b476eedc9e17b97ac1591a773c366646bf
   FreestarAds-TAM-PreRelease: b41523f969b272c2a753511ba222ab77de2218ad
   FreestarAds-Tapjoy-PreRelease: a94ca37220806eba176344739e7fb3a8848bfb41
-  FreestarAds-Unity-PreRelease: 41fc2ae51cdf400636645aac4bcc2132dc460882
+  FreestarAds-Unity-PreRelease: 559af18c7aa18e3f56131010dcabc31558fe8efd
   FreestarAds-Vungle-PreRelease: 195a798dc7444731213462fe4626124ec86b25cf
   FreestarAds-Yahoo-PreRelease: c00e374e8dd61548f39dc1f953f01df9204455c8
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
@@ -370,6 +370,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 951f6767c535ba34d9bd7f7e40ae9e617c51b072
+PODFILE CHECKSUM: af6fa6a07d014aa44cabbc0c668643dcba7f7cc9
 
 COCOAPODS: 1.11.2
