@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'FreestarSwiftSample' do
   # M1 compatible
-  pod "FreestarAds", "~> 5.9"
+  pod "FreestarAds", "~> 5.10"
   pod "FreestarAds-AdColony", "~> 4.7"
   pod "FreestarAds-Tapjoy", "~> 12.8"
   pod "FreestarAds-Criteo", "~> 4.3"
@@ -14,16 +14,12 @@ target 'FreestarSwiftSample' do
   pod "FreestarAds-TAM", "~> 4.3"
   pod "FreestarAds-Hyprmx", "~> 6.0"
   pod "FreestarAds-Yahoo", "~> 1.14"
+  pod 'FreestarAds-Googleadmob', '~> 9.2'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
+  pod 'FreestarAds-GAM', '~> 9.2'
+  pod 'FreestarAds-GAM/Facebook', '~> 9.2'
   
   # Not M1 compatible pods
-  pod 'FreestarAds-Googleadmob', '~> 8.12'
-  pod 'FreestarAds-Googleadmob/Facebook', '~> 8.12'
-  pod 'FreestarAds-Googleadmob/AdColony', '~> 8.12'
-  pod 'FreestarAds-Googleadmob/AppLovin', '~> 8.12'
-  pod 'FreestarAds-GAM', '~> 8.12'
-  pod 'FreestarAds-GAM/Facebook', '~> 8.12'
-  pod 'FreestarAds-GAM/AdColony', '~> 8.12'
-  pod 'FreestarAds-GAM/AppLovin', '~> 8.12'
   pod "FreestarAds-Unity", "~> 3.7"
   pod "FreestarAds-Vungle", "~> 6.10"
   pod "FreestarAds-Nimbus", "~> 1.10"
