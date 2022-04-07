@@ -18,9 +18,9 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
   pod 'FreestarAds-GAM', '~> 9.2'
   pod 'FreestarAds-GAM/Facebook', '~> 9.2'
+  pod "FreestarAds-Unity", "~> 4.1"
   
   # Not M1 compatible pods
-  pod "FreestarAds-Unity", "~> 3.7"
   pod "FreestarAds-Vungle", "~> 6.10"
   pod "FreestarAds-Nimbus", "~> 1.10"
   pod "FreestarAds-Google", "~> 3.13"

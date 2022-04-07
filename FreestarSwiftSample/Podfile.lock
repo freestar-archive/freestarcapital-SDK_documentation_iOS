@@ -64,9 +64,9 @@ PODS:
   - FreestarAds-Tapjoy (12.8.0.1):
     - FreestarAds (~> 5.7)
     - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity (3.7.0.2):
+  - FreestarAds-Unity (4.1.0.3):
     - FreestarAds (~> 5.10)
-    - UnityAds (= 3.7.0)
+    - UnityAds (= 4.1.0)
   - FreestarAds-Vungle (6.10.6.1):
     - FreestarAds (~> 5.7)
     - VungleSDK-iOS (= 6.10.6)
@@ -143,7 +143,7 @@ PODS:
   - PromisesObjC (2.0.0)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
-  - UnityAds (3.7.0)
+  - UnityAds (4.1.0)
   - Verizon-Ads-Core (2.8.2)
   - Verizon-Ads-InlinePlacement (1.8.0):
     - Verizon-Ads-Core (~> 2.8)
@@ -238,7 +238,7 @@ DEPENDENCIES:
   - FreestarAds-Pangle (~> 3.7)
   - FreestarAds-TAM (~> 4.3)
   - FreestarAds-Tapjoy (~> 12.8)
-  - FreestarAds-Unity (~> 3.7)
+  - FreestarAds-Unity (~> 4.1)
   - FreestarAds-Vungle (~> 6.10)
   - FreestarAds-Yahoo (~> 1.14)
   - LoremIpsum (~> 1.0)
@@ -323,7 +323,7 @@ SPEC CHECKSUMS:
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-TAM: 127d4ad8ec623dafb02a56fc39197f75e24260bd
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
-  FreestarAds-Unity: b32c910a133ef99eb61b68605ac63a6d5eddbc90
+  FreestarAds-Unity: 75f5842b7dfa5355e05d7192ca606eb75aaf187d
   FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
   FreestarAds-Yahoo: c04d72c5dcafe62243f8f32da1409997ff4b422a
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
@@ -339,7 +339,7 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
-  UnityAds: cc929eb40aefa1e8dca8f0d271e6f4c13c8ed9e4
+  UnityAds: 840c036310722cc4b78abc97fe5031d3d1eb2b06
   Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
   Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
   Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
@@ -359,6 +359,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: e7bce86d0b56c80fb16d836ae0f01babb9041bd6
+PODFILE CHECKSUM: d62e18eeca1d2b1d590541f5e1af42d16c539527
 
 COCOAPODS: 1.11.2
