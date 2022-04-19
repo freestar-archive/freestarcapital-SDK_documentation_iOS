@@ -12,7 +12,7 @@ import FreestarAds
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
 //    static let FREESTAR_API_KEY = "ef05da0e-1c5f-4595-b835-74ecedf048dd"
-    static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
+    static let FREESTAR_API_KEY = "43bf5367-bcad-4707-91f8-64dbb9086c60"
 //    static let FREESTAR_API_KEY = "XqjhRR"
     
     var window : UIWindow?
