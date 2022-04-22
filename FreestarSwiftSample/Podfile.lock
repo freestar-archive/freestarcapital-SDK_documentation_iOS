@@ -16,7 +16,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.10.0)
+  - FreestarAds (5.11.0)
   - FreestarAds-AdColony (4.7.2.1):
     - AdColony (= 4.7.2)
     - FreestarAds (~> 5.7)
@@ -64,7 +64,7 @@ PODS:
   - FreestarAds-Tapjoy (12.8.0.1):
     - FreestarAds (~> 5.7)
     - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity (4.1.0.3):
+  - FreestarAds-Unity (4.1.0.4):
     - FreestarAds (~> 5.10)
     - UnityAds (= 4.1.0)
   - FreestarAds-Vungle (6.10.6.1):
@@ -77,21 +77,21 @@ PODS:
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAds-IMA-iOS-SDK (3.13.0)
-  - GoogleAppMeasurement (8.14.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.14.0)
+  - GoogleAppMeasurement (8.15.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.14.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.14.0)
+  - GoogleAppMeasurement/AdIdSupport (8.15.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.14.0):
+  - GoogleAppMeasurement/WithoutAdIdSupport (8.15.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
@@ -140,7 +140,7 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (1.10.5):
     - NimbusSDK/NimbusCoreKit
-  - PromisesObjC (2.0.0)
+  - PromisesObjC (2.1.0)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
   - UnityAds (4.1.0)
@@ -223,7 +223,7 @@ PODS:
   - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.10)
+  - FreestarAds (~> 5.11)
   - FreestarAds-AdColony (~> 4.7)
   - FreestarAds-AppLovin (~> 11.0)
   - FreestarAds-AppLovinMax (~> 11.0)
@@ -310,7 +310,7 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 47ddb6cc8b26e2ddddfd0fe541d04a3e0e186137
+  FreestarAds: d4a1ba48bcfda2f2e0bb2316f958a7735feef8a2
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
   FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
@@ -323,12 +323,12 @@ SPEC CHECKSUMS:
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-TAM: 127d4ad8ec623dafb02a56fc39197f75e24260bd
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
-  FreestarAds-Unity: 75f5842b7dfa5355e05d7192ca606eb75aaf187d
+  FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
   FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
   FreestarAds-Yahoo: c04d72c5dcafe62243f8f32da1409997ff4b422a
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
-  GoogleAppMeasurement: 71156240babd3cc6ced03e0d54816f01a880c730
+  GoogleAppMeasurement: 4c19f031220c72464d460c9daa1fb5d1acce958e
   GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
@@ -336,7 +336,7 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   UnityAds: 840c036310722cc4b78abc97fe5031d3d1eb2b06
@@ -359,6 +359,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: d62e18eeca1d2b1d590541f5e1af42d16c539527
+PODFILE CHECKSUM: 003fa26d37f026cae053b1b0e0e8ef1b2675d14e
 
 COCOAPODS: 1.11.2
