@@ -1,27 +1,61 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+# # Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
 
-USE_PREPROD = false
-POD_TAGS = USE_PREPROD ?
-  { :name_tag => '-PreRelease', :version_tag => '-alpha' } :
-  { :name_tag => '', :version_tag => '' }
+# USE_PREPROD = false
+# POD_TAGS = USE_PREPROD ?
+#   { :name_tag => '-PreRelease', :version_tag => '-alpha' } :
+#   { :name_tag => '', :version_tag => '' }
+
+# target 'FreestarOBJCSample' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+#   pod "FreestarAds#{POD_TAGS[:name_tag]}", "~> 5.6#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-AdColony#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Googleadmob#{POD_TAGS[:name_tag]}", "~> 6.4#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Tapjoy#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Unity#{POD_TAGS[:name_tag]}", "~> 6.0#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Vungle#{POD_TAGS[:name_tag]}", "~> 5.2#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Google#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Criteo#{POD_TAGS[:name_tag]}", "~> 3.0#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-GAM#{POD_TAGS[:name_tag]}", "~> 5.4#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Nimbus#{POD_TAGS[:name_tag]}", "~> 3.5#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Mopub#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-AppLovin#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-TAM#{POD_TAGS[:name_tag]}", "~> 2.4#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Pangle#{POD_TAGS[:name_tag]}", "~> 1.1#{POD_TAGS[:version_tag]}"
+#   pod "FreestarAds-Hyprmx#{POD_TAGS[:name_tag]}", "~> 1.0#{POD_TAGS[:version_tag]}"
+# end
+
+source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+use_frameworks!
 
 target 'FreestarOBJCSample' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-  pod "FreestarAds#{POD_TAGS[:name_tag]}", "~> 5.6#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-AdColony#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Googleadmob#{POD_TAGS[:name_tag]}", "~> 6.4#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Tapjoy#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Unity#{POD_TAGS[:name_tag]}", "~> 6.0#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Vungle#{POD_TAGS[:name_tag]}", "~> 5.2#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Google#{POD_TAGS[:name_tag]}", "~> 5.0#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Criteo#{POD_TAGS[:name_tag]}", "~> 3.0#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-GAM#{POD_TAGS[:name_tag]}", "~> 5.4#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Nimbus#{POD_TAGS[:name_tag]}", "~> 3.5#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Mopub#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-AppLovin#{POD_TAGS[:name_tag]}", "~> 5.1#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-TAM#{POD_TAGS[:name_tag]}", "~> 2.4#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Pangle#{POD_TAGS[:name_tag]}", "~> 1.1#{POD_TAGS[:version_tag]}"
-  pod "FreestarAds-Hyprmx#{POD_TAGS[:name_tag]}", "~> 1.0#{POD_TAGS[:version_tag]}"
+  # M1 compatible
+  pod "FreestarAds", "~> 5.11"
+  pod "FreestarAds-AdColony", "~> 4.7"
+  pod "FreestarAds-Tapjoy", "~> 12.8"
+  pod "FreestarAds-Criteo", "~> 4.3"
+  pod "FreestarAds-AppLovin", "~> 11.0"
+  pod "FreestarAds-AppLovinMax", "~> 11.0"
+  pod "FreestarAds-TAM", "~> 4.3"
+  pod "FreestarAds-Hyprmx", "~> 6.0"
+  pod "FreestarAds-Yahoo", "~> 1.14"
+  pod 'FreestarAds-Googleadmob', '~> 9.2'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
+  pod 'FreestarAds-GAM', '~> 9.2'
+  pod 'FreestarAds-GAM/Facebook', '~> 9.2'
+  pod "FreestarAds-Unity", "~> 4.1"
+  
+  # Not M1 compatible pods
+  pod "FreestarAds-Vungle", "~> 6.10"
+  pod "FreestarAds-Nimbus", "~> 1.10"
+  pod "FreestarAds-Google", "~> 3.13"
+  pod "FreestarAds-Pangle", "~> 3.7"
+
+  # helper frameworks for feed view
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'LoremIpsum', '~> 1.0'
+
 end
