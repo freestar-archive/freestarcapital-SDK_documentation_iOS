@@ -1,6 +1,6 @@
 PODS:
   - AdColony (4.7.2)
-  - AmazonPublisherServicesSDK (4.3.0)
+  - AmazonPublisherServicesSDK (4.4.3)
   - AppLovinSDK (11.0.0)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
@@ -43,10 +43,10 @@ PODS:
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
   - FreestarAds-PreRelease (5.10.1-beta-7)
-  - FreestarAds-TAM-PreRelease (4.3.0.2-beta-1):
-    - AmazonPublisherServicesSDK (= 4.3.0)
+  - FreestarAds-TAM-PreRelease (4.4.3.2-beta-3):
+    - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
-    - FreestarAds-PreRelease (~> 5.7)
+    - FreestarAds-PreRelease (~> 5.10-beta)
   - FreestarAds-Tapjoy-PreRelease (12.8.0.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
@@ -204,7 +204,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
   - FreestarAds-PreRelease (~> 5.10.1-beta-7)
-  - FreestarAds-TAM-PreRelease (~> 4.3.0.1-beta)
+  - FreestarAds-TAM-PreRelease (~> 4.4.3.2-beta-3)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1.0.4-beta-1)
   - FreestarAds-Yahoo-PreRelease (~> 1.14.2.1-beta)
@@ -264,7 +264,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
+  AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
@@ -277,7 +277,7 @@ SPEC CHECKSUMS:
   FreestarAds-Googleadmob-PreRelease: 28c2846de1eb5614bb692d6ae1b4fb041493e414
   FreestarAds-Hyprmx-PreRelease: 27b616c8cea541e81ead53939fda6a70a8ec625d
   FreestarAds-PreRelease: 04800d1905f561a6ade3e845e5d261a358299a48
-  FreestarAds-TAM-PreRelease: 475384c5fa01f2c1474d2be42d747305ca5e0c3f
+  FreestarAds-TAM-PreRelease: b93ff1b76abd681f7812503e57b724c94b0803e6
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
   FreestarAds-Yahoo-PreRelease: 65fd6ea38b618e2f0204f7ade649a6601e5c26a4
@@ -312,6 +312,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 98e52b5254dfb9ba9bb6f904c5e5c5de64c99d3b
+PODFILE CHECKSUM: 8ec2b804c44f498f577726dd2ffe368e5aa7c1c4
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

@@ -13,7 +13,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.1-beta'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 12.8.0.1-beta'
   pod 'FreestarAds-Criteo-PreRelease', '~> 4.3.1.1-beta'
-  pod 'FreestarAds-TAM-PreRelease', '~> 4.3.0.1-beta'
+  pod 'FreestarAds-TAM-PreRelease', '~> 4.4.3.2-beta-3'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0.0.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0.0.0-beta'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.2.1-beta'
