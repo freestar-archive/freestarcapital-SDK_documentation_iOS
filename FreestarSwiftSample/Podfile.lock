@@ -42,11 +42,11 @@ PODS:
     - FreestarAds-PreRelease (~> 5.7)
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
-  - FreestarAds-Prebid-PreRelease (2.0.0.1-beta-9):
+  - FreestarAds-Prebid-PreRelease (2.0.0.1-beta-10):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - PrebidMobile-FSTRAds (= 2.0.0.1)
-  - FreestarAds-PreRelease (5.12.0-beta-3)
+  - FreestarAds-PreRelease (5.12.0-beta-4)
   - FreestarAds-TAM-PreRelease (4.4.3.2-beta-3):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
@@ -208,8 +208,8 @@ DEPENDENCIES:
   - FreestarAds-Googleadmob-PreRelease/Facebook (~> 9.2-beta)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.0.0.1-beta-9)
-  - FreestarAds-PreRelease (~> 5.12.0-beta-3)
+  - FreestarAds-Prebid-PreRelease (~> 2.0.0.1-beta-10)
+  - FreestarAds-PreRelease (~> 5.12.0-beta-4)
   - FreestarAds-TAM-PreRelease (~> 4.4.3.2-beta-3)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1.0.4-beta-1)
@@ -284,8 +284,8 @@ SPEC CHECKSUMS:
   FreestarAds-GAM-PreRelease: 8197b79eef3181fc8c7526b2a1acfd2f8c7f1119
   FreestarAds-Googleadmob-PreRelease: 28c2846de1eb5614bb692d6ae1b4fb041493e414
   FreestarAds-Hyprmx-PreRelease: 27b616c8cea541e81ead53939fda6a70a8ec625d
-  FreestarAds-Prebid-PreRelease: 70bb296985b97e4eceb0c04b5cfcb519dabbd949
-  FreestarAds-PreRelease: 852f69a7f269df94fa91cb9031e37980e043b8b5
+  FreestarAds-Prebid-PreRelease: ddd7203993905ae8924850c37b4e457b71572d67
+  FreestarAds-PreRelease: 7a15300bccf3a604b12848d6c394ca4e03589c34
   FreestarAds-TAM-PreRelease: b93ff1b76abd681f7812503e57b724c94b0803e6
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -322,6 +322,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 84884dbc831796404697bff93905bf76040d929c
+PODFILE CHECKSUM: 8c6bf0c2a3b0f567a8b81998ebe53816bd817c89
 
 COCOAPODS: 1.11.2
