@@ -7,7 +7,7 @@ PODS:
     - Ads-Global/International
   - Ads-Global/BUFoundation (3.7.0.8)
   - Ads-Global/International (3.7.0.8)
-  - AmazonPublisherServicesSDK (4.3.0)
+  - AmazonPublisherServicesSDK (4.4.3)
   - AppLovinSDK (11.0.0)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
@@ -57,10 +57,10 @@ PODS:
   - FreestarAds-Pangle (3.7.0.1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds (~> 5.7)
-  - FreestarAds-TAM (4.3.0.1):
-    - AmazonPublisherServicesSDK (= 4.3.0)
+  - FreestarAds-TAM (4.4.3.2):
+    - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
-    - FreestarAds (~> 5.7)
+    - FreestarAds (~> 5.10)
   - FreestarAds-Tapjoy (12.8.0.1):
     - FreestarAds (~> 5.7)
     - TapjoySDK (= 12.8.0)
@@ -236,7 +236,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0)
   - FreestarAds-Nimbus (~> 1.10)
   - FreestarAds-Pangle (~> 3.7)
-  - FreestarAds-TAM (~> 4.3)
+  - FreestarAds-TAM (~> 4.4.3.2)
   - FreestarAds-Tapjoy (~> 12.8)
   - FreestarAds-Unity (~> 4.1)
   - FreestarAds-Vungle (~> 6.10)
@@ -305,7 +305,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
-  AmazonPublisherServicesSDK: 8bce59aeadab8256c0ef25e573d66a904b7df87d
+  AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
@@ -321,7 +321,7 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
-  FreestarAds-TAM: 127d4ad8ec623dafb02a56fc39197f75e24260bd
+  FreestarAds-TAM: 546d663f8c24f599df08f71fbc6303b68c8bcfc1
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
   FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
@@ -359,6 +359,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 003fa26d37f026cae053b1b0e0e8ef1b2675d14e
+PODFILE CHECKSUM: 0be0e0356c277278aa28f4c9f1fe2099e15ce440
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
