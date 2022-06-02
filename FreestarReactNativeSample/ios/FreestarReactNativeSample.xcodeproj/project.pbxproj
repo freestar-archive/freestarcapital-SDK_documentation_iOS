@@ -407,11 +407,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-10.1.1/AppLovinSDKResources.bundle",
-				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Medium.xib",
-				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Small.xib",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.0.0/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/FreestarAds/build/Assets/Freestar-Native-Medium.xib",
+				"${PODS_ROOT}/FreestarAds/build/Assets/Freestar-Native-Small.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk/MoPubResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -419,7 +418,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MoPubResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,25 +446,27 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DTBiOSSDK/DTBiOSSDK.framework/DTBiOSSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusKit/NimbusKit.framework/NimbusKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds/FreestarAds.framework/FreestarAds",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework/NimbusKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,11 +481,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-10.1.1/AppLovinSDKResources.bundle",
-				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Medium.xib",
-				"${PODS_ROOT}/FreestarAds/SDK/Assets/Freestar-Native-Small.xib",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.0.0/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/FreestarAds/build/Assets/Freestar-Native-Medium.xib",
+				"${PODS_ROOT}/FreestarAds/build/Assets/Freestar-Native-Small.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk/MoPubResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -493,7 +492,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MoPubResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,25 +550,27 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DTBiOSSDK/DTBiOSSDK.framework/DTBiOSSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusKit/NimbusKit.framework/NimbusKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds/FreestarAds.framework/FreestarAds",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework/NimbusKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

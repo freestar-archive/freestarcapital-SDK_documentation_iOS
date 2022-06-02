@@ -13,6 +13,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@freestar/cordova-plugin-freestar": "^1.2.1",
     "cordova-ios": "^6.1.1",
     "cordova-plugin-freestar": "^1.0.19",
     "cordova-plugin-whitelist": "^1.3.4"
