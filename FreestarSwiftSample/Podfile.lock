@@ -21,10 +21,10 @@ PODS:
   - FreestarAds-Criteo-PreRelease (4.3.1.2-beta-1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-GAM-PreRelease (9.2.0.2-beta-2):
+  - FreestarAds-GAM-PreRelease (9.2.0.3-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-GAM-PreRelease/Facebook (9.2.0.2-beta-2):
+  - FreestarAds-GAM-PreRelease/Facebook (9.2.0.3-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
@@ -42,11 +42,11 @@ PODS:
     - FreestarAds-PreRelease (~> 5.7)
     - HyprMX/Core (= 6.0.0)
     - HyprMX/MRAID (= 6.0.0)
-  - FreestarAds-Prebid-PreRelease (2.0.0.1-beta-10):
+  - FreestarAds-Prebid-PreRelease (2.0.0.1-beta-13):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-    - PrebidMobile-FSTRAds (= 2.0.0.1)
-  - FreestarAds-PreRelease (5.12.0-beta-4)
+    - PrebidMobile-FSTRAds (= 2.0.0.2)
+  - FreestarAds-PreRelease (5.12.0-beta-13)
   - FreestarAds-TAM-PreRelease (4.4.3.2-beta-3):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
@@ -115,7 +115,7 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - PrebidMobile-FSTRAds (2.0.0.1)
+  - PrebidMobile-FSTRAds (2.0.0.2)
   - PromisesObjC (2.1.0)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -208,7 +208,8 @@ DEPENDENCIES:
   - FreestarAds-Googleadmob-PreRelease/Facebook (~> 9.2-beta)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.0.0.1-beta-10)
+  - FreestarAds-Prebid-PreRelease (= 2.0.0.1-beta-13)
+  - FreestarAds-PreRelease (= 5.12.0-beta-13)
   - FreestarAds-PreRelease (~> 5.12.0-beta-4)
   - FreestarAds-TAM-PreRelease (~> 4.4.3.2-beta-3)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
@@ -281,11 +282,11 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin-PreRelease: f847a0894848173e8b83364ab2c2a72739b0d102
   FreestarAds-AppLovinMax-PreRelease: 8e4022691cffd32a1a07f5342ea2c15fe823beb4
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
-  FreestarAds-GAM-PreRelease: 8197b79eef3181fc8c7526b2a1acfd2f8c7f1119
+  FreestarAds-GAM-PreRelease: 53366c65c06c40a20787503c63f5388aacb8a563
   FreestarAds-Googleadmob-PreRelease: 28c2846de1eb5614bb692d6ae1b4fb041493e414
   FreestarAds-Hyprmx-PreRelease: 27b616c8cea541e81ead53939fda6a70a8ec625d
-  FreestarAds-Prebid-PreRelease: ddd7203993905ae8924850c37b4e457b71572d67
-  FreestarAds-PreRelease: 7a15300bccf3a604b12848d6c394ca4e03589c34
+  FreestarAds-Prebid-PreRelease: d2717f4e2363e68f69faa0b7b238fdf0f86b7be2
+  FreestarAds-PreRelease: 1e1ee0265550ff8714565f1a527d6493673435cd
   FreestarAds-TAM-PreRelease: b93ff1b76abd681f7812503e57b724c94b0803e6
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -299,7 +300,7 @@ SPEC CHECKSUMS:
   HyprMX-Mraid: ca10b241c7fa31983ce219d9a81b47ef6166e355
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PrebidMobile-FSTRAds: 9b6ad0b99ba33ee1d108f922c6d0917df4d1bd18
+  PrebidMobile-FSTRAds: ee753db906629a9493feffe514285fe6e30f80ae
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -322,6 +323,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 8c6bf0c2a3b0f567a8b81998ebe53816bd817c89
+PODFILE CHECKSUM: 0a433790bf32ac22ce8decb97d1fc91f50da942d
 
 COCOAPODS: 1.11.2
