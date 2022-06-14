@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Freestar.setAdaptiveBannerEnabledIfAvailable(true)
 //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
-        
+        Freestar.setUserID("User123")
+
         let tabVC = UITabBarController()
         
         let fsVC = FullscreenAdViewController()

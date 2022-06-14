@@ -9,12 +9,12 @@ target 'FreestarSwiftSample' do
   # M1 compatible
   
   # feature branch
-  pod 'FreestarAds-PreRelease', '5.12.0-beta-13'
+  #  pod 'FreestarAds-PreRelease', '5.12.0-beta-13'
   # merged develop branch
 #  pod 'FreestarAds-PreRelease', '5.12.0-beta-14'
 
   pod 'FreestarAds-Prebid-PreRelease', '2.0.0.1-beta-13'
-  pod 'FreestarAds-PreRelease', '~> 5.12.0-beta-4'
+  pod 'FreestarAds-PreRelease', '~> 5.12.0-beta-14'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0.0.7-beta-4'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.1-beta'
   pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.1-beta'
