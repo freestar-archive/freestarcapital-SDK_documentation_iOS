@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # M1 compatible
-  pod "FreestarAds", "~> 5.11"
+  pod "FreestarAds", "~> 5.12"
   pod "FreestarAds-AdColony", "~> 4.7"
   pod "FreestarAds-Tapjoy", "~> 12.8"
   pod "FreestarAds-Criteo", "~> 4.3"
@@ -19,6 +19,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-GAM', '~> 9.2'
   pod 'FreestarAds-GAM/Facebook', '~> 9.2'
   pod "FreestarAds-Unity", "~> 4.1"
+  pod "FreestarAds-Prebid", "~> 2.0"
   
   # Not M1 compatible pods
   pod "FreestarAds-Vungle", "~> 6.10"
