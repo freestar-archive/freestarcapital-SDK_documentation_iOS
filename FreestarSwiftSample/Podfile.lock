@@ -57,10 +57,6 @@ PODS:
   - FreestarAds-Pangle (3.7.0.1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds (~> 5.7)
-  - FreestarAds-Prebid (2.0.0.2):
-    - FreestarAds (~> 5.12)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-    - PrebidMobile-FSTRAds (= 2.0.0.3)
   - FreestarAds-TAM (4.4.3.2):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
@@ -144,7 +140,6 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (1.10.5):
     - NimbusSDK/NimbusCoreKit
-  - PrebidMobile-FSTRAds (2.0.0.3)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -241,7 +236,6 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0)
   - FreestarAds-Nimbus (~> 1.10)
   - FreestarAds-Pangle (~> 3.7)
-  - FreestarAds-Prebid (~> 2.0)
   - FreestarAds-TAM (~> 4.4.3.2)
   - FreestarAds-Tapjoy (~> 12.8)
   - FreestarAds-Unity (~> 4.1)
@@ -270,7 +264,6 @@ SPEC REPOS:
     - FreestarAds-Hyprmx
     - FreestarAds-Nimbus
     - FreestarAds-Pangle
-    - FreestarAds-Prebid
     - FreestarAds-TAM
     - FreestarAds-Tapjoy
     - FreestarAds-Unity
@@ -286,7 +279,6 @@ SPEC REPOS:
     - LoremIpsum
     - nanopb
     - NimbusSDK
-    - PrebidMobile-FSTRAds
     - PromisesObjC
     - SnapKit
     - TapjoySDK
@@ -329,7 +321,6 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
-  FreestarAds-Prebid: 7aebeb7028d2a4ae8275efb837d880b4ef412e83
   FreestarAds-TAM: 546d663f8c24f599df08f71fbc6303b68c8bcfc1
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
@@ -345,7 +336,6 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
-  PrebidMobile-FSTRAds: 93ee04b5facf5eb5dd2ef5c718171fe97ebafe85
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -369,6 +359,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 9a591ee1cd7bc946d77b0d04a1f7c7ce4635fb15
+PODFILE CHECKSUM: b7e819a0a3c28d635d4f4f735e62bcd27342a3c2
 
 COCOAPODS: 1.11.2
