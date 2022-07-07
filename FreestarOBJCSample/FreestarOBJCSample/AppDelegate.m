@@ -20,8 +20,7 @@ static NSString* const FREESTAR_API_KEY = @"XqjhRR";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
-    [Freestar setLoggingEnabled:YES];
+    
     [Freestar setAdaptiveBannerEnabledIfAvailable:YES];
     [Freestar initWithAppKey:FREESTAR_API_KEY];
 
