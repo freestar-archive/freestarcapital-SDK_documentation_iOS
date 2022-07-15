@@ -1,6 +1,6 @@
 PODS:
-  - FreestarAds-PreRelease (5.13.0-beta-1)
-  - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-3):
+  - FreestarAds-PreRelease (5.13.0-beta-2)
+  - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-4):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Verizon-Ads-StandardEdition (= 1.14.2)
   - LoremIpsum (1.0.0)
@@ -83,8 +83,8 @@ PODS:
     - Verizon-Ads-Support (~> 1.15)
 
 DEPENDENCIES:
-  - FreestarAds-PreRelease (~> 5.13.0-beta-1)
-  - FreestarAds-Yahoo-PreRelease (~> 1.14.3.2-beta-3)
+  - FreestarAds-PreRelease (~> 5.13.0-beta-2)
+  - FreestarAds-Yahoo-PreRelease (~> 1.14.3.2-beta-4)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
@@ -113,8 +113,8 @@ SPEC REPOS:
     - Verizon-Ads-WebView
 
 SPEC CHECKSUMS:
-  FreestarAds-PreRelease: e3c39f8fd1e5290b16bef7653c14f79cd10d2986
-  FreestarAds-Yahoo-PreRelease: 863637603889cb106b1e338faa5fbb5d05cb650f
+  FreestarAds-PreRelease: 8016dee7a0d8ca2e6922f0f8a10b25bc37978033
+  FreestarAds-Yahoo-PreRelease: cb900772f36fb51f675379471c62c9c113bd13b3
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
@@ -135,6 +135,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 7a11040f5a6ff74da9aeb0f44f48b7bb15aa0a28
+PODFILE CHECKSUM: bda75bf8fe9d06fd62a51a71ed06ae951960b1be
 
 COCOAPODS: 1.11.3
