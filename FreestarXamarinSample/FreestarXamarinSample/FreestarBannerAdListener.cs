@@ -1,11 +1,11 @@
 ﻿using System;
 using UIKit;
-using FreestarAds;
+using com.freestar.ios.ads;
 using CoreGraphics;
 
 namespace FreestarXamarinSample
 {
-    public class FreestarBannerAdListener : Foundation.NSObject, IFreestarBannerAdDelegate
+    public class FreestarBannerAdListener<IFreestarBannerAdDelegate> : FreestarBannerAdDelegate
     {
         private UIButton loadButton;
         private UIButton showButton;
@@ -62,28 +62,28 @@ namespace FreestarXamarinSample
         }
 
         //Freestar banner ad delegate
-        void IFreestarBannerAdDelegate.FreestarBannerClicked(FreestarBannerAd ad)
+        public override void FreestarBannerClicked(FreestarBannerAd ad)
         {
             Console.WriteLine("Freestar Banner Ad Clicked");
         }
 
-        void IFreestarBannerAdDelegate.FreestarBannerClosed(FreestarBannerAd ad)
+        public override void FreestarBannerClosed(FreestarBannerAd ad)
         {
             Console.WriteLine("Freestar Banner Ad Closed");
         }
 
-        void IFreestarBannerAdDelegate.FreestarBannerFailed(FreestarBannerAd ad, FreestarNoAdReason reason)
+        public override void FreestarBannerFailed(FreestarBannerAd ad, FreestarNoAdReason reason)
         {
             Console.WriteLine("Freestar Banner Ad Load Failed");
         }
 
-        void IFreestarBannerAdDelegate.FreestarBannerLoaded(FreestarBannerAd ad)
+        public override void FreestarBannerLoaded(FreestarBannerAd ad)
         {
             Console.WriteLine("Freestar Banner Ad Loaded");
             this.showButton.Enabled = true;
         }
 
-        void IFreestarBannerAdDelegate.FreestarBannerShown(FreestarBannerAd ad)
+        public override void FreestarBannerShown(FreestarBannerAd ad)
         {
             Console.WriteLine("Freestar Banner Ad Shown");
             this.showButton.Enabled = false;
