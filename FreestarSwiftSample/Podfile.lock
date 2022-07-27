@@ -57,7 +57,7 @@ PODS:
     - NimbusSDK (= 1.10.5)
     - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
     - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-4):
+  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-5):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - OgurySdk (~> 2.1.0)
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
@@ -264,7 +264,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx-PreRelease (~> 6.0.0.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0.0.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 1.10.5.1-beta)
-  - FreestarAds-Ogury-PreRelease (~> 2.1.0.1-beta-4)
+  - FreestarAds-Ogury-PreRelease (~> 2.1.0.1-beta-5)
   - FreestarAds-Pangle-PreRelease (~> 3.7.0.1-beta)
   - FreestarAds-PreRelease (~> 5.14.0-beta-1)
   - FreestarAds-TAM-PreRelease (~> 4.4.3.2-beta-3)
@@ -357,7 +357,7 @@ SPEC CHECKSUMS:
   FreestarAds-Googleadmob-PreRelease: 0066db93775ea3a180715d3dc54bf3c80cb27255
   FreestarAds-Hyprmx-PreRelease: 27b616c8cea541e81ead53939fda6a70a8ec625d
   FreestarAds-Nimbus-PreRelease: 41ab6fd9822dde249fac81cde9a7311dfc2e84ea
-  FreestarAds-Ogury-PreRelease: f6250682a1ba88b272def8c5274eb92aa585abac
+  FreestarAds-Ogury-PreRelease: b2a52ecc1803a0ec053bdfea4b956345997be7a1
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-PreRelease: b167bfc5358937cf0ccc449a26150a1c33de7646
   FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
@@ -403,6 +403,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: dfd3ca7dff23579511ddf1172be2a0e5d9acbb92
+PODFILE CHECKSUM: 3e45060b862e5083d56abc6c558910bb5bc3c22d
 
 COCOAPODS: 1.11.3
