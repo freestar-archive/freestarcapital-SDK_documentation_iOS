@@ -57,12 +57,16 @@ PODS:
     - NimbusSDK (= 1.10.5)
     - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
     - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-2):
+  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-7):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - OgurySdk (~> 2.1.0)
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.7)
+  - FreestarAds-Prebid-PreRelease (2.0.0.3-beta-3):
+    - FreestarAds-PreRelease (~> 5.12-beta)
+    - Google-Mobile-Ads-SDK (= 9.2.0)
+    - PrebidMobile-FSTRAds (= 2.0.0.5)
   - FreestarAds-PreRelease (5.13.0-beta-4)
   - FreestarAds-TAM-PreRelease (4.4.3.3-beta-3):
     - AmazonPublisherServicesSDK (= 4.4.3)
@@ -77,7 +81,7 @@ PODS:
   - FreestarAds-Vungle-PreRelease (6.10.6.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - VungleSDK-iOS (= 6.10.6)
-  - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-6):
+  - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-7):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Verizon-Ads-StandardEdition (= 1.14.2)
   - Google-Mobile-Ads-SDK (9.2.0):
@@ -169,6 +173,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.1.0):
     - OguryChoiceManager (= 4.0.1)
     - OguryCore (= 1.2.0)
+  - PrebidMobile-FSTRAds (2.0.0.5)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -266,6 +271,7 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 1.10.5.1-beta)
   - FreestarAds-Ogury-PreRelease (~> 2.1.0.0-beta-2)
   - FreestarAds-Pangle-PreRelease (~> 3.7.0.1-beta)
+  - FreestarAds-Prebid-PreRelease (~> 2.0.0-beta)
   - FreestarAds-PreRelease (~> 5.13.0-beta-4)
   - FreestarAds-TAM-PreRelease (~> 4.4.3.2-beta-3)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.1-beta)
@@ -295,6 +301,7 @@ SPEC REPOS:
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-Ogury-PreRelease
     - FreestarAds-Pangle-PreRelease
+    - FreestarAds-Prebid-PreRelease
     - FreestarAds-PreRelease
     - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
@@ -315,6 +322,7 @@ SPEC REPOS:
     - OguryChoiceManager
     - OguryCore
     - OgurySdk
+    - PrebidMobile-FSTRAds
     - PromisesObjC
     - TapjoySDK
     - UnityAds
@@ -357,14 +365,15 @@ SPEC CHECKSUMS:
   FreestarAds-Googleadmob-PreRelease: 0066db93775ea3a180715d3dc54bf3c80cb27255
   FreestarAds-Hyprmx-PreRelease: 27b616c8cea541e81ead53939fda6a70a8ec625d
   FreestarAds-Nimbus-PreRelease: 41ab6fd9822dde249fac81cde9a7311dfc2e84ea
-  FreestarAds-Ogury-PreRelease: 526aff0e1dd0fd05b15b57a136b10f65e165ec64
+  FreestarAds-Ogury-PreRelease: c3b6f68baed6d7a7c267c05c8a92716059b07f1f
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
+  FreestarAds-Prebid-PreRelease: 6bc7e7771a94d3fc797b1ad8ece3dc00573b34b1
   FreestarAds-PreRelease: fcbda922be07f518659107e1045150b40abb3146
   FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
   FreestarAds-Vungle-PreRelease: 7f0b2e297cf8b52df9f4fc33193cb2b1e7617dd7
-  FreestarAds-Yahoo-PreRelease: 76a79111bf5dc0c11753f83e4793f043de26607e
+  FreestarAds-Yahoo-PreRelease: 94b790566e590ef495740a66277066b72e324e49
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: 4c19f031220c72464d460c9daa1fb5d1acce958e
@@ -380,6 +389,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
+  PrebidMobile-FSTRAds: 964a1eb234a99e81fa8751b614345c4cc2ebc009
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -403,6 +413,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 4fb21cc042f37207f811892ba8e8a69b607034ee
+PODFILE CHECKSUM: 59f86d171b4f05111ecb6152b99b1e9cee5bea2a
 
 COCOAPODS: 1.11.3
