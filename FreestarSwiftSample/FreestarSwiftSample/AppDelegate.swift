@@ -65,11 +65,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             print("\(error)")
         }
+        //Confiant Initialize
+        Freestar.confiantInitialize(with: "Vw6Hmt4tR8gdJgdE_ZvL9fmbqdE")
         
         return true
     }
-
-    
 
 }
 
