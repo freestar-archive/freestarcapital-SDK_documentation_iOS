@@ -1,0 +1,11 @@
+framework module ConfiantSDK {
+  umbrella header "ConfiantSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ConfiantSDK.Swift {
+    header "ConfiantSDK-Swift.h"
+    requires objc
+}

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66FC846DC8F6A160D93334AE /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */; };
+		84174559289B30A400638694 /* ConfiantTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84174558289B30A400638694 /* ConfiantTest.m */; };
+		8417455B289B313600638694 /* ConfiantSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8417455A289B313600638694 /* ConfiantSDK.xcframework */; };
+		84B5CF06289B16CD003F7724 /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */; };
 		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
 		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
 		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
@@ -28,6 +30,10 @@
 		27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		59F1136446EB4D7EFDAEF206 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84174556289B304800638694 /* ConfiantTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfiantTest.h; sourceTree = "<group>"; };
+		84174557289B30A400638694 /* FreestarSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreestarSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		84174558289B30A400638694 /* ConfiantTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfiantTest.m; sourceTree = "<group>"; };
+		8417455A289B313600638694 /* ConfiantSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ConfiantSDK.xcframework; sourceTree = "<group>"; };
 		96006408242EA20D00A3212E /* FreestarAds-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreestarAds-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9600640F242EA20D00A3212E /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FC846DC8F6A160D93334AE /* Pods_FreestarSwiftSample.framework in Frameworks */,
+				8417455B289B313600638694 /* ConfiantSDK.xcframework in Frameworks */,
+				84B5CF06289B16CD003F7724 /* Pods_FreestarSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,7 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				8417455A289B313600638694 /* ConfiantSDK.xcframework */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
@@ -111,6 +119,9 @@
 				FD1179A624CB935600547873 /* SpinnerViewController.swift */,
 				FD1179A824CB96F700547873 /* FeedConstants.swift */,
 				DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */,
+				84174556289B304800638694 /* ConfiantTest.h */,
+				84174558289B30A400638694 /* ConfiantTest.m */,
+				84174557289B30A400638694 /* FreestarSwiftSample-Bridging-Header.h */,
 			);
 			path = FreestarSwiftSample;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 				TargetAttributes = {
 					96006407242EA20D00A3212E = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -250,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */,
+				84174559289B30A400638694 /* ConfiantTest.m in Sources */,
 				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
 				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
@@ -395,6 +408,7 @@
 			baseConfigurationReference = 27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -437,6 +451,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreestarSwiftSample/FreestarSwiftSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +463,7 @@
 			baseConfigurationReference = 562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -489,6 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreestarSwiftSample/FreestarSwiftSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

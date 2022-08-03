@@ -1,0 +1,106 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios11.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ConfiantSDK
+@_exported import ConfiantSDK
+import CoreMedia
+import Foundation
+import ObjectiveC
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public enum Result<TypeContent, TypeError> {
+  case success(TypeContent)
+  case failure(TypeError)
+}
+@_hasMissingDesignatedInitializers @objc public class Settings : ObjectiveC.NSObject {
+  @objc public static func with(propertyId propertyIdNSString: Foundation.NSString, error ioError: Foundation.NSErrorPointer) -> ConfiantSDK.Settings?
+  public static func with(propertyId propertyIdString: Swift.String) -> ConfiantSDK.Result<ConfiantSDK.Settings, ConfiantSDK.ConfiantError>
+  @objc public static func with(propertyId propertyIdNSString: Foundation.NSString, enableRate: Foundation.NSNumber?, enableAdReporter: Foundation.NSNumber?, forceBlockOnLoad: Foundation.NSNumber?, error ioError: Foundation.NSErrorPointer) -> ConfiantSDK.Settings?
+  public static func with(propertyId propertyIdString: Swift.String, enableRate: Swift.Double?, enableAdReporter: Swift.Bool?, forceBlockOnLoad: Swift.Bool?) -> ConfiantSDK.Result<ConfiantSDK.Settings, ConfiantSDK.ConfiantError>
+  @objc deinit
+}
+public enum ConfiantError : Foundation.CustomNSError, Foundation.LocalizedError {
+  case confiantAlreadyInitialized
+  case confiantIsAlreadyBeingInitialized
+  case confiantNotInitialized
+  case configInWebViewClosingBracketNotFound(string: Swift.String)
+  case configInWebViewGeneratingFailed(errorDescription: Swift.String)
+  case hookError0(task: Swift.String, argument: Swift.String)
+  case hookError1(task: Swift.String, argument: Swift.String)
+  case hookError2(task: Swift.String, argument: Swift.String)
+  case hookError3(task: Swift.String, argument: Swift.String)
+  case parserDecodingError(errorDescription: Swift.String)
+  case parserEncodingError(errorDescription: Swift.String)
+  case parserDecodeSingleValueInvalidInputType(decodeErrorDescription: Swift.String, requiredType: Any.Type)
+  case parserDecodingBase64StringToDataFailed(base64EncodedString: Swift.String)
+  case parserDecodingDataToUTF8Failed(base64EncodedString: Swift.String)
+  case parserRegexCreationFailed(pattern: Swift.String, regexErrorDescription: Swift.String)
+  case parserSerializationToJSONError(object: Swift.AnyObject, serializationErrorDescription: Swift.String)
+  case parserPercentEscapingPathFailed(string: Swift.String)
+  case parserEncodeSingleValueInvalidInputType(encodeErrorDescription: Swift.String, requiredType: Any.Type)
+  case parserConvertGenericValueToJsonElement(value: Any?, valueType: Any.Type, underlyingErrorDescription: Swift.String)
+  case propertyIdDecodingFailed(errorDescription: Swift.String)
+  case propertyIdCreationFromStringFailed(string: Swift.String, errorDescription: Swift.String)
+  case propertyIdInvalidFormat(stringRepresentation: Swift.String)
+  case propertyIdCheckFailed(stringRepresentation: Swift.String, errorDescription: Swift.String)
+  case werrorSubmissionFailed(payload: Swift.String, errorDescription: Swift.String)
+  case oneOffScanResultSubmissionFailed(payload: Swift.String, errorDescription: Swift.String)
+  case configCDNRetrievalError(url: Foundation.URL, errorDescription: Swift.String)
+  case configCDNResolutionMissingAdditionalConfig1(additionalConfigName: Swift.String)
+  case configCDNResolutionMissingAdditionalConfig2(additionalConfigName: Swift.String)
+  case integrationScriptError(url: Foundation.URL, errorDescription: Swift.String)
+  case downloadFailed(url: Foundation.URL, errorDescription: Swift.String)
+  case downloadNoData(url: Foundation.URL)
+  case downloadHTTPResponseNotOK(url: Foundation.URL, httpResponse: Foundation.HTTPURLResponse)
+  case downloadUnknownResponseType(url: Foundation.URL, responseType: Any.Type)
+  case uploadFailed(url: Foundation.URL, errorDescription: Swift.String)
+  case uploadHTTPResponseNotOK(url: Foundation.URL, httpResponse: Foundation.HTTPURLResponse)
+  case uploadUnknownResponseType(url: Foundation.URL, responseType: Any.Type)
+  case cacheBreakerCompositionError(url: Foundation.URL, components: Foundation.URLComponents)
+  case cacheBreakerDecompositionError(url: Foundation.URL)
+  case integrationScriptVersionDecodingFailed(errorDescription: Swift.String)
+  case environmentMatchingURLRegexDecodingFailed(errorDescription: Swift.String)
+  case submitNativeAdGC(a: Swift.String)
+  case submitNativeAdUC(a: Any.Type, b: Any.Type)
+  case submiteNativeAdOT(a: Any?, b: Any.Type, c: Swift.String)
+  case submiteNativeAdGIVV(a: Any.Type, b: Swift.String)
+  case submiteNativeAdGIV(a: Any.Type, b: Swift.String)
+  case submitNativeAdGP(a: Any.Type, b: Swift.String)
+  case submitNativeAdGPT(a: Any.Type, b: Swift.String)
+  case submitNativeAdGPTT(a: Any.Type, b: Swift.String, c: Swift.String)
+  case submitNativeAdGPS(a: Any.Type, b: Swift.String, c: ObjectiveC.Selector)
+  case submitNativeAdGPRT(a: Any?, b: Swift.String, c: Any.Type)
+  case submitNativeAdData(errorDescription: Swift.String)
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var helpAnchor: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+}
+public enum NativeAd {
+  case gma(nativeAdObject: Swift.AnyObject)
+}
+@_hasMissingDesignatedInitializers @objc final public class Confiant : ObjectiveC.NSObject {
+  @objc public static func initialize(settings: ConfiantSDK.Settings, completion: ((ConfiantSDK.Confiant?, Foundation.NSError?) -> ())?)
+  public static func initialize(settings: ConfiantSDK.Settings, completion: ((ConfiantSDK.Result<ConfiantSDK.Confiant, ConfiantSDK.ConfiantError>) -> ())?)
+  @objc public static func submitNativeAdGMA(_ googleNativeAdObject: Swift.AnyObject, onRootView rootView: UIKit.UIView, completion: @escaping ((Foundation.NSNumber?, Foundation.NSError?) -> ()))
+  public static func submitNativeAd(_ nativeAd: ConfiantSDK.NativeAd, onRootView view: UIKit.UIView, completion: @escaping ((ConfiantSDK.Result<Swift.Bool, ConfiantSDK.ConfiantError>) -> ()))
+  @objc deinit
+}

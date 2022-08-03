@@ -1,8 +1,8 @@
 PODS:
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-7):
+  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-9):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-PreRelease (5.14.0-beta-1)
+  - FreestarAds-PreRelease (5.14.0-beta-2)
   - LoremIpsum (1.0.0)
   - OguryAds (3.1.0):
     - OguryAds/OMID (= 3.1.0)
@@ -25,14 +25,14 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - FreestarAds-Ogury-PreRelease (from `/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec`)
-  - FreestarAds-PreRelease (~> 5.14.0-beta-1)
+  - FreestarAds-Ogury-PreRelease (~> 2.1.0.1-beta-9)
+  - FreestarAds-PreRelease (from `/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec`)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - FreestarAds-PreRelease
+    - FreestarAds-Ogury-PreRelease
     - OguryAds
     - OguryChoiceManager
     - OguryCore
@@ -42,12 +42,12 @@ SPEC REPOS:
     - SnapKit
 
 EXTERNAL SOURCES:
-  FreestarAds-Ogury-PreRelease:
-    :path: "/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec"
+  FreestarAds-PreRelease:
+    :path: "/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec"
 
 SPEC CHECKSUMS:
-  FreestarAds-Ogury-PreRelease: 10e2b17a8ccdf3cb400360fc0ee200c458d16dda
-  FreestarAds-PreRelease: b167bfc5358937cf0ccc449a26150a1c33de7646
+  FreestarAds-Ogury-PreRelease: 1245a4a9570069977b017c5a69dd04b4b88abbec
+  FreestarAds-PreRelease: f4e5edd976f9443f7a57f8eadd394b89ba8f48c3
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
@@ -55,6 +55,6 @@ SPEC CHECKSUMS:
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 9fa834d9b3a001f52090081d838188f910739636
+PODFILE CHECKSUM: 776b1bb49a3b9a86cf8c4e07819d1c8ecd5abfa2
 
 COCOAPODS: 1.11.3
