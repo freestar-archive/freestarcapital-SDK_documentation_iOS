@@ -29,20 +29,20 @@ PODS:
   - FreestarAds-Criteo (4.3.1.1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds (~> 5.7)
-  - FreestarAds-GAM (9.2.0.2):
+  - FreestarAds-GAM (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-GAM/Facebook (9.2.0.2):
+  - FreestarAds-GAM/Facebook (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
   - FreestarAds-Google (3.13.0.1):
     - FreestarAds (~> 5.7)
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob (9.2.0.2):
+  - FreestarAds-Googleadmob (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-Googleadmob/Facebook (9.2.0.2):
+  - FreestarAds-Googleadmob/Facebook (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
@@ -57,7 +57,11 @@ PODS:
   - FreestarAds-Pangle (3.7.0.1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds (~> 5.7)
-  - FreestarAds-TAM (4.4.3.2):
+  - FreestarAds-Prebid (2.0.0.3):
+    - FreestarAds (~> 5.12)
+    - Google-Mobile-Ads-SDK (= 9.2.0)
+    - PrebidMobile-FSTRAds (= 2.0.0.5)
+  - FreestarAds-TAM (4.4.3.3):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
     - FreestarAds (~> 5.10)
@@ -140,6 +144,7 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (1.10.5):
     - NimbusSDK/NimbusCoreKit
+  - PrebidMobile-FSTRAds (2.0.0.5)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -236,6 +241,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0)
   - FreestarAds-Nimbus (~> 1.10)
   - FreestarAds-Pangle (~> 3.7)
+  - FreestarAds-Prebid (~> 2.0)
   - FreestarAds-TAM (~> 4.4.3.2)
   - FreestarAds-Tapjoy (~> 12.8)
   - FreestarAds-Unity (~> 4.1)
@@ -264,6 +270,7 @@ SPEC REPOS:
     - FreestarAds-Hyprmx
     - FreestarAds-Nimbus
     - FreestarAds-Pangle
+    - FreestarAds-Prebid
     - FreestarAds-TAM
     - FreestarAds-Tapjoy
     - FreestarAds-Unity
@@ -279,6 +286,7 @@ SPEC REPOS:
     - LoremIpsum
     - nanopb
     - NimbusSDK
+    - PrebidMobile-FSTRAds
     - PromisesObjC
     - SnapKit
     - TapjoySDK
@@ -315,13 +323,14 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
   FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
-  FreestarAds-GAM: 77982767cec27474493d15799ac3d5d49cc6cefd
+  FreestarAds-GAM: f6ed896401b528a635300c95418ba4ece6078ea4
   FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
-  FreestarAds-Googleadmob: 3715552492b530ae8992c600e887c57e818f97a1
+  FreestarAds-Googleadmob: 5c170b9e33a51cc556ca8adcc510c11d7bfb0b30
   FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
-  FreestarAds-TAM: 546d663f8c24f599df08f71fbc6303b68c8bcfc1
+  FreestarAds-Prebid: 16bc49fc28b9572331614b08e84094256535523d
+  FreestarAds-TAM: f9026636ab8239c5e1e7c7aebbbe45cd1c181cec
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
   FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
@@ -336,6 +345,7 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
+  PrebidMobile-FSTRAds: 964a1eb234a99e81fa8751b614345c4cc2ebc009
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -359,6 +369,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: b7e819a0a3c28d635d4f4f735e62bcd27342a3c2
+PODFILE CHECKSUM: 4273cb00d6ea7d1337e73d29d726a142d24c2c41
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
