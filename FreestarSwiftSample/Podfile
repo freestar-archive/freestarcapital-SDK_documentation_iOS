@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'FreestarSwiftSample' do
   # M1 compatible
-  pod "FreestarAds", "~> 5.12"
+  pod "FreestarAds", "~> 5.13"
   pod "FreestarAds-AdColony", "~> 4.7"
   pod "FreestarAds-Tapjoy", "~> 12.8"
   pod "FreestarAds-Criteo", "~> 4.3"
@@ -13,7 +13,8 @@ target 'FreestarSwiftSample' do
   pod "FreestarAds-AppLovinMax", "~> 11.0"
   pod "FreestarAds-TAM", "~> 4.4.3.2"
   pod "FreestarAds-Hyprmx", "~> 6.0"
-  pod "FreestarAds-Yahoo", "~> 1.14"
+  pod "FreestarAds-Yahoo", "~> 1.14.2.2"
+  pod "FreestarAds-Ogury", "~> 2.1.0.2"
   pod 'FreestarAds-Googleadmob', '~> 9.2'
   pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
   pod 'FreestarAds-GAM', '~> 9.2'
