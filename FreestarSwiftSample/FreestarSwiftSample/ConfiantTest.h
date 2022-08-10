@@ -13,7 +13,7 @@
 
 @interface ConfiantTest : NSObject
 
-+ (void)confiantInitializeWith:(NSString *_Nonnull)propertyId;
++ (void)confiantInitializeWith:(NSString *_Nonnull)propertyId completion:(void (^_Nonnull)(BOOL isOk))completion;
 
 @end
 

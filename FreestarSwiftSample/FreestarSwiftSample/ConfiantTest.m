@@ -14,39 +14,42 @@
 
 #pragma mark - Confiant SDK
 
-+ (void)confiantInitializeWith:(NSString *_Nonnull)propertyId {
++ (void)confiantInitializeWith:(NSString *_Nonnull)propertyId completion:(void (^_Nonnull)(BOOL isOk))completion {
     NSError * _Nullable errorIfAny = nil;
 
     NSLog(@"ConfiantSDK: propertyId: %@", propertyId);
 
     if (propertyId == nil) {
         NSLog(@"ConfiantSDK: Error: Property ID is invalid");
-        return;
-    }
-
-    Settings * _Nullable settings = [Settings withPropertyId:propertyId error:&errorIfAny];
-    if (errorIfAny == nil) {
-        NSAssert(settings != nil, nil);
+        completion(false);
     } else {
-        NSError * _Nonnull error = errorIfAny;
-        NSString * _Nonnull const message = [NSString stringWithFormat:@"Failed to create Confiant Settings: %@ %ld", error.localizedDescription, (long)error.code];
-        NSLog(@"ConfiantSDK: Error: %@", message);
-        NSAssert(false, nil);
-    }
-
-    NSLog(@"ConfiantSDK: settings: %@", settings);
-
-    //Confiant Initialize
-    [Confiant initializeWithSettings:settings completion:^(Confiant * _Nullable _, NSError * _Nullable errorIfAny) {
+        Settings * _Nullable settings = [Settings withPropertyId:propertyId error:&errorIfAny];
         if (errorIfAny == nil) {
-            NSLog(@"ConfiantSDK: Successfully initialized Confiant SDK");
+            NSAssert(settings != nil, nil);
         } else {
             NSError * _Nonnull error = errorIfAny;
-            NSString * _Nonnull const message = [NSString stringWithFormat:@"ConfiantSDK: Failed to initialize Confiant SDK: %@ %ld", error.localizedDescription, (long)error.code];
+            NSString * _Nonnull const message = [NSString stringWithFormat:@"Failed to create Confiant Settings: %@ %ld", error.localizedDescription, (long)error.code];
             NSLog(@"ConfiantSDK: Error: %@", message);
             NSAssert(false, nil);
+            completion(false);
         }
-    }];
+
+        NSLog(@"ConfiantSDK: settings: %@", settings);
+
+        //Confiant Initialize
+        [Confiant initializeWithSettings:settings completion:^(Confiant * _Nullable _, NSError * _Nullable errorIfAny) {
+            if (errorIfAny == nil) {
+                NSLog(@"ConfiantSDK: Successfully initialized Confiant SDK");
+                completion(true);
+            } else {
+                NSError * _Nonnull error = errorIfAny;
+                NSString * _Nonnull const message = [NSString stringWithFormat:@"ConfiantSDK: Failed to initialize Confiant SDK: %@ %ld", error.localizedDescription, (long)error.code];
+                NSLog(@"ConfiantSDK: Error: %@", message);
+                NSAssert(false, nil);
+                completion(false);
+            }
+        }];
+    }
 }
 
 @end

@@ -1,8 +1,11 @@
 PODS:
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-9):
-    - FreestarAds-PreRelease (~> 5.12-beta)
+  - FreestarAds (5.13.0)
+  - FreestarAds-Ogury (2.1.0.2):
+    - FreestarAds (~> 5.12)
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-PreRelease (5.14.0-beta-2)
+  - FreestarAds-Yahoo (1.14.2.2):
+    - FreestarAds (~> 5.10)
+    - Verizon-Ads-StandardEdition (= 1.14.2)
   - LoremIpsum (1.0.0)
   - OguryAds (3.1.0):
     - OguryAds/OMID (= 3.1.0)
@@ -23,38 +26,147 @@ PODS:
     - OguryChoiceManager (= 4.0.1)
     - OguryCore (= 1.2.0)
   - SnapKit (5.0.1)
+  - Verizon-Ads-Core (2.8.2)
+  - Verizon-Ads-InlinePlacement (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-InlineWebAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InlinePlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebController (~> 1.7)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-InterstitialPlacement (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-InterstitialVASTAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InterstitialPlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-VASTController (~> 1.10)
+  - Verizon-Ads-InterstitialWebAdapter (1.8.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-InterstitialPlacement (~> 1.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebController (~> 1.7)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-NativePlacement (1.14.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-NativeVerizonNativeAdapter (2.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-NativePlacement (~> 1.14)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-VerizonNativeController (~> 2.15)
+  - Verizon-Ads-OMSDK (1.10.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-StandardEdition (1.14.2):
+    - Verizon-Ads-Core (= 2.8.2)
+    - Verizon-Ads-InlinePlacement (= 1.8.0)
+    - Verizon-Ads-InlineWebAdapter (= 1.8.0)
+    - Verizon-Ads-InterstitialPlacement (= 1.8.0)
+    - Verizon-Ads-InterstitialVASTAdapter (= 1.8.0)
+    - Verizon-Ads-InterstitialWebAdapter (= 1.8.0)
+    - Verizon-Ads-NativePlacement (= 1.14.0)
+    - Verizon-Ads-NativeVerizonNativeAdapter (= 2.9.0)
+    - Verizon-Ads-OMSDK (= 1.10.0)
+    - Verizon-Ads-Support (= 1.15.0)
+    - Verizon-Ads-URIExperience (= 2.9.0)
+    - Verizon-Ads-VASTController (= 1.10.1)
+    - Verizon-Ads-VerizonNativeController (= 2.15.0)
+    - Verizon-Ads-VideoPlayer (= 1.9.0)
+    - Verizon-Ads-WebController (= 1.7.0)
+    - Verizon-Ads-WebView (= 1.10.0)
+  - Verizon-Ads-Support (1.15.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-URIExperience (2.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VASTController (1.10.1):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VerizonNativeController (2.15.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
+  - Verizon-Ads-VideoPlayer (1.9.0):
+    - Verizon-Ads-Core (~> 2.8)
+  - Verizon-Ads-WebController (1.7.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-Support (~> 1.15)
+    - Verizon-Ads-WebView (~> 1.10)
+  - Verizon-Ads-WebView (1.10.0):
+    - Verizon-Ads-Core (~> 2.8)
+    - Verizon-Ads-OMSDK (~> 1.10)
+    - Verizon-Ads-Support (~> 1.15)
 
 DEPENDENCIES:
-  - FreestarAds-Ogury-PreRelease (~> 2.1.0.1-beta-9)
-  - FreestarAds-PreRelease (from `/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec`)
+  - FreestarAds (~> 5.13)
+  - FreestarAds-Ogury (~> 2.1.0.2)
+  - FreestarAds-Yahoo (~> 1.14.2.2)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - FreestarAds-Ogury-PreRelease
+  trunk:
+    - FreestarAds
+    - FreestarAds-Ogury
+    - FreestarAds-Yahoo
+    - LoremIpsum
     - OguryAds
     - OguryChoiceManager
     - OguryCore
     - OgurySdk
-  trunk:
-    - LoremIpsum
     - SnapKit
-
-EXTERNAL SOURCES:
-  FreestarAds-PreRelease:
-    :path: "/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec"
+    - Verizon-Ads-Core
+    - Verizon-Ads-InlinePlacement
+    - Verizon-Ads-InlineWebAdapter
+    - Verizon-Ads-InterstitialPlacement
+    - Verizon-Ads-InterstitialVASTAdapter
+    - Verizon-Ads-InterstitialWebAdapter
+    - Verizon-Ads-NativePlacement
+    - Verizon-Ads-NativeVerizonNativeAdapter
+    - Verizon-Ads-OMSDK
+    - Verizon-Ads-StandardEdition
+    - Verizon-Ads-Support
+    - Verizon-Ads-URIExperience
+    - Verizon-Ads-VASTController
+    - Verizon-Ads-VerizonNativeController
+    - Verizon-Ads-VideoPlayer
+    - Verizon-Ads-WebController
+    - Verizon-Ads-WebView
 
 SPEC CHECKSUMS:
-  FreestarAds-Ogury-PreRelease: 1245a4a9570069977b017c5a69dd04b4b88abbec
-  FreestarAds-PreRelease: f4e5edd976f9443f7a57f8eadd394b89ba8f48c3
+  FreestarAds: ae1533c4940daace2da3c95908484d7047aa21b2
+  FreestarAds-Ogury: 6c2856646ae073b3d46d02c829ef6eb0fcce56f9
+  FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
+  Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
+  Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
+  Verizon-Ads-InterstitialPlacement: 2d4f5be86641b64970cbe6d2d1917eb245252fca
+  Verizon-Ads-InterstitialVASTAdapter: 135651b0535778f63f0d2adff4a7eb37c9e5e016
+  Verizon-Ads-InterstitialWebAdapter: cbdaffd6ab36908d3877b923d6820b493dea9937
+  Verizon-Ads-NativePlacement: 6102f0665a4b243eb2c50941814f9c7285c8ab43
+  Verizon-Ads-NativeVerizonNativeAdapter: 0d39f50875750691f0551e619be819156c4002cf
+  Verizon-Ads-OMSDK: 910be89c7ffdc442ec989d0bc1f4f3e57121fb3b
+  Verizon-Ads-StandardEdition: 6537599052748e40c294a3394947010febc6daea
+  Verizon-Ads-Support: edce32ca3a90c206775444724d54bbb7bde593d3
+  Verizon-Ads-URIExperience: 56d3bfd162780b7ee44574d26794ae873e8c3f4e
+  Verizon-Ads-VASTController: c82f96e74790807c18197dbcb9bc27715a1b9d23
+  Verizon-Ads-VerizonNativeController: 7a6a7fb1dbd8c81d320505b46e1e5d43b5321d61
+  Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
+  Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
+  Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 776b1bb49a3b9a86cf8c4e07819d1c8ecd5abfa2
+PODFILE CHECKSUM: 05da4783dffc921be6120254b230bb0c858fad86
 
 COCOAPODS: 1.11.3
