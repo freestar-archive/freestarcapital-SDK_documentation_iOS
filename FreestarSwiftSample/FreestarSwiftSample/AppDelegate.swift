@@ -29,7 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Freestar.setUserID("User123")
 
         let tabVC = UITabBarController()
-        
+
+        let fsVC = ThumbnailAdViewController()
+        fsVC.title = "Thumbnail"
+
         let fsVC = FullscreenAdViewController()
         fsVC.title = "Fullscreen"
         

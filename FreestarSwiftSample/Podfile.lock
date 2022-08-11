@@ -1,8 +1,8 @@
 PODS:
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-9):
+  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-10):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-PreRelease (5.14.0-beta-1)
+  - FreestarAds-PreRelease (5.14.0-beta-10)
   - LoremIpsum (1.0.0)
   - OguryAds (3.1.0):
     - OguryAds/OMID (= 3.1.0)
@@ -25,15 +25,13 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - FreestarAds-Ogury-PreRelease (~> 2.1.0.1-beta-9)
-  - FreestarAds-PreRelease (~> 5.14.0-beta-1)
+  - FreestarAds-Ogury-PreRelease (from `/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec`)
+  - FreestarAds-PreRelease (from `/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec`)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - FreestarAds-Ogury-PreRelease
-    - FreestarAds-PreRelease
     - OguryAds
     - OguryChoiceManager
     - OguryCore
@@ -42,9 +40,15 @@ SPEC REPOS:
     - LoremIpsum
     - SnapKit
 
+EXTERNAL SOURCES:
+  FreestarAds-Ogury-PreRelease:
+    :path: "/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec"
+  FreestarAds-PreRelease:
+    :path: "/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec"
+
 SPEC CHECKSUMS:
-  FreestarAds-Ogury-PreRelease: 1245a4a9570069977b017c5a69dd04b4b88abbec
-  FreestarAds-PreRelease: b167bfc5358937cf0ccc449a26150a1c33de7646
+  FreestarAds-Ogury-PreRelease: 3b131f5cb9345134d74f0c9f8c34fb2d7621cc18
+  FreestarAds-PreRelease: 7d579bada8c761b0347c7116c55512c7cb43eec0
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
@@ -52,6 +56,6 @@ SPEC CHECKSUMS:
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 2adb8b8222b5a6c239892deee472999c5a7ea0c3
+PODFILE CHECKSUM: ce7e5d3a868f659120d179d16b63c251decab834
 
 COCOAPODS: 1.11.3
