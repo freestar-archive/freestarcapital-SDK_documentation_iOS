@@ -434,7 +434,7 @@
 					"\"SnapKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -486,7 +486,7 @@
 					"\"SnapKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
