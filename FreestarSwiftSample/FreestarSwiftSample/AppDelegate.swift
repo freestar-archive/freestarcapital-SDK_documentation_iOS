@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabVC = UITabBarController()
 
-        let fsVC = ThumbnailAdViewController()
-        fsVC.title = "Thumbnail"
+        let thumbVC = ThumbnailAdViewController()
+        thumbVC.title = "Thumbnail"
 
         let fsVC = FullscreenAdViewController()
         fsVC.title = "Fullscreen"

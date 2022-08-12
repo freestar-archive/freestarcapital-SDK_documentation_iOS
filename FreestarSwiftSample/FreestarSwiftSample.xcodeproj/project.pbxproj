@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5182DC170B4FFF5E61DEAB09 /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3493825A9B22F9F5CBF1F651 /* Pods_FreestarSwiftSample.framework */; };
+		84D21A1928A5D36600F68142 /* ThumbnailAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */; };
 		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
 		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
 		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		3493825A9B22F9F5CBF1F651 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3833FEBA5C1D87917D5F13C6 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailAdViewController.swift; sourceTree = "<group>"; };
 		96006408242EA20D00A3212E /* FreestarAds-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreestarAds-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9600640F242EA20D00A3212E /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9600640B242EA20D00A3212E /* AppDelegate.swift */,
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
+				84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */,
 				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,
 				960064272432F5B900A3212E /* AdViewController.swift */,
 				960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */,
@@ -254,6 +257,7 @@
 				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
 				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
+				84D21A1928A5D36600F68142 /* ThumbnailAdViewController.swift in Sources */,
 				FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */,
 				960064282432F5B900A3212E /* AdViewController.swift in Sources */,
 				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,

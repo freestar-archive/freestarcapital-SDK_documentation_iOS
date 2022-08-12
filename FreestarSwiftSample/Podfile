@@ -9,11 +9,11 @@ target 'FreestarSwiftSample' do
   
   # M1 compatible
   #  pod 'FreestarAds-PreRelease', '~> 5.14.0-beta-1'
-   pod 'FreestarAds-PreRelease', :path => '/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec'
+   pod 'FreestarAds-PreRelease', :path => '/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec'
 
   # pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.3.2-beta-7'
   # pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.1-beta-9'
-  pod 'FreestarAds-Ogury-PreRelease', :path => '/Users/charles/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec'
+  pod 'FreestarAds-Ogury-PreRelease', :path => '/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-sdk-ogury-adapter/FreestarAds-Ogury-PreRelease.local.podspec'
     
   #  pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0.0.7-beta-4'
   #  pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.1-beta'
