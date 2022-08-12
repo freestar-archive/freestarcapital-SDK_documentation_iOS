@@ -448,7 +448,7 @@
 					"\"SnapKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FreestarSwiftSample/FreestarSwiftSample-Bridging-Header.h";
@@ -503,7 +503,7 @@
 					"\"SnapKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSampleAnurag;
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FreestarSwiftSample/FreestarSwiftSample-Bridging-Header.h";
