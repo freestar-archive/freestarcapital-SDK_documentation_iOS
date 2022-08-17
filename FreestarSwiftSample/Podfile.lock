@@ -1,8 +1,8 @@
 PODS:
-  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-9):
+  - FreestarAds-Ogury-PreRelease (2.1.0.1-beta-10):
     - FreestarAds-PreRelease (~> 5.12-beta)
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-PreRelease (5.14.0-beta-10)
+  - FreestarAds-PreRelease (5.14.0-beta-12)
   - LoremIpsum (1.0.0)
   - OguryAds (3.1.0):
     - OguryAds/OMID (= 3.1.0)
@@ -47,8 +47,8 @@ EXTERNAL SOURCES:
     :path: "/Users/admin/Documents/DEVELOPER/WORKSPACE/FREESTAR/ios-core-sdk/FreestarAds-Core/FreestarAds-PreRelease.local.podspec"
 
 SPEC CHECKSUMS:
-  FreestarAds-Ogury-PreRelease: 3878a21529d5e662d10403126b465093d5376d35
-  FreestarAds-PreRelease: 7d579bada8c761b0347c7116c55512c7cb43eec0
+  FreestarAds-Ogury-PreRelease: 3b131f5cb9345134d74f0c9f8c34fb2d7621cc18
+  FreestarAds-PreRelease: e9b8b3b7e7be9d74072065f6395a2930cbba2349
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491

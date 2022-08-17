@@ -36,6 +36,12 @@ class ThumbnailAdViewController: AdViewController {
         showThumbnailAd()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.enablePartnerSelection = false
+    }
+
     // MARK: - controlling UI
 
     @objc override func updateShowButton() {
@@ -43,35 +49,35 @@ class ThumbnailAdViewController: AdViewController {
     }
 }
 
-extension ThumbnailAdViewController : FreestarThumbnailDelegate {
+private extension ThumbnailAdViewController {
     func loadThumbnailAd() {
         self.thumbnailAd = FreestarThumbnailAd(delegate: self)
-        self.thumbnailAd?.selectPartners(self.chosenPartners)
-        self.thumbnailAd?.loadPlacement(placementField.text)
+        self.thumbnailAd?.load()
     }
 
     func showThumbnailAd() {
-        thumbnailAd?.show(from: self)
-    }
-
-    func freestarThumbnailLoaded(_ ad: FreestarThumbnailAd) {
-        self.thumbnailAdReady = true
-    }
-
-    func freestarThumbnailFailed(_ ad: FreestarThumbnailAd, because reason: FreestarNoAdReason) {
-        self.thumbnailAdReady = false
-    }
-
-    func freestarThumbnailShown(_ ad: FreestarThumbnailAd) {
-
-    }
-
-    func freestarThumbnailClicked(_ ad: FreestarThumbnailAd) {
-
-    }
-
-    func freestarThumbnailClosed(_ ad: FreestarThumbnailAd) {
-        self.thumbnailAdReady = false
+        thumbnailAd?.show()
     }
 }
 
+extension ThumbnailAdViewController : FreestarThumbnailAdDelegate {
+    func onThumbnailLoaded(_ ad: FreestarThumbnailAd) {
+        self.thumbnailAdReady = true
+    }
+
+    func onThumbnailFailed(_ ad: FreestarThumbnailAd, because reason: FreestarNoAdReason) {
+        self.thumbnailAdReady = false
+    }
+
+    func onThumbnailShown(_ ad: FreestarThumbnailAd) {
+
+    }
+
+    func onThumbnailClicked(_ ad: FreestarThumbnailAd) {
+
+    }
+
+    func onThumbnailClosed(_ ad: FreestarThumbnailAd) {
+        self.thumbnailAdReady = false
+    }
+}

@@ -67,6 +67,8 @@ class PartnerSelectionTableViewController: UITableViewController {
         case .Preroll: return [PartnerChoice(name: "All", selected: true)] + [
                 "Nimbus",
                 "Google" ].map { PartnerChoice(name: $0) }
+        case .Thumbnail:
+            return []
         }
     }
 
