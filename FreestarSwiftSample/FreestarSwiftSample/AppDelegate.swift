@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         Freestar.setUserID("User123")
+        Freestar.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
+        Freestar.setBlacklistViewControllers([NSStringFromClass(FullscreenAdViewController.self)])
 
         let tabVC = UITabBarController()
 
@@ -72,4 +74,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+
 }
