@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDE98FCA28A3029C00FD76BF /* FreestarAds in Frameworks */ = {isa = PBXBuildFile; productRef = FDE98FC928A3029C00FD76BF /* FreestarAds */; };
+		FD14638B28AED62200B6C864 /* FreestarAds in Frameworks */ = {isa = PBXBuildFile; productRef = FD14638A28AED62200B6C864 /* FreestarAds */; };
+		FD14638E28AED63600B6C864 /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD14638D28AED63600B6C864 /* FreestarAds-TAM */; };
+		FD14639128AED65900B6C864 /* FreestarAds-GAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD14639028AED65900B6C864 /* FreestarAds-GAM */; };
+		FD14639328AEDB4A00B6C864 /* CustomRewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */; };
+		FD14639528AEDB9400B6C864 /* CustomInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */; };
+		FD14639728AEE58D00B6C864 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */; };
+		FDD8B24328AAE3F500BA0D77 /* CustomSwiftUIBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */; };
 		FDE98FCC28A4551C00FD76BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */; };
 		FDF1FCA228A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1FCA128A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift */; };
 		FDF1FCA428A2C6A000FC9859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1FCA328A2C6A000FC9859 /* ContentView.swift */; };
@@ -16,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRewardedAd.swift; sourceTree = "<group>"; };
+		FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterstitialAd.swift; sourceTree = "<group>"; };
+		FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftUIBanner.swift; sourceTree = "<group>"; };
 		FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDE98FCD28A4566700FD76BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FDF1FC9E28A2C6A000FC9859 /* FreestarSwiftUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarSwiftUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE98FCA28A3029C00FD76BF /* FreestarAds in Frameworks */,
+				FD14638E28AED63600B6C864 /* FreestarAds-TAM in Frameworks */,
+				FD14638B28AED62200B6C864 /* FreestarAds in Frameworks */,
+				FD14639128AED65900B6C864 /* FreestarAds-GAM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +71,13 @@
 				FDE98FCD28A4566700FD76BF /* Info.plist */,
 				FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */,
 				FDF1FCA128A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift */,
+				FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */,
+				FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */,
+				FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */,
 				FDF1FCA328A2C6A000FC9859 /* ContentView.swift */,
 				FDF1FCA528A2C6A400FC9859 /* Assets.xcassets */,
 				FDF1FCA728A2C6A400FC9859 /* Preview Content */,
+				FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */,
 			);
 			path = FreestarSwiftUISample;
 			sourceTree = "<group>";
@@ -91,7 +107,9 @@
 			);
 			name = FreestarSwiftUISample;
 			packageProductDependencies = (
-				FDE98FC928A3029C00FD76BF /* FreestarAds */,
+				FD14638A28AED62200B6C864 /* FreestarAds */,
+				FD14638D28AED63600B6C864 /* FreestarAds-TAM */,
+				FD14639028AED65900B6C864 /* FreestarAds-GAM */,
 			);
 			productName = "SPM-Test";
 			productReference = FDF1FC9E28A2C6A000FC9859 /* FreestarSwiftUISample.app */;
@@ -122,7 +140,9 @@
 			);
 			mainGroup = FDF1FC9528A2C6A000FC9859;
 			packageReferences = (
-				FDE98FC828A3029C00FD76BF /* XCRemoteSwiftPackageReference "spm-freestarads-core" */,
+				FD14638928AED62200B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-core" */,
+				FD14638C28AED63600B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
+				FD14638F28AED65900B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */,
 			);
 			productRefGroup = FDF1FC9F28A2C6A000FC9859 /* Products */;
 			projectDirPath = "";
@@ -151,8 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE98FCC28A4551C00FD76BF /* AppDelegate.swift in Sources */,
+				FD14639528AEDB9400B6C864 /* CustomInterstitialAd.swift in Sources */,
 				FDF1FCA428A2C6A000FC9859 /* ContentView.swift in Sources */,
 				FDF1FCA228A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift in Sources */,
+				FD14639328AEDB4A00B6C864 /* CustomRewardedAd.swift in Sources */,
+				FDD8B24328AAE3F500BA0D77 /* CustomSwiftUIBanner.swift in Sources */,
+				FD14639728AEE58D00B6C864 /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FreestarSwiftUISample/Preview Content\"";
 				DEVELOPMENT_TEAM = FLA943DDZ8;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freestar.FreestarSwiftUISample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -310,6 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FreestarSwiftUISample/Preview Content\"";
 				DEVELOPMENT_TEAM = FLA943DDZ8;
 				ENABLE_PREVIEWS = YES;
@@ -325,6 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freestar.FreestarSwiftUISample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -357,7 +385,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FDE98FC828A3029C00FD76BF /* XCRemoteSwiftPackageReference "spm-freestarads-core" */ = {
+		FD14638928AED62200B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-core" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-core.git";
 			requirement = {
@@ -365,13 +393,39 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		FD14638C28AED63600B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-tam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		FD14638F28AED65900B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-gam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FDE98FC928A3029C00FD76BF /* FreestarAds */ = {
+		FD14638A28AED62200B6C864 /* FreestarAds */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FDE98FC828A3029C00FD76BF /* XCRemoteSwiftPackageReference "spm-freestarads-core" */;
+			package = FD14638928AED62200B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-core" */;
 			productName = FreestarAds;
+		};
+		FD14638D28AED63600B6C864 /* FreestarAds-TAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD14638C28AED63600B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */;
+			productName = "FreestarAds-TAM";
+		};
+		FD14639028AED65900B6C864 /* FreestarAds-GAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD14638F28AED65900B6C864 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */;
+			productName = "FreestarAds-GAM";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

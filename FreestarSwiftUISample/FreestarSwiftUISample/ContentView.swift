@@ -6,14 +6,43 @@
 //
 
 import SwiftUI
+import FreestarAds
 
 struct ContentView: View {
+    let bannerPlacementId: String = "banner_p1"
+    let mrecPlacementId: String = "mrec_p1"
+    let interstitialPlacementId: String = "interstitial_p2"
+    let rewardedPlacementId: String = "reward_p1"
+    
+    @State var interstitial: CustomInterstitialAd?
+    @State var rewarded: CustomRewardedAd?
+    
     init(appDelegate: AppDelegate) {
-       // at this point `didFinishLaunching` is completed       
+       // at this point `didFinishLaunching` is completed
+        
      }
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            CustomSwiftUIBanner(placementId: mrecPlacementId,
+                                  size: FreestarBannerAdSize.banner300x250)
+            .frame(width: 300, height: 250)
+            Spacer()
+            Button("Load & Show Interstitial") {
+                interstitial = CustomInterstitialAd(placementId: interstitialPlacementId)
+                interstitial?.load()
+            }
+            Spacer().frame(height: 20)
+            Button("Load & Show Rewarded") {
+                rewarded = CustomRewardedAd(placementId: rewardedPlacementId,
+                                                rewardName: "Coins",
+                                                rewardAmount: 1000)
+                rewarded?.load()
+            }
+            Spacer()
+            CustomSwiftUIBanner(placementId: bannerPlacementId,
+                                  size: FreestarBannerAdSize.banner320x50)
+            .frame(width: 320, height: 50)
+        }
     }
 }
