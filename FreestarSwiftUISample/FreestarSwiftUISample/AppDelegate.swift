@@ -10,7 +10,7 @@ import UIKit
 import FreestarAds
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-//    static let FREESTAR_API_KEY = "5fee93b8-d3d5-43ce-84a5-bffc90e81b5b"
+//    static let FREESTAR_API_KEY = "37f63777-6e63-42f2-89b7-4b67689c2493"
     static let FREESTAR_API_KEY = "XqjhRR"
     var window : UIWindow?
     
