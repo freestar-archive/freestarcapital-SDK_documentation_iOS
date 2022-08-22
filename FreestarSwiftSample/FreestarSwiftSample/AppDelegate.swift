@@ -28,8 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         Freestar.setUserID("User123")
         Freestar.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
- //       Freestar.setBlacklistViewControllers(["BlackViewController"])
-        Freestar.setBlacklistViewControllers([NSStringFromClass(BlackViewController.self)])
+
+        let black = NSStringFromClass(BlackViewController.self)
+        print("black: \(black)")
+        Freestar.setBlacklistViewControllers([black, "BlackViewController"])
 
         let tabVC = UITabBarController()
 
