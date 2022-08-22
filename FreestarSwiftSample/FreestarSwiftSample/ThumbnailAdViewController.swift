@@ -10,6 +10,8 @@ import FreestarAds
 
 class ThumbnailAdViewController: AdViewController {
 
+    let showBlackButton = UIButton(type: .system)
+
     var thumbnailAd : FreestarThumbnailAd?
 
     var thumbnailAdReady = false {
@@ -39,6 +41,8 @@ class ThumbnailAdViewController: AdViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupBlackButtons()
+
         self.enablePartnerSelection = false
     }
 
@@ -46,6 +50,24 @@ class ThumbnailAdViewController: AdViewController {
 
     @objc override func updateShowButton() {
         showButton.isEnabled = thumbnailAdReady
+    }
+
+    func setupBlackButtons() {
+        showBlackButton.setTitle("Show Black", for: .normal)
+        showBlackButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
+        showBlackButton.addTarget(self,
+                             action:#selector(showBlackVC),
+                             for: .touchUpInside)
+        self.view.addSubview(showBlackButton)
+        showBlackButton.translatesAutoresizingMaskIntoConstraints = false
+        showBlackButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 100).isActive = true
+        showBlackButton.topAnchor.constraint(equalTo: loadButton.bottomAnchor, constant: 10).isActive = true
+    }
+
+    @objc
+    func showBlackVC() {
+        //PUSH
+        navigationController?.pushViewController(BlackViewController(), animated: true)
     }
 }
 
