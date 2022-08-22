@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5182DC170B4FFF5E61DEAB09 /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3493825A9B22F9F5CBF1F651 /* Pods_FreestarSwiftSample.framework */; };
 		84D21A1928A5D36600F68142 /* ThumbnailAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */; };
 		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
 		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
@@ -18,6 +17,7 @@
 		9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */; };
 		9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600642B2433E74700A3212E /* PrerollAdViewController.swift */; };
 		9600642E2435941B00A3212E /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9600642D2435890800A3212E /* bunny.mp4 */; };
+		B65D41D5E7EE47D5D00AC292 /* Pods_FreestarSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FA2FECD0E015D8493A30E1 /* Pods_FreestarSwiftSample.framework */; };
 		DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */; };
 		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
@@ -26,8 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3493825A9B22F9F5CBF1F651 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3833FEBA5C1D87917D5F13C6 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailAdViewController.swift; sourceTree = "<group>"; };
 		96006408242EA20D00A3212E /* FreestarAds-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreestarAds-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +38,10 @@
 		960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewController.swift; sourceTree = "<group>"; };
 		9600642B2433E74700A3212E /* PrerollAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrerollAdViewController.swift; sourceTree = "<group>"; };
 		9600642D2435890800A3212E /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
-		9FDC785793916D85B37EBF7D /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		9C7689DF85C52344B34889C8 /* Pods-FreestarSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B4FA2FECD0E015D8493A30E1 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
+		FBA5FAF3F6369F419EC3B8F8 /* Pods-FreestarSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarSwiftSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5182DC170B4FFF5E61DEAB09 /* Pods_FreestarSwiftSample.framework in Frameworks */,
+				B65D41D5E7EE47D5D00AC292 /* Pods_FreestarSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +63,18 @@
 		6FF828191980196AA5797F6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9FDC785793916D85B37EBF7D /* Pods-FreestarSwiftSample.debug.xcconfig */,
-				3833FEBA5C1D87917D5F13C6 /* Pods-FreestarSwiftSample.release.xcconfig */,
+				9C7689DF85C52344B34889C8 /* Pods-FreestarSwiftSample.debug.xcconfig */,
+				FBA5FAF3F6369F419EC3B8F8 /* Pods-FreestarSwiftSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		90CC37863E16197048682FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4FA2FECD0E015D8493A30E1 /* Pods_FreestarSwiftSample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		960063FF242EA20D00A3212E = {
@@ -75,7 +83,7 @@
 				9600640A242EA20D00A3212E /* FreestarSwiftSample */,
 				96006409242EA20D00A3212E /* Products */,
 				6FF828191980196AA5797F6B /* Pods */,
-				F91C0249E3FF625601A1275C /* Frameworks */,
+				90CC37863E16197048682FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,14 +118,6 @@
 			path = FreestarSwiftSample;
 			sourceTree = "<group>";
 		};
-		F91C0249E3FF625601A1275C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3493825A9B22F9F5CBF1F651 /* Pods_FreestarSwiftSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,12 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9600641C242EA20F00A3212E /* Build configuration list for PBXNativeTarget "FreestarSwiftSample" */;
 			buildPhases = (
-				98F387E2CE83C6CD78239DAD /* [CP] Check Pods Manifest.lock */,
+				E2DEBDD6914971A4B45160C4 /* [CP] Check Pods Manifest.lock */,
 				96006404242EA20D00A3212E /* Sources */,
 				96006405242EA20D00A3212E /* Frameworks */,
 				96006406242EA20D00A3212E /* Resources */,
-				98B2D3C641366D5706A0CF28 /* [CP] Embed Pods Frameworks */,
-				50965D88F7EE56E9369B7CD7 /* [CP] Copy Pods Resources */,
+				80C43E11A15EE9CB763142AB /* [CP] Embed Pods Frameworks */,
+				067C202F1C65B1649DBB92E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,7 +189,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50965D88F7EE56E9369B7CD7 /* [CP] Copy Pods Resources */ = {
+		067C202F1C65B1649DBB92E1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,7 +206,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98B2D3C641366D5706A0CF28 /* [CP] Embed Pods Frameworks */ = {
+		80C43E11A15EE9CB763142AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,7 +223,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarSwiftSample/Pods-FreestarSwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98F387E2CE83C6CD78239DAD /* [CP] Check Pods Manifest.lock */ = {
+		E2DEBDD6914971A4B45160C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,7 +396,7 @@
 		};
 		9600641D242EA20F00A3212E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FDC785793916D85B37EBF7D /* Pods-FreestarSwiftSample.debug.xcconfig */;
+			baseConfigurationReference = 9C7689DF85C52344B34889C8 /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -448,7 +448,7 @@
 		};
 		9600641E242EA20F00A3212E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3833FEBA5C1D87917D5F13C6 /* Pods-FreestarSwiftSample.release.xcconfig */;
+			baseConfigurationReference = FBA5FAF3F6369F419EC3B8F8 /* Pods-FreestarSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
