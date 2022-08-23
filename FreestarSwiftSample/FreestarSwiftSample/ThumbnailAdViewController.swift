@@ -92,14 +92,16 @@ extension ThumbnailAdViewController : FreestarThumbnailAdDelegate {
     }
 
     func onThumbnailShown(_ ad: FreestarThumbnailAd) {
-
     }
 
     func onThumbnailClicked(_ ad: FreestarThumbnailAd) {
-
     }
 
     func onThumbnailClosed(_ ad: FreestarThumbnailAd) {
+        self.thumbnailAdReady = false
+    }
+
+    func onThumbnailDismissed(_ ad: FreestarThumbnailAd) {
         self.thumbnailAdReady = false
     }
 }

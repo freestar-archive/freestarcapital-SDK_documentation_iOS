@@ -27,11 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         Freestar.setUserID("User123")
-        Freestar.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
 
-        let black = NSStringFromClass(BlackViewController.self)
-        print("black: \(black)")
-        Freestar.setBlacklistViewControllers([black, "BlackViewController"])
+        //Thumbnail Configurations
+        Freestar.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
+        Freestar.setBlacklistViewControllers(["BlackViewController"])
+        Freestar.setGravity(FreestarThumbnailAdGravity.TopRight)
+        Freestar.setXMargin(20)
+        Freestar.setYMargin(50)
 
         let tabVC = UITabBarController()
 
