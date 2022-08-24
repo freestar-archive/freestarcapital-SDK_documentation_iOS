@@ -1,13 +1,9 @@
 PODS:
-  - FBAudienceNetwork (6.9.0)
-  - FreestarAds-GAM-PreRelease (9.2.0.3-beta-4):
-    - FreestarAds-PreRelease (~> 5.10-beta)
+  - FreestarAds-Prebid-PreRelease (2.0.0.4-beta-2):
+    - FreestarAds-PreRelease (~> 5.14-beta)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-GAM-PreRelease/Facebook (9.2.0.3-beta-4):
-    - FreestarAds-PreRelease (~> 5.10-beta)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-    - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
-  - FreestarAds-PreRelease (5.13.0-beta-4)
+    - PrebidMobile-FSTRAds (= 2.0.0.6)
+  - FreestarAds-PreRelease (5.14.0-beta-7)
   - Google-Mobile-Ads-SDK (9.2.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -31,9 +27,6 @@ PODS:
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
     - nanopb (~> 2.30908.0)
-  - GoogleMobileAdsMediationFacebook (6.9.0.1):
-    - FBAudienceNetwork (= 6.9.0)
-    - Google-Mobile-Ads-SDK (~> 9.0)
   - GoogleUserMessagingPlatform (2.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
@@ -58,46 +51,44 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - PrebidMobile-FSTRAds (2.0.0.6)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - FreestarAds-GAM-PreRelease (~> 9.2-beta)
-  - FreestarAds-GAM-PreRelease/Facebook (~> 9.2-beta)
-  - FreestarAds-PreRelease (~> 5.13.0-beta-4)
+  - FreestarAds-Prebid-PreRelease (~> 2.0.0.4-beta-2)
+  - FreestarAds-PreRelease (~> 5.14.0-beta-7)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - FBAudienceNetwork
-    - FreestarAds-GAM-PreRelease
+    - FreestarAds-Prebid-PreRelease
     - FreestarAds-PreRelease
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
-    - GoogleMobileAdsMediationFacebook
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
+    - PrebidMobile-FSTRAds
     - PromisesObjC
   trunk:
     - LoremIpsum
     - SnapKit
 
 SPEC CHECKSUMS:
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  FreestarAds-GAM-PreRelease: b3573e7d89adc2a7b7c29f8e853c0c5fcb0b57fd
-  FreestarAds-PreRelease: fcbda922be07f518659107e1045150b40abb3146
+  FreestarAds-Prebid-PreRelease: 015a8f2fcc453f3ef07b92ac8c045bcb31207e50
+  FreestarAds-PreRelease: 45f05fc6df647adee580006e47275430406f1ed3
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
   GoogleAppMeasurement: 4c19f031220c72464d460c9daa1fb5d1acce958e
-  GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  PrebidMobile-FSTRAds: 62e9843a223fc17526ef1d0fa1f3861e32015e71
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 09fec4e22757c39661712b12263c2ab5d1705f4f
+PODFILE CHECKSUM: f8c862f2797e87e5ae740e688daa1e5e9c1e47ef
 
 COCOAPODS: 1.11.3
