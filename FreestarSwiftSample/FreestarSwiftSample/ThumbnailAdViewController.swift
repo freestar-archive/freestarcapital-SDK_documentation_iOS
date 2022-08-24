@@ -41,9 +41,19 @@ class ThumbnailAdViewController: AdViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupConfig()
         setupBlackButtons()
 
         self.enablePartnerSelection = false
+    }
+
+    func setupConfig() {
+        //FreestarThumbnailAd Configurations
+        FreestarThumbnailAd.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
+        FreestarThumbnailAd.setBlacklistViewControllers(["BlackViewController"])
+        FreestarThumbnailAd.setGravity(FreestarThumbnailAdGravity.BottomRight)
+        FreestarThumbnailAd.setXMargin(20)
+        FreestarThumbnailAd.setYMargin(50)
     }
 
     // MARK: - controlling UI

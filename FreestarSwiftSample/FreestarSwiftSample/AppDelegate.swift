@@ -28,13 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         Freestar.setUserID("User123")
 
-        //Thumbnail Configurations
-        Freestar.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
-        Freestar.setBlacklistViewControllers(["BlackViewController"])
-        Freestar.setGravity(FreestarThumbnailAdGravity.TopRight)
-        Freestar.setXMargin(20)
-        Freestar.setYMargin(50)
-
         let tabVC = UITabBarController()
 
         let thumbVC = ThumbnailAdViewController()
