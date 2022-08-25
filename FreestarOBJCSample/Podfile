@@ -11,7 +11,7 @@ target 'FreestarOBJCSample' do
   pod "FreestarAds-AppLovin", "~> 11.0.0.1"
   pod "FreestarAds-AppLovinMax", "~> 11.0"
   pod "FreestarAds-TAM", "~> 4.4.3.3"
-  pod "FreestarAds-Hyprmx", "~> 6.0"
+  pod "FreestarAds-Hyprmx", "~> 6.0.0.3"
   pod "FreestarAds-Yahoo", "~> 1.14.2.2"
   pod "FreestarAds-Ogury", "~> 2.1.0.2"
   pod 'FreestarAds-Googleadmob', '~> 9.2'
