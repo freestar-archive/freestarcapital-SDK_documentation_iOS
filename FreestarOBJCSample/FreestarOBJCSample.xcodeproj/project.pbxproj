@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84ECA13128BEE78000D83EBD /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ECA13028BEE78000D83EBD /* ThumbnailViewController.m */; };
 		96C859F2241C53E1009BD9FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C859F1241C53E1009BD9FB /* AppDelegate.m */; };
 		96C859F8241C53E1009BD9FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C859F7241C53E1009BD9FB /* ViewController.m */; };
 		96C859FB241C53E1009BD9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C859F9241C53E1009BD9FB /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarOBJCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.release.xcconfig"; sourceTree = "<group>"; };
+		84ECA12F28BEE78000D83EBD /* ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		84ECA13028BEE78000D83EBD /* ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.debug.xcconfig"; sourceTree = "<group>"; };
 		96C859ED241C53E1009BD9FB /* FreestarOBJCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarOBJCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C859F0241C53E1009BD9FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				96C859F1241C53E1009BD9FB /* AppDelegate.m */,
 				96C859F6241C53E1009BD9FB /* ViewController.h */,
 				96C859F7241C53E1009BD9FB /* ViewController.m */,
+				84ECA12F28BEE78000D83EBD /* ThumbnailViewController.h */,
+				84ECA13028BEE78000D83EBD /* ThumbnailViewController.m */,
 				96C85A0D241C5AFD009BD9FB /* PartnerChoice.h */,
 				96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */,
 				96C85A0E241C5AFD009BD9FB /* PartnerSelectionTableViewController.h */,
@@ -251,6 +256,7 @@
 				96C859F2241C53E1009BD9FB /* AppDelegate.m in Sources */,
 				96C85A03241C53E4009BD9FB /* main.m in Sources */,
 				96C85A10241C5AFD009BD9FB /* PartnerChoice.m in Sources */,
+				84ECA13128BEE78000D83EBD /* ThumbnailViewController.m in Sources */,
 				96C85A11241C5AFD009BD9FB /* PartnerSelectionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +337,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					"$inherited",
+					$inherited,
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -389,7 +395,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					"$inherited",
+					$inherited,
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
