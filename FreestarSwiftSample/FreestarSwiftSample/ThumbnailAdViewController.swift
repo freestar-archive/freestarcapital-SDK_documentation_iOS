@@ -11,6 +11,7 @@ import FreestarAds
 class ThumbnailAdViewController: AdViewController {
 
     let showBlackButton = UIButton(type: .system)
+    let showFullScreenButton = UIButton(type: .system)
 
     var thumbnailAd : FreestarThumbnailAd?
 
@@ -43,6 +44,7 @@ class ThumbnailAdViewController: AdViewController {
 
         setupConfig()
         setupBlackButtons()
+        setupFullScreen()
 
         self.enablePartnerSelection = false
     }
@@ -50,10 +52,10 @@ class ThumbnailAdViewController: AdViewController {
     func setupConfig() {
         //FreestarThumbnailAd Configurations
         FreestarThumbnailAd.setWhitelistBundleIdentifiers(["io.freestar.ads.FreestarSwiftSample"])
-        FreestarThumbnailAd.setBlacklistViewControllers(["BlackViewController"])
-        FreestarThumbnailAd.setGravity(FreestarThumbnailAdGravity.BottomRight)
-        FreestarThumbnailAd.setXMargin(20)
-        FreestarThumbnailAd.setYMargin(50)
+        FreestarThumbnailAd.setBlacklistViewControllers(["BlackViewController","FullscreenAdViewControllerPush","FullscreenAdViewController"])
+        FreestarThumbnailAd.setGravity(FreestarThumbnailAdGravity.TopLeft)
+        FreestarThumbnailAd.setXMargin(100)
+        FreestarThumbnailAd.setYMargin(500)
     }
 
     // MARK: - controlling UI
@@ -74,10 +76,28 @@ class ThumbnailAdViewController: AdViewController {
         showBlackButton.topAnchor.constraint(equalTo: loadButton.bottomAnchor, constant: 10).isActive = true
     }
 
+    func setupFullScreen() {
+        showFullScreenButton.setTitle("Show FullScreen", for: .normal)
+        showFullScreenButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
+        showFullScreenButton.addTarget(self,
+                             action:#selector(showFullVC),
+                             for: .touchUpInside)
+        self.view.addSubview(showFullScreenButton)
+        showFullScreenButton.translatesAutoresizingMaskIntoConstraints = false
+        showFullScreenButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 100).isActive = true
+        showFullScreenButton.topAnchor.constraint(equalTo: showBlackButton.bottomAnchor, constant: 30).isActive = true
+    }
+
     @objc
     func showBlackVC() {
         //PUSH
         navigationController?.pushViewController(BlackViewController(), animated: true)
+    }
+
+    @objc
+    func showFullVC() {
+        //PUSH
+        navigationController?.pushViewController(FullscreenAdViewControllerPush(), animated: true)
     }
 }
 
