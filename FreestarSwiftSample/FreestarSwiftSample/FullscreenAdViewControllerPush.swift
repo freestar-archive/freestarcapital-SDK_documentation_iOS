@@ -9,7 +9,8 @@ import UIKit
 import FreestarAds
 
 class FullscreenAdViewControllerPush: AdViewController {
-    
+
+    var showThumbnail = ShowThumbnail.shared    
     var interstitialAd : FreestarInterstitialAd?
     var rewardedAd : FreestarRewardedAd?
     
@@ -74,12 +75,18 @@ class FullscreenAdViewControllerPush: AdViewController {
 
 extension FullscreenAdViewControllerPush : FreestarInterstitialDelegate {
     func loadInterstitialAd() {
+        if showThumbnail.isShowingThumbnail == true {
+            return
+        }
         self.interstitialAd = FreestarInterstitialAd(delegate: self)
         self.interstitialAd?.selectPartners(self.chosenPartners)
         self.interstitialAd?.loadPlacement(placementField.text)
     }
     
     func showInterstitialAd() {
+        if showThumbnail.isShowingThumbnail == true {
+            return
+        }
         interstitialAd?.show(from: self)
     }
     
@@ -106,6 +113,9 @@ extension FullscreenAdViewControllerPush : FreestarInterstitialDelegate {
 
 extension FullscreenAdViewControllerPush : FreestarRewardedDelegate {
     func loadRewardedAd() {
+        if showThumbnail.isShowingThumbnail == true {
+            return
+        }
         let rew = FreestarReward.blank()
         rew.rewardName = "Coins"
         rew.rewardAmount = 1000
@@ -115,6 +125,9 @@ extension FullscreenAdViewControllerPush : FreestarRewardedDelegate {
     }
     
     func showRewardedAd() {
+        if showThumbnail.isShowingThumbnail == true {
+            return
+        }
         rewardedAd?.show(from: self)
     }
     
