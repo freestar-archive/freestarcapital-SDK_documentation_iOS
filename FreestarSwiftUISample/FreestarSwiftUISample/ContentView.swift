@@ -13,9 +13,10 @@ struct ContentView: View {
     let mrecPlacementId: String = "mrec_p1"
     let interstitialPlacementId: String = "interstitial_p2"
     let rewardedPlacementId: String = "reward_p1"
-    
+        
     @State var interstitial: CustomInterstitialAd?
     @State var rewarded: CustomRewardedAd?
+    @State var showBannerFlag = false
     
     init(appDelegate: AppDelegate) {
        // at this point `didFinishLaunching` is completed
@@ -24,9 +25,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            CustomSwiftUIBanner(placementId: mrecPlacementId,
-                                  size: FreestarBannerAdSize.banner300x250)
-            .frame(width: 300, height: 250)
+            Button("Load & Show Banner") {
+                self.showBannerFlag.toggle()
+            }
+            if showBannerFlag {
+                CustomSwiftUIBanner(placementId: mrecPlacementId,
+                                           size: FreestarBannerAdSize.banner300x250)
+                .frame(width: 300, height: 250)
+            }
             Spacer()
             Button("Load & Show Interstitial") {
                 interstitial = CustomInterstitialAd(placementId: interstitialPlacementId)

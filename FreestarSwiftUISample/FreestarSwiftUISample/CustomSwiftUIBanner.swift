@@ -14,6 +14,7 @@ final class CustomSwiftUIBanner: UIViewRepresentable {
     
     var placementId: String?
     var size: FreestarBannerAdSize
+    var internalBanner: FreestarBannerAd?
     
     public init(placementId: String?, size: FreestarBannerAdSize) {
         self.placementId = placementId
@@ -25,10 +26,10 @@ final class CustomSwiftUIBanner: UIViewRepresentable {
     }
 
     func makeUIView(context: Context) -> FreestarBannerAd {
-        let adView = FreestarBannerAd(delegate: context.coordinator, andSize: size)
-        adView.delegate = context.coordinator
-        adView.loadPlacement(placementId)
-        return adView
+        internalBanner = FreestarBannerAd(delegate: context.coordinator, andSize: size)
+        internalBanner!.delegate = context.coordinator
+        internalBanner!.loadPlacement(placementId)
+        return internalBanner!
     }
 
     func updateUIView(_ uiView: FreestarBannerAd, context: Context) {}
