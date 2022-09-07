@@ -6,32 +6,33 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '~> 5.14.0-beta-7'
-  pod 'FreestarAds-Prebid-PreRelease', '~> 2.0.0.4-beta-2'
-#
-#  pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.0-beta-2'
-#  pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.3.2-beta-6' # M10-443
-#  pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0.0.7-beta-4'
-#  pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.1-beta'
-#  pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.1-beta'
-#  pod 'FreestarAds-Tapjoy-PreRelease', '~> 12.8.0.1-beta'
-#  pod 'FreestarAds-Criteo-PreRelease', '~> 4.3.1.1-beta'
-#  pod 'FreestarAds-TAM-PreRelease', '~> 4.4.3.2-beta-3'
-#  pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0.0.0-beta'
-#  pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0.0.0-beta'
-#  pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.2-beta'
-#  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 9.2-beta'
-#  pod 'FreestarAds-GAM-PreRelease', '~> 9.2-beta'
-#  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.2-beta'
-#  pod 'FreestarAds-Unity-PreRelease', '~> 4.1.0.4-beta-1'
-#  
+ pod 'FreestarAds-PreRelease', '~> 5.14.0-beta-7'
+ pod 'FreestarAds-Fyber-PreRelease', '~> 3.30.0.1-beta-1'
+
+ pod 'FreestarAds-Prebid-PreRelease', '~> 2.0.0.4-beta-2'
+ pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.0-beta-2'
+ pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14.3.2-beta-6' 
+ pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0.0.7-beta-4'
+ pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.1-beta'
+ pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.1-beta'
+ pod 'FreestarAds-Tapjoy-PreRelease', '~> 12.8.0.1-beta'
+ pod 'FreestarAds-Criteo-PreRelease', '~> 4.3.1.1-beta'
+ pod 'FreestarAds-TAM-PreRelease', '~> 4.4.3.2-beta-3'
+ pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0.0.0-beta'
+ pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0.0.0-beta'
+ pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.2-beta'
+ pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 9.2-beta'
+ pod 'FreestarAds-GAM-PreRelease', '~> 9.2-beta'
+ pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.2-beta'
+ pod 'FreestarAds-Unity-PreRelease', '~> 4.1.0.4-beta-1'
+ 
 #  # Not M1 compatible
-#   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.1-beta'
-#   pod 'FreestarAds-Nimbus-PreRelease', '~> 1.10.5.1-beta'
-#   pod 'FreestarAds-Google-PreRelease', '~> 3.13.0.1-beta'
-#   pod 'FreestarAds-Pangle-PreRelease', '~> 3.7.0.1-beta'    
+ pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.1-beta'
+ pod 'FreestarAds-Nimbus-PreRelease', '~> 1.10.5.1-beta'
+ pod 'FreestarAds-Google-PreRelease', '~> 3.13.0.1-beta'
+ pod 'FreestarAds-Pangle-PreRelease', '~> 3.7.0.1-beta'    
   
   # helper frameworks for feed view
-  pod 'SnapKit', '~> 5.0.0'
-  pod 'LoremIpsum', '~> 1.0'  
+ pod 'SnapKit', '~> 5.0.0'
+ pod 'LoremIpsum', '~> 1.0'  
 end
