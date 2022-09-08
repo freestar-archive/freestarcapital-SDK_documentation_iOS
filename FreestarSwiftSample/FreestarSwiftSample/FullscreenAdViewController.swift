@@ -12,7 +12,7 @@ class FullscreenAdViewController: AdViewController {
     
     var interstitialAd : FreestarInterstitialAd?
     var rewardedAd : FreestarRewardedAd?
-    var showThumbnail = ShowThumbnail.shared
+    var thumbnailOptions = ThumbnailOptions.shared
     
     var interstitialAdReady = false {
         didSet {
@@ -73,7 +73,8 @@ class FullscreenAdViewController: AdViewController {
 
 extension FullscreenAdViewController : FreestarInterstitialDelegate {
     func loadInterstitialAd() {
-        if showThumbnail.isShowingThumbnail == true {
+        if thumbnailOptions.isShowingThumbnail == true {
+            debugPrint("isShowingThumbnail TRUE")
             return
         }
         self.interstitialAd = FreestarInterstitialAd(delegate: self)
@@ -82,7 +83,7 @@ extension FullscreenAdViewController : FreestarInterstitialDelegate {
     }
     
     func showInterstitialAd() {
-        if showThumbnail.isShowingThumbnail == true {
+        if thumbnailOptions.isShowingThumbnail == true {
             return
         }
         interstitialAd?.show(from: self)
@@ -111,7 +112,8 @@ extension FullscreenAdViewController : FreestarInterstitialDelegate {
 
 extension FullscreenAdViewController : FreestarRewardedDelegate {
     func loadRewardedAd() {
-        if showThumbnail.isShowingThumbnail == true {
+        if thumbnailOptions.isShowingThumbnail == true {
+            debugPrint("isShowingThumbnail TRUE")
             return
         }
         let rew = FreestarReward.blank()
@@ -123,7 +125,8 @@ extension FullscreenAdViewController : FreestarRewardedDelegate {
     }
     
     func showRewardedAd() {
-        if showThumbnail.isShowingThumbnail == true {
+        if thumbnailOptions.isShowingThumbnail == true {
+            debugPrint("isShowingThumbnail TRUE")
             return
         }
         rewardedAd?.show(from: self)

@@ -1,5 +1,5 @@
 //
-//  ShowThumbnail.swift
+//  ThumbnailOptions.swift
 //  FreestarSwiftSample
 //
 //  Created by Carlos Alcala on 06/09/22.
@@ -9,9 +9,9 @@
 import UIKit
 import FreestarAds
 
-class ShowThumbnail {
+class ThumbnailOptions {
 
-    static let shared = ShowThumbnail()
+    static let shared = ThumbnailOptions()
 
     var isShowingThumbnail: Bool = false
 

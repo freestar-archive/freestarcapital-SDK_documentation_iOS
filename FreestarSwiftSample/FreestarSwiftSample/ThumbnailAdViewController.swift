@@ -13,7 +13,7 @@ class ThumbnailAdViewController: AdViewController {
     let showBlackButton = UIButton(type: .system)
     let showFullScreenButton = UIButton(type: .system)
 
-    var showThumbnail = ShowThumbnail.shared
+    var thumbnailOptions = ThumbnailOptions.shared
 
     var thumbnailAd : FreestarThumbnailAd?
 
@@ -110,7 +110,7 @@ private extension ThumbnailAdViewController {
     }
 
     func showThumbnailAd() {
-        showThumbnail.isShowingThumbnail = true
+        thumbnailOptions.isShowingThumbnail = true
         thumbnailAd?.show()
     }
 }
@@ -132,11 +132,11 @@ extension ThumbnailAdViewController : FreestarThumbnailAdDelegate {
 
     func onThumbnailClosed(_ ad: FreestarThumbnailAd) {
         self.thumbnailAdReady = false
-        showThumbnail.isShowingThumbnail = false
+        thumbnailOptions.isShowingThumbnail = false
     }
 
     func onThumbnailDismissed(_ ad: FreestarThumbnailAd) {
         self.thumbnailAdReady = false
-        showThumbnail.isShowingThumbnail = false
+        thumbnailOptions.isShowingThumbnail = false
     }
 }

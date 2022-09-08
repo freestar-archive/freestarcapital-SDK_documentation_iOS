@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5601AEC428C240FF006646D9 /* FullscreenAdViewControllerPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601AEC328C240FF006646D9 /* FullscreenAdViewControllerPush.swift */; };
+		8415D7B928C96E3D009DFD4F /* ThumbnailOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415D7B828C96E3D009DFD4F /* ThumbnailOptions.swift */; };
 		8421EE4428B034AD00254501 /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421EE4328B034AD00254501 /* BlackViewController.swift */; };
 		8421EE4628B0353F00254501 /* BlackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421EE4528B0353F00254501 /* BlackViewController.xib */; };
 		84D21A1928A5D36600F68142 /* ThumbnailAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		10298A3828FE355029570B14 /* Pods_FreestarSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5601AEC328C240FF006646D9 /* FullscreenAdViewControllerPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenAdViewControllerPush.swift; sourceTree = "<group>"; };
+		8415D7B828C96E3D009DFD4F /* ThumbnailOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailOptions.swift; sourceTree = "<group>"; };
 		8421EE4328B034AD00254501 /* BlackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
 		8421EE4528B0353F00254501 /* BlackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackViewController.xib; sourceTree = "<group>"; };
 		84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailAdViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
 				96006419242EA20F00A3212E /* Info.plist */,
 				84D21A1828A5D36600F68142 /* ThumbnailAdViewController.swift */,
+				8415D7B828C96E3D009DFD4F /* ThumbnailOptions.swift */,
 				8421EE4328B034AD00254501 /* BlackViewController.swift */,
 				8421EE4528B0353F00254501 /* BlackViewController.xib */,
 				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,
@@ -265,6 +268,7 @@
 				DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */,
 				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
 				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
+				8415D7B928C96E3D009DFD4F /* ThumbnailOptions.swift in Sources */,
 				5601AEC428C240FF006646D9 /* FullscreenAdViewControllerPush.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
 				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
