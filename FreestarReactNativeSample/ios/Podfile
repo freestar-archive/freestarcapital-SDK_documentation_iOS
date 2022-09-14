@@ -1,4 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
+use_frameworks!
+
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 
@@ -16,15 +19,16 @@ target 'FreestarReactNativeSample' do
     # Pods for testing
   end
   
-  versions = {}
-  versions['Flipper'] = '~> 0.91.0'
-  versions['Flipper-Folly'] = '~> 2.6'
-  use_flipper!(versions)
+  # versions = {}
+  # versions['Flipper'] = '~> 0.91.0'
+  # versions['Flipper-Folly'] = '~> 2.6'
+  # use_flipper!(versions)
 
   post_install do |installer|
     react_native_post_install(installer)
   end
   
+  # pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.3-beta-6'
   pod 'FreestarAds-AdColony', '~> 5.2.0'
   pod 'FreestarAds-AppLovin', '~> 11.0.0.1'
   pod 'FreestarAds-Googleadmob', '~> 9.2.0.2'
