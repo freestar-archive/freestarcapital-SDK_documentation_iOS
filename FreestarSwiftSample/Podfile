@@ -7,7 +7,7 @@ target 'FreestarSwiftSample' do
 
   # M1 compatible
  pod 'FreestarAds-PreRelease', '~> 5.15.0-beta-4'
- pod 'FreestarAds-Fyber-PreRelease', '~> 3.30.0.1-beta-4'
+ pod 'FreestarAds-Fyber-PreRelease', '~> 3.30.0.1-beta-5'
 
  pod 'FreestarAds-Prebid-PreRelease', '~> 2.0.0.4-beta-2'
  pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.3-beta-6'
