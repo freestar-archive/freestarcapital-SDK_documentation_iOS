@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import FreestarAds
 
-final class CustomSwiftUIBanner: UIViewRepresentable {
+struct CustomSwiftUIBanner: UIViewRepresentable {
     
     var placementId: String?
     var size: FreestarBannerAdSize
@@ -24,15 +24,32 @@ final class CustomSwiftUIBanner: UIViewRepresentable {
     func makeCoordinator() -> Coordinator {
         return Coordinator()
     }
-
-    func makeUIView(context: Context) -> FreestarBannerAd {
-        internalBanner = FreestarBannerAd(delegate: context.coordinator, andSize: size)
-        internalBanner!.delegate = context.coordinator
-        internalBanner!.loadPlacement(placementId)
-        return internalBanner!
+    
+    private func widthFromSize(_ size: FreestarBannerAdSize) -> Int {
+        if (size ==  FreestarBannerAdSize.banner300x250) {
+            return 300
+        } else {
+            return 320
+        }
+    }
+    
+    private func heightFromSize(_ size: FreestarBannerAdSize) -> Int {
+        if (size ==  FreestarBannerAdSize.banner320x50) {
+            return 50
+        } else {
+            return 250
+        }
     }
 
-    func updateUIView(_ uiView: FreestarBannerAd, context: Context) {}
+    func makeUIView(context: Context) -> FreestarBannerAd {
+        let banner = FreestarBannerAd(delegate: context.coordinator, andSize: size)
+        banner.delegate = context.coordinator
+        return banner
+    }
+
+    func updateUIView(_ uiView: FreestarBannerAd, context: Context) {
+        uiView.loadPlacement(placementId)
+    }
 
     class Coordinator: NSObject, FreestarBannerAdDelegate {
         

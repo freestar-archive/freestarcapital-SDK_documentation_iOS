@@ -31,7 +31,7 @@ struct ContentView: View {
             if showBannerFlag {
                 CustomSwiftUIBanner(placementId: mrecPlacementId,
                                            size: FreestarBannerAdSize.banner300x250)
-                .frame(width: 300, height: 250)
+                .frame(width: 300, height: 250)                
             }
             Spacer()
             Button("Load & Show Interstitial") {
