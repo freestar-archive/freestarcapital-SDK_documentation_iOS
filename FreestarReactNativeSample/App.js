@@ -19,6 +19,7 @@ var state = {
   placementID: "",
   interstitialReady: false,
   rewardedReady: false,
+  thumbnailReady: false,
 };
 
 const styles = StyleSheet.create({
@@ -53,6 +54,62 @@ function enableShowFullscreen(adUnitSelection) {
          (adUnitSelection === 1 && state.rewardedReady);
 }
 
+function enableShowThumbnail() {
+  return (state.thumbnailReady);
+}
+
+function ThumbnailAds() {
+  const [canShowThumbnail, setCanShowThumbnail] = useState(false);
+
+  FreestarReactBridge.subscribeToThumbnailAdCallbacks((eventName) => {
+    if(eventName === "onThumbnailAdLoaded") {
+      state.thumbnailReady = true;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else if (eventName === "onThumbnailAdClicked") {
+
+    } else if (eventName === "onThumbnailAdShown") {
+
+    } else if (eventName === "onThumbnailAdFailed") {
+      Alert.alert('Thumbnail Ad not available');
+      state.thumbnailReady = false;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else if (eventName === "onThumbnailAdDismissed") {
+      state.thumbnailReady = false;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else {
+       console.log("unknown Thumbnail event");
+    }
+  });
+
+
+  return(
+    <View style={styles.container}>
+      <Text style={styles.title}>Freestar on ReactNative</Text>
+      <TextInput
+      style={[styles.label, styles.border]}
+      placeholder='Placement ID'
+      onChangeText={(pid) => state.placementID = pid }/>
+
+      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+        <Button
+          title="Load"
+          titleStyle={{fontSize: 36}}
+          onPress={() => {
+              FreestarReactBridge.loadThumbnailAd(state.placementID);
+          }}
+        />
+        <View style={{width: 10}} />
+        <Button
+          disabled={!canShowThumbnail}
+          title="Show"
+          onPress={() => {
+              FreestarReactBridge.showThumbnailAd();
+          }}
+        />
+      </View>
+    </View>
+  );
+}
 
 function FullscreenAds() {
   const [canShowFullscreen, setCanShowFullscreen] = useState(false);
@@ -274,6 +331,7 @@ export default function App(props) {
         <Tab.Screen name="Fullscreen" component={FullscreenAds} />
         <Tab.Screen name="Banner" component={BannerAds} />
         <Tab.Screen name="Native" component={NativeAds} />
+        <Tab.Screen name="Thumbnail" component={ThumbnailAds} />
       </Tab.Navigator>
     </NavigationContainer>
   );
