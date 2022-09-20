@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign : 'center',
     color : 'blue',
-    paddingTop: 20,
+    paddingTop: 40,
     paddingBottom: 10
   }
 });
@@ -104,7 +104,7 @@ function ThumbnailAds() {
           disabled={!canShowThumbnail}
           title="Show"
           onPress={() => {
-              FreestarReactBridge.showThumbnailAd();
+              FreestarReactBridge.showThumbnailAd(state.placementID,"TopRight",10,175);
           }}
         />
       </View>
@@ -324,7 +324,6 @@ function NativeAds() {
 const Tab = createBottomTabNavigator();
 
 export default function App(props) {
-  Alert.alert('APP KEY', APP_KEY);
   FreestarReactBridge.initWithAdUnitID(APP_KEY);
 
   return (
