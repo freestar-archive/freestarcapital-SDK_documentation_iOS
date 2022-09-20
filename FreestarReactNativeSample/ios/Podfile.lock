@@ -1,6 +1,5 @@
 PODS:
   - AdColony (4.7.2)
-  - AmazonPublisherServicesSDK (4.4.3)
   - AppLovinSDK (11.0.0)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
@@ -76,12 +75,9 @@ PODS:
   - FlipperKit/SKIOSNetworkPlugin (0.91.2):
     - FlipperKit/Core
     - FlipperKit/FlipperKitNetworkPlugin
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
   - fmt (6.2.1)
   - freestar-plugin-react-native (1.2.7):
-    - FreestarAds-PreRelease (~> 5.15.0-beta-4)
+    - FreestarAds-PreRelease (~> 5.15.0-beta-5)
     - React
   - FreestarAds-AdColony-PreRelease (4.7.2.2-beta-4):
     - AdColony (= 4.7.2)
@@ -103,11 +99,12 @@ PODS:
     - NimbusSDK (= 1.10.5)
     - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
     - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
-  - FreestarAds-PreRelease (5.15.0-beta-4)
-  - FreestarAds-TAM-PreRelease (4.4.3.3-beta-3):
-    - AmazonPublisherServicesSDK (= 4.4.3)
-    - FMDB (= 2.7.5)
-    - FreestarAds-PreRelease (~> 5.10-beta)
+  - FreestarAds-Ogury-PreRelease (2.1.0.3-beta-6):
+    - FreestarAds-PreRelease (~> 5.12-beta)
+    - OguryAds
+    - OguryChoiceManager
+    - OgurySdk (~> 2.1.0)
+  - FreestarAds-PreRelease (5.15.0-beta-5)
   - FreestarAds-Tapjoy-PreRelease (12.8.0.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
@@ -181,6 +178,24 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (1.10.5):
     - NimbusSDK/NimbusCoreKit
+  - OguryAds (3.1.0):
+    - OguryAds/OMID (= 3.1.0)
+    - OguryCore (= 1.2.0)
+  - OguryAds/OMID (3.1.0):
+    - OguryCore (= 1.2.0)
+  - OguryChoiceManager (4.0.1):
+    - OguryCore (= 1.2.0)
+  - OguryCore (1.2.0)
+  - OgurySdk (2.1.0):
+    - OguryCore (= 1.2.0)
+    - OgurySdk/OguryAds (= 2.1.0)
+    - OgurySdk/OguryChoiceManager (= 2.1.0)
+  - OgurySdk/OguryAds (2.1.0):
+    - OguryAds (= 3.1.0)
+    - OguryCore (= 1.2.0)
+  - OgurySdk/OguryChoiceManager (2.1.0):
+    - OguryChoiceManager (= 4.0.1)
+    - OguryCore (= 1.2.0)
   - OpenSSL-Universal (1.1.1100)
   - PromisesObjC (2.1.1)
   - RCT-Folly (2021.06.28.00-v2):
@@ -492,7 +507,7 @@ DEPENDENCIES:
   - FreestarAds-GAM-PreRelease (~> 9.2.0.3-beta-4)
   - FreestarAds-Googleadmob-PreRelease (~> 9.2-beta)
   - FreestarAds-Nimbus-PreRelease (~> 1.10.5.2-beta-1)
-  - FreestarAds-TAM-PreRelease (~> 4.4.3.3-beta-3)
+  - FreestarAds-Ogury-PreRelease (~> 2.1.0.3-beta-6)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8.0.2-beta-1)
   - FreestarAds-Unity-PreRelease (~> 4.1.0.4-beta-1)
   - FreestarAds-Vungle-PreRelease (~> 6.10.6.2-beta-1)
@@ -531,7 +546,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AdColony
-    - AmazonPublisherServicesSDK
     - AppLovinSDK
     - CocoaAsyncSocket
     - CriteoPublisherSdk
@@ -544,7 +558,6 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - Flipper-RSocket
     - FlipperKit
-    - FMDB
     - fmt
     - FreestarAds-AdColony-PreRelease
     - FreestarAds-AppLovin-PreRelease
@@ -552,8 +565,8 @@ SPEC REPOS:
     - FreestarAds-GAM-PreRelease
     - FreestarAds-Googleadmob-PreRelease
     - FreestarAds-Nimbus-PreRelease
+    - FreestarAds-Ogury-PreRelease
     - FreestarAds-PreRelease
-    - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Unity-PreRelease
     - FreestarAds-Vungle-PreRelease
@@ -565,6 +578,10 @@ SPEC REPOS:
     - libevent
     - nanopb
     - NimbusSDK
+    - OguryAds
+    - OguryChoiceManager
+    - OguryCore
+    - OgurySdk
     - OpenSSL-Universal
     - PromisesObjC
     - TapjoySDK
@@ -644,7 +661,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
@@ -661,17 +677,16 @@ SPEC CHECKSUMS:
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
   Flipper-RSocket: d9d9ade67cbecf6ac10730304bf5607266dd2541
   FlipperKit: ceac080c9cc3d99fb7d44da8337f844459cc3d2a
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  freestar-plugin-react-native: d01cdf2f48283fd7d124d76f9c88baec221210ec
+  freestar-plugin-react-native: 725ef23d654d5b4f371b5fc65c75d5a3eaba96a0
   FreestarAds-AdColony-PreRelease: 1a6b85cd6d47a0da2b9680c7f199eb2bfccf8550
   FreestarAds-AppLovin-PreRelease: f847a0894848173e8b83364ab2c2a72739b0d102
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
   FreestarAds-GAM-PreRelease: b3573e7d89adc2a7b7c29f8e853c0c5fcb0b57fd
   FreestarAds-Googleadmob-PreRelease: 0066db93775ea3a180715d3dc54bf3c80cb27255
   FreestarAds-Nimbus-PreRelease: 41ab6fd9822dde249fac81cde9a7311dfc2e84ea
-  FreestarAds-PreRelease: cee51a3674f219d4a5989001601a3e202b71d754
-  FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
+  FreestarAds-Ogury-PreRelease: 57a016774e7a2970df065e964dc5132f60a12fef
+  FreestarAds-PreRelease: efd556302def1b58ba296eea786735075ce673b9
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
   FreestarAds-Vungle-PreRelease: 7f0b2e297cf8b52df9f4fc33193cb2b1e7617dd7
@@ -684,6 +699,10 @@ SPEC CHECKSUMS:
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
+  OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
+  OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
+  OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
+  OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   RCT-Folly: a21c126816d8025b547704b777a2ba552f3d9fa9
@@ -719,6 +738,6 @@ SPEC CHECKSUMS:
   Yoga: c11abbf5809216c91fcd62f5571078b83d9b6720
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 2f80172f5cd9c2c5cba51a10eaa0d682c49fc669
+PODFILE CHECKSUM: af554fccf0c86f0082d27379eb36078a3c03b999
 
 COCOAPODS: 1.11.3

@@ -12,14 +12,14 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19AFC4AF2F8AC579FC5DFFF7 /* libPods-FreestarReactNativeSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BFA6772ECF0FFD49246C65 /* libPods-FreestarReactNativeSample-tvOS.a */; };
+		1CB9FEE6E67D1F1A94CB1E45 /* libPods-FreestarReactNativeSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3566EF354B92F40180AFD592 /* libPods-FreestarReactNativeSample.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* FreestarReactNativeSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FreestarReactNativeSampleTests.m */; };
-		3C2307D440BFB625F38739A8 /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E813256E3AFF874A117136D /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */; };
-		5AB8574CA2CF2668FC3380F8 /* libPods-FreestarReactNativeSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86444D56D477F7A1E1DE2A61 /* libPods-FreestarReactNativeSample-tvOSTests.a */; };
-		DB32A4F5E5A6708A456085C7 /* libPods-FreestarReactNativeSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E6B636EFB1F9C2EB2ABA9B /* libPods-FreestarReactNativeSample-tvOS.a */; };
-		F4355BBC4B535364695B8BA3 /* libPods-FreestarReactNativeSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B76ACD2F8406B73814C876A /* libPods-FreestarReactNativeSample.a */; };
+		B10D8283DA7CCA416E49946F /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32222BC5F859F440CDFC582A /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */; };
+		C77194D7DFF03EA8E349F88E /* libPods-FreestarReactNativeSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E3444D096D9A4BF874ECCB /* libPods-FreestarReactNativeSample-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		00E356EE1AD99517003FC87E /* FreestarReactNativeSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreestarReactNativeSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FreestarReactNativeSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreestarReactNativeSampleTests.m; sourceTree = "<group>"; };
-		132DC7CB0DDBAE0C4DAB599D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A15B4284904B981D278CA55 /* Pods-FreestarReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FreestarReactNativeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarReactNativeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FreestarReactNativeSample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FreestarReactNativeSample/AppDelegate.m; sourceTree = "<group>"; };
@@ -52,19 +52,19 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FreestarReactNativeSample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FreestarReactNativeSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FreestarReactNativeSample/main.m; sourceTree = "<group>"; };
-		206A279DCB27D29229A65EDC /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		2AEDCDB80559A83F5D09C45C /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2140434605AA7A1DDD6EDF05 /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* FreestarReactNativeSample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreestarReactNativeSample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* FreestarReactNativeSample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreestarReactNativeSample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3015DAC442D5B124EA50DC54 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5B76ACD2F8406B73814C876A /* libPods-FreestarReactNativeSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E813256E3AFF874A117136D /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		618CA1F8D69BC9660D5B428C /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		86444D56D477F7A1E1DE2A61 /* libPods-FreestarReactNativeSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9DC4570C62A8A4428B7D727 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF60D6A817A808102DAE4ED3 /* Pods-FreestarReactNativeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.debug.xcconfig"; sourceTree = "<group>"; };
-		C5E6B636EFB1F9C2EB2ABA9B /* libPods-FreestarReactNativeSample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9D0078841D8CFD8F237C56E /* Pods-FreestarReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
+		32222BC5F859F440CDFC582A /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3566EF354B92F40180AFD592 /* libPods-FreestarReactNativeSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		384C65BB509292069A4FDC1D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54E3444D096D9A4BF874ECCB /* libPods-FreestarReactNativeSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FABC3BB0BA9296B0D7EF068 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84AD074DC58A6A42B87E8494 /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOSTests/Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		94BFA6772ECF0FFD49246C65 /* libPods-FreestarReactNativeSample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreestarReactNativeSample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB102F778EC76DB602346183 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-tvOS/Pods-FreestarReactNativeSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E15674B5420FE56DF537E6C9 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E17F397D54F5D99171BC2AA9 /* Pods-FreestarReactNativeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarReactNativeSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C2307D440BFB625F38739A8 /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a in Frameworks */,
+				B10D8283DA7CCA416E49946F /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4355BBC4B535364695B8BA3 /* libPods-FreestarReactNativeSample.a in Frameworks */,
+				1CB9FEE6E67D1F1A94CB1E45 /* libPods-FreestarReactNativeSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB32A4F5E5A6708A456085C7 /* libPods-FreestarReactNativeSample-tvOS.a in Frameworks */,
+				19AFC4AF2F8AC579FC5DFFF7 /* libPods-FreestarReactNativeSample-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AB8574CA2CF2668FC3380F8 /* libPods-FreestarReactNativeSample-tvOSTests.a in Frameworks */,
+				C77194D7DFF03EA8E349F88E /* libPods-FreestarReactNativeSample-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5B76ACD2F8406B73814C876A /* libPods-FreestarReactNativeSample.a */,
-				5E813256E3AFF874A117136D /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */,
-				C5E6B636EFB1F9C2EB2ABA9B /* libPods-FreestarReactNativeSample-tvOS.a */,
-				86444D56D477F7A1E1DE2A61 /* libPods-FreestarReactNativeSample-tvOSTests.a */,
+				3566EF354B92F40180AFD592 /* libPods-FreestarReactNativeSample.a */,
+				32222BC5F859F440CDFC582A /* libPods-FreestarReactNativeSample-FreestarReactNativeSampleTests.a */,
+				94BFA6772ECF0FFD49246C65 /* libPods-FreestarReactNativeSample-tvOS.a */,
+				54E3444D096D9A4BF874ECCB /* libPods-FreestarReactNativeSample-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		55BB66E2E482B444B80242C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF60D6A817A808102DAE4ED3 /* Pods-FreestarReactNativeSample.debug.xcconfig */,
-				E9D0078841D8CFD8F237C56E /* Pods-FreestarReactNativeSample.release.xcconfig */,
-				2AEDCDB80559A83F5D09C45C /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */,
-				B9DC4570C62A8A4428B7D727 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */,
-				3015DAC442D5B124EA50DC54 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */,
-				206A279DCB27D29229A65EDC /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */,
-				132DC7CB0DDBAE0C4DAB599D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */,
-				618CA1F8D69BC9660D5B428C /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */,
+				E17F397D54F5D99171BC2AA9 /* Pods-FreestarReactNativeSample.debug.xcconfig */,
+				0A15B4284904B981D278CA55 /* Pods-FreestarReactNativeSample.release.xcconfig */,
+				6FABC3BB0BA9296B0D7EF068 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */,
+				E15674B5420FE56DF537E6C9 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */,
+				DB102F778EC76DB602346183 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */,
+				2140434605AA7A1DDD6EDF05 /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */,
+				384C65BB509292069A4FDC1D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */,
+				84AD074DC58A6A42B87E8494 /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,12 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FreestarReactNativeSampleTests" */;
 			buildPhases = (
-				247F85A16CD0F06A735F50FE /* [CP] Check Pods Manifest.lock */,
+				B959F7CBA47CC4B1C584B441 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1193FC8D9610466ADC38D655 /* [CP] Embed Pods Frameworks */,
-				37B4C60B81C435B7AABAAE42 /* [CP] Copy Pods Resources */,
+				D4BBF60F12A3480A9E51B16A /* [CP] Embed Pods Frameworks */,
+				D96C6590FA1F3D0D468404FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,14 +225,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FreestarReactNativeSample" */;
 			buildPhases = (
-				FC1F6ABABF8FB949908394F7 /* [CP] Check Pods Manifest.lock */,
+				58011929B8E11FE0098EAFEA /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7CC72AB22B744AD424D5F108 /* [CP] Embed Pods Frameworks */,
-				58B1C1437E833EF2FA2F54C7 /* [CP] Copy Pods Resources */,
+				5D2634FE3BCA17E1F199D0BC /* [CP] Embed Pods Frameworks */,
+				AD658373CD6039E62D07C386 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FreestarReactNativeSample-tvOS" */;
 			buildPhases = (
-				6CB920A348521628958F983E /* [CP] Check Pods Manifest.lock */,
+				0A03C3178F7FE61FE8A09741 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -267,7 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FreestarReactNativeSample-tvOSTests" */;
 			buildPhases = (
-				1396B2C40507ABAB87E50AC9 /* [CP] Check Pods Manifest.lock */,
+				0AC4904F64361ACA0FCAFF15 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -378,47 +378,29 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		1193FC8D9610466ADC38D655 /* [CP] Embed Pods Frameworks */ = {
+		0A03C3178F7FE61FE8A09741 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh",
-				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds-PreRelease/FreestarAds.framework/FreestarAds",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds-TAM-PreRelease/FreestarAds-TAM.framework/FreestarAds-TAM",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework/NimbusKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds-TAM.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1396B2C40507ABAB87E50AC9 /* [CP] Check Pods Manifest.lock */ = {
+		0AC4904F64361ACA0FCAFF15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,28 +422,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		247F85A16CD0F06A735F50FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,31 +436,67 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		37B4C60B81C435B7AABAAE42 /* [CP] Copy Pods Resources */ = {
+		58011929B8E11FE0098EAFEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2634FE3BCA17E1F199D0BC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.0.0/AppLovinSDKResources.bundle",
-				"${PODS_ROOT}/FreestarAds-PreRelease/build/Assets/Freestar-Native-Medium.xib",
-				"${PODS_ROOT}/FreestarAds-PreRelease/build/Assets/Freestar-Native-Small.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds-PreRelease/FreestarAds.framework/FreestarAds",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework/NimbusKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryAds/OMID/OMSDK_Ogury.framework/OMSDK_Ogury",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Ogury.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58B1C1437E833EF2FA2F54C7 /* [CP] Copy Pods Resources */ = {
+		AD658373CD6039E62D07C386 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -524,7 +520,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6CB920A348521628958F983E /* [CP] Check Pods Manifest.lock */ = {
+		B959F7CBA47CC4B1C584B441 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,73 +535,73 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CC72AB22B744AD424D5F108 /* [CP] Embed Pods Frameworks */ = {
+		D4BBF60F12A3480A9E51B16A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds-PreRelease/FreestarAds.framework/FreestarAds",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FreestarAds-TAM-PreRelease/FreestarAds-TAM.framework/FreestarAds-TAM",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusCoreKit/NimbusCoreKit.framework/NimbusCoreKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusKit/NimbusKit.framework/NimbusKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderKit/NimbusRenderKit.framework/NimbusRenderKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderStaticKit/NimbusRenderStaticKit.framework/NimbusRenderStaticKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRenderVideoKit/NimbusRenderVideoKit.framework/NimbusRenderVideoKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NimbusSDK/NimbusRequestKit/NimbusRequestKit.framework/NimbusRequestKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryAds/OMID/OMSDK_Ogury.framework/OMSDK_Ogury",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreestarAds-TAM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderStaticKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRenderVideoKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbusRequestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Ogury.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample/Pods-FreestarReactNativeSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC1F6ABABF8FB949908394F7 /* [CP] Check Pods Manifest.lock */ = {
+		D96C6590FA1F3D0D468404FA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.0.0/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/FreestarAds-PreRelease/build/Assets/Freestar-Native-Medium.xib",
+				"${PODS_ROOT}/FreestarAds-PreRelease/build/Assets/Freestar-Native-Small.xib",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreestarReactNativeSample-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Medium.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Freestar-Native-Small.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests/Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -713,7 +709,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AEDCDB80559A83F5D09C45C /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */;
+			baseConfigurationReference = 6FABC3BB0BA9296B0D7EF068 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -736,7 +732,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9DC4570C62A8A4428B7D727 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */;
+			baseConfigurationReference = E15674B5420FE56DF537E6C9 /* Pods-FreestarReactNativeSample-FreestarReactNativeSampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -756,7 +752,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF60D6A817A808102DAE4ED3 /* Pods-FreestarReactNativeSample.debug.xcconfig */;
+			baseConfigurationReference = E17F397D54F5D99171BC2AA9 /* Pods-FreestarReactNativeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -846,7 +842,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9D0078841D8CFD8F237C56E /* Pods-FreestarReactNativeSample.release.xcconfig */;
+			baseConfigurationReference = 0A15B4284904B981D278CA55 /* Pods-FreestarReactNativeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -867,7 +863,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3015DAC442D5B124EA50DC54 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */;
+			baseConfigurationReference = DB102F778EC76DB602346183 /* Pods-FreestarReactNativeSample-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -895,7 +891,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206A279DCB27D29229A65EDC /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */;
+			baseConfigurationReference = 2140434605AA7A1DDD6EDF05 /* Pods-FreestarReactNativeSample-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -923,7 +919,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 132DC7CB0DDBAE0C4DAB599D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 384C65BB509292069A4FDC1D /* Pods-FreestarReactNativeSample-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -950,7 +946,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 618CA1F8D69BC9660D5B428C /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 84AD074DC58A6A42B87E8494 /* Pods-FreestarReactNativeSample-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

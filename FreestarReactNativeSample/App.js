@@ -13,7 +13,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SegmentedControl from '@react-native-community/segmented-control';
 
-var APP_KEY = "P8RIA3";
+// var APP_KEY = "P8RIA3";
+var APP_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080";
 
 var state = {
   placementID: "",
@@ -323,6 +324,7 @@ function NativeAds() {
 const Tab = createBottomTabNavigator();
 
 export default function App(props) {
+  Alert.alert('APP KEY', APP_KEY);
   FreestarReactBridge.initWithAdUnitID(APP_KEY);
 
   return (
