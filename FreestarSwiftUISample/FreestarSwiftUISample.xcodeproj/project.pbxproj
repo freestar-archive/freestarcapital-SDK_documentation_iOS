@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD0B2BB928D93D0D007214E1 /* FreestarAds-Googleadmob in Frameworks */ = {isa = PBXBuildFile; productRef = FD0B2BB828D93D0D007214E1 /* FreestarAds-Googleadmob */; };
+		FD0B2BBC28D93D1D007214E1 /* FreestarAds-GAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD0B2BBB28D93D1D007214E1 /* FreestarAds-GAM */; };
+		FD0B2BBF28D93D2E007214E1 /* FreestarAds-Prebid in Frameworks */ = {isa = PBXBuildFile; productRef = FD0B2BBE28D93D2E007214E1 /* FreestarAds-Prebid */; };
+		FD0B2BC228D93D43007214E1 /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD0B2BC128D93D43007214E1 /* FreestarAds-TAM */; };
+		FD0B2BC528D93D55007214E1 /* FreestarAds-Nimbus in Frameworks */ = {isa = PBXBuildFile; productRef = FD0B2BC428D93D55007214E1 /* FreestarAds-Nimbus */; };
+		FD14639328AEDB4A00B6C864 /* CustomRewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */; };
+		FD14639528AEDB9400B6C864 /* CustomInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */; };
+		FD14639728AEE58D00B6C864 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */; };
+		FDD8B24328AAE3F500BA0D77 /* CustomSwiftUIBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */; };
+		FDE98FCC28A4551C00FD76BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */; };
+		FDF1FCA228A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1FCA128A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift */; };
+		FDF1FCA428A2C6A000FC9859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1FCA328A2C6A000FC9859 /* ContentView.swift */; };
+		FDF1FCA628A2C6A400FC9859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF1FCA528A2C6A400FC9859 /* Assets.xcassets */; };
+		FDF1FCA928A2C6A400FC9859 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF1FCA828A2C6A400FC9859 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDD7ED4D28C816A600BC8C20 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRewardedAd.swift; sourceTree = "<group>"; };
+		FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterstitialAd.swift; sourceTree = "<group>"; };
+		FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftUIBanner.swift; sourceTree = "<group>"; };
+		FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDE98FCD28A4566700FD76BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FDF1FC9E28A2C6A000FC9859 /* FreestarSwiftUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarSwiftUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF1FCA128A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreestarSwiftUISampleApp.swift; sourceTree = "<group>"; };
+		FDF1FCA328A2C6A000FC9859 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDF1FCA528A2C6A400FC9859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF1FCA828A2C6A400FC9859 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDF1FC9B28A2C6A000FC9859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0B2BB928D93D0D007214E1 /* FreestarAds-Googleadmob in Frameworks */,
+				FD0B2BC528D93D55007214E1 /* FreestarAds-Nimbus in Frameworks */,
+				FD0B2BBF28D93D2E007214E1 /* FreestarAds-Prebid in Frameworks */,
+				FD0B2BC228D93D43007214E1 /* FreestarAds-TAM in Frameworks */,
+				FD0B2BBC28D93D1D007214E1 /* FreestarAds-GAM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDF1FC9528A2C6A000FC9859 = {
+			isa = PBXGroup;
+			children = (
+				FDF1FCA028A2C6A000FC9859 /* FreestarSwiftUISample */,
+				FDF1FC9F28A2C6A000FC9859 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDF1FC9F28A2C6A000FC9859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDF1FC9E28A2C6A000FC9859 /* FreestarSwiftUISample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDF1FCA028A2C6A000FC9859 /* FreestarSwiftUISample */ = {
+			isa = PBXGroup;
+			children = (
+				FDE98FCD28A4566700FD76BF /* Info.plist */,
+				FDE98FCB28A4551C00FD76BF /* AppDelegate.swift */,
+				FDF1FCA128A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift */,
+				FDD8B24228AAE3F500BA0D77 /* CustomSwiftUIBanner.swift */,
+				FD14639228AEDB4A00B6C864 /* CustomRewardedAd.swift */,
+				FD14639428AEDB9400B6C864 /* CustomInterstitialAd.swift */,
+				FDF1FCA328A2C6A000FC9859 /* ContentView.swift */,
+				FDF1FCA528A2C6A400FC9859 /* Assets.xcassets */,
+				FDF1FCA728A2C6A400FC9859 /* Preview Content */,
+				FD14639628AEE58D00B6C864 /* UIApplication+Extension.swift */,
+			);
+			path = FreestarSwiftUISample;
+			sourceTree = "<group>";
+		};
+		FDF1FCA728A2C6A400FC9859 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDF1FCA828A2C6A400FC9859 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDF1FC9D28A2C6A000FC9859 /* FreestarSwiftUISample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF1FCAC28A2C6A400FC9859 /* Build configuration list for PBXNativeTarget "FreestarSwiftUISample" */;
+			buildPhases = (
+				FDF1FC9A28A2C6A000FC9859 /* Sources */,
+				FDF1FC9B28A2C6A000FC9859 /* Frameworks */,
+				FDF1FC9C28A2C6A000FC9859 /* Resources */,
+				FDD7ED4D28C816A600BC8C20 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreestarSwiftUISample;
+			packageProductDependencies = (
+				FD0B2BB828D93D0D007214E1 /* FreestarAds-Googleadmob */,
+				FD0B2BBB28D93D1D007214E1 /* FreestarAds-GAM */,
+				FD0B2BBE28D93D2E007214E1 /* FreestarAds-Prebid */,
+				FD0B2BC128D93D43007214E1 /* FreestarAds-TAM */,
+				FD0B2BC428D93D55007214E1 /* FreestarAds-Nimbus */,
+			);
+			productName = "SPM-Test";
+			productReference = FDF1FC9E28A2C6A000FC9859 /* FreestarSwiftUISample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDF1FC9628A2C6A000FC9859 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FDF1FC9D28A2C6A000FC9859 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FDF1FC9928A2C6A000FC9859 /* Build configuration list for PBXProject "FreestarSwiftUISample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDF1FC9528A2C6A000FC9859;
+			packageReferences = (
+				FD0B2BB728D93D0D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */,
+				FD0B2BBA28D93D1D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */,
+				FD0B2BBD28D93D2E007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */,
+				FD0B2BC028D93D43007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
+				FD0B2BC328D93D55007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */,
+			);
+			productRefGroup = FDF1FC9F28A2C6A000FC9859 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDF1FC9D28A2C6A000FC9859 /* FreestarSwiftUISample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDF1FC9C28A2C6A000FC9859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF1FCA928A2C6A400FC9859 /* Preview Assets.xcassets in Resources */,
+				FDF1FCA628A2C6A400FC9859 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDF1FC9A28A2C6A000FC9859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE98FCC28A4551C00FD76BF /* AppDelegate.swift in Sources */,
+				FD14639528AEDB9400B6C864 /* CustomInterstitialAd.swift in Sources */,
+				FDF1FCA428A2C6A000FC9859 /* ContentView.swift in Sources */,
+				FDF1FCA228A2C6A000FC9859 /* FreestarSwiftUISampleApp.swift in Sources */,
+				FD14639328AEDB4A00B6C864 /* CustomRewardedAd.swift in Sources */,
+				FDD8B24328AAE3F500BA0D77 /* CustomSwiftUIBanner.swift in Sources */,
+				FD14639728AEE58D00B6C864 /* UIApplication+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FDF1FCAA28A2C6A400FC9859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDF1FCAB28A2C6A400FC9859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDF1FCAD28A2C6A400FC9859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"FreestarSwiftUISample/Preview Content\"";
+				DEVELOPMENT_TEAM = FLA943DDZ8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreestarSwiftUISample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.freestar.FreestarSwiftUISample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDF1FCAE28A2C6A400FC9859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"FreestarSwiftUISample/Preview Content\"";
+				DEVELOPMENT_TEAM = FLA943DDZ8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreestarSwiftUISample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.freestar.FreestarSwiftUISample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDF1FC9928A2C6A000FC9859 /* Build configuration list for PBXProject "FreestarSwiftUISample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF1FCAA28A2C6A400FC9859 /* Debug */,
+				FDF1FCAB28A2C6A400FC9859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF1FCAC28A2C6A400FC9859 /* Build configuration list for PBXNativeTarget "FreestarSwiftUISample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF1FCAD28A2C6A400FC9859 /* Debug */,
+				FDF1FCAE28A2C6A400FC9859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD0B2BB728D93D0D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-admob.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FD0B2BBA28D93D1D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-gam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FD0B2BBD28D93D2E007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-prebid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FD0B2BC028D93D43007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-tam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		FD0B2BC328D93D55007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-nimbus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD0B2BB828D93D0D007214E1 /* FreestarAds-Googleadmob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD0B2BB728D93D0D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */;
+			productName = "FreestarAds-Googleadmob";
+		};
+		FD0B2BBB28D93D1D007214E1 /* FreestarAds-GAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD0B2BBA28D93D1D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */;
+			productName = "FreestarAds-GAM";
+		};
+		FD0B2BBE28D93D2E007214E1 /* FreestarAds-Prebid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD0B2BBD28D93D2E007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */;
+			productName = "FreestarAds-Prebid";
+		};
+		FD0B2BC128D93D43007214E1 /* FreestarAds-TAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD0B2BC028D93D43007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */;
+			productName = "FreestarAds-TAM";
+		};
+		FD0B2BC428D93D55007214E1 /* FreestarAds-Nimbus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD0B2BC328D93D55007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */;
+			productName = "FreestarAds-Nimbus";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FDF1FC9628A2C6A000FC9859 /* Project object */;
+}
