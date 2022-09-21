@@ -106,7 +106,7 @@ class ThumbnailAdViewController: AdViewController {
 private extension ThumbnailAdViewController {
     func loadThumbnailAd() {
         self.thumbnailAd = FreestarThumbnailAd(delegate: self)
-        self.thumbnailAd?.load()
+        self.thumbnailAd?.loadPlacement(placementField.text)
     }
 
     func showThumbnailAd() {
