@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640B242EA20D00A3212E /* AppDelegate.swift */; };
+		96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600640F242EA20D00A3212E /* BannerAdViewController.swift */; };
+		96006415242EA20F00A3212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96006414242EA20F00A3212E /* Assets.xcassets */; };
+		96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96006416242EA20F00A3212E /* LaunchScreen.storyboard */; };
+		960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064252432F46A00A3212E /* FullscreenAdViewController.swift */; };
+		960064282432F5B900A3212E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064272432F5B900A3212E /* AdViewController.swift */; };
+		9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */; };
+		9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600642B2433E74700A3212E /* PrerollAdViewController.swift */; };
+		9600642E2435941B00A3212E /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9600642D2435890800A3212E /* bunny.mp4 */; };
+		DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */; };
+		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
+		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
+		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
+		FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */; };
+		FDA20B4E28DB895800E2566F /* FreestarAds-Googleadmob in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B4D28DB895800E2566F /* FreestarAds-Googleadmob */; };
+		FDA20B5128DB896700E2566F /* FreestarAds-GAM in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B5028DB896700E2566F /* FreestarAds-GAM */; };
+		FDA20B5428DB897B00E2566F /* FreestarAds-Prebid in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B5328DB897B00E2566F /* FreestarAds-Prebid */; };
+		FDA20B5728DB899000E2566F /* FreestarAds-Nimbus in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B5628DB899000E2566F /* FreestarAds-Nimbus */; };
+		FDA20B5A28DB89A600E2566F /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B5928DB89A600E2566F /* FreestarAds-TAM */; };
+		FDA20B5D28DB89E400E2566F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B5C28DB89E400E2566F /* SnapKit */; };
+		FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B6328DB8BC700E2566F /* LoremIpsum */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96006408242EA20D00A3212E /* FreestarAds-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreestarAds-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600640B242EA20D00A3212E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9600640F242EA20D00A3212E /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
+		96006414242EA20F00A3212E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96006417242EA20F00A3212E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96006419242EA20F00A3212E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960064252432F46A00A3212E /* FullscreenAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenAdViewController.swift; sourceTree = "<group>"; };
+		960064272432F5B900A3212E /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewController.swift; sourceTree = "<group>"; };
+		9600642B2433E74700A3212E /* PrerollAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrerollAdViewController.swift; sourceTree = "<group>"; };
+		9600642D2435890800A3212E /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
+		DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
+		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
+		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
+		FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerAdViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96006405242EA20D00A3212E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA20B4E28DB895800E2566F /* FreestarAds-Googleadmob in Frameworks */,
+				FDA20B5728DB899000E2566F /* FreestarAds-Nimbus in Frameworks */,
+				FDA20B5A28DB89A600E2566F /* FreestarAds-TAM in Frameworks */,
+				FDA20B5D28DB89E400E2566F /* SnapKit in Frameworks */,
+				FDA20B5428DB897B00E2566F /* FreestarAds-Prebid in Frameworks */,
+				FDA20B5128DB896700E2566F /* FreestarAds-GAM in Frameworks */,
+				FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960063FF242EA20D00A3212E = {
+			isa = PBXGroup;
+			children = (
+				9600640A242EA20D00A3212E /* FreestarSwiftSample */,
+				96006409242EA20D00A3212E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96006409242EA20D00A3212E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96006408242EA20D00A3212E /* FreestarAds-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
+			isa = PBXGroup;
+			children = (
+				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
+				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
+				96006414242EA20F00A3212E /* Assets.xcassets */,
+				9600640B242EA20D00A3212E /* AppDelegate.swift */,
+				96006416242EA20F00A3212E /* LaunchScreen.storyboard */,
+				96006419242EA20F00A3212E /* Info.plist */,
+				960064252432F46A00A3212E /* FullscreenAdViewController.swift */,
+				960064272432F5B900A3212E /* AdViewController.swift */,
+				960064292433DC2200A3212E /* PartnerSelectionTableViewController.swift */,
+				9600642B2433E74700A3212E /* PrerollAdViewController.swift */,
+				9600642D2435890800A3212E /* bunny.mp4 */,
+				FD1179A424CB8D7000547873 /* FeedAdViewController.swift */,
+				FD1179A624CB935600547873 /* SpinnerViewController.swift */,
+				FD1179A824CB96F700547873 /* FeedConstants.swift */,
+				DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */,
+			);
+			path = FreestarSwiftSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96006407242EA20D00A3212E /* FreestarSwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9600641C242EA20F00A3212E /* Build configuration list for PBXNativeTarget "FreestarSwiftSample" */;
+			buildPhases = (
+				96006404242EA20D00A3212E /* Sources */,
+				96006405242EA20D00A3212E /* Frameworks */,
+				96006406242EA20D00A3212E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreestarSwiftSample;
+			packageProductDependencies = (
+				FDA20B4D28DB895800E2566F /* FreestarAds-Googleadmob */,
+				FDA20B5028DB896700E2566F /* FreestarAds-GAM */,
+				FDA20B5328DB897B00E2566F /* FreestarAds-Prebid */,
+				FDA20B5628DB899000E2566F /* FreestarAds-Nimbus */,
+				FDA20B5928DB89A600E2566F /* FreestarAds-TAM */,
+				FDA20B5C28DB89E400E2566F /* SnapKit */,
+				FDA20B6328DB8BC700E2566F /* LoremIpsum */,
+			);
+			productName = FreestarSwiftSample;
+			productReference = 96006408242EA20D00A3212E /* FreestarAds-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96006400242EA20D00A3212E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = Freestar;
+				TargetAttributes = {
+					96006407242EA20D00A3212E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 96006403242EA20D00A3212E /* Build configuration list for PBXProject "FreestarSwiftSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960063FF242EA20D00A3212E;
+			packageReferences = (
+				FDA20B4C28DB895800E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */,
+				FDA20B4F28DB896700E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */,
+				FDA20B5228DB897B00E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */,
+				FDA20B5528DB899000E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */,
+				FDA20B5828DB89A600E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
+				FDA20B5B28DB89E400E2566F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FDA20B6228DB8BC700E2566F /* XCRemoteSwiftPackageReference "LoremIpsum-Swift" */,
+			);
+			productRefGroup = 96006409242EA20D00A3212E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96006407242EA20D00A3212E /* FreestarSwiftSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96006406242EA20D00A3212E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
+				FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */,
+				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
+				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96006404242EA20D00A3212E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */,
+				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
+				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
+				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
+				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
+				FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */,
+				960064282432F5B900A3212E /* AdViewController.swift in Sources */,
+				9600640C242EA20D00A3212E /* AppDelegate.swift in Sources */,
+				FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */,
+				9600642A2433DC2200A3212E /* PartnerSelectionTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96006416242EA20F00A3212E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96006417242EA20F00A3212E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9600641A242EA20F00A3212E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9600641B242EA20F00A3212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9600641D242EA20F00A3212E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = FLA943DDZ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
+				PRODUCT_NAME = "FreestarAds-Swift";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9600641E242EA20F00A3212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = FLA943DDZ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
+				PRODUCT_NAME = "FreestarAds-Swift";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96006403242EA20D00A3212E /* Build configuration list for PBXProject "FreestarSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600641A242EA20F00A3212E /* Debug */,
+				9600641B242EA20F00A3212E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9600641C242EA20F00A3212E /* Build configuration list for PBXNativeTarget "FreestarSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600641D242EA20F00A3212E /* Debug */,
+				9600641E242EA20F00A3212E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDA20B4C28DB895800E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-admob.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FDA20B4F28DB896700E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-gam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FDA20B5228DB897B00E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-prebid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FDA20B5528DB899000E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-nimbus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FDA20B5828DB89A600E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-tam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		FDA20B5B28DB89E400E2566F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		FDA20B6228DB8BC700E2566F /* XCRemoteSwiftPackageReference "LoremIpsum-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/owlcoding/LoremIpsum-Swift/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDA20B4D28DB895800E2566F /* FreestarAds-Googleadmob */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B4C28DB895800E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */;
+			productName = "FreestarAds-Googleadmob";
+		};
+		FDA20B5028DB896700E2566F /* FreestarAds-GAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B4F28DB896700E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */;
+			productName = "FreestarAds-GAM";
+		};
+		FDA20B5328DB897B00E2566F /* FreestarAds-Prebid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B5228DB897B00E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */;
+			productName = "FreestarAds-Prebid";
+		};
+		FDA20B5628DB899000E2566F /* FreestarAds-Nimbus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B5528DB899000E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */;
+			productName = "FreestarAds-Nimbus";
+		};
+		FDA20B5928DB89A600E2566F /* FreestarAds-TAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B5828DB89A600E2566F /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */;
+			productName = "FreestarAds-TAM";
+		};
+		FDA20B5C28DB89E400E2566F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B5B28DB89E400E2566F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FDA20B6328DB8BC700E2566F /* LoremIpsum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA20B6228DB8BC700E2566F /* XCRemoteSwiftPackageReference "LoremIpsum-Swift" */;
+			productName = LoremIpsum;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 96006400242EA20D00A3212E /* Project object */;
+}
