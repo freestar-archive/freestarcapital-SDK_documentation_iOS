@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 
@@ -25,18 +25,17 @@ target 'FreestarReactNativeSample' do
     react_native_post_install(installer)
   end
   
-  pod 'FreestarAds-AdColony', '~> 4.0'
-  pod 'FreestarAds-AppLovin', '~> 4.0'
-  pod 'FreestarAds-Googleadmob', '~> 3.0'
-  pod 'FreestarAds-Tapjoy', '~> 4.0'
-  pod 'FreestarAds-Unity', '~> 5.0'
-  pod 'FreestarAds-Vungle', '~> 4.0'
-  pod 'FreestarAds-Google', '~> 4.0'
-  pod 'FreestarAds-Criteo', '~> 2.0'
-  pod 'FreestarAds-GAM', '~> 2.0'
-  pod 'FreestarAds-Mopub', '~> 4.0'
-  pod 'FreestarAds-Nimbus', '~> 2.0'
-  pod 'FreestarAds-TAM', '~> 1.0'
+  pod 'FreestarAds-AdColony', '~> 5.2.0'
+  pod 'FreestarAds-AppLovin', '~> 11.0.0.1'
+  pod 'FreestarAds-Googleadmob', '~> 9.2.0.2'
+  pod 'FreestarAds-Tapjoy', '~> 12.8.0.1'
+  pod 'FreestarAds-Unity', '~> 6.1.0'
+  pod 'FreestarAds-Vungle', '~> 6.10.6.1'
+  pod 'FreestarAds-Google', '~> 5.1.0'
+  pod 'FreestarAds-Criteo', '~> 4.3.1.1'
+  pod 'FreestarAds-GAM', '~> 9.2.0.2'
+  pod 'FreestarAds-Nimbus', '~> 3.6.0'
+  pod 'FreestarAds-TAM', '~> 4.4.3.2'
   
 end
 

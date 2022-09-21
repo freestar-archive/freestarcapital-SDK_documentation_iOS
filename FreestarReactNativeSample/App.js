@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { Alert } from 'react-native';
 import FreestarReactBridge, { MrecBannerAd2 } from '@freestar/freestar-plugin-react-native';
 import BannerAd from '@freestar/freestar-plugin-react-native/BannerAd';
-import MrecBannerAd from '@freestar/freestar-plugin-react-native/BannerAd';
-import MrecBannerAd3 from '@freestar/freestar-plugin-react-native/BannerAd';
+import MrecBannerAd from '@freestar/freestar-plugin-react-native/MrecBannerAd';
+import MrecBannerAd3 from '@freestar/freestar-plugin-react-native/MrecBannerAd3';
 import SmallNativeAd from '@freestar/freestar-plugin-react-native/SmallNativeAd';
 import MediumNativeAd2 from '@freestar/freestar-plugin-react-native/MediumNativeAd2';
 
@@ -233,7 +233,7 @@ function NativeAds() {
 
       <View style={{ flexDirection: 'row', paddingTop: 30}}>
       <MediumNativeAd2
-         style={{width: 300, height: 250}}
+         style={{width: 360, height: 350}}
          requestOptions={
             {
                targetingParams: {
@@ -251,7 +251,7 @@ function NativeAds() {
       
       <View style={{ flexDirection: 'row', paddingTop: 10}}>
       <SmallNativeAd
-        style={{width: 320, height: 50}}
+        style={{width: 360, height: 100}}
         requestOptions={{}}
         onNativeAdLoaded={nativeLoaded}
         onNativeAdFailedToLoad={nativeFailed}

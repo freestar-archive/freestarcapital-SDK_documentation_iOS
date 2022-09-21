@@ -24,6 +24,13 @@
 /* Begin PBXFileReference section */
 		84A319E728C29F100006BDB0 /* ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		84A319E828C29F100006BDB0 /* ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		E833BEE692F1BF029D3067FE /* Pods_FreestarOBJCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarOBJCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.release.xcconfig"; sourceTree = "<group>"; };
+		8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.debug.xcconfig"; sourceTree = "<group>"; };
 		96C859ED241C53E1009BD9FB /* FreestarOBJCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarOBJCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C859F0241C53E1009BD9FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96C859F1241C53E1009BD9FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92793EC606DBDE17E6300B77 /* Pods_FreestarOBJCSample.framework in Frameworks */,
+				E833BEE692F1BF029D3067FE /* Pods_FreestarOBJCSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				DBEE4A7426CA098B9A702258 /* Pods_FreestarOBJCSample.framework */,
+				08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +140,8 @@
 				96C859EB241C53E1009BD9FB /* Resources */,
 				DF3725B7DBF1A97E62E3FA39 /* [CP] Embed Pods Frameworks */,
 				2F739A81EAA862FD560D4D0B /* [CP] Copy Pods Resources */,
+				8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */,
+				5E6A25C5AF784848CA09EF24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +239,24 @@
 			showEnvVarsInLog = 0;
 		};
 		DF3725B7DBF1A97E62E3FA39 /* [CP] Embed Pods Frameworks */ = {
+		5E6A25C5AF784848CA09EF24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,7 +366,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					"$inherited",
+					$inherited,
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -395,7 +424,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					"$inherited",
+					$inherited,
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;

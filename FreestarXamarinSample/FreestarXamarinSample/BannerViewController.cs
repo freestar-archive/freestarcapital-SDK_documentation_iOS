@@ -1,6 +1,6 @@
 ﻿using System;
 using UIKit;
-using FreestarAds;
+using com.freestar.ios.ads;
 
 namespace FreestarXamarinSample
 {
@@ -10,19 +10,19 @@ namespace FreestarXamarinSample
         {
         }
 
-        private FreestarBannerAdListener sl; //small banners
-        private FreestarBannerAdListener ll; //large banners
+        private FreestarBannerAdListener<IFreestarBannerAdDelegate> sl; //small banners
+        private FreestarBannerAdListener<IFreestarBannerAdDelegate> ll; //large banners
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-            sl = new FreestarBannerAdListener(
+            sl = new FreestarBannerAdListener<IFreestarBannerAdDelegate>(
                 SmallBannerLoadBtn,
                 SmallBannerShowBtn,
                 SmallBannerContainer,
                 FreestarBannerAdSize.FreestarBanner320x50);
-            ll = new FreestarBannerAdListener(
+            ll = new FreestarBannerAdListener<IFreestarBannerAdDelegate>(
                 LargeBannerLoadBtn,
                 LargeBannerShowBtn,
                 LargeBannerContainer,

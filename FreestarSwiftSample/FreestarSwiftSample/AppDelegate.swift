@@ -16,15 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //      static let FREESTAR_API_KEY = "37f63777-6e63-42f2-89b7-4b67689c2493"
     static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
 //    static let FREESTAR_API_KEY = "XqjhRR"
+    static let FREESTAR_API_KEY = "XqjhRR"
     
-    var window : UIWindow?
+    var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Freestar.setLoggingEnabled(true)
-        Freestar.setTestModeEnabled(true)
         Freestar.setAdaptiveBannerEnabledIfAvailable(true)
-//        Freestar.setServingMode(.admobGam)
+        //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
         Freestar.setUserID("User123")
 
@@ -72,5 +72,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
 }
