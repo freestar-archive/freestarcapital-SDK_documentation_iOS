@@ -21,6 +21,7 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
     let ArticleCellIdentifier = "ArticleCell"
     let ErrorMessageLabelTextColor = UIColor.gray
     let ErrorMessageFontSize: CGFloat = 16
+    let randomWords = String.loremIpsum(paragraphs: 1).components(separatedBy: " ")
     var partnerLabel: UILabel?
     var articles: [Article]? = []
 
@@ -218,11 +219,17 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    func getRandomWord() -> String {        
+        let length = randomWords.count
+        let randomIndex = Int.random(in: 0..<length)
+        return randomWords[randomIndex]
+    }
+    
     func loadArticles(completion: (() -> Void)) {
         for _ in 0...FeedConstants.articleCount-1 {
-            let name = String.loremIpsum(paragraphs: 1) +  String.loremIpsum(paragraphs: 1)
-            let email = String.loremIpsum(paragraphs: 1)
-            let title = String.loremIpsum(paragraphs: 1)
+            let name = getRandomWord() + getRandomWord()
+            let email = getRandomWord()
+            let title = getRandomWord()
             let url = FeedConstants.randomUrl!
             let score = Int.random(in: 1..<101)
             self.articles?.append(Article(title: title, url: url, by: name, email:  email, score: score))
@@ -236,7 +243,15 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let article: Article? = articles?[indexPath.row]
+        guard let articles = articles else {
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
+            return cell
+        }
+        if (articles.count < indexPath.row + 1) {
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
+            return cell
+        }
+        let article: Article? = articles[indexPath.row]
         if isBannerRow(indexPath.row) {
             let cell: UITableViewCell = UITableViewCell()
             cell.backgroundColor = UIColor.groupTableViewBackground
