@@ -21,6 +21,7 @@ var state = {
   interstitialReady: false,
   rewardedReady: false,
   thumbnailReady: false,
+  isShowingThumbnail: false,
 };
 
 const styles = StyleSheet.create({
@@ -69,12 +70,14 @@ function ThumbnailAds() {
     } else if (eventName === "onThumbnailAdClicked") {
 
     } else if (eventName === "onThumbnailAdShown") {
-
+      state.isShowingThumbnail = true;
     } else if (eventName === "onThumbnailAdFailed") {
       Alert.alert('Thumbnail Ad not available');
       state.thumbnailReady = false;
+      state.isShowingThumbnail = false;
       setCanShowThumbnail(enableShowThumbnail());
     } else if (eventName === "onThumbnailAdDismissed") {
+      state.isShowingThumbnail = false;
       state.thumbnailReady = false;
       setCanShowThumbnail(enableShowThumbnail());
     } else {
@@ -117,13 +120,15 @@ function FullscreenAds() {
   const [fullscreenSelection, setFullscreenSelection] = useState(0);
 
   FreestarReactBridge.subscribeToInterstitialCallbacks((eventName) => {
-    if(eventName === "onInterstitialLoaded") {
+    if(eventName === "onInterstitialLoaded") {      
       state.interstitialReady = true;
       setCanShowFullscreen(enableShowFullscreen(fullscreenSelection));
     } else if (eventName === "onInterstitialClicked") {
 
     } else if (eventName === "onInterstitialShown") {
-
+      if (state.isShowingThumbnail) {
+        return;
+      }
     } else if (eventName === "onInterstitialFailed") {
       Alert.alert('Interstitial Ad not available');
       state.interstitialReady = false;
@@ -151,7 +156,9 @@ function FullscreenAds() {
       console.log("reward placement done: " + placement)
       console.log("reward ad completed: awarded " + rewardAmount + ' ' + rewardName);
     } else if (eventName === "onRewardedShown") {
-
+      if (state.isShowingThumbnail) {
+        return;
+      }
     } else if (eventName === "onRewardedShowFailed") {
       Alert.alert('Reward Ad was available but failed to show');
       state.rewardedReady = false;
@@ -185,9 +192,17 @@ function FullscreenAds() {
           titleStyle={{fontSize: 36}}
           onPress={() => {
             if(fullscreenSelection === 0) { //interstitial
-              FreestarReactBridge.loadInterstitialAd(state.placementID);
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.loadInterstitialAd(state.placementID);
+              }              
             } else { //rewarded
-              FreestarReactBridge.loadRewardAd(state.placementID);
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.loadRewardAd(state.placementID);
+              }              
             }
           }}
         />
@@ -197,9 +212,17 @@ function FullscreenAds() {
           title="Show"
           onPress={() => {
             if(fullscreenSelection === 0) { //interstitial
-              FreestarReactBridge.showInterstitialAd();
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.showInterstitialAd();
+              }              
             } else { //rewarded
-              FreestarReactBridge.showRewardAd(null, "Coins", 50, "myuserId", "12345678");
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.showRewardAd(null, "Coins", 50, "myuserId", "12345678");
+              }              
             }
           }}
         />

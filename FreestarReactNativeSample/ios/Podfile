@@ -40,16 +40,16 @@ target 'FreestarReactNativeSample' do
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 
-    pod 'FreestarAds-Ogury-PreRelease', '~> 2.1.0.3-beta-6'
-    pod 'FreestarAds-AdColony-PreRelease', '~> 4.7.2.2-beta-4'
-    pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0.0.2-beta-1'
-    pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.2-beta'
-    pod 'FreestarAds-Tapjoy-PreRelease', '~> 12.8.0.2-beta-1'
-    pod 'FreestarAds-Unity-PreRelease', '~> 4.1.0.4-beta-1'
-    pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.2-beta-1'
-    pod 'FreestarAds-Criteo-PreRelease', '~> 4.3.1.2-beta-1'
-    pod 'FreestarAds-GAM-PreRelease', '~> 9.2.0.3-beta-4'
-    pod 'FreestarAds-Nimbus-PreRelease', '~> 1.10.5.2-beta-1'
+  pod 'FreestarAds-Ogury', '~> 2.1.0.3' 
+  pod 'FreestarAds-AdColony', '~> 5.2.0'
+  pod 'FreestarAds-AppLovin', '~> 11.0.0.1'
+  pod 'FreestarAds-Googleadmob', '~> 9.2.0.2'
+  pod 'FreestarAds-Tapjoy', '~> 12.8.0.1'
+  pod 'FreestarAds-Unity', '~> 6.1.0'
+  pod 'FreestarAds-Vungle', '~> 6.10.6.1'
+  pod 'FreestarAds-Criteo', '~> 4.3.1.1'
+  pod 'FreestarAds-GAM', '~> 9.2.0.2'
+  pod 'FreestarAds-Nimbus', '~> 3.6.0'
 
 end
 
