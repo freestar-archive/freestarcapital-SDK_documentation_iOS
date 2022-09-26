@@ -1,35 +1,35 @@
 source 'https://github.com/CocoaPods/Specs.git'
-# Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 use_frameworks!
 
-target 'FreestarSwiftSample' do
-  # M1 compatible
-  pod "FreestarAds", "~> 5.14.0"
-  pod "FreestarAds-AdColony", "~> 4.7.2.1"
-  pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
-  pod "FreestarAds-Criteo", "~> 4.3.1.1"
-  pod "FreestarAds-AppLovin", "~> 11.0.0.1"
-  pod "FreestarAds-AppLovinMax", "~> 11.0"
-  pod "FreestarAds-TAM", "~> 4.4.3.3"
-  pod "FreestarAds-Hyprmx", "~> 6.0.0.3"
-  pod "FreestarAds-Yahoo", "~> 1.14.2.2"
-  pod "FreestarAds-Ogury", "~> 2.1.0.2"
-  pod 'FreestarAds-Googleadmob', '~> 9.2'
-  pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
-  pod 'FreestarAds-GAM', '~> 9.2.0.3'
-  pod 'FreestarAds-GAM/Facebook', '~> 9.2'
-  pod "FreestarAds-Unity", "~> 4.1.0.4"
-  pod "FreestarAds-Prebid", "~> 2.0.0.4"
-
-  # Not M1 compatible pods
-  pod "FreestarAds-Vungle", "~> 6.10"
-  pod "FreestarAds-Nimbus", "~> 1.10"
-  pod "FreestarAds-Google", "~> 3.13"
-  pod "FreestarAds-Pangle", "~> 3.7"
-
-  # helper frameworks for feed view
-  pod 'SnapKit', '~> 5.0.0'
-  pod 'LoremIpsum', '~> 1.0'
+target 'FreestarSwiftSample' do 
+   # M1 compatible
+   pod "FreestarAds", "~> 5.15.0"
+   pod "FreestarAds-AdColony", "~> 4.7.2.1"
+   pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
+   pod "FreestarAds-Criteo", "~> 4.3.1.1"
+   pod "FreestarAds-AppLovin", "~> 11.0.0.1"
+   pod "FreestarAds-AppLovinMax", "~> 11.0"
+   pod "FreestarAds-TAM", "~> 4.4.3.3"
+   pod "FreestarAds-Hyprmx", "~> 6.0.0.3"
+   pod "FreestarAds-Yahoo", "~> 1.14.2.2"
+   pod "FreestarAds-Ogury", "~> 2.1.0.3"
+   pod 'FreestarAds-Googleadmob', '~> 9.2'
+   pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
+   pod 'FreestarAds-GAM', '~> 9.2.0.3'
+   pod 'FreestarAds-GAM/Facebook', '~> 9.2'
+   pod "FreestarAds-Unity", "~> 4.1.0.4"
+   pod "FreestarAds-Prebid", "~> 2.0.0.4"
+ 
+   # Not M1 compatible pods
+   pod "FreestarAds-Vungle", "~> 6.10"
+   pod "FreestarAds-Nimbus", "~> 1.10"
+   pod "FreestarAds-Google", "~> 3.13"
+   pod "FreestarAds-Pangle", "~> 3.7"
+ 
+  
+   # helper frameworks for feed view
+   pod 'SnapKit', '~> 5.0.0'
+   pod 'LoremIpsum', '~> 1.0' 
 
 end

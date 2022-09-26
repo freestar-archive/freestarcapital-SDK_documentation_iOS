@@ -20,13 +20,19 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FSTR_DEV_SKIP_PRELOAD_INTERSTITIAL</key>
+	<false/>
+	<key>FSTR_DEV_SKIP_PRELOAD_REWARD</key>
+	<false/>
 	<key>FSTR_ENABLE_PARTNER_SELECTION</key>
 	<true/>
 	<key>FSTR_LOGGING_ENABLE</key>
 	<true/>
-	<key>FSTR_TEST_ADS</key>
-	<true/>
+	<key>FSTR_SERVER_ENDPOINT_QUERY_STRING</key>
+	<string></string>
 	<key>FSTR_STAGING_SERVER</key>
+	<true/>
+	<key>FSTR_TEST_ADS</key>
 	<true/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>

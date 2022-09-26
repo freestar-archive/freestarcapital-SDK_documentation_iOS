@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
 use_frameworks!
 
-target 'FreestarOBJCSample' do
+target 'FreestarOBJCSample' do  
   # M1 compatible
   pod "FreestarAds", "~> 5.14.0"
   pod "FreestarAds-AdColony", "~> 4.7.2.1"

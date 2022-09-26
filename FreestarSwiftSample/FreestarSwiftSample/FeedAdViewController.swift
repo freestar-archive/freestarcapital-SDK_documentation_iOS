@@ -236,30 +236,36 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let article: Article? = articles?[indexPath.row]
-        if isBannerRow(indexPath.row) {
-            let cell: UITableViewCell = UITableViewCell()
-            cell.backgroundColor = UIColor.groupTableViewBackground
-            guard let bannerView = bannerForIndex(indexPath.row) else {
-                return cell
-            }
-            
-            cell.contentView.addSubview(bannerView)
-            if (bannerView == banner1) {
-                anchorBanner(bannerView, size: CGSize(width: 320, height: 50))
-            } else {
-                anchorBanner(bannerView, size: CGSize(width: 300, height: 250))
-            }
-            return cell
-        } else {
-            let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
-            
-            guard let article = article else { return cell! }
-            cell?.textLabel?.text = article.title
-            cell?.detailTextLabel?.text = "\(article.score!) points by \(article.by!) [\(article.email!)]"
-            cell?.accessoryView?.isHidden = false
+        let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
+        guard let articles = self.articles else {
             return cell!
+        }                
+        
+        if articles.indices.contains(indexPath.row) {
+            let article: Article? = articles[indexPath.row]
+            if isBannerRow(indexPath.row) {
+                let cell: UITableViewCell = UITableViewCell()
+                cell.backgroundColor = UIColor.groupTableViewBackground
+                guard let bannerView = bannerForIndex(indexPath.row) else {
+                    return cell
+                }
+                
+                cell.contentView.addSubview(bannerView)
+                if (bannerView == banner1) {
+                    anchorBanner(bannerView, size: CGSize(width: 320, height: 50))
+                } else {
+                    anchorBanner(bannerView, size: CGSize(width: 300, height: 250))
+                }
+                return cell
+            } else {
+                guard let article = article else { return cell! }
+                cell?.textLabel?.text = article.title
+                cell?.detailTextLabel?.text = "\(article.score!) points by \(article.by!) [\(article.email!)]"
+                cell?.accessoryView?.isHidden = false
+                return cell!
+            }
         }
+        return cell!
     }
 
     // MARK: UITableViewDelegate

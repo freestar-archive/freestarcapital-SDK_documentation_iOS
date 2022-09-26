@@ -39,10 +39,10 @@ PODS:
   - FreestarAds-Google (3.13.0.1):
     - FreestarAds (~> 5.7)
     - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob (9.2.0.2):
+  - FreestarAds-Googleadmob (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-Googleadmob/Facebook (9.2.0.2):
+  - FreestarAds-Googleadmob/Facebook (9.2.0.3):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
@@ -325,7 +325,7 @@ SPEC CHECKSUMS:
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-GAM: f6ed896401b528a635300c95418ba4ece6078ea4
   FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
-  FreestarAds-Googleadmob: 3715552492b530ae8992c600e887c57e818f97a1
+  FreestarAds-Googleadmob: 5c170b9e33a51cc556ca8adcc510c11d7bfb0b30
   FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
@@ -369,6 +369,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 0065b3107f8eb7a383e63fda10f075e496030d1b
+PODFILE CHECKSUM: 1f9804da274dee6f7eeed5d85d7d8d0172dc0239
 
 COCOAPODS: 1.11.3

@@ -15,6 +15,7 @@ enum FreestarAdType {
     case SmallBanner
     case LargeBanner
     case Preroll
+    case Thumbnail
 }
 
 class AdViewController : UIViewController, UITextFieldDelegate, PartnerSelectionViewControllerDelegate {

@@ -1,5 +1,5 @@
 //
-//  FullscreenAdViewController.swift
+//  FullscreenAdViewControllerPush.swift
 //  FreestarSwiftSample
 //
 //  Copyright © 2020 Freestar. All rights reserved.
@@ -8,11 +8,11 @@
 import UIKit
 import FreestarAds
 
-class FullscreenAdViewController: AdViewController {
-    
+class FullscreenAdViewControllerPush: AdViewController {
+
+    var thumbnailOptions = ThumbnailOptions.shared    
     var interstitialAd : FreestarInterstitialAd?
     var rewardedAd : FreestarRewardedAd?
-    var thumbnailOptions = ThumbnailOptions.shared
     
     var interstitialAdReady = false {
         didSet {
@@ -30,6 +30,8 @@ class FullscreenAdViewController: AdViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.title = "FullScreen Blocked Thumbnail"
         
         // Do any additional setup after loading the view.
         self.enablePartnerSelection = true
@@ -71,7 +73,7 @@ class FullscreenAdViewController: AdViewController {
     }
 }
 
-extension FullscreenAdViewController : FreestarInterstitialDelegate {
+extension FullscreenAdViewControllerPush : FreestarInterstitialDelegate {
     func loadInterstitialAd() {
         if thumbnailOptions.isShowingThumbnail == true {
             debugPrint("isShowingThumbnail TRUE")
@@ -84,6 +86,7 @@ extension FullscreenAdViewController : FreestarInterstitialDelegate {
     
     func showInterstitialAd() {
         if thumbnailOptions.isShowingThumbnail == true {
+            debugPrint("isShowingThumbnail TRUE")
             return
         }
         interstitialAd?.show(from: self)
@@ -110,7 +113,7 @@ extension FullscreenAdViewController : FreestarInterstitialDelegate {
     }
 }
 
-extension FullscreenAdViewController : FreestarRewardedDelegate {
+extension FullscreenAdViewControllerPush : FreestarRewardedDelegate {
     func loadRewardedAd() {
         if thumbnailOptions.isShowingThumbnail == true {
             debugPrint("isShowingThumbnail TRUE")

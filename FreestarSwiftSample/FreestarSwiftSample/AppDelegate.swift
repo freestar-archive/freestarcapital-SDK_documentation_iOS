@@ -11,19 +11,26 @@ import FreestarAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static let FREESTAR_API_KEY = "XqjhRR"
+//    static let FREESTAR_API_KEY = "ef05da0e-1c5f-4595-b835-74ecedf048dd"
+//    static let FREESTAR_API_KEY = "5fee93b8-d3d5-43ce-84a5-bffc90e81b5b"
+//      static let FREESTAR_API_KEY = "37f63777-6e63-42f2-89b7-4b67689c2493"
+    static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
+//    static let FREESTAR_API_KEY = "XqjhRR"
     
-    var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-    
+    var window : UIWindow? = UIWindow(frame: UIScreen.main.bounds)    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Freestar.setAdaptiveBannerEnabledIfAvailable(true)
         //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
-        
+        Freestar.setUserID("User123")
+
         let tabVC = UITabBarController()
-        
+
+        let thumbVC = ThumbnailAdViewController()
+        thumbVC.title = "Thumbnail"
+
         let fsVC = FullscreenAdViewController()
         fsVC.title = "Fullscreen"
         
@@ -40,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nativeVC.title = "Native"
         
         tabVC.viewControllers = [
+            UINavigationController(rootViewController: thumbVC),
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
             UINavigationController(rootViewController: pVC),
@@ -62,8 +70,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
-    
-    
 }
-
