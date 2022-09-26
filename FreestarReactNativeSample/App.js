@@ -13,12 +13,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import SegmentedControl from '@react-native-community/segmented-control';
 
-var APP_KEY = "P8RIA3";
+// var APP_KEY = "P8RIA3";
+var APP_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080";
 
 var state = {
   placementID: "",
   interstitialReady: false,
   rewardedReady: false,
+  thumbnailReady: false,
+  isShowingThumbnail: false,
 };
 
 const styles = StyleSheet.create({
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign : 'center',
     color : 'blue',
-    paddingTop: 20,
+    paddingTop: 40,
     paddingBottom: 10
   }
 });
@@ -53,19 +56,79 @@ function enableShowFullscreen(adUnitSelection) {
          (adUnitSelection === 1 && state.rewardedReady);
 }
 
+function enableShowThumbnail() {
+  return (state.thumbnailReady);
+}
+
+function ThumbnailAds() {
+  const [canShowThumbnail, setCanShowThumbnail] = useState(false);
+
+  FreestarReactBridge.subscribeToThumbnailAdCallbacks((eventName) => {
+    if(eventName === "onThumbnailAdLoaded") {
+      state.thumbnailReady = true;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else if (eventName === "onThumbnailAdClicked") {
+
+    } else if (eventName === "onThumbnailAdShown") {
+      state.isShowingThumbnail = true;
+    } else if (eventName === "onThumbnailAdFailed") {
+      Alert.alert('Thumbnail Ad not available');
+      state.thumbnailReady = false;
+      state.isShowingThumbnail = false;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else if (eventName === "onThumbnailAdDismissed") {
+      state.isShowingThumbnail = false;
+      state.thumbnailReady = false;
+      setCanShowThumbnail(enableShowThumbnail());
+    } else {
+       console.log("unknown Thumbnail event");
+    }
+  });
+
+
+  return(
+    <View style={styles.container}>
+      <Text style={styles.title}>Freestar on ReactNative</Text>
+      <TextInput
+      style={[styles.label, styles.border]}
+      placeholder='Placement ID'
+      onChangeText={(pid) => state.placementID = pid }/>
+
+      <View style={{ flexDirection: 'row', paddingTop: 10}}>
+        <Button
+          title="Load"
+          titleStyle={{fontSize: 36}}
+          onPress={() => {
+              FreestarReactBridge.loadThumbnailAd(state.placementID);
+          }}
+        />
+        <View style={{width: 10}} />
+        <Button
+          disabled={!canShowThumbnail}
+          title="Show"
+          onPress={() => {
+              FreestarReactBridge.showThumbnailAd(state.placementID,"TopRight",10,175);
+          }}
+        />
+      </View>
+    </View>
+  );
+}
 
 function FullscreenAds() {
   const [canShowFullscreen, setCanShowFullscreen] = useState(false);
   const [fullscreenSelection, setFullscreenSelection] = useState(0);
 
   FreestarReactBridge.subscribeToInterstitialCallbacks((eventName) => {
-    if(eventName === "onInterstitialLoaded") {
+    if(eventName === "onInterstitialLoaded") {      
       state.interstitialReady = true;
       setCanShowFullscreen(enableShowFullscreen(fullscreenSelection));
     } else if (eventName === "onInterstitialClicked") {
 
     } else if (eventName === "onInterstitialShown") {
-
+      if (state.isShowingThumbnail) {
+        return;
+      }
     } else if (eventName === "onInterstitialFailed") {
       Alert.alert('Interstitial Ad not available');
       state.interstitialReady = false;
@@ -93,7 +156,9 @@ function FullscreenAds() {
       console.log("reward placement done: " + placement)
       console.log("reward ad completed: awarded " + rewardAmount + ' ' + rewardName);
     } else if (eventName === "onRewardedShown") {
-
+      if (state.isShowingThumbnail) {
+        return;
+      }
     } else if (eventName === "onRewardedShowFailed") {
       Alert.alert('Reward Ad was available but failed to show');
       state.rewardedReady = false;
@@ -127,9 +192,17 @@ function FullscreenAds() {
           titleStyle={{fontSize: 36}}
           onPress={() => {
             if(fullscreenSelection === 0) { //interstitial
-              FreestarReactBridge.loadInterstitialAd(state.placementID);
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.loadInterstitialAd(state.placementID);
+              }              
             } else { //rewarded
-              FreestarReactBridge.loadRewardAd(state.placementID);
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.loadRewardAd(state.placementID);
+              }              
             }
           }}
         />
@@ -139,9 +212,17 @@ function FullscreenAds() {
           title="Show"
           onPress={() => {
             if(fullscreenSelection === 0) { //interstitial
-              FreestarReactBridge.showInterstitialAd();
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.showInterstitialAd();
+              }              
             } else { //rewarded
-              FreestarReactBridge.showRewardAd(null, "Coins", 50, "myuserId", "12345678");
+              if (state.isShowingThumbnail) {
+                return;
+              } else {
+                FreestarReactBridge.showRewardAd(null, "Coins", 50, "myuserId", "12345678");
+              }              
             }
           }}
         />
@@ -274,6 +355,7 @@ export default function App(props) {
         <Tab.Screen name="Fullscreen" component={FullscreenAds} />
         <Tab.Screen name="Banner" component={BannerAds} />
         <Tab.Screen name="Native" component={NativeAds} />
+        <Tab.Screen name="Thumbnail" component={ThumbnailAds} />
       </Tab.Navigator>
     </NavigationContainer>
   );
