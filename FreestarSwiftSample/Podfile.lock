@@ -1,114 +1,31 @@
 PODS:
-  - AdColony (4.7.2)
-  - Ads-Global (3.7.0.8):
-    - Ads-Global/BUAdSDK (= 3.7.0.8)
-  - Ads-Global/BUAdSDK (3.7.0.8):
-    - Ads-Global/BUFoundation
-    - Ads-Global/International
-  - Ads-Global/BUFoundation (3.7.0.8)
-  - Ads-Global/International (3.7.0.8)
-  - AmazonPublisherServicesSDK (4.4.3)
-  - AppLovinSDK (11.0.0)
-  - CriteoPublisherSdk (4.3.1):
-    - CriteoPublisherSdk/Sdk (= 4.3.1)
-  - CriteoPublisherSdk/Sdk (4.3.1)
-  - FBAudienceNetwork (6.9.0)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
-  - FreestarAds (5.15.0)
-  - FreestarAds-AdColony (4.7.2.1):
-    - AdColony (= 4.7.2)
-    - FreestarAds (~> 5.7)
-  - FreestarAds-AppLovin (11.0.0.1):
-    - AppLovinSDK (= 11.0.0)
-    - FreestarAds (~> 5.7)
-  - FreestarAds-AppLovinMax (11.0.0.2):
-    - AppLovinSDK (= 11.0.0)
-    - FreestarAds (~> 5.7)
-  - FreestarAds-Criteo (4.3.1.1):
-    - CriteoPublisherSdk (= 4.3.1)
-    - FreestarAds (~> 5.7)
-  - FreestarAds-GAM (9.2.0.3):
-    - FreestarAds (~> 5.10)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-GAM/Facebook (9.2.0.3):
-    - FreestarAds (~> 5.10)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-    - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
-  - FreestarAds-Google (3.13.0.1):
-    - FreestarAds (~> 5.7)
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-  - FreestarAds-Googleadmob (9.2.0.3):
-    - FreestarAds (~> 5.10)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-  - FreestarAds-Googleadmob/Facebook (9.2.0.3):
-    - FreestarAds (~> 5.10)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-    - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
-  - FreestarAds-Hyprmx (6.0.0.3):
-    - FreestarAds (~> 5.7)
-    - HyprMX/Core (= 6.0.0)
-  - FreestarAds-Nimbus (1.10.5.1):
-    - FreestarAds (~> 5.7)
-    - NimbusSDK (= 1.10.5)
-    - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
-    - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
-  - FreestarAds-Ogury (2.1.0.3):
-    - FreestarAds (~> 5.15)
-    - OguryAds
-    - OguryChoiceManager
-    - OgurySdk (~> 2.1.0)
-  - FreestarAds-Pangle (3.7.0.1):
-    - Ads-Global (= 3.7.0.8)
-    - FreestarAds (~> 5.7)
-  - FreestarAds-Prebid (2.0.0.4):
-    - FreestarAds (~> 5.14)
-    - Google-Mobile-Ads-SDK (= 9.2.0)
-    - PrebidMobile-FSTRAds (= 2.0.0.6)
-  - FreestarAds-TAM (4.4.3.3):
-    - AmazonPublisherServicesSDK (= 4.4.3)
-    - FMDB (= 2.7.5)
-    - FreestarAds (~> 5.10)
-  - FreestarAds-Tapjoy (12.8.0.1):
-    - FreestarAds (~> 5.7)
-    - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity (4.1.0.4):
-    - FreestarAds (~> 5.10)
-    - UnityAds (= 4.1.0)
-  - FreestarAds-Vungle (6.10.6.1):
-    - FreestarAds (~> 5.7)
-    - VungleSDK-iOS (= 6.10.6)
-  - FreestarAds-Yahoo (1.14.2.2):
-    - FreestarAds (~> 5.10)
-    - Verizon-Ads-StandardEdition (= 1.14.2)
-  - Google-Mobile-Ads-SDK (9.2.0):
-    - GoogleAppMeasurement (< 9.0, >= 7.0)
+  - FreestarAds-Googleadmob-PreRelease (9.11.0.4-beta-1):
+    - FreestarAds-PreRelease (~> 5.16-beta)
+    - Google-Mobile-Ads-SDK (= 9.11.0)
+  - FreestarAds-PreRelease (5.16.0-beta-1)
+  - Google-Mobile-Ads-SDK (9.11.0):
+    - GoogleAppMeasurement (< 10.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAds-IMA-iOS-SDK (3.13.0)
-  - GoogleAppMeasurement (8.15.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.15.0)
+  - GoogleAppMeasurement (9.6.0):
+    - GoogleAppMeasurement/AdIdSupport (= 9.6.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.15.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.15.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (9.6.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.6.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.15.0):
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (9.6.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleMobileAdsMediationFacebook (6.9.0.1):
-    - FBAudienceNetwork (= 6.9.0)
-    - Google-Mobile-Ads-SDK (~> 9.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.1)
   - GoogleUtilities/AppDelegateSwizzler (7.8.0):
     - GoogleUtilities/Environment
@@ -127,283 +44,47 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.8.0)"
   - GoogleUtilities/Reachability (7.8.0):
     - GoogleUtilities/Logger
-  - HyprMX/Core (6.0.0)
   - LoremIpsum (1.0.0)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - NimbusSDK (1.10.5):
-    - NimbusSDK/NimbusKit (= 1.10.5)
-  - NimbusSDK/NimbusCoreKit (1.10.5)
-  - NimbusSDK/NimbusKit (1.10.5):
-    - NimbusSDK/NimbusRenderKit
-    - NimbusSDK/NimbusRequestKit
-  - NimbusSDK/NimbusRenderKit (1.10.5):
-    - NimbusSDK/NimbusCoreKit
-  - NimbusSDK/NimbusRenderStaticKit (1.10.5):
-    - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRenderVideoKit (1.10.5):
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
-    - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRequestKit (1.10.5):
-    - NimbusSDK/NimbusCoreKit
-  - OguryAds (3.1.0):
-    - OguryAds/OMID (= 3.1.0)
-    - OguryCore (= 1.2.0)
-  - OguryAds/OMID (3.1.0):
-    - OguryCore (= 1.2.0)
-  - OguryChoiceManager (4.0.1):
-    - OguryCore (= 1.2.0)
-  - OguryCore (1.2.0)
-  - OgurySdk (2.1.0):
-    - OguryCore (= 1.2.0)
-    - OgurySdk/OguryAds (= 2.1.0)
-    - OgurySdk/OguryChoiceManager (= 2.1.0)
-  - OgurySdk/OguryAds (2.1.0):
-    - OguryAds (= 3.1.0)
-    - OguryCore (= 1.2.0)
-  - OgurySdk/OguryChoiceManager (2.1.0):
-    - OguryChoiceManager (= 4.0.1)
-    - OguryCore (= 1.2.0)
-  - PrebidMobile-FSTRAds (2.0.0.6)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
-  - TapjoySDK (12.8.0)
-  - UnityAds (4.1.0)
-  - Verizon-Ads-Core (2.8.2)
-  - Verizon-Ads-InlinePlacement (1.8.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-InlineWebAdapter (1.8.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-InlinePlacement (~> 1.8)
-    - Verizon-Ads-Support (~> 1.15)
-    - Verizon-Ads-WebController (~> 1.7)
-    - Verizon-Ads-WebView (~> 1.10)
-  - Verizon-Ads-InterstitialPlacement (1.8.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-InterstitialVASTAdapter (1.8.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-InterstitialPlacement (~> 1.8)
-    - Verizon-Ads-Support (~> 1.15)
-    - Verizon-Ads-VASTController (~> 1.10)
-  - Verizon-Ads-InterstitialWebAdapter (1.8.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-InterstitialPlacement (~> 1.8)
-    - Verizon-Ads-Support (~> 1.15)
-    - Verizon-Ads-WebController (~> 1.7)
-    - Verizon-Ads-WebView (~> 1.10)
-  - Verizon-Ads-NativePlacement (1.14.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-OMSDK (~> 1.10)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-NativeVerizonNativeAdapter (2.9.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-NativePlacement (~> 1.14)
-    - Verizon-Ads-OMSDK (~> 1.10)
-    - Verizon-Ads-Support (~> 1.15)
-    - Verizon-Ads-VerizonNativeController (~> 2.15)
-  - Verizon-Ads-OMSDK (1.10.0):
-    - Verizon-Ads-Core (~> 2.8)
-  - Verizon-Ads-StandardEdition (1.14.2):
-    - Verizon-Ads-Core (= 2.8.2)
-    - Verizon-Ads-InlinePlacement (= 1.8.0)
-    - Verizon-Ads-InlineWebAdapter (= 1.8.0)
-    - Verizon-Ads-InterstitialPlacement (= 1.8.0)
-    - Verizon-Ads-InterstitialVASTAdapter (= 1.8.0)
-    - Verizon-Ads-InterstitialWebAdapter (= 1.8.0)
-    - Verizon-Ads-NativePlacement (= 1.14.0)
-    - Verizon-Ads-NativeVerizonNativeAdapter (= 2.9.0)
-    - Verizon-Ads-OMSDK (= 1.10.0)
-    - Verizon-Ads-Support (= 1.15.0)
-    - Verizon-Ads-URIExperience (= 2.9.0)
-    - Verizon-Ads-VASTController (= 1.10.1)
-    - Verizon-Ads-VerizonNativeController (= 2.15.0)
-    - Verizon-Ads-VideoPlayer (= 1.9.0)
-    - Verizon-Ads-WebController (= 1.7.0)
-    - Verizon-Ads-WebView (= 1.10.0)
-  - Verizon-Ads-Support (1.15.0):
-    - Verizon-Ads-Core (~> 2.8)
-  - Verizon-Ads-URIExperience (2.9.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-VASTController (1.10.1):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-OMSDK (~> 1.10)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-VerizonNativeController (2.15.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-OMSDK (~> 1.10)
-    - Verizon-Ads-Support (~> 1.15)
-  - Verizon-Ads-VideoPlayer (1.9.0):
-    - Verizon-Ads-Core (~> 2.8)
-  - Verizon-Ads-WebController (1.7.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-Support (~> 1.15)
-    - Verizon-Ads-WebView (~> 1.10)
-  - Verizon-Ads-WebView (1.10.0):
-    - Verizon-Ads-Core (~> 2.8)
-    - Verizon-Ads-OMSDK (~> 1.10)
-    - Verizon-Ads-Support (~> 1.15)
-  - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.15.0)
-  - FreestarAds-AdColony (~> 4.7.2.1)
-  - FreestarAds-AppLovin (~> 11.0.0.1)
-  - FreestarAds-AppLovinMax (~> 11.0)
-  - FreestarAds-Criteo (~> 4.3.1.1)
-  - FreestarAds-GAM (~> 9.2.0.3)
-  - FreestarAds-GAM/Facebook (~> 9.2)
-  - FreestarAds-Google (~> 3.13)
-  - FreestarAds-Googleadmob (~> 9.2)
-  - FreestarAds-Googleadmob/Facebook (~> 9.2)
-  - FreestarAds-Hyprmx (~> 6.0.0.3)
-  - FreestarAds-Nimbus (~> 1.10)
-  - FreestarAds-Ogury (~> 2.1.0.3)
-  - FreestarAds-Pangle (~> 3.7)
-  - FreestarAds-Prebid (~> 2.0.0.4)
-  - FreestarAds-TAM (~> 4.4.3.3)
-  - FreestarAds-Tapjoy (~> 12.8.0.1)
-  - FreestarAds-Unity (~> 4.1.0.4)
-  - FreestarAds-Vungle (~> 6.10)
-  - FreestarAds-Yahoo (~> 1.14.2.2)
+  - FreestarAds-Googleadmob-PreRelease (= 9.11.0.4-beta-1)
+  - FreestarAds-PreRelease (= 5.16.0-beta-1)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AdColony
-    - Ads-Global
-    - AmazonPublisherServicesSDK
-    - AppLovinSDK
-    - CriteoPublisherSdk
-    - FBAudienceNetwork
-    - FMDB
-    - FreestarAds
-    - FreestarAds-AdColony
-    - FreestarAds-AppLovin
-    - FreestarAds-AppLovinMax
-    - FreestarAds-Criteo
-    - FreestarAds-GAM
-    - FreestarAds-Google
-    - FreestarAds-Googleadmob
-    - FreestarAds-Hyprmx
-    - FreestarAds-Nimbus
-    - FreestarAds-Ogury
-    - FreestarAds-Pangle
-    - FreestarAds-Prebid
-    - FreestarAds-TAM
-    - FreestarAds-Tapjoy
-    - FreestarAds-Unity
-    - FreestarAds-Vungle
-    - FreestarAds-Yahoo
+    - FreestarAds-Googleadmob-PreRelease
+    - FreestarAds-PreRelease
     - Google-Mobile-Ads-SDK
-    - GoogleAds-IMA-iOS-SDK
     - GoogleAppMeasurement
-    - GoogleMobileAdsMediationFacebook
     - GoogleUserMessagingPlatform
     - GoogleUtilities
-    - HyprMX
     - nanopb
-    - NimbusSDK
-    - OguryAds
-    - OguryChoiceManager
-    - OguryCore
-    - OgurySdk
-    - PrebidMobile-FSTRAds
     - PromisesObjC
-    - TapjoySDK
-    - UnityAds
-    - Verizon-Ads-Core
-    - Verizon-Ads-InlinePlacement
-    - Verizon-Ads-InlineWebAdapter
-    - Verizon-Ads-InterstitialPlacement
-    - Verizon-Ads-InterstitialVASTAdapter
-    - Verizon-Ads-InterstitialWebAdapter
-    - Verizon-Ads-NativePlacement
-    - Verizon-Ads-NativeVerizonNativeAdapter
-    - Verizon-Ads-OMSDK
-    - Verizon-Ads-StandardEdition
-    - Verizon-Ads-Support
-    - Verizon-Ads-URIExperience
-    - Verizon-Ads-VASTController
-    - Verizon-Ads-VerizonNativeController
-    - Verizon-Ads-VideoPlayer
-    - Verizon-Ads-WebController
-    - Verizon-Ads-WebView
-    - VungleSDK-iOS
   trunk:
     - LoremIpsum
     - SnapKit
 
 SPEC CHECKSUMS:
-  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
-  AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
-  AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
-  CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 34617900dc6f06c585daa000f24b99b56bb060ee
-  FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
-  FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
-  FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
-  FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
-  FreestarAds-GAM: f6ed896401b528a635300c95418ba4ece6078ea4
-  FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
-  FreestarAds-Googleadmob: 5c170b9e33a51cc556ca8adcc510c11d7bfb0b30
-  FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
-  FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
-  FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
-  FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
-  FreestarAds-Prebid: 38f6c032760a19afc0c4a26531ba232153666558
-  FreestarAds-TAM: f9026636ab8239c5e1e7c7aebbbe45cd1c181cec
-  FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
-  FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
-  FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
-  FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
-  Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
-  GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
-  GoogleAppMeasurement: 4c19f031220c72464d460c9daa1fb5d1acce958e
-  GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
+  FreestarAds-Googleadmob-PreRelease: 85f0c1ab22cc27e44c213830e1f319724fea54d1
+  FreestarAds-PreRelease: 00eac3b97b4a2f2d7655b20b2963ea6e6d49eb7e
+  Google-Mobile-Ads-SDK: e0322ce0f304126547185fa254dfe66ac66153d8
+  GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
   GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
-  HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
-  OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
-  OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
-  OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
-  OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
-  PrebidMobile-FSTRAds: 62e9843a223fc17526ef1d0fa1f3861e32015e71
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
-  UnityAds: 840c036310722cc4b78abc97fe5031d3d1eb2b06
-  Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
-  Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
-  Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
-  Verizon-Ads-InterstitialPlacement: 2d4f5be86641b64970cbe6d2d1917eb245252fca
-  Verizon-Ads-InterstitialVASTAdapter: 135651b0535778f63f0d2adff4a7eb37c9e5e016
-  Verizon-Ads-InterstitialWebAdapter: cbdaffd6ab36908d3877b923d6820b493dea9937
-  Verizon-Ads-NativePlacement: 6102f0665a4b243eb2c50941814f9c7285c8ab43
-  Verizon-Ads-NativeVerizonNativeAdapter: 0d39f50875750691f0551e619be819156c4002cf
-  Verizon-Ads-OMSDK: 910be89c7ffdc442ec989d0bc1f4f3e57121fb3b
-  Verizon-Ads-StandardEdition: 6537599052748e40c294a3394947010febc6daea
-  Verizon-Ads-Support: edce32ca3a90c206775444724d54bbb7bde593d3
-  Verizon-Ads-URIExperience: 56d3bfd162780b7ee44574d26794ae873e8c3f4e
-  Verizon-Ads-VASTController: c82f96e74790807c18197dbcb9bc27715a1b9d23
-  Verizon-Ads-VerizonNativeController: 7a6a7fb1dbd8c81d320505b46e1e5d43b5321d61
-  Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
-  Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
-  Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
-  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 3a99ad1b1ed3e967efa9998f5d835775ee39d838
+PODFILE CHECKSUM: 72f9143bb9b563b2ae471a600cb959800fdbaddc
 
 COCOAPODS: 1.11.3
