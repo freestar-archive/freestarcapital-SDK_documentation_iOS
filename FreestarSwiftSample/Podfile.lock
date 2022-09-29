@@ -77,6 +77,9 @@ PODS:
   - FreestarAds-Tapjoy-PreRelease (12.8.0.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
+  - FreestarAds-Unity-PreRelease (4.1.0.4-beta-1):
+    - FreestarAds-PreRelease (~> 5.10-beta)
+    - UnityAds (= 4.1.0)
   - FreestarAds-Vungle-PreRelease (6.10.6.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - VungleSDK-iOS (= 6.10.6)
@@ -176,6 +179,7 @@ PODS:
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
+  - UnityAds (4.1.0)
   - Verizon-Ads-Core (2.8.2)
   - Verizon-Ads-InlinePlacement (1.8.0):
     - Verizon-Ads-Core (~> 2.8)
@@ -273,6 +277,7 @@ DEPENDENCIES:
   - FreestarAds-PreRelease (~> 5.18-beta)
   - FreestarAds-TAM-PreRelease (~> 4.4-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
+  - FreestarAds-Unity-PreRelease (~> 4.1-beta)
   - FreestarAds-Vungle-PreRelease (~> 6.10-beta)
   - FreestarAds-Yahoo-PreRelease (~> 1.14-beta)
   - LoremIpsum (~> 1.0)
@@ -302,6 +307,7 @@ SPEC REPOS:
     - FreestarAds-PreRelease
     - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
+    - FreestarAds-Unity-PreRelease
     - FreestarAds-Vungle-PreRelease
     - FreestarAds-Yahoo-PreRelease
     - Google-Mobile-Ads-SDK
@@ -323,6 +329,7 @@ SPEC REPOS:
     - PromisesObjC
     - SnapKit
     - TapjoySDK
+    - UnityAds
     - Verizon-Ads-Core
     - Verizon-Ads-InlinePlacement
     - Verizon-Ads-InlineWebAdapter
@@ -365,6 +372,7 @@ SPEC CHECKSUMS:
   FreestarAds-PreRelease: 27130b343e931cccd353da94f910920459f2a510
   FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
+  FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
   FreestarAds-Vungle-PreRelease: 7f0b2e297cf8b52df9f4fc33193cb2b1e7617dd7
   FreestarAds-Yahoo-PreRelease: 94b790566e590ef495740a66277066b72e324e49
   Google-Mobile-Ads-SDK: 0badb67224b63f7947428eb07039ba37e47ba405
@@ -386,6 +394,7 @@ SPEC CHECKSUMS:
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
+  UnityAds: 840c036310722cc4b78abc97fe5031d3d1eb2b06
   Verizon-Ads-Core: 9f15181ef801b38ce9c4bfe97bd10bf074199437
   Verizon-Ads-InlinePlacement: 6400ff72e1d9c32d548bbe4ad2ea9f7749fb4e1f
   Verizon-Ads-InlineWebAdapter: a6cf9ecceeb34e134b67249465b8fd4b7cb8122d
@@ -405,6 +414,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 126a0946dca1195791ac060af1670a7d5548b8c9
+PODFILE CHECKSUM: cfcafb4151171e6eef527ec7d0c7964b20a23b03
 
 COCOAPODS: 1.11.3
