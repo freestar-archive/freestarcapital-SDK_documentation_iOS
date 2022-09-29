@@ -17,13 +17,12 @@
 		96C85A10241C5AFD009BD9FB /* PartnerChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0A241C5AFD009BD9FB /* PartnerChoice.m */; };
 		96C85A11241C5AFD009BD9FB /* PartnerSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C85A0C241C5AFD009BD9FB /* PartnerSelectionTableViewController.m */; };
 		96C85A13241C5F6E009BD9FB /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96C85A12241C5CF7009BD9FB /* bunny.mp4 */; };
-		E833BEE692F1BF029D3067FE /* Pods_FreestarOBJCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */; };
+		A4711236A723F6E1F141EE14 /* Pods_FreestarOBJCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A0D4C88CF6F56E83799FD5 /* Pods_FreestarOBJCSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarOBJCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.release.xcconfig"; sourceTree = "<group>"; };
-		8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.debug.xcconfig"; sourceTree = "<group>"; };
+		3019543546364C6B80E9A0C0 /* Pods-FreestarOBJCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.debug.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.debug.xcconfig"; sourceTree = "<group>"; };
+		44A0D4C88CF6F56E83799FD5 /* Pods_FreestarOBJCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreestarOBJCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C859ED241C53E1009BD9FB /* FreestarOBJCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreestarOBJCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C859F0241C53E1009BD9FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96C859F1241C53E1009BD9FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		96C85A0D241C5AFD009BD9FB /* PartnerChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerChoice.h; sourceTree = "<group>"; };
 		96C85A0E241C5AFD009BD9FB /* PartnerSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerSelectionTableViewController.h; sourceTree = "<group>"; };
 		96C85A12241C5CF7009BD9FB /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bunny.mp4; path = ../../bunny.mp4; sourceTree = "<group>"; };
+		C91A82AAE402D9B0EE6B3007 /* Pods-FreestarOBJCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreestarOBJCSample.release.xcconfig"; path = "Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E833BEE692F1BF029D3067FE /* Pods_FreestarOBJCSample.framework in Frameworks */,
+				A4711236A723F6E1F141EE14 /* Pods_FreestarOBJCSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 				96C859EF241C53E1009BD9FB /* FreestarOBJCSample */,
 				96C859EE241C53E1009BD9FB /* Products */,
 				98A862637BB8A7DD6BE356BE /* Pods */,
-				9F53B4BDB3D277B1FEE46B7C /* Frameworks */,
+				C6EB9FB48EF2F4788A90D313 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,16 +99,16 @@
 		98A862637BB8A7DD6BE356BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */,
-				0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */,
+				3019543546364C6B80E9A0C0 /* Pods-FreestarOBJCSample.debug.xcconfig */,
+				C91A82AAE402D9B0EE6B3007 /* Pods-FreestarOBJCSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9F53B4BDB3D277B1FEE46B7C /* Frameworks */ = {
+		C6EB9FB48EF2F4788A90D313 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08F6F922488BF3C56987BCA8 /* Pods_FreestarOBJCSample.framework */,
+				44A0D4C88CF6F56E83799FD5 /* Pods_FreestarOBJCSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,12 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96C85A06241C53E4009BD9FB /* Build configuration list for PBXNativeTarget "FreestarOBJCSample" */;
 			buildPhases = (
-				14CF03639FAB4BBE25567B9B /* [CP] Check Pods Manifest.lock */,
+				BBDC98A8E0F781D4732A42B9 /* [CP] Check Pods Manifest.lock */,
 				96C859E9241C53E1009BD9FB /* Sources */,
 				96C859EA241C53E1009BD9FB /* Frameworks */,
 				96C859EB241C53E1009BD9FB /* Resources */,
-				8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */,
-				5E6A25C5AF784848CA09EF24 /* [CP] Embed Pods Frameworks */,
+				89C347248EC11A300CBCC607 /* [CP] Embed Pods Frameworks */,
+				37B7EDDCE501E27BE4DA1B0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +183,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14CF03639FAB4BBE25567B9B /* [CP] Check Pods Manifest.lock */ = {
+		37B7EDDCE501E27BE4DA1B0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C347248EC11A300CBCC607 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBDC98A8E0F781D4732A42B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,40 +237,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E6A25C5AF784848CA09EF24 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8CFAC932721D6FA5D85292CD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreestarOBJCSample/Pods-FreestarOBJCSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,7 +331,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					$inherited,
+					"$inherited",
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -389,7 +389,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
-					$inherited,
+					"$inherited",
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -401,7 +401,7 @@
 		};
 		96C85A07241C53E4009BD9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E7837AFE96219BEC152EA63 /* Pods-FreestarOBJCSample.debug.xcconfig */;
+			baseConfigurationReference = 3019543546364C6B80E9A0C0 /* Pods-FreestarOBJCSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,7 +419,7 @@
 		};
 		96C85A08241C53E4009BD9FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED34A1B5BE2B9301E7BA748 /* Pods-FreestarOBJCSample.release.xcconfig */;
+			baseConfigurationReference = C91A82AAE402D9B0EE6B3007 /* Pods-FreestarOBJCSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
