@@ -1,6 +1,6 @@
 ﻿using Foundation;
 using UIKit;
-using FreestarAds;
+using com.freestar.ios.ads;
 
 namespace FreestarXamarinSample
 {
@@ -15,7 +15,9 @@ namespace FreestarXamarinSample
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
-            Freestar.InitWithAdUnitID("P8RIA3");
+            Freestar.SetTestModeEnabled(true);
+            Freestar.SetLoggingEnabled(true);
+            Freestar.InitWithAppKey("XqjhRR");
             return true;
         }
 
