@@ -46,9 +46,9 @@ PODS:
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.2.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
-  - FreestarAds-Hyprmx (6.0.0.3):
-    - FreestarAds (~> 5.7)
-    - HyprMX/Core (= 6.0.0)
+  - FreestarAds-Hyprmx (6.0.3.4):
+    - FreestarAds (~> 5.10)
+    - HyprMX/Core (= 6.0.3)
   - FreestarAds-Nimbus (1.10.5.1):
     - FreestarAds (~> 5.7)
     - NimbusSDK (= 1.10.5)
@@ -122,7 +122,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.8.0)"
   - GoogleUtilities/Reachability (7.8.0):
     - GoogleUtilities/Logger
-  - HyprMX/Core (6.0.0)
+  - HyprMX/Core (6.0.3)
   - LoremIpsum (1.0.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -238,7 +238,7 @@ DEPENDENCIES:
   - FreestarAds-Google (~> 3.13)
   - FreestarAds-Googleadmob (~> 9.2)
   - FreestarAds-Googleadmob/Facebook (~> 9.2)
-  - FreestarAds-Hyprmx (~> 6.0.0.3)
+  - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 1.10)
   - FreestarAds-Pangle (~> 3.7)
   - FreestarAds-Prebid (~> 2.0.0.4)
@@ -326,7 +326,7 @@ SPEC CHECKSUMS:
   FreestarAds-GAM: f6ed896401b528a635300c95418ba4ece6078ea4
   FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
   FreestarAds-Googleadmob: 5c170b9e33a51cc556ca8adcc510c11d7bfb0b30
-  FreestarAds-Hyprmx: 7a22255a59ba9937279a9ef98676ba46cc53ec86
+  FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-Prebid: 38f6c032760a19afc0c4a26531ba232153666558
@@ -341,7 +341,7 @@ SPEC CHECKSUMS:
   GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
   GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
-  HyprMX: 0b88a6b8f773041d75c94c64d3e85b45b2d0cf06
+  HyprMX: c4801c9f7b962a5d5bc5c6471d81c992e5a0bc3f
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
@@ -369,6 +369,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: e8b2b055a22d93753fdd44c716992a2ee2dc3d30
+PODFILE CHECKSUM: 036287fe6c4378dd7d5bc383ba0707a3959f91fa
 
 COCOAPODS: 1.11.3
