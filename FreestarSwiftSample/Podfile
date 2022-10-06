@@ -19,10 +19,10 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-TAM-PreRelease', '~> 4.4-beta'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0-beta'
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.2-beta'
-  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 9.2-beta'
-  pod 'FreestarAds-GAM-PreRelease', '~> 9.2-beta'
-  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.2-beta'
+  pod 'FreestarAds-Googleadmob-PreRelease', '~> 9.11-beta'
+  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 9.11-beta'
+  pod 'FreestarAds-GAM-PreRelease', '~> 9.11-beta'
+  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.11-beta'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.1-beta'
 
 #  # Not M1 compatible
