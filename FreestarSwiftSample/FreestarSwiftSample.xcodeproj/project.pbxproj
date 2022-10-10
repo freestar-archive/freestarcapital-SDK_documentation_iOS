@@ -395,8 +395,8 @@
 			baseConfigurationReference = 27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FLA943DDZ8;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -436,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Swift Sample App Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
