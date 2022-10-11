@@ -13,12 +13,12 @@ target 'FreestarOBJCSample' do
   pod "FreestarAds-TAM", "~> 4.4.3.3"
   pod "FreestarAds-Hyprmx", "~> 6.0.3.4"
   pod "FreestarAds-Yahoo", "~> 1.14.2.2"
-  pod 'FreestarAds-Googleadmob', '~> 9.2'
-  pod 'FreestarAds-Googleadmob/Facebook', '~> 9.2'
-  pod 'FreestarAds-GAM', '~> 9.2.0.3'
-  pod 'FreestarAds-GAM/Facebook', '~> 9.2'
+  pod 'FreestarAds-Googleadmob', '~> 9.11'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 9.11'
+  pod 'FreestarAds-GAM', '~> 9.11'
+  pod 'FreestarAds-GAM/Facebook', '~> 9.11'
   pod "FreestarAds-Unity", "~> 4.1.0.4"
-  pod "FreestarAds-Prebid", "~> 2.0.3.5"
+  pod "FreestarAds-Prebid", "~> 2.0.3.6"
 
   # Not M1 compatible pods
   pod "FreestarAds-Vungle", "~> 6.10"
