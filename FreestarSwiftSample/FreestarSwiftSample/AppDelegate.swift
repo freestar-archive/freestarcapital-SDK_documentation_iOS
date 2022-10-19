@@ -7,6 +7,7 @@
 
 import UIKit
 import FreestarAds
+import ConfiantSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+                
         // Override point for customization after application launch.
         Freestar.setLoggingEnabled(true)
         Freestar.setTestModeEnabled(true)
@@ -66,10 +68,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("\(error)")
         }
         
+        confiantInit()
         return true
     }
-
     
-
+    func confiantInit() {
+        let confiantPropertyId: String? = Bundle.main.object(forInfoDictionaryKey:"CONFIANT_PROPERTY_ID") as? String
+        let confiantForceBlock: Bool? = Bundle.main.object(forInfoDictionaryKey:"CONFIANT_FORCE_BLOCK") as? Bool
+        
+        guard let confiantPropertyId = confiantPropertyId, let confiantForceBlock = confiantForceBlock else {
+            return
+        }
+        
+        let settingsResult = Settings.with(propertyId: confiantPropertyId,
+                                           enableRate: nil,
+                                           enableAdReporter: nil,
+                                           forceBlockOnLoad: confiantForceBlock
+        )
+        switch settingsResult {
+        case let .success(settings):
+            Confiant.initialize(settings: settings) {
+                initResult in
+                switch initResult {
+                case .success:
+                    print("ConfiantSDK init complete.")
+                case let .failure(initError):
+                    print("ConfiantSDK init init error \(initError.localizedDescription).")
+                @unknown default:
+                    print("ConfiantSDK init error unknown.")
+                }
+            }
+        case let .failure(settingsError):
+            print("ConfiantSDK settings error \(settingsError.localizedDescription).")
+        @unknown default:
+            print("ConfiantSDK settings error unknown.")
+        }
+    }
 }
 

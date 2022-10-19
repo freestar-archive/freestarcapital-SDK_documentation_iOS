@@ -9,6 +9,7 @@ PODS:
   - Ads-Global/International (3.7.0.8)
   - AmazonPublisherServicesSDK (4.4.3)
   - AppLovinSDK (11.0.0)
+  - ConfiantSDK (5.0.2-1934)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -259,6 +260,7 @@ PODS:
   - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
+  - ConfiantSDK (from `https://s3.amazonaws.com/confiant-integrations/backend-integrations/in-app/releases/ios/podspecs/ConfiantSDK-5.0.2-1934.podspec`)
   - FreestarAds-AdColony-PreRelease (~> 4.7-beta)
   - FreestarAds-AppLovin-PreRelease (~> 11.0-beta)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0-beta)
@@ -349,11 +351,16 @@ SPEC REPOS:
     - Verizon-Ads-WebView
     - VungleSDK-iOS
 
+EXTERNAL SOURCES:
+  ConfiantSDK:
+    :podspec: https://s3.amazonaws.com/confiant-integrations/backend-integrations/in-app/releases/ios/podspecs/ConfiantSDK-5.0.2-1934.podspec
+
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
+  ConfiantSDK: 4005fa27c961c40e1a83a3917e23da510809a9de
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -414,6 +421,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: a7f192dcbbdf824b2ff4a9374ead74f0d1540ed8
+PODFILE CHECKSUM: c6af3dee77ec04c6b7fbcf11a8fa6776b5709c7f
 
 COCOAPODS: 1.11.3

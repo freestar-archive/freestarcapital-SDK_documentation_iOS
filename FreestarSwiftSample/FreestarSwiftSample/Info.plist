@@ -79,5 +79,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CONFIANT_PROPERTY_ID</key>
+	<string>Vw6Hmt4tR8gdJgdE_ZvL9fmbqdE</string>
+	<key>CONFIANT_FORCE_BLOCK</key>
+	<true/>
 </dict>
 </plist>

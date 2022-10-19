@@ -4,6 +4,9 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'FreestarSwiftSample' do
+  
+  # confiant
+  pod 'ConfiantSDK', :podspec => 'https://s3.amazonaws.com/confiant-integrations/backend-integrations/in-app/releases/ios/podspecs/ConfiantSDK-5.0.2-1934.podspec'
 
   # M1 compatible
   pod 'FreestarAds-PreRelease', '~> 5.18-beta'
