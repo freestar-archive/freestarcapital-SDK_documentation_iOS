@@ -24,6 +24,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-GAM-PreRelease', '~> 9.11-beta'
   pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.11-beta'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.1-beta'
+  pod 'FreestarAds-Fyber2-PreRelease', '~> 8.1-beta-1'
 
 #  # Not M1 compatible
   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10-beta'
