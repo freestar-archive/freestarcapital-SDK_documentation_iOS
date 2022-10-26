@@ -29,6 +29,9 @@ PODS:
   - FreestarAds-Criteo (4.3.1.1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds (~> 5.7)
+  - FreestarAds-Fyber2 (8.1.6.1):
+    - FreestarAds (~> 5.17)
+    - Fyber_Marketplace_SDK (= 8.1.6)
   - FreestarAds-GAM (9.11.0.4):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.11.0)
@@ -54,6 +57,11 @@ PODS:
     - NimbusSDK (= 1.10.5)
     - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
     - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
+  - FreestarAds-Ogury (2.1.0.3):
+    - FreestarAds (~> 5.15)
+    - OguryAds
+    - OguryChoiceManager
+    - OgurySdk (~> 2.1.0)
   - FreestarAds-Pangle (3.7.0.1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds (~> 5.7)
@@ -77,6 +85,9 @@ PODS:
   - FreestarAds-Yahoo (1.14.2.2):
     - FreestarAds (~> 5.10)
     - Verizon-Ads-StandardEdition (= 1.14.2)
+  - Fyber_Marketplace_SDK (8.1.6):
+    - Fyber_Marketplace_SDK/IASDKCore (= 8.1.6)
+  - Fyber_Marketplace_SDK/IASDKCore (8.1.6)
   - Google-Mobile-Ads-SDK (9.11.0):
     - GoogleAppMeasurement (< 10.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -144,6 +155,24 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (1.10.5):
     - NimbusSDK/NimbusCoreKit
+  - OguryAds (3.1.0):
+    - OguryAds/OMID (= 3.1.0)
+    - OguryCore (= 1.2.0)
+  - OguryAds/OMID (3.1.0):
+    - OguryCore (= 1.2.0)
+  - OguryChoiceManager (4.0.1):
+    - OguryCore (= 1.2.0)
+  - OguryCore (1.2.0)
+  - OgurySdk (2.1.0):
+    - OguryCore (= 1.2.0)
+    - OgurySdk/OguryAds (= 2.1.0)
+    - OgurySdk/OguryChoiceManager (= 2.1.0)
+  - OgurySdk/OguryAds (2.1.0):
+    - OguryAds (= 3.1.0)
+    - OguryCore (= 1.2.0)
+  - OgurySdk/OguryChoiceManager (2.1.0):
+    - OguryChoiceManager (= 4.0.1)
+    - OguryCore (= 1.2.0)
   - PrebidMobile-FSTRAds (2.0.0.7)
   - PromisesObjC (2.1.1)
   - SnapKit (5.0.1)
@@ -233,6 +262,7 @@ DEPENDENCIES:
   - FreestarAds-AppLovin (~> 11.0.0.1)
   - FreestarAds-AppLovinMax (~> 11.0)
   - FreestarAds-Criteo (~> 4.3.1.1)
+  - FreestarAds-Fyber2 (~> 8.1.6.1)
   - FreestarAds-GAM (~> 9.11)
   - FreestarAds-GAM/Facebook (~> 9.11)
   - FreestarAds-Google (~> 3.13)
@@ -240,6 +270,7 @@ DEPENDENCIES:
   - FreestarAds-Googleadmob/Facebook (~> 9.11)
   - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 1.10)
+  - FreestarAds-Ogury (~> 2.1.0.3)
   - FreestarAds-Pangle (~> 3.7)
   - FreestarAds-Prebid (~> 2.0.3.6)
   - FreestarAds-TAM (~> 4.4.3.3)
@@ -264,11 +295,13 @@ SPEC REPOS:
     - FreestarAds-AppLovin
     - FreestarAds-AppLovinMax
     - FreestarAds-Criteo
+    - FreestarAds-Fyber2
     - FreestarAds-GAM
     - FreestarAds-Google
     - FreestarAds-Googleadmob
     - FreestarAds-Hyprmx
     - FreestarAds-Nimbus
+    - FreestarAds-Ogury
     - FreestarAds-Pangle
     - FreestarAds-Prebid
     - FreestarAds-TAM
@@ -276,6 +309,7 @@ SPEC REPOS:
     - FreestarAds-Unity
     - FreestarAds-Vungle
     - FreestarAds-Yahoo
+    - Fyber_Marketplace_SDK
     - Google-Mobile-Ads-SDK
     - GoogleAds-IMA-iOS-SDK
     - GoogleAppMeasurement
@@ -286,6 +320,10 @@ SPEC REPOS:
     - LoremIpsum
     - nanopb
     - NimbusSDK
+    - OguryAds
+    - OguryChoiceManager
+    - OguryCore
+    - OgurySdk
     - PrebidMobile-FSTRAds
     - PromisesObjC
     - SnapKit
@@ -323,11 +361,13 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
   FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
+  FreestarAds-Fyber2: 64a850bf9cb4c5f1567cbb283346227da07d9840
   FreestarAds-GAM: 7e5c1c0b35585e7cd3b56f87f06c40076ccfa763
   FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
   FreestarAds-Googleadmob: 7a45e2d9e54f5592114e9947ae306bdd601ad6e7
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
+  FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-Prebid: 2e47d929dd0aa3a920e0ea645e88faacdc3e62dc
   FreestarAds-TAM: f9026636ab8239c5e1e7c7aebbbe45cd1c181cec
@@ -335,6 +375,7 @@ SPEC CHECKSUMS:
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
   FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
   FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
+  Fyber_Marketplace_SDK: 0325c667dce841f2fabc3644c1a467978c3eed02
   Google-Mobile-Ads-SDK: e0322ce0f304126547185fa254dfe66ac66153d8
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
   GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
@@ -345,6 +386,10 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
+  OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
+  OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
+  OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
+  OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
   PrebidMobile-FSTRAds: f8910d9449cf76c6656bb927c5389bc6f372def5
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -369,6 +414,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 8dbd41ec8048eb8b327d7affa468f04e1fe66c5e
+PODFILE CHECKSUM: 7d76ecfb535bf3d34d1d6ca5d52385533a432a25
 
 COCOAPODS: 1.11.3
