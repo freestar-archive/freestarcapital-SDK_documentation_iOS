@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    static let FREESTAR_API_KEY = "ef05da0e-1c5f-4595-b835-74ecedf048dd"
 //    static let FREESTAR_API_KEY = "5fee93b8-d3d5-43ce-84a5-bffc90e81b5b"
 //      static let FREESTAR_API_KEY = "37f63777-6e63-42f2-89b7-4b67689c2493"
-    static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
-//    static let FREESTAR_API_KEY = "XqjhRR"
+//    static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
+    static let FREESTAR_API_KEY = "XqjhRR"
     
     var window : UIWindow?
     

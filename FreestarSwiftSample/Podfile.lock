@@ -72,7 +72,7 @@ PODS:
     - FreestarAds-PreRelease (~> 5.14-beta)
     - Google-Mobile-Ads-SDK (= 9.11.0)
     - PrebidMobile-FSTRAds (= 2.0.0.7)
-  - FreestarAds-PreRelease (5.18.0-beta-1)
+  - FreestarAds-PreRelease (5.18.0-beta-4)
   - FreestarAds-TAM-PreRelease (4.4.3.3-beta-3):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
@@ -379,7 +379,7 @@ SPEC CHECKSUMS:
   FreestarAds-Ogury-PreRelease: 57a016774e7a2970df065e964dc5132f60a12fef
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: 32223db848989a4eaa0d27d40a5108b5062bdf49
-  FreestarAds-PreRelease: 27130b343e931cccd353da94f910920459f2a510
+  FreestarAds-PreRelease: 8e0fee629d298acf6be3904472f656a5317b656f
   FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
