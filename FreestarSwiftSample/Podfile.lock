@@ -19,6 +19,7 @@ PODS:
   - FreestarAds-AdColony-PreRelease (4.7.2.2-beta-4):
     - AdColony (= 4.7.2)
     - FreestarAds-PreRelease (~> 5.10-beta)
+  - FreestarAds-AdQualityKit (5.0.4)
   - FreestarAds-AppLovin-PreRelease (11.0.0.2-beta-1):
     - AppLovinSDK (= 11.0.0)
     - FreestarAds-PreRelease (~> 5.7)
@@ -72,7 +73,8 @@ PODS:
     - FreestarAds-PreRelease (~> 5.14-beta)
     - Google-Mobile-Ads-SDK (= 9.11.0)
     - PrebidMobile-FSTRAds (= 2.0.0.7)
-  - FreestarAds-PreRelease (5.18.0-beta-4)
+  - FreestarAds-PreRelease (5.18.0-beta-5):
+    - FreestarAds-AdQualityKit (= 5.0.4)
   - FreestarAds-TAM-PreRelease (4.4.3.3-beta-3):
     - AmazonPublisherServicesSDK (= 4.4.3)
     - FMDB (= 2.7.5)
@@ -300,6 +302,7 @@ SPEC REPOS:
     - FBAudienceNetwork
     - FMDB
     - FreestarAds-AdColony-PreRelease
+    - FreestarAds-AdQualityKit
     - FreestarAds-AppLovin-PreRelease
     - FreestarAds-AppLovinMax-PreRelease
     - FreestarAds-Criteo-PreRelease
@@ -367,6 +370,7 @@ SPEC CHECKSUMS:
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 1a6b85cd6d47a0da2b9680c7f199eb2bfccf8550
+  FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
   FreestarAds-AppLovin-PreRelease: f847a0894848173e8b83364ab2c2a72739b0d102
   FreestarAds-AppLovinMax-PreRelease: 8e4022691cffd32a1a07f5342ea2c15fe823beb4
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
@@ -379,7 +383,7 @@ SPEC CHECKSUMS:
   FreestarAds-Ogury-PreRelease: 57a016774e7a2970df065e964dc5132f60a12fef
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: 32223db848989a4eaa0d27d40a5108b5062bdf49
-  FreestarAds-PreRelease: 8e0fee629d298acf6be3904472f656a5317b656f
+  FreestarAds-PreRelease: 3dde9b242a66f6f616ceda588122a49620bfc373
   FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -425,6 +429,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 70b94b7b8dcec1b9205865b3942cd9d635188006
+PODFILE CHECKSUM: 0c299e0fd1d6b044984682bc3743c60ca55473bb
 
 COCOAPODS: 1.11.3

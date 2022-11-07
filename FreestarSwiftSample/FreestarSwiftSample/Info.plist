@@ -34,6 +34,8 @@
 	<true/>
 	<key>FSTR_SERVER_ENDPOINT_QUERY_STRING</key>
 	<string></string>
+	<key>FSTR_ADQUALITY_TEST_MODE_ENABLED</key>
+	<false/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSRequiresIPhoneOS</key>
