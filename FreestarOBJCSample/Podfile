@@ -16,7 +16,7 @@ target 'FreestarOBJCSample' do
   pod 'FreestarAds-Googleadmob/Facebook', '~> 9.11'
   pod "FreestarAds-Hyprmx", "~> 6.0.3.4"
   pod "FreestarAds-Ogury", "~> 2.1.0.3"
-  pod "FreestarAds-Prebid", "~> 2.0.3.6"
+  pod "FreestarAds-Prebid", "~> 2.0.3.7"
   pod "FreestarAds-TAM", "~> 4.4.3.3"
   pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
   pod "FreestarAds-Unity", "~> 4.1.0.4"
