@@ -25,11 +25,12 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 9.11-beta'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.1-beta'
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.1-beta-1'
+  pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1-beta-3'
 
 #  # Not M1 compatible
   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10-beta'
-  pod 'FreestarAds-Nimbus-PreRelease', '~> 1.10-beta'
-  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
+  # IMA SDK conflict with Nimbus adapter
+#  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
   pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
   
   # helper frameworks for feed view
