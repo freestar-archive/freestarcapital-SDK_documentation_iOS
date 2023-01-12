@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '11.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'FreestarOBJCSample' do  
@@ -21,13 +21,13 @@ target 'FreestarOBJCSample' do
   pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
   pod "FreestarAds-Unity", "~> 4.1.0.4"
   pod "FreestarAds-Yahoo", "~> 1.14.2.2"
+  pod "FreestarAds-Nimbus", "~> 2.1.2.2"
   
 
   # Not M1 compatible pods
   pod "FreestarAds-Vungle", "~> 6.10"
-  pod "FreestarAds-Nimbus", "~> 1.10"
-  pod "FreestarAds-Google", "~> 3.13"
   pod "FreestarAds-Pangle", "~> 3.7"
+  #  pod "FreestarAds-Google", "~> 3.13"
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'

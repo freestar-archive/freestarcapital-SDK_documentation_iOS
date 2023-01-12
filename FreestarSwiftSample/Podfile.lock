@@ -39,9 +39,6 @@ PODS:
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.11.0)
     - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
-  - FreestarAds-Google (3.13.0.1):
-    - FreestarAds (~> 5.7)
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
   - FreestarAds-Googleadmob (9.11.0.4):
     - FreestarAds (~> 5.10)
     - Google-Mobile-Ads-SDK (= 9.11.0)
@@ -52,11 +49,11 @@ PODS:
   - FreestarAds-Hyprmx (6.0.3.4):
     - FreestarAds (~> 5.10)
     - HyprMX/Core (= 6.0.3)
-  - FreestarAds-Nimbus (1.10.5.1):
-    - FreestarAds (~> 5.7)
-    - NimbusSDK (= 1.10.5)
-    - NimbusSDK/NimbusRenderStaticKit (= 1.10.5)
-    - NimbusSDK/NimbusRenderVideoKit (= 1.10.5)
+  - FreestarAds-Nimbus (2.1.2.2):
+    - FreestarAds (~> 5.10)
+    - NimbusSDK (= 2.1.2)
+    - NimbusSDK/NimbusRenderStaticKit (= 2.1.2)
+    - NimbusSDK/NimbusRenderVideoKit (= 2.1.2)
   - FreestarAds-Ogury (2.1.0.3):
     - FreestarAds (~> 5.15)
     - OguryAds
@@ -91,7 +88,7 @@ PODS:
   - Google-Mobile-Ads-SDK (9.11.0):
     - GoogleAppMeasurement (< 10.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAds-IMA-iOS-SDK (3.13.0)
+  - GoogleAds-IMA-iOS-SDK (3.16.3)
   - GoogleAppMeasurement (9.6.0):
     - GoogleAppMeasurement/AdIdSupport (= 9.6.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
@@ -140,20 +137,20 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
-  - NimbusSDK (1.10.5):
-    - NimbusSDK/NimbusKit (= 1.10.5)
-  - NimbusSDK/NimbusCoreKit (1.10.5)
-  - NimbusSDK/NimbusKit (1.10.5):
+  - NimbusSDK (2.1.2):
+    - NimbusSDK/NimbusKit (= 2.1.2)
+  - NimbusSDK/NimbusCoreKit (2.1.2)
+  - NimbusSDK/NimbusKit (2.1.2):
     - NimbusSDK/NimbusRenderKit
     - NimbusSDK/NimbusRequestKit
-  - NimbusSDK/NimbusRenderKit (1.10.5):
+  - NimbusSDK/NimbusRenderKit (2.1.2):
     - NimbusSDK/NimbusCoreKit
-  - NimbusSDK/NimbusRenderStaticKit (1.10.5):
+  - NimbusSDK/NimbusRenderStaticKit (2.1.2):
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRenderVideoKit (1.10.5):
-    - GoogleAds-IMA-iOS-SDK (= 3.13.0)
+  - NimbusSDK/NimbusRenderVideoKit (2.1.2):
+    - GoogleAds-IMA-iOS-SDK (= 3.16.3)
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRequestKit (1.10.5):
+  - NimbusSDK/NimbusRequestKit (2.1.2):
     - NimbusSDK/NimbusCoreKit
   - OguryAds (3.1.0):
     - OguryAds/OMID (= 3.1.0)
@@ -265,11 +262,10 @@ DEPENDENCIES:
   - FreestarAds-Fyber2 (~> 8.1.6.1)
   - FreestarAds-GAM (~> 9.11)
   - FreestarAds-GAM/Facebook (~> 9.11)
-  - FreestarAds-Google (~> 3.13)
   - FreestarAds-Googleadmob (~> 9.11)
   - FreestarAds-Googleadmob/Facebook (~> 9.11)
   - FreestarAds-Hyprmx (~> 6.0.3.4)
-  - FreestarAds-Nimbus (~> 1.10)
+  - FreestarAds-Nimbus (~> 2.1.2.2)
   - FreestarAds-Ogury (~> 2.1.0.3)
   - FreestarAds-Pangle (~> 3.7)
   - FreestarAds-Prebid (~> 2.0.3.7)
@@ -297,7 +293,6 @@ SPEC REPOS:
     - FreestarAds-Criteo
     - FreestarAds-Fyber2
     - FreestarAds-GAM
-    - FreestarAds-Google
     - FreestarAds-Googleadmob
     - FreestarAds-Hyprmx
     - FreestarAds-Nimbus
@@ -364,10 +359,9 @@ SPEC CHECKSUMS:
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-Fyber2: 64a850bf9cb4c5f1567cbb283346227da07d9840
   FreestarAds-GAM: 7e5c1c0b35585e7cd3b56f87f06c40076ccfa763
-  FreestarAds-Google: 96f58d7f0a9f60b99891d2d687083174cff89122
   FreestarAds-Googleadmob: 7a45e2d9e54f5592114e9947ae306bdd601ad6e7
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
-  FreestarAds-Nimbus: 602de1b78542f14d9035c3b5219dfc4c36cf0e05
+  FreestarAds-Nimbus: a0ee883cf8c5e58b231840981a268da691c0bf99
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
   FreestarAds-Pangle: 2c745c90f4d02d194f2e13ac0b31528546cf8913
   FreestarAds-Prebid: 52fe62aa39197fa70b1d88576717d94e5c5ace53
@@ -378,7 +372,7 @@ SPEC CHECKSUMS:
   FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
   Fyber_Marketplace_SDK: 0325c667dce841f2fabc3644c1a467978c3eed02
   Google-Mobile-Ads-SDK: e0322ce0f304126547185fa254dfe66ac66153d8
-  GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
+  GoogleAds-IMA-iOS-SDK: 1aba71fa5b58dc463cc5b752f06e970ec7c739c1
   GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
   GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
@@ -386,7 +380,7 @@ SPEC CHECKSUMS:
   HyprMX: c4801c9f7b962a5d5bc5c6471d81c992e5a0bc3f
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  NimbusSDK: 4e841bd0e128fbcaf69d506695c5a1269808a918
+  NimbusSDK: 4aba63f8ea58aaf6ac2aeb04e79996466f063171
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
@@ -415,6 +409,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 3d0e84c7e422ed711922ef261a0c4b33b3d46b2d
+PODFILE CHECKSUM: 680f163adb7074ff84f21d9f91059a6174a83db3
 
 COCOAPODS: 1.11.3
