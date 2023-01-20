@@ -1,7 +1,13 @@
 Pods/
-*xcworkspace*
-*xcuserdata*
 FreestarSwiftSample/build
 FreestarXamarinSample/FreestarXamarinSample/obj
 FreestarXamarinSample/FreestarXamarinSample/bin
 FreestarSwiftSPMSample/build
+FreestarOBJCSample/FreestarOBJCSample.xcodeproj/xcuserdata
+FreestarOBJCSample/FreestarOBJCSample.xcworkspace/xcuserdata
+FreestarSwiftSample/FreestarSwiftSample.xcworkspace/xcuserdata
+FreestarSwiftSPMSample/FreestarSwiftSample.xcodeproj/project.xcworkspace/xcuserdata
+FreestarSwiftSPMSample/FreestarSwiftSample.xcodeproj/xcuserdata
+FreestarSwiftUISample/FreestarSwiftUISample.xcodeproj/xcuserdata
+FreestarSwiftUISample/FreestarSwiftUISample.xcodeproj/project.xcworkspace/xcuserdata
+WorkspaceSettings.xcsettings

@@ -1,0 +1,149 @@
+{
+  "pins" : [
+    {
+      "identity" : "fmdb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maddapper/fmdb.git",
+      "state" : {
+        "revision" : "63c280a0af32136fffc0189e38badae3c1b0f5d8",
+        "version" : "2.7.6"
+      }
+    },
+    {
+      "identity" : "googleappmeasurement",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleAppMeasurement.git",
+      "state" : {
+        "revision" : "c1cfde8067668027b23a42c29d11c246152fe046",
+        "version" : "9.6.0"
+      }
+    },
+    {
+      "identity" : "googleutilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleUtilities.git",
+      "state" : {
+        "revision" : "68ea347bdb1a69e2d2ae2e25cd085b6ef92f64cb",
+        "version" : "7.9.0"
+      }
+    },
+    {
+      "identity" : "loremipsum-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/owlcoding/LoremIpsum-Swift.git",
+      "state" : {
+        "revision" : "47be1bbd0e2744a4f7d444907b137068a0b21388",
+        "version" : "0.6.0"
+      }
+    },
+    {
+      "identity" : "nanopb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/firebase/nanopb.git",
+      "state" : {
+        "revision" : "819d0a2173aff699fb8c364b6fb906f7cdb1a692",
+        "version" : "2.30909.0"
+      }
+    },
+    {
+      "identity" : "promises",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/promises.git",
+      "state" : {
+        "revision" : "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
+        "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-admob",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-admob.git",
+      "state" : {
+        "revision" : "62a5f54d0de78d1b77f72ecf3e9a2c953a37f0c9",
+        "version" : "9.11.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
+      "state" : {
+        "revision" : "2164d04c7e670b34783af3fe163acb0c7b85edae",
+        "version" : "5.17.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-gam",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
+      "state" : {
+        "revision" : "af287c1fe73e937ff4f2d65843eb4f692d095c0f",
+        "version" : "9.11.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-gma-dependencies",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-gma-dependencies.git",
+      "state" : {
+        "revision" : "3a950d3b7513946e7ca618d77c7b5165dde81d90",
+        "version" : "9.11.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-nimbus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-nimbus.git",
+      "state" : {
+        "revision" : "ecff13e313994eb0f638db8d977795e5e4713957",
+        "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-prebid",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-prebid.git",
+      "state" : {
+        "revision" : "a5ffd8f03d5270009ebc6bc58f5241a85109a5d7",
+        "version" : "2.0.4"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-tam",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-tam.git",
+      "state" : {
+        "revision" : "b3573f0002eb7aa413ed2233fea92317adda1b51",
+        "version" : "4.4.3"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-mobile-ads",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      "state" : {
+        "revision" : "8ee37d38a965c54c36a33a169c49f3d293def2f6",
+        "version" : "9.11.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-user-messaging-platform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
+      "state" : {
+        "revision" : "3b924ce3313a5fd2fc6a8dc889a8c38f76890fe3",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
