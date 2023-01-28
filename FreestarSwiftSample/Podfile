@@ -6,8 +6,8 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '~> 5.18-beta-19'
-  
+  pod 'FreestarAds-PreRelease', '~> 5.18.0-beta-20'
+
   pod 'FreestarAds-Prebid-PreRelease', '~> 2.0-beta'
   pod 'FreestarAds-Ogury-PreRelease', '~> 2.1-beta'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14-beta'
@@ -32,8 +32,8 @@ target 'FreestarSwiftSample' do
   # IMA SDK conflict with Nimbus adapter
 #  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
   pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
-  
+
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
-  pod 'LoremIpsum', '~> 1.0'  
+  pod 'LoremIpsum', '~> 1.0'
 end
