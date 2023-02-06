@@ -10,13 +10,13 @@ target 'FreestarSwiftSample' do
    pod "FreestarAds-AppLovinMax", "~> 11.0"
    pod "FreestarAds-Criteo", "~> 4.3.1.1"
    pod "FreestarAds-Fyber2", "~> 8.1.6.1"
-   pod 'FreestarAds-GAM', '~> 9.11'
-   pod 'FreestarAds-GAM/Facebook', '~> 9.11'
-   pod 'FreestarAds-Googleadmob', '~> 9.11'
-   pod 'FreestarAds-Googleadmob/Facebook', '~> 9.11'
+   pod 'FreestarAds-GAM', '~> 10.0'
+   pod 'FreestarAds-GAM/Facebook', '~> 10.0'
+   pod 'FreestarAds-Googleadmob', '~> 10.0'
+   pod 'FreestarAds-Googleadmob/Facebook', '~> 10.0'
    pod "FreestarAds-Hyprmx", "~> 6.0.3.4"
    pod "FreestarAds-Ogury", "~> 2.1.0.3"
-   pod "FreestarAds-Prebid", "~> 2.0.3.7"
+   pod "FreestarAds-Prebid", "~> 2.0.3.8"
    pod "FreestarAds-TAM", "~> 4.4.3.3"
    pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
    pod "FreestarAds-Unity", "~> 4.1.0.4"
