@@ -9,7 +9,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-PreRelease', '5.19.0-beta-2'
 
   pod 'FreestarAds-Prebid-PreRelease', '~> 2.0-beta'
-  pod 'FreestarAds-Ogury2-PreRelease', '2.1.0.1-beta-2'
+  pod 'FreestarAds-Ogury2-PreRelease', '2.2.0.1-beta-4'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14-beta'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0-beta'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 11.0-beta'
@@ -29,9 +29,9 @@ target 'FreestarSwiftSample' do
 
 #  # Not M1 compatible
   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10-beta'
+  pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
   # IMA SDK conflict with Nimbus adapter
 #  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
-  pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
 
   # helper frameworks for feed view
   pod 'SnapKit', '~> 5.0.0'
