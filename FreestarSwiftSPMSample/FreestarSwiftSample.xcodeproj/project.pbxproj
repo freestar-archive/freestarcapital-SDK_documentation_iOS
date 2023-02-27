@@ -20,6 +20,8 @@
 		FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A424CB8D7000547873 /* FeedAdViewController.swift */; };
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
 		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
+		FD2D560529AD399A00CB0563 /* Freestar-Native-Small.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD2D560329AD399A00CB0563 /* Freestar-Native-Small.xib */; };
+		FD2D560629AD399A00CB0563 /* Freestar-Native-Medium.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD2D560429AD399A00CB0563 /* Freestar-Native-Medium.xib */; };
 		FD402AAA2977212F00E8D7A7 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FD402AA92977212F00E8D7A7 /* SnapKit-Dynamic */; };
 		FD476B2228F8C9C900565077 /* FreestarAds-Prebid in Frameworks */ = {isa = PBXBuildFile; productRef = FD476B2128F8C9C900565077 /* FreestarAds-Prebid */; };
 		FD476B2528F8C9D800565077 /* FreestarAds-Googleadmob in Frameworks */ = {isa = PBXBuildFile; productRef = FD476B2428F8C9D800565077 /* FreestarAds-Googleadmob */; };
@@ -46,6 +48,8 @@
 		FD1179A424CB8D7000547873 /* FeedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAdViewController.swift; sourceTree = "<group>"; };
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
+		FD2D560329AD399A00CB0563 /* Freestar-Native-Small.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Freestar-Native-Small.xib"; sourceTree = "<group>"; };
+		FD2D560429AD399A00CB0563 /* Freestar-Native-Medium.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Freestar-Native-Medium.xib"; sourceTree = "<group>"; };
 		FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerAdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,8 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				FD2D560429AD399A00CB0563 /* Freestar-Native-Medium.xib */,
+				FD2D560329AD399A00CB0563 /* Freestar-Native-Small.xib */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
@@ -182,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
+				FD2D560629AD399A00CB0563 /* Freestar-Native-Medium.xib in Resources */,
 				FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */,
 				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
+				FD2D560529AD399A00CB0563 /* Freestar-Native-Small.xib in Resources */,
 				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

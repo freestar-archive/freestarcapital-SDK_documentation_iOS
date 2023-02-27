@@ -36,11 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let feedVC = FeedAdViewController()
         feedVC.title = "Feed"
         
+        let nativeVC = NativeAdViewController()
+        nativeVC.title = "Feed"
+        
         tabVC.viewControllers = [
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
             UINavigationController(rootViewController: pVC),
-            UINavigationController(rootViewController: feedVC)
+            UINavigationController(rootViewController: feedVC),
+            UINavigationController(rootViewController: nativeVC)
         ]
         
         window = UIWindow()

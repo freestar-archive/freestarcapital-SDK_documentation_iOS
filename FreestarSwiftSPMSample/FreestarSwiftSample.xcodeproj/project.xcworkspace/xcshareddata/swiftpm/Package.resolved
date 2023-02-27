@@ -30,7 +30,7 @@
     {
       "identity" : "loremipsum-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/owlcoding/LoremIpsum-Swift.git",
+      "location" : "https://github.com/owlcoding/LoremIpsum-Swift/",
       "state" : {
         "revision" : "47be1bbd0e2744a4f7d444907b137068a0b21388",
         "version" : "0.6.0"
