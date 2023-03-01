@@ -414,7 +414,7 @@
 			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-admob.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		FD0B2BBA28D93D1D007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */ = {
@@ -422,7 +422,7 @@
 			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-gam.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		FD0B2BBD28D93D2E007214E1 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */ = {
@@ -446,7 +446,7 @@
 			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-nimbus.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
