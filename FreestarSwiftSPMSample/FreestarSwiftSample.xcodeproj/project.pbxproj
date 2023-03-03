@@ -31,6 +31,8 @@
 		FD9F2DE829B181590062E8C0 /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DE729B181590062E8C0 /* FreestarAds-TAM */; };
 		FD9F2DEB29B1816B0062E8C0 /* FreestarAds-Nimbus in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DEA29B1816B0062E8C0 /* FreestarAds-Nimbus */; };
 		FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B6328DB8BC700E2566F /* LoremIpsum */; };
+		FDD6FB2429B29E9B000B5847 /* FreestarAds-Vungle in Frameworks */ = {isa = PBXBuildFile; productRef = FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */; };
+		FDD6FB2729B29EC8000B5847 /* FreestarAds-Unity in Frameworks */ = {isa = PBXBuildFile; productRef = FDD6FB2629B29EC8000B5847 /* FreestarAds-Unity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +65,10 @@
 				FD9F2DEB29B1816B0062E8C0 /* FreestarAds-Nimbus in Frameworks */,
 				FD9F2DE529B181400062E8C0 /* FreestarAds-Prebid in Frameworks */,
 				FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */,
+				FDD6FB2429B29E9B000B5847 /* FreestarAds-Vungle in Frameworks */,
 				FD9F2DDC29B17F7E0062E8C0 /* FreestarAds-Fyber2 in Frameworks */,
 				FD402AAA2977212F00E8D7A7 /* SnapKit-Dynamic in Frameworks */,
+				FDD6FB2729B29EC8000B5847 /* FreestarAds-Unity in Frameworks */,
 				FD9F2DE829B181590062E8C0 /* FreestarAds-TAM in Frameworks */,
 				FD9F2DE229B1811A0062E8C0 /* FreestarAds-GAM in Frameworks */,
 			);
@@ -138,6 +142,8 @@
 				FD9F2DE429B181400062E8C0 /* FreestarAds-Prebid */,
 				FD9F2DE729B181590062E8C0 /* FreestarAds-TAM */,
 				FD9F2DEA29B1816B0062E8C0 /* FreestarAds-Nimbus */,
+				FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */,
+				FDD6FB2629B29EC8000B5847 /* FreestarAds-Unity */,
 			);
 			productName = FreestarSwiftSample;
 			productReference = 96006408242EA20D00A3212E /* FreestarAds-Swift.app */;
@@ -176,6 +182,8 @@
 				FD9F2DE329B181400062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */,
 				FD9F2DE629B181590062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
 				FD9F2DE929B1816B0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */,
+				FDD6FB2229B29E9B000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-vungle" */,
+				FDD6FB2529B29EC8000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-unity" */,
 			);
 			productRefGroup = 96006409242EA20D00A3212E /* Products */;
 			projectDirPath = "";
@@ -502,6 +510,22 @@
 				minimumVersion = 0.6.0;
 			};
 		};
+		FDD6FB2229B29E9B000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-vungle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-vungle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		FDD6FB2529B29EC8000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-unity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-unity.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -544,6 +568,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FDA20B6228DB8BC700E2566F /* XCRemoteSwiftPackageReference "LoremIpsum-Swift" */;
 			productName = LoremIpsum;
+		};
+		FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDD6FB2229B29E9B000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-vungle" */;
+			productName = "FreestarAds-Vungle";
+		};
+		FDD6FB2629B29EC8000B5847 /* FreestarAds-Unity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDD6FB2529B29EC8000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-unity" */;
+			productName = "FreestarAds-Unity";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
