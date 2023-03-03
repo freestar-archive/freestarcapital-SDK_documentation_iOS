@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "c1cfde8067668027b23a42c29d11c246152fe046",
-        "version" : "9.6.0"
+        "revision" : "04351180d4c757c6c16127cb57b685fff9ef260b",
+        "version" : "10.6.0"
       }
     },
     {
@@ -79,6 +79,15 @@
       "state" : {
         "revision" : "de20937abe58d281c1f9f6cc77d7b9c8a3dc6553",
         "version" : "5.18.0"
+      }
+    },
+    {
+      "identity" : "spm-freestarads-fyber",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-fyber.git",
+      "state" : {
+        "revision" : "1e6ba24ec22c9b24ca0beb3d0dbc06a9cef30fe9",
+        "version" : "8.1.6"
       }
     },
     {

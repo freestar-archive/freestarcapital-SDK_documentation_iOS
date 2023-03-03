@@ -64,6 +64,15 @@
       }
     },
     {
+      "identity" : "spm-freestarads-fyber",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-fyber.git",
+      "state" : {
+        "revision" : "1e6ba24ec22c9b24ca0beb3d0dbc06a9cef30fe9",
+        "version" : "8.1.6"
+      }
+    },
+    {
       "identity" : "spm-freestarads-gam",
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
