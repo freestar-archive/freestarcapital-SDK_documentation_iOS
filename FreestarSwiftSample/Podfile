@@ -28,7 +28,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1-beta-3'
 
 #  # Not M1 compatible
-  pod 'FreestarAds-Vungle-PreRelease', '~> 6.10-beta'
+  pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.2-beta-2'
   pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
   # IMA SDK conflict with Nimbus adapter
 #  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
