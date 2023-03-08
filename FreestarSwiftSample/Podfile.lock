@@ -78,8 +78,8 @@ PODS:
   - FreestarAds-Unity (4.1.0.4):
     - FreestarAds (~> 5.10)
     - UnityAds (= 4.1.0)
-  - FreestarAds-Vungle (6.10.6.1):
-    - FreestarAds (~> 5.7)
+  - FreestarAds-Vungle (6.10.6.2):
+    - FreestarAds (~> 5.10)
     - VungleSDK-iOS (= 6.10.6)
   - FreestarAds-Yahoo (1.14.2.2):
     - FreestarAds (~> 5.10)
@@ -274,7 +274,7 @@ DEPENDENCIES:
   - FreestarAds-TAM (~> 4.4.3.3)
   - FreestarAds-Tapjoy (~> 12.8.0.1)
   - FreestarAds-Unity (~> 4.1.0.4)
-  - FreestarAds-Vungle (~> 6.10)
+  - FreestarAds-Vungle (= 6.10.6.2)
   - FreestarAds-Yahoo (~> 1.14.2.2)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
@@ -372,7 +372,7 @@ SPEC CHECKSUMS:
   FreestarAds-TAM: f9026636ab8239c5e1e7c7aebbbe45cd1c181cec
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
-  FreestarAds-Vungle: 005107875e95376c7a48125954ed00a5f61dd861
+  FreestarAds-Vungle: a644cb4013b4242989875c86c47c0403d3333196
   FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
   Fyber_Marketplace_SDK: 0325c667dce841f2fabc3644c1a467978c3eed02
   GMA-Meta-Mediation: ba7610f95ef6afabd1e786ebae673d58f8f92553
@@ -413,6 +413,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 55390ee3475e5ad5bfaec7191b666fdeaef9c7e8
+PODFILE CHECKSUM: 6f44b7d26ed17bfe4d393c4fa857d5da0e0f7800
 
 COCOAPODS: 1.11.3
