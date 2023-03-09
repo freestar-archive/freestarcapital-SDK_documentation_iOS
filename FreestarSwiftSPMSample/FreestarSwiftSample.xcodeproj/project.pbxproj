@@ -28,9 +28,9 @@
 		FD9F2DDF29B180FD0062E8C0 /* FreestarAds-Googleadmob in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DDE29B180FD0062E8C0 /* FreestarAds-Googleadmob */; };
 		FD9F2DE229B1811A0062E8C0 /* FreestarAds-GAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DE129B1811A0062E8C0 /* FreestarAds-GAM */; };
 		FD9F2DE529B181400062E8C0 /* FreestarAds-Prebid in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DE429B181400062E8C0 /* FreestarAds-Prebid */; };
-		FD9F2DE829B181590062E8C0 /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DE729B181590062E8C0 /* FreestarAds-TAM */; };
 		FD9F2DEB29B1816B0062E8C0 /* FreestarAds-Nimbus in Frameworks */ = {isa = PBXBuildFile; productRef = FD9F2DEA29B1816B0062E8C0 /* FreestarAds-Nimbus */; };
 		FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */ = {isa = PBXBuildFile; productRef = FDA20B6328DB8BC700E2566F /* LoremIpsum */; };
+		FDC737D529B96686009BCDA1 /* FreestarAds-TAM in Frameworks */ = {isa = PBXBuildFile; productRef = FDC737D429B96686009BCDA1 /* FreestarAds-TAM */; };
 		FDD6FB2429B29E9B000B5847 /* FreestarAds-Vungle in Frameworks */ = {isa = PBXBuildFile; productRef = FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */; };
 		FDD6FB2729B29EC8000B5847 /* FreestarAds-Unity in Frameworks */ = {isa = PBXBuildFile; productRef = FDD6FB2629B29EC8000B5847 /* FreestarAds-Unity */; };
 /* End PBXBuildFile section */
@@ -63,13 +63,13 @@
 			files = (
 				FD9F2DDF29B180FD0062E8C0 /* FreestarAds-Googleadmob in Frameworks */,
 				FD9F2DEB29B1816B0062E8C0 /* FreestarAds-Nimbus in Frameworks */,
+				FDC737D529B96686009BCDA1 /* FreestarAds-TAM in Frameworks */,
 				FD9F2DE529B181400062E8C0 /* FreestarAds-Prebid in Frameworks */,
 				FDA20B6428DB8BC700E2566F /* LoremIpsum in Frameworks */,
 				FDD6FB2429B29E9B000B5847 /* FreestarAds-Vungle in Frameworks */,
 				FD9F2DDC29B17F7E0062E8C0 /* FreestarAds-Fyber2 in Frameworks */,
 				FD402AAA2977212F00E8D7A7 /* SnapKit-Dynamic in Frameworks */,
 				FDD6FB2729B29EC8000B5847 /* FreestarAds-Unity in Frameworks */,
-				FD9F2DE829B181590062E8C0 /* FreestarAds-TAM in Frameworks */,
 				FD9F2DE229B1811A0062E8C0 /* FreestarAds-GAM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +140,10 @@
 				FD9F2DDE29B180FD0062E8C0 /* FreestarAds-Googleadmob */,
 				FD9F2DE129B1811A0062E8C0 /* FreestarAds-GAM */,
 				FD9F2DE429B181400062E8C0 /* FreestarAds-Prebid */,
-				FD9F2DE729B181590062E8C0 /* FreestarAds-TAM */,
 				FD9F2DEA29B1816B0062E8C0 /* FreestarAds-Nimbus */,
 				FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */,
 				FDD6FB2629B29EC8000B5847 /* FreestarAds-Unity */,
+				FDC737D429B96686009BCDA1 /* FreestarAds-TAM */,
 			);
 			productName = FreestarSwiftSample;
 			productReference = 96006408242EA20D00A3212E /* FreestarAds-Swift.app */;
@@ -180,10 +180,10 @@
 				FD9F2DDD29B180FD0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-admob" */,
 				FD9F2DE029B1811A0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-gam" */,
 				FD9F2DE329B181400062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */,
-				FD9F2DE629B181590062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
 				FD9F2DE929B1816B0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */,
 				FDD6FB2229B29E9B000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-vungle" */,
 				FDD6FB2529B29EC8000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-unity" */,
+				FDC737D329B96686009BCDA1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */,
 			);
 			productRefGroup = 96006409242EA20D00A3212E /* Products */;
 			projectDirPath = "";
@@ -486,14 +486,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		FD9F2DE629B181590062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-tam.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 		FD9F2DE929B1816B0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-nimbus.git";
@@ -508,6 +500,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.6.0;
+			};
+		};
+		FDC737D329B96686009BCDA1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/freestar/spm-freestarads-tam.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 		FDD6FB2229B29E9B000B5847 /* XCRemoteSwiftPackageReference "spm-freestarads-vungle" */ = {
@@ -554,11 +554,6 @@
 			package = FD9F2DE329B181400062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-prebid" */;
 			productName = "FreestarAds-Prebid";
 		};
-		FD9F2DE729B181590062E8C0 /* FreestarAds-TAM */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD9F2DE629B181590062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */;
-			productName = "FreestarAds-TAM";
-		};
 		FD9F2DEA29B1816B0062E8C0 /* FreestarAds-Nimbus */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FD9F2DE929B1816B0062E8C0 /* XCRemoteSwiftPackageReference "spm-freestarads-nimbus" */;
@@ -568,6 +563,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FDA20B6228DB8BC700E2566F /* XCRemoteSwiftPackageReference "LoremIpsum-Swift" */;
 			productName = LoremIpsum;
+		};
+		FDC737D429B96686009BCDA1 /* FreestarAds-TAM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDC737D329B96686009BCDA1 /* XCRemoteSwiftPackageReference "spm-freestarads-tam" */;
+			productName = "FreestarAds-TAM";
 		};
 		FDD6FB2329B29E9B000B5847 /* FreestarAds-Vungle */ = {
 			isa = XCSwiftPackageProductDependency;
