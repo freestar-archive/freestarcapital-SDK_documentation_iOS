@@ -131,8 +131,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-vungle.git",
       "state" : {
-        "revision" : "5f9152db6079bc9d33750b1eb32d459259e3558f",
-        "version" : "6.10.6"
+        "revision" : "607adefbac969aeedc246eedd12c8808dd76dff0",
+        "version" : "6.10.7"
       }
     },
     {
