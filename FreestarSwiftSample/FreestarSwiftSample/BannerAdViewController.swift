@@ -125,10 +125,10 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         var newFrame = CGRectZero
         newFrame.size = size
         self.container!.frame = newFrame
-        self.largeBanner.frame = newFrame
-        if (self.largeBanner.superview != nil) {
-            setAnchorConstraints(ad)
+        if (ad == largeBanner) {
+            largeBanner.frame = newFrame
         }
+        setAnchorConstraints(ad)        
     }
     
     func loadLargeBannerAd() {
