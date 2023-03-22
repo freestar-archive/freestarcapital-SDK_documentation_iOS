@@ -11,6 +11,8 @@ import FreestarAds
 class BannerAdViewController: AdViewController {
     
     @IBOutlet var container: UIView?
+    private var currentSize: CGSize = CGSizeMake(300, 250)
+    private var mrecSize: CGSize = CGSizeMake(300, 250)
         
     lazy var smallBanner: FreestarBannerAd = {
         let banner = FreestarBannerAd(delegate: self, andSize: .banner320x50)
@@ -25,6 +27,27 @@ class BannerAdViewController: AdViewController {
         return banner
     }()
     
+    var smallBannerConstraints: [NSLayoutConstraint] {
+        return [ smallBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
+                 smallBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
+                 smallBanner.widthAnchor.constraint(equalToConstant: smallBanner.frame.width),
+                 smallBanner.heightAnchor.constraint(equalToConstant: smallBanner.frame.height)]
+    }
+    
+    var largeBannerConstraints : [NSLayoutConstraint] {
+        return [ largeBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
+                 largeBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
+                 largeBanner.widthAnchor.constraint(equalToConstant: largeBanner.frame.width),
+                 largeBanner.heightAnchor.constraint(equalToConstant: largeBanner.frame.height)]
+    }
+    
+    var largeNativeConstraints : [NSLayoutConstraint] {
+        return [ largeBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
+                 largeBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
+                 largeBanner.widthAnchor.constraint(lessThanOrEqualToConstant: container!.frame.width),
+                 largeBanner.heightAnchor.constraint(lessThanOrEqualToConstant: container!.frame.height)]
+    }
+    
     var smallBannerAdReady = false {
         didSet {
             updateShowButton()
@@ -35,6 +58,10 @@ class BannerAdViewController: AdViewController {
         didSet {
             updateShowButton()
         }
+    }
+    
+    private func currentSizeEqualToMrecSize() -> Bool {
+        return CGSizeEqualToSize(currentSize, mrecSize)
     }
 
     override func viewDidLoad() {
@@ -92,6 +119,18 @@ class BannerAdViewController: AdViewController {
 }
 
 extension BannerAdViewController : FreestarBannerAdDelegate {
+    
+    func didUpdateBanner(_ ad: FreestarBannerAd, with size: CGSize) {
+        currentSize = size
+        var newFrame = CGRectZero
+        newFrame.size = size
+        self.container!.frame = newFrame
+        self.largeBanner.frame = newFrame
+        if (self.largeBanner.superview != nil) {
+            setAnchorConstraints(ad)
+        }
+    }
+    
     func loadLargeBannerAd() {
         largeBannerAdReady = false
         largeBanner.loadPlacement(placementField.text)
@@ -106,26 +145,31 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         guard let container = container else {
             return
         }
-        container.subviews.forEach({ $0.removeFromSuperview() })
-        container.addSubview(banner)
+        if (banner.superview == nil) {
+            container.subviews.forEach({ $0.removeFromSuperview() })
+            container.addSubview(banner)
+        }
                 
         setAnchorConstraints(banner)
     }
     
     func setAnchorConstraints(_ banner: FreestarBannerAd) {
-        guard let container = banner.superview else {
+        if (banner.superview == nil) {
             return
         }
-                
-        banner.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        banner.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
-        if (banner.isAdaptive) {
-            banner.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth()).isActive = true
-            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = false
+        if (banner == smallBanner) {
+            NSLayoutConstraint.activate(smallBannerConstraints)
         } else {
-            banner.widthAnchor.constraint(equalToConstant: banner.frame.width).isActive = true
-            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = true
+            NSLayoutConstraint.deactivate(largeBannerConstraints)
+            NSLayoutConstraint.deactivate(largeNativeConstraints)
+            if (currentSizeEqualToMrecSize()) {
+                NSLayoutConstraint.activate(largeBannerConstraints)
+            } else {
+                largeBanner.frame.origin = CGPointZero
+                NSLayoutConstraint.activate(largeNativeConstraints)
+            }
         }
+        view.layoutIfNeeded()
     }
     
     // - Banner Delegate
@@ -135,7 +179,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
             smallBannerAdReady = true
         } else {
             largeBannerAdReady = true
-        }        
+        }
         setAnchorConstraints(ad)
     }
     
