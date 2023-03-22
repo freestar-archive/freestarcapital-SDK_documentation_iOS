@@ -7,7 +7,6 @@ target 'FreestarOBJCSample' do
   pod 'FreestarAds-PreRelease', '5.6.0-beta-1'
   pod 'FreestarAds-AdColony-PreRelease', '~> 5.3.0-alpha-1'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 5.3.0-alpha-1'
-  pod 'FreestarAds-Mopub-PreRelease', '~> 5.3.0-alpha-1'
   pod 'FreestarAds-Googleadmob-PreRelease', '~> 6.3.0-beta-2'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 5.2.0-alpha-1'
   pod 'FreestarAds-Unity-PreRelease', '~> 6.2.0-alpha-1'
