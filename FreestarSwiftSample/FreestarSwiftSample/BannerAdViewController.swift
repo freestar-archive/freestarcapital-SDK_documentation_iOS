@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import CoreGraphics
 import FreestarAds
+import SnapKit
 
 class BannerAdViewController: AdViewController {
     
     @IBOutlet var container: UIView?
-    private var currentSize: CGSize = CGSizeMake(300, 250)
-    private var mrecSize: CGSize = CGSizeMake(300, 250)
-        
+    
     lazy var smallBanner: FreestarBannerAd = {
         let banner = FreestarBannerAd(delegate: self, andSize: .banner320x50)
         banner.adaptiveBannerWidth = calculateAdaptiveViewWidth()
@@ -22,31 +22,9 @@ class BannerAdViewController: AdViewController {
     }()
     lazy var largeBanner: FreestarBannerAd = {
         let banner = FreestarBannerAd(delegate: self, andSize: .banner300x250)
-        banner.adaptiveBannerWidth = calculateAdaptiveViewWidth()
         banner.translatesAutoresizingMaskIntoConstraints = false
         return banner
     }()
-    
-    var smallBannerConstraints: [NSLayoutConstraint] {
-        return [ smallBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
-                 smallBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
-                 smallBanner.widthAnchor.constraint(equalToConstant: smallBanner.frame.width),
-                 smallBanner.heightAnchor.constraint(equalToConstant: smallBanner.frame.height)]
-    }
-    
-    var largeBannerConstraints : [NSLayoutConstraint] {
-        return [ largeBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
-                 largeBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
-                 largeBanner.widthAnchor.constraint(equalToConstant: largeBanner.frame.width),
-                 largeBanner.heightAnchor.constraint(equalToConstant: largeBanner.frame.height)]
-    }
-    
-    var largeNativeConstraints : [NSLayoutConstraint] {
-        return [ largeBanner.centerXAnchor.constraint(equalTo: container!.centerXAnchor),
-                 largeBanner.centerYAnchor.constraint(equalTo: container!.centerYAnchor),
-                 largeBanner.widthAnchor.constraint(lessThanOrEqualToConstant: container!.frame.width),
-                 largeBanner.heightAnchor.constraint(lessThanOrEqualToConstant: container!.frame.height)]
-    }
     
     var smallBannerAdReady = false {
         didSet {
@@ -60,24 +38,20 @@ class BannerAdViewController: AdViewController {
         }
     }
     
-    private func currentSizeEqualToMrecSize() -> Bool {
-        return CGSizeEqualToSize(currentSize, mrecSize)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         enablePartnerSelection = false
     }
-    
+        
     func calculateAdaptiveViewWidth() -> CGFloat {
         let frame = { () -> CGRect in
-          // Here safe area is taken into account, hence the view frame is used
-          // after the view has been laid out.
-          if #available(iOS 11.0, *) {
-            return view.frame.inset(by: view.safeAreaInsets)
-          } else {
-            return view.frame
-          }
+            // Here safe area is taken into account, hence the view frame is used
+            // after the view has been laid out.
+            if #available(iOS 11.0, *) {
+                return view.frame.inset(by: view.safeAreaInsets)
+            } else {
+                return view.frame
+            }
         }()
         return frame.size.width
     }
@@ -98,8 +72,9 @@ class BannerAdViewController: AdViewController {
             largeBannerAdReady = false
             showBanner(banner: largeBanner)
         }
+        //        let webView: WKWebView = smallBanner.findFirstWkWebView()
     }
-
+    
     
     override func selectedAdType() -> FreestarAdType {
         return concreteAdTypeSelector.selectedSegmentIndex == 0 ? .SmallBanner : .LargeBanner
@@ -113,30 +88,18 @@ class BannerAdViewController: AdViewController {
     
     @objc override func updateShowButton() {
         showButton.isEnabled =
-            (concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
-            (concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
+        (concreteAdTypeSelector.selectedSegmentIndex == 0 && smallBannerAdReady) ||
+        (concreteAdTypeSelector.selectedSegmentIndex == 1 && largeBannerAdReady)
     }
 }
 
 extension BannerAdViewController : FreestarBannerAdDelegate {
-    
-    func didUpdateBanner(_ ad: FreestarBannerAd, with size: CGSize) {
-        currentSize = size
-        var newFrame = CGRectZero
-        newFrame.size = size
-        self.container!.frame = newFrame
-        if (ad == largeBanner) {
-            largeBanner.frame = newFrame
-        }
-        setAnchorConstraints(ad)        
-    }
-    
     func loadLargeBannerAd() {
         largeBannerAdReady = false
-        largeBanner.loadPlacement(placementField.text)
+        largeBanner.loadPlacement(nil)
     }
     
-    func loadSmallBannerAd() {        
+    func loadSmallBannerAd() {
         smallBannerAdReady = false
         smallBanner.loadPlacement(placementField.text)
     }
@@ -149,30 +112,36 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
             container.subviews.forEach({ $0.removeFromSuperview() })
             container.addSubview(banner)
         }
-                
-        setAnchorConstraints(banner)
+        setupConstraints(banner)
     }
     
-    func setAnchorConstraints(_ banner: FreestarBannerAd) {
-        if (banner.superview == nil) {
+    func setupConstraints(_ banner: FreestarBannerAd) {
+        guard banner.superview != nil else {
             return
         }
-        if (banner == smallBanner) {
-            NSLayoutConstraint.activate(smallBannerConstraints)
+
+        if banner === self.smallBanner {
+            banner.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                make.width.equalTo(calculateAdaptiveViewWidth())
+                make.height.equalTo(banner.frame.height)
+            }
         } else {
-            NSLayoutConstraint.deactivate(largeBannerConstraints)
-            NSLayoutConstraint.deactivate(largeNativeConstraints)
-            if (currentSizeEqualToMrecSize()) {
-                NSLayoutConstraint.activate(largeBannerConstraints)
-            } else {
-                largeBanner.frame.origin = CGPointZero
-                NSLayoutConstraint.activate(largeNativeConstraints)
+            banner.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                make.width.equalTo(banner.frame.width)
+                make.height.equalTo(banner.frame.height)
             }
         }
-        view.layoutIfNeeded()
     }
     
     // - Banner Delegate
+    
+    func didUpdateBanner(_ ad: FreestarBannerAd, with size: CGSize) {
+        setupConstraints(ad)
+    }
     
     func freestarBannerLoaded(_ ad: FreestarBannerAd) {
         if ad == smallBanner {
@@ -180,7 +149,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         } else {
             largeBannerAdReady = true
         }
-        setAnchorConstraints(ad)
+        setupConstraints(ad)
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
