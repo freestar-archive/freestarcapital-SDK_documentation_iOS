@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="250" translatesAutoresizingMaskIntoConstraints="NO" id="nas-Fm-bkU" userLabel="container">
-                    <rect key="frame" x="0.0" y="563" width="414" height="250"/>
+                    <rect key="frame" x="0.0" y="488" width="414" height="325"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="325" id="0eF-84-RGt"/>
+                        <constraint firstAttribute="height" constant="325" id="0eF-84-RGt"/>
                     </constraints>
                 </view>
             </subviews>
