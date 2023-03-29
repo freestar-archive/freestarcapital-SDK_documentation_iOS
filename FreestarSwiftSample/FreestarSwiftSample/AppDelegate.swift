@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    static let FREESTAR_API_KEY = "1d10c713-cdc8-4d98-9747-1a0724904080"
 //    static let FREESTAR_API_KEY = "d9eafefe-9368-47e3-b77f-1327e4dd7131"
     static let FREESTAR_API_KEY = "XqjhRR"
+//    static let FREESTAR_API_KEY = "6D0gc7"
     
     var window : UIWindow?
     
@@ -59,13 +60,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = tabVC
         
-        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { placement, event, error in
-            guard let error = error else {
-                print(event)
-                return
-            }
-            print("\(error)")
-        }
+//        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { placement, event, error in
+//            guard let error = error else {
+//                print(event)
+//                return
+//            }
+//            print("\(error)")
+//        }
         
         return true
     }

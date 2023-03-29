@@ -108,6 +108,14 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         guard let container = container else {
             return
         }
+        
+        if (smallBanner !== banner) {
+            smallBanner.removeFromSuperview()
+        }
+        if (largeBanner !== banner) {
+            largeBanner.removeFromSuperview()
+        }
+
         if (banner.superview == nil) {
             container.subviews.forEach({ $0.removeFromSuperview() })
             container.addSubview(banner)
@@ -119,8 +127,10 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         guard banner.superview != nil else {
             return
         }
-
-        if banner === self.smallBanner {
+        
+        let  isBannerSize = CGSizeEqualToSize(CGSizeMake(320, 50), banner.frame.size)
+        
+        if (smallBanner === banner || isBannerSize) {
             banner.snp.remakeConstraints { (make) in
                 make.centerX.equalToSuperview()
                 make.centerY.equalToSuperview()
