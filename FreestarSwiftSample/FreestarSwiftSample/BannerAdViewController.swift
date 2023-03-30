@@ -134,7 +134,10 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
             banner.snp.remakeConstraints { (make) in
                 make.centerX.equalToSuperview()
                 make.centerY.equalToSuperview()
-                make.width.equalTo(calculateAdaptiveViewWidth())
+                // adaptive banner
+//                make.width.equalTo(calculateAdaptiveViewWidth())
+                // normal small banner size (320x50)
+                make.width.equalTo(banner.frame.width)
                 make.height.equalTo(banner.frame.height)
             }
         } else {
@@ -145,6 +148,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
                 make.height.equalTo(banner.frame.height)
             }
         }
+        self.view.layoutIfNeeded()
     }
     
     // - Banner Delegate
