@@ -96,7 +96,7 @@ class BannerAdViewController: AdViewController {
 extension BannerAdViewController : FreestarBannerAdDelegate {
     func loadLargeBannerAd() {
         largeBannerAdReady = false
-        largeBanner.loadPlacement(nil)
+        largeBanner.loadPlacement(placementField.text)
     }
     
     func loadSmallBannerAd() {
