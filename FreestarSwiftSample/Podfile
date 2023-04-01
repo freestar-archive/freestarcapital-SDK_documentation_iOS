@@ -6,7 +6,7 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '5.20.0-beta-8'
+  pod 'FreestarAds-PreRelease', '5.20.0-beta-9'
 
   pod 'FreestarAds-Prebid-PreRelease', '~> 2.0-beta'
   pod 'FreestarAds-Ogury2-PreRelease', '2.2.0.1-beta-4'
