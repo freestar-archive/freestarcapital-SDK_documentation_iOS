@@ -153,7 +153,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
     
     // - Banner Delegate
     
-    func didUpdateBanner(_ ad: FreestarBannerAd, with size: CGSize) {
+    func didUpdateBanner(_ ad: FreestarBannerAd, with newSize: CGSize, native isNative: Bool) {
         setupConstraints(ad)
     }
     

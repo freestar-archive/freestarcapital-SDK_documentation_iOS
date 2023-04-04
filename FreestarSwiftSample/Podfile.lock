@@ -7,7 +7,7 @@ PODS:
     - Ads-Global/International
   - Ads-Global/BUFoundation (3.7.0.8)
   - Ads-Global/International (3.7.0.8)
-  - AmazonPublisherServicesSDK (4.4.3)
+  - AmazonPublisherServicesSDK (4.6.0)
   - AppLovinSDK (11.0.0)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
@@ -70,13 +70,13 @@ PODS:
     - FreestarAds-PreRelease (~> 5.14-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
     - PrebidMobile-FSTRAds (= 2.0.0.8)
-  - FreestarAds-PreRelease (5.20.0-beta-9):
+  - FreestarAds-PreRelease (5.20.0-beta-10):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - PromisesObjC (~> 2.0)
-  - FreestarAds-TAM-PreRelease (4.4.3.3-beta-3):
-    - AmazonPublisherServicesSDK (= 4.4.3)
+  - FreestarAds-TAM-PreRelease (4.6.0.4-beta-1):
+    - AmazonPublisherServicesSDK (= 4.6.0)
     - FMDB (= 2.7.5)
-    - FreestarAds-PreRelease (~> 5.10-beta)
+    - FreestarAds-PreRelease (~> 5.20-beta)
   - FreestarAds-Tapjoy-PreRelease (12.8.0.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
@@ -280,8 +280,8 @@ DEPENDENCIES:
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.0-beta)
-  - FreestarAds-PreRelease (= 5.20.0-beta-9)
-  - FreestarAds-TAM-PreRelease (~> 4.4-beta)
+  - FreestarAds-PreRelease (= 5.20.0-beta-10)
+  - FreestarAds-TAM-PreRelease (~> 4.6.0.4-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1-beta)
   - FreestarAds-Vungle-PreRelease (~> 6.10.6.2-beta-2)
@@ -360,7 +360,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
-  AmazonPublisherServicesSDK: cd88ef55d5afaa6483bcb04b977e1585a95f9211
+  AmazonPublisherServicesSDK: 41b3adbf8bcf2f43ff909965c16bf1d8646c5508
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
@@ -378,8 +378,8 @@ SPEC CHECKSUMS:
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: c6eeb60a51650b8cc28927a05cbed383d74d191d
-  FreestarAds-PreRelease: 8df07ca72d603858f6ce95b7ee46ce56352d6d03
-  FreestarAds-TAM-PreRelease: 2da60e6be19f3c3394fb6edf788bcb13ab2eddc5
+  FreestarAds-PreRelease: 3b3c3ef5a8d2c5014e907f09d5aacefbf90c9c14
+  FreestarAds-TAM-PreRelease: cdcfc707b96b27905ba4d141560659345252664e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
   FreestarAds-Vungle-PreRelease: 85c99bc2b9f9285dd1ef2ec9c8e236f4ebe413c3
@@ -424,6 +424,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 521e2f1ae804e3a30a2b1eb60430aa8ddc6b3217
+PODFILE CHECKSUM: c8a7ed8587fbf7a6f1bea2d17a6176f1f24b9642
 
 COCOAPODS: 1.11.3
