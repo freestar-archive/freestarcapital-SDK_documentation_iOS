@@ -4,18 +4,18 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 
 target 'FreestarReactNativeSample' do
   config = use_native_modules!
-  
+
   use_react_native!(
       :path => config[:reactNativePath],
       # to enable hermes on iOS, change `false` to `true` and then install pods
       :hermes_enabled => false
     )
-  
+
   target 'FreestarReactNativeSampleTests' do
     inherit! :complete
     # Pods for testing
   end
-  
+
   versions = {}
   versions['Flipper'] = '~> 0.91.0'
   versions['Flipper-Folly'] = '~> 2.6'
@@ -24,20 +24,25 @@ target 'FreestarReactNativeSample' do
   post_install do |installer|
     react_native_post_install(installer)
   end
-  
-  pod 'FreestarAds-AdColony', '~> 4.0'
-  pod 'FreestarAds-AppLovin', '~> 4.0'
-  pod 'FreestarAds-Googleadmob', '~> 3.0'
-  pod 'FreestarAds-Tapjoy', '~> 4.0'
-  pod 'FreestarAds-Unity', '~> 5.0'
-  pod 'FreestarAds-Vungle', '~> 4.0'
-  pod 'FreestarAds-Google', '~> 4.0'
-  pod 'FreestarAds-Criteo', '~> 2.0'
-  pod 'FreestarAds-GAM', '~> 2.0'
-  pod 'FreestarAds-Mopub', '~> 4.0'
-  pod 'FreestarAds-Nimbus', '~> 2.0'
-  pod 'FreestarAds-TAM', '~> 1.0'
-  
+
+  pod "FreestarAds-AdColony", "~> 4.7.2.1"
+  pod "FreestarAds-Tapjoy", "~> 12.8.0.1"
+  pod "FreestarAds-Criteo", "~> 4.3.1.1"
+  pod "FreestarAds-AppLovin", "~> 11.0.0.1"
+  pod "FreestarAds-AppLovinMax", "~> 11.0.0.2"
+  pod "FreestarAds-Hyprmx", "~> 6.0.3.4"
+  pod "FreestarAds-Yahoo", "~> 1.14.2.2"
+  pod "FreestarAds-Ogury", "~> 2.1.0.3"
+  pod 'FreestarAds-Googleadmob', '~> 10.0.0.5'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 10.0.0.5'
+  pod 'FreestarAds-GAM', '~> 10.0.0.5'
+  pod 'FreestarAds-GAM/Facebook', '~> 10.0.0.5'
+  pod "FreestarAds-Unity", "~> 4.1.0.4"
+  pod "FreestarAds-Prebid", "~> 2.0.3.8"
+  pod "FreestarAds-TAM", "~> 4.4.3.3"
+  pod "FreestarAds-Fyber2", "~> 8.1.6.1"
+  pod "FreestarAds-Nimbus", "~> 2.1.2.2"
+
 end
 
 target 'FreestarReactNativeSample-tvOS' do
