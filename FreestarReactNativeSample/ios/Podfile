@@ -62,7 +62,6 @@ pod "FreestarAds-Nimbus", "~> 2.1.2.2"
 
 # Not M1 compatible pods
 pod "FreestarAds-Vungle", "~> 6.10.6.1"
-pod "FreestarAds-Nimbus", "~> 1.10.5.1"
 pod "FreestarAds-Google", "~> 3.13.0.1"
 pod "FreestarAds-Pangle", "~> 3.7.0.1"
 
