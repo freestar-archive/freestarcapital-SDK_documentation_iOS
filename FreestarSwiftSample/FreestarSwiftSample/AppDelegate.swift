@@ -60,13 +60,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = tabVC
         
-//        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { placement, event, error in
-//            guard let error = error else {
-//                print(event)
-//                return
-//            }
-//            print("\(error)")
-//        }
+        Freestar.requestAppOpenAds(withPlacement: "interstitial_p1", waitScreen: true) { placement, event, error in
+            guard let error = error else {
+                print(event)
+                return
+            }
+            print("\(error)")
+        }
         
         return true
     }
