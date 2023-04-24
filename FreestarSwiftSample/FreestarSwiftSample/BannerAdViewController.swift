@@ -109,26 +109,44 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         container.subviews.forEach({ $0.removeFromSuperview() })
         container.addSubview(banner)
                 
-        setAnchorConstraints(banner)
+        setupConstraints(banner)
     }
     
-    func setAnchorConstraints(_ banner: FreestarBannerAd) {
-        guard let container = banner.superview else {
+    func setupConstraints(_ banner: FreestarBannerAd) {
+        guard banner.superview != nil else {
             return
         }
-                
-        banner.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        banner.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
-        if (banner.isAdaptive) {
-            banner.widthAnchor.constraint(equalToConstant: calculateAdaptiveViewWidth()).isActive = true
-            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = false
+        
+        let  isBannerSize = CGSizeEqualToSize(CGSizeMake(320, 50), banner.frame.size)
+        
+        if (smallBanner === banner || isBannerSize) {
+            banner.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                // adaptive banner
+//                make.width.equalTo(calculateAdaptiveViewWidth())
+                // normal small banner size (320x50)
+                make.width.equalTo(banner.frame.width)
+                make.height.equalTo(banner.frame.height)
+            }
         } else {
-            banner.widthAnchor.constraint(equalToConstant: banner.frame.width).isActive = true
-            banner.heightAnchor.constraint(equalToConstant: banner.frame.height).isActive = true
+            banner.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                make.width.equalTo(banner.frame.width)
+                make.height.equalTo(banner.frame.height)
+            }
+        }
+        DispatchQueue.main.async {
+            self.view.layoutIfNeeded()
         }
     }
     
     // - Banner Delegate
+    
+    func didUpdateBanner(_ ad: FreestarBannerAd, with newSize: CGSize, native isNative: Bool) {
+        setupConstraints(ad)
+    }
     
     func freestarBannerLoaded(_ ad: FreestarBannerAd) {
         if ad == smallBanner {
@@ -136,7 +154,7 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
         } else {
             largeBannerAdReady = true
         }        
-        setAnchorConstraints(ad)
+        setupConstraints(ad)
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {

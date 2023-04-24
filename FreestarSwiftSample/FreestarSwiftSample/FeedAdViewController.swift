@@ -84,32 +84,6 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-        
-    func anchorBanner(_ banner: UIView?, size: CGSize) {
-        guard ((banner?.superview) != nil) else {
-            return
-        }
-
-        if (banner == banner1) {
-            if !isLoadedBanner1 {
-                return
-            }
-        } else if(banner == banner2) {
-            if !isLoadedBanner2 {
-                return
-            }
-        } else if(banner == banner3) {
-            if !isLoadedBanner3 {
-                return
-            }
-        }
-        
-        banner!.clipsToBounds = true
-        banner!.snp.makeConstraints { (make) in
-            make.centerY.centerX.equalTo(banner!.superview!)
-            make.size.equalTo(size)
-        }
-    }
     
     // MARK: Navigation
     @IBAction func unwindToMainViewController(segue: UIStoryboardSegue) {
@@ -175,7 +149,7 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
                 return CGSize(width: 320, height: 50)
             default:
                 // default to medium rect
-                return CGSize(width: 300, height: 250)
+                return CGSize(width: 375, height: 325)
         }
     }
     
@@ -239,7 +213,7 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
         let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: ArticleCellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: ArticleCellIdentifier)
         guard let articles = self.articles else {
             return cell!
-        }                
+        }
         
         if articles.indices.contains(indexPath.row) {
             let article: Article? = articles[indexPath.row]
@@ -251,11 +225,7 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
                 }
                 
                 cell.contentView.addSubview(bannerView)
-                if (bannerView == banner1) {
-                    anchorBanner(bannerView, size: CGSize(width: 320, height: 50))
-                } else {
-                    anchorBanner(bannerView, size: CGSize(width: 300, height: 250))
-                }
+                setupConstraints(bannerView)
                 return cell
             } else {
                 guard let article = article else { return cell! }
@@ -307,6 +277,25 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
     }
     
+    func setupConstraints(_ banner: FreestarBannerAd) {
+        guard banner.superview != nil else {
+            return
+        }
+                
+        banner.snp.remakeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalTo(banner.frame.width)
+            make.height.equalTo(banner.frame.height)
+        }
+        
+        self.view.layoutIfNeeded()
+    }
+    
+    func didUpdateBanner(_ ad: FreestarBannerAd, with size: CGSize) {
+        setupConstraints(ad)
+    }
+    
     // MARK: Freestar banner delegate callbacks
     func freestarBannerLoaded(_ ad: FreestarBannerAd) {
         print("Function: \(#function)")
@@ -314,16 +303,7 @@ class FeedAdViewController: UIViewController, UITableViewDataSource, UITableView
         ad.show()
         ad.layer.borderWidth = 1
         ad.layer.borderColor = UIColor.darkGray.cgColor
-        if (ad == banner1) {
-            isLoadedBanner1 = true
-            anchorBanner(banner1, size: CGSize(width: 320, height: 50))
-        } else if (ad == banner2) {
-            isLoadedBanner2 = true
-            anchorBanner(banner2, size: CGSize(width: 300, height: 250))
-        } else if (ad == banner3) {
-            isLoadedBanner3 = true
-            anchorBanner(banner3, size: CGSize(width: 300, height: 250))
-        }
+        setupConstraints(ad)
     }
        
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {

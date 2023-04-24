@@ -141,8 +141,6 @@ static FreestarNativeAd *mediumNative = nil;
     adTypeLoadedStates[5] = @NO;
     [self adjustUIForAdState];
 
-    CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
-    mediumNative.center = pos;
     [inviewAdContainer addSubview:mediumNative];
 }
 
@@ -163,9 +161,6 @@ static FreestarNativeAd *mediumNative = nil;
 -(void)showSmallNativeAd {
     adTypeLoadedStates[6] = @NO;
     [self adjustUIForAdState];
-
-    CGPoint pos = CGPointMake(CGRectGetMidX(inviewAdContainer.bounds), CGRectGetMidY(inviewAdContainer.bounds) + 10);
-    smallNative.center = pos;
     [inviewAdContainer addSubview:smallNative];
 }
 
@@ -231,6 +226,10 @@ static FreestarNativeAd *mediumNative = nil;
 }
 
 # pragma mark - FreestarBannerAdDelegate
+
+- (void)didUpdateBanner:(FreestarBannerAd *)ad withSize:(CGSize)newSize native:(BOOL)isNative {
+    // TODO: handle size changes, if needed
+}
 
 -(void)freestarBannerLoaded:(FreestarBannerAd *)ad {
     NSLog(@"%@ banner loaded", ad == banner ? @"large" : @"small");

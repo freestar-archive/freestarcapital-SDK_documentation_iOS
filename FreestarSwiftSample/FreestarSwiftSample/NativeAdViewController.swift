@@ -10,12 +10,7 @@ import FreestarAds
 
 class NativeAdViewController: AdViewController {
     
-    let NativeAdContainer = UIView()
-    
-    var NativeContainerPortraitXPos : NSLayoutConstraint?
-    var NativeContainerPortraitYPos : NSLayoutConstraint?
-    var NativeContainerLandscapeXPos : NSLayoutConstraint?
-    var NativeContainerLandscapeYPos : NSLayoutConstraint?
+    let nativeAdContainer = UIView()
     
     var smallNative: FreestarNativeAd?
     var largeNative: FreestarNativeAd?
@@ -41,20 +36,37 @@ class NativeAdViewController: AdViewController {
     }
     
     func setupNativeContainer() {
-        NativeAdContainer.backgroundColor = .lightGray;
-        self.view.addSubview(NativeAdContainer)
-        NativeAdContainer.translatesAutoresizingMaskIntoConstraints = false
-        
-        NativeContainerPortraitXPos = NativeAdContainer.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-        NativeContainerLandscapeXPos = NativeAdContainer.rightAnchor.constraint(equalTo: self.view.rightAnchor)
-        NativeContainerPortraitYPos = NativeAdContainer.topAnchor.constraint(equalTo: loadButton.bottomAnchor, constant: 20)
-        NativeContainerLandscapeYPos = NativeAdContainer.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-        
-        NativeContainerPortraitXPos?.isActive = true
-        NativeContainerPortraitYPos?.isActive = true
-        
-        NativeAdContainer.widthAnchor.constraint(equalToConstant: 330).isActive = true
-        NativeAdContainer.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        nativeAdContainer.backgroundColor = .lightGray;
+        self.view.addSubview(nativeAdContainer)
+        nativeAdContainer.translatesAutoresizingMaskIntoConstraints = false
+        nativeAdContainer.snp.remakeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalTo(375)
+            make.height.equalTo(325)
+        }
+    }
+    
+    func setupConstraints(_ native: FreestarNativeAd) {
+        guard native.superview != nil else {
+            return
+        }
+
+        if native === self.smallNative {
+            native.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                make.width.equalTo(nativeAdContainer.frame.width)
+                make.height.equalTo(100)
+            }
+        } else {
+            native.snp.remakeConstraints { (make) in
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview()
+                make.width.equalTo(nativeAdContainer.frame.width)
+                make.height.equalTo(nativeAdContainer.frame.height)
+            }
+        }
     }
     
     override func loadChosenAd() {
@@ -72,7 +84,6 @@ class NativeAdViewController: AdViewController {
             showLargeNativeAd()
         }
     }
-
     
     override func selectedAdType() -> FreestarAdType {
         return concreteAdTypeSelector.selectedSegmentIndex == 0 ? .SmallBanner : .LargeBanner
@@ -89,25 +100,6 @@ class NativeAdViewController: AdViewController {
             (self.concreteAdTypeSelector.selectedSegmentIndex == 0 && smallNativeAdReady) ||
             (self.concreteAdTypeSelector.selectedSegmentIndex == 1 && largeNativeAdReady)
     }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animate(alongsideTransition: { (_ context: UIViewControllerTransitionCoordinatorContext) in
-            let orient = UIApplication.shared.statusBarOrientation
-            if orient == .portrait {
-                self.NativeContainerLandscapeXPos?.isActive = false
-                self.NativeContainerLandscapeYPos?.isActive = false
-                self.NativeContainerPortraitXPos?.isActive = true
-                self.NativeContainerPortraitYPos?.isActive = true
-            } else {
-                self.NativeContainerPortraitXPos?.isActive = false
-                self.NativeContainerPortraitYPos?.isActive = false
-                self.NativeContainerLandscapeXPos?.isActive = true
-                self.NativeContainerLandscapeYPos?.isActive = true
-            }
-        }, completion: nil)
-        
-        super.viewWillTransition(to: size, with: coordinator)
-    }
 }
 
 extension NativeAdViewController : FreestarNativeAdDelegate {
@@ -122,8 +114,8 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
         closeExistingNatives()
         self.largeNativeAdReady = false
         largeNative = FreestarNativeAd(delegate: self, andSize: .medium)
-        
         largeNative?.loadPlacement(placementField.text)
+        largeNative?.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func loadSmallNativeAd() {
@@ -131,18 +123,19 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
         self.smallNativeAdReady = false
         smallNative = FreestarNativeAd(delegate: self, andSize: .small)
         smallNative?.loadPlacement(placementField.text)
+        smallNative?.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func showLargeNativeAd() {
         self.largeNativeAdReady = false
-        largeNative?.center = CGPoint(x: NativeAdContainer.bounds.midX, y: NativeAdContainer.bounds.midY)
-        NativeAdContainer.addSubview(largeNative!)
+        nativeAdContainer.addSubview(largeNative!)
+        setupConstraints(largeNative!)
     }
     
     func showSmallNativeAd() {
         self.smallNativeAdReady = false
-        smallNative?.center = CGPoint(x: NativeAdContainer.bounds.midX, y: NativeAdContainer.bounds.midY)
-        NativeAdContainer.addSubview(smallNative!)
+        nativeAdContainer.addSubview(smallNative!)
+        setupConstraints(smallNative!)
     }
     
     // - Native Delegate
@@ -153,6 +146,7 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
         } else {
             self.largeNativeAdReady = true
         }
+        setupConstraints(ad)
     }
     
     func freestarNativeFailed(_ ad: FreestarNativeAd, because reason: FreestarNoAdReason) {
