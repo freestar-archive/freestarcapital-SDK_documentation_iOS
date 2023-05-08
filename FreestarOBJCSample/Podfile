@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'FreestarOBJCSample' do  
   # M1 compatible
-  pod "FreestarAds", "~> 5.20.0"
+  pod "FreestarAds", "~> 5.21.0"
   pod "FreestarAds-AdColony", "~> 4.7.2.1"
   pod "FreestarAds-AppLovin", "~> 11.0.0.1"
   pod "FreestarAds-AppLovinMax", "~> 11.0"
@@ -33,4 +33,14 @@ target 'FreestarOBJCSample' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'LoremIpsum', '~> 1.0'
 
+end
+
+post_install do |installer|
+    installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+               end
+          end
+   end
 end
