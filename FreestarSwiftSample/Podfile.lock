@@ -13,6 +13,42 @@ PODS:
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
   - FBAudienceNetwork (6.12.0)
+  - Firebase (10.5.0):
+    - Firebase/Core (= 10.5.0)
+  - Firebase/Core (10.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 10.5.0)
+  - Firebase/CoreOnly (10.5.0):
+    - FirebaseCore (= 10.5.0)
+  - FirebaseAnalytics (10.5.0):
+    - FirebaseAnalytics/AdIdSupport (= 10.5.0)
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (10.5.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleAppMeasurement (= 10.5.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseCore (10.5.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.9.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.9.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -53,7 +89,7 @@ PODS:
     - FreestarAds-PreRelease (~> 5.10-beta)
     - HyprMX/Core (= 6.0.3)
     - HyprMX/MRAID (= 6.0.3)
-  - FreestarAds-Nimbus-PreRelease (2.1.2.2-beta-3):
+  - FreestarAds-Nimbus-PreRelease (2.1.2.3-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - NimbusSDK (= 2.1.2)
     - NimbusSDK/NimbusRenderStaticKit (= 2.1.2)
@@ -70,7 +106,7 @@ PODS:
     - FreestarAds-PreRelease (~> 5.14-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
     - PrebidMobile-FSTRAds (= 2.0.0.8)
-  - FreestarAds-PreRelease (5.21.0-beta-2):
+  - FreestarAds-PreRelease (5.22.0-beta-2):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
   - FreestarAds-TAM-PreRelease (4.6.0.4-beta-1):
@@ -137,6 +173,8 @@ PODS:
     - GoogleUtilities/Reachability
   - "GoogleUtilities/NSData+zlib (7.11.0)"
   - GoogleUtilities/Reachability (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.0):
     - GoogleUtilities/Logger
   - HyprMX-Mraid (6.0.3)
   - HyprMX/Core (6.0.3)
@@ -266,6 +304,7 @@ PODS:
   - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
+  - Firebase
   - FreestarAds-AdColony-PreRelease (~> 4.7-beta)
   - FreestarAds-AppLovin-PreRelease (~> 11.0-beta)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0-beta)
@@ -277,11 +316,11 @@ DEPENDENCIES:
   - FreestarAds-Googleadmob-PreRelease/Facebook (~> 10.0-beta)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
-  - FreestarAds-Nimbus-PreRelease (~> 2.1-beta-3)
+  - FreestarAds-Nimbus-PreRelease (~> 2.1.2.3-beta-1)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.0-beta)
-  - FreestarAds-PreRelease (~> 5.21.0-beta-2)
+  - FreestarAds-PreRelease (~> 5.22.0-beta-2)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.4-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1-beta)
@@ -298,6 +337,11 @@ SPEC REPOS:
     - AppLovinSDK
     - CriteoPublisherSdk
     - FBAudienceNetwork
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
     - FMDB
     - FreestarAds-AdColony-PreRelease
     - FreestarAds-AdQualityKit
@@ -366,6 +410,11 @@ SPEC CHECKSUMS:
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
+  Firebase: 3d6637234ab163e31852834617b4fe1df3b7af6d
+  FirebaseAnalytics: 6f7430030cb6b22fe1db2e3bed782e999b76dc00
+  FirebaseCore: 324b8d182d9ff7e3f6d1fa2f04b082d1c7a3e366
+  FirebaseCoreInternal: d2b4acb827908e72eca47a9fd896767c3053921e
+  FirebaseInstallations: c58489c9caacdbf27d1da60891a87318e20218e0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 1a6b85cd6d47a0da2b9680c7f199eb2bfccf8550
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
@@ -376,11 +425,11 @@ SPEC CHECKSUMS:
   FreestarAds-GAM-PreRelease: 4ed1a2c0c8f1ed804b5560cb17d8b26bde5f931e
   FreestarAds-Googleadmob-PreRelease: 2d5fb57a1359e9e26abacba802cc573eebe91e4f
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
-  FreestarAds-Nimbus-PreRelease: 9ba22d2ee01c9005a047483e8c42c110516a1ad3
+  FreestarAds-Nimbus-PreRelease: 76e210f866ff768f81ae75f373807212fd5203da
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: c6eeb60a51650b8cc28927a05cbed383d74d191d
-  FreestarAds-PreRelease: 93988ced6ffbcb0364d3bab6c58ab0e8dc073fbb
+  FreestarAds-PreRelease: 9ede19763feb89c331f7f63414497f24fcc71b8b
   FreestarAds-TAM-PreRelease: cdcfc707b96b27905ba4d141560659345252664e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -427,6 +476,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 736a14cff736166b85969516b0bbc874bafaa0ff
+PODFILE CHECKSUM: 16ebe71d7732c8e6ea9fef45dbbafc72c5fb8c82
 
 COCOAPODS: 1.12.1
