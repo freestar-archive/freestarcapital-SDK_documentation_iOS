@@ -27,7 +27,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.1-beta-1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1.2.3-beta-1'
   
-  pod 'Firebase'
+#  pod 'Firebase'
 
 #  # Not M1 compatible
   pod 'FreestarAds-Vungle-PreRelease', '~> 6.10.6.2-beta-2'
