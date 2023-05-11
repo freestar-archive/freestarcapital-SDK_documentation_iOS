@@ -9,10 +9,10 @@ import SwiftUI
 import FreestarAds
 
 struct ContentView: View {
-    let bannerPlacementId: String = "banner_p1"
-    let mrecPlacementId: String = "mrec_p1"
-    let interstitialPlacementId: String = "interstitial_p2"
-    let rewardedPlacementId: String = "reward_p1"
+    let bannerPlacementId: String? = "banner_p1"
+    let mrecPlacementId: String? = nil
+    let interstitialPlacementId: String? = "interstitial_p2"
+    let rewardedPlacementId: String? = "reward_p1"
         
     @State var interstitial: CustomInterstitialAd?
     @State var rewarded: CustomRewardedAd?
