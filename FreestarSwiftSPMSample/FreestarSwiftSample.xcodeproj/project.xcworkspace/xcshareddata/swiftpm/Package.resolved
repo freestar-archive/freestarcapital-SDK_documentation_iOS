@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-tam.git",
       "state" : {
-        "revision" : "b3573f0002eb7aa413ed2233fea92317adda1b51",
-        "version" : "4.4.3"
+        "revision" : "a2614bf29ddf48061543d40c686f914887e8a82d",
+        "version" : "4.6.0"
       }
     },
     {
