@@ -16,7 +16,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-AdColony-PreRelease', '~> 4.7-beta'
   pod 'FreestarAds-Tapjoy-PreRelease', '~> 12.8-beta'
   pod 'FreestarAds-Criteo-PreRelease', '~> 4.3-beta'
-  pod 'FreestarAds-TAM-PreRelease', '~> 4.6.0.4-beta'
+  pod 'FreestarAds-TAM-PreRelease', '~> 4.6.0.6-beta'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0-beta'
   pod 'FreestarAds-Googleadmob-PreRelease', '~> 10.0-beta'
@@ -25,7 +25,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 10.0-beta'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.1-beta'
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.1-beta-1'
-  pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1.2.3-beta-1'
+  pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1.2.4-beta'
   
 #  pod 'Firebase'
 
