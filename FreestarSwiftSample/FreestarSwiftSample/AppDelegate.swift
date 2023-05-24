@@ -19,9 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let FREESTAR_API_KEY = "XqjhRR"
 //    static let FREESTAR_API_KEY = "d9eafefe-9368-47e3-b77f-1327e4dd7131"
     
+    static let IABUSPrivacy_StringKey = "IABUSPrivacy_String"
+    
     var window : UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //
+        updateUSPrivacyString(to: "1---")
+        
         // Override point for customization after application launch.
         Freestar.setLoggingEnabled(true)
         Freestar.setTestModeEnabled(true)
@@ -70,8 +76,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
     
+    private static func setUserDefaults(value: Any?, forKey: String) {
+          UserDefaults.standard.set(value, forKey: forKey)
+    }
+    
+    private func updateUSPrivacyString(to privacyString: String) {
+        Self.setUserDefaults(value: privacyString, forKey: Self.IABUSPrivacy_StringKey)
+    }
 
 }
 
