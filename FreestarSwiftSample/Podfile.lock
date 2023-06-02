@@ -32,10 +32,10 @@ PODS:
   - FreestarAds-Fyber2-PreRelease (8.1.6.1-beta-1):
     - FreestarAds-PreRelease (~> 5.17-beta)
     - Fyber_Marketplace_SDK (= 8.1.6)
-  - FreestarAds-GAM-PreRelease (10.0.0.5-beta-2):
+  - FreestarAds-GAM-PreRelease (10.0.0.6-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
-  - FreestarAds-GAM-PreRelease/Facebook (10.0.0.5-beta-2):
+  - FreestarAds-GAM-PreRelease/Facebook (10.0.0.6-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - GMA-Meta-Mediation (= 6.12.0.1)
     - Google-Mobile-Ads-SDK (= 10.0.0)
@@ -66,11 +66,11 @@ PODS:
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Prebid-PreRelease (2.0.3.8-beta-1):
-    - FreestarAds-PreRelease (~> 5.14-beta)
+  - FreestarAds-Prebid-PreRelease (2.1.1.9-beta-8):
+    - FreestarAds-PreRelease (~> 5.24-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
-    - PrebidMobile-FSTRAds (= 2.0.0.8)
-  - FreestarAds-PreRelease (5.23.0-beta-3):
+    - PrebidMobile-FSTRAds (= 2.1.1.0)
+  - FreestarAds-PreRelease (5.24.0-beta-3):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
   - FreestarAds-TAM-PreRelease (4.6.0.6-beta-1):
@@ -100,25 +100,25 @@ PODS:
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAds-IMA-iOS-SDK (3.16.3)
-  - GoogleAppMeasurement (10.5.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.5.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - GoogleAppMeasurement (10.10.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.5.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.5.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - GoogleAppMeasurement/AdIdSupport (10.10.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.5.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.10.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.1)
   - GoogleUtilities/AppDelegateSwizzler (7.11.1):
@@ -182,7 +182,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.2.0):
     - OguryChoiceManager (= 4.1.0)
     - OguryCore (= 1.3.0)
-  - PrebidMobile-FSTRAds (2.0.0.8)
+  - PrebidMobile-FSTRAds (2.1.1.0)
   - PromisesObjC (2.2.0)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -280,8 +280,8 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.0-beta)
-  - FreestarAds-PreRelease (~> 5.23.0-beta-3)
+  - FreestarAds-Prebid-PreRelease (~> 2.1-beta)
+  - FreestarAds-PreRelease (~> 5.24.0-beta-3)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.6-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1-beta)
@@ -373,14 +373,14 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovinMax-PreRelease: 8e4022691cffd32a1a07f5342ea2c15fe823beb4
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
   FreestarAds-Fyber2-PreRelease: 8862330bbdf13d9f28d793f21ff1f97765a046dc
-  FreestarAds-GAM-PreRelease: 4ed1a2c0c8f1ed804b5560cb17d8b26bde5f931e
+  FreestarAds-GAM-PreRelease: ddf090239266b909f5755d48165cef7291d8b7a9
   FreestarAds-Googleadmob-PreRelease: 2d5fb57a1359e9e26abacba802cc573eebe91e4f
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
-  FreestarAds-Prebid-PreRelease: c6eeb60a51650b8cc28927a05cbed383d74d191d
-  FreestarAds-PreRelease: e774778f1ff2873d08e634f95bb329aeadc5c4b6
+  FreestarAds-Prebid-PreRelease: c90895496071ec940ab2318da44ae9363e62719a
+  FreestarAds-PreRelease: 6bba7eab194ddfee0749b121f5c92cb1ab5592bb
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -391,7 +391,7 @@ SPEC CHECKSUMS:
   GMA-Meta-Mediation: ba7610f95ef6afabd1e786ebae673d58f8f92553
   Google-Mobile-Ads-SDK: 02b68fc1dd65d011dd5e61e204a7d0cee79b8a85
   GoogleAds-IMA-iOS-SDK: 1aba71fa5b58dc463cc5b752f06e970ec7c739c1
-  GoogleAppMeasurement: 40c70a7d89013f0eca72006c4b9732163ea4cdae
+  GoogleAppMeasurement: bbbfd4bcb2b40ae9b772c3b0823a58c1e3d618f9
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
   GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
   HyprMX: c4801c9f7b962a5d5bc5c6471d81c992e5a0bc3f
@@ -403,7 +403,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
   OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
   OgurySdk: ec5197dc468484c70bfee7125e867673764a9416
-  PrebidMobile-FSTRAds: 2162e99523a009b4a9ca7c55149cc5ba742e7f54
+  PrebidMobile-FSTRAds: c07f71df456ffc4eb6e668c2b22500107dd49609
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -427,6 +427,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: aa3521e79eb28e94ccde79c80bcd0f53a72afb07
+PODFILE CHECKSUM: 9bc575e56e5ab605d0b569b4d61ecb4284fb40f1
 
 COCOAPODS: 1.12.1

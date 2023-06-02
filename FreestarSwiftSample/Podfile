@@ -6,9 +6,9 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '~> 5.23.0-beta-3'
+  pod 'FreestarAds-PreRelease', '~> 5.24.0-beta-3'
 
-  pod 'FreestarAds-Prebid-PreRelease', '~> 2.0-beta'
+  pod 'FreestarAds-Prebid-PreRelease', '~> 2.1-beta'
   pod 'FreestarAds-Ogury2-PreRelease', '2.2.0.1-beta-4'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14-beta'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.0-beta'
@@ -26,7 +26,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-Unity-PreRelease', '~> 4.1-beta'
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.1-beta-1'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.1.2.4-beta'
-  
+
 #  pod 'Firebase'
 
 #  # Not M1 compatible
