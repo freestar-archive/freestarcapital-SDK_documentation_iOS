@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let FREESTAR_API_KEY = "XqjhRR"
 //    static let FREESTAR_API_KEY = "d9eafefe-9368-47e3-b77f-1327e4dd7131"
 //    static let FREESTAR_API_KEY = "f7bee8c9-f7e9-4289-908a-a84eaa8f98eb"
+//    static let FREESTAR_API_KEY = "c909712c-71d0-44d6-aa27-28788be997a5"
     
     static let IABUSPrivacy_StringKey = "IABUSPrivacy_String"
     
