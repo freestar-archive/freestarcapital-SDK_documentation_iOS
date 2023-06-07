@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'FreestarOBJCSample' do  
   # M1 compatible
-  pod "FreestarAds", "~> 5.23.0"
+  pod "FreestarAds", "~> 5.24.0"
   pod "FreestarAds-AdColony", "~> 4.7.2.1"
   pod "FreestarAds-AppLovin", "~> 11.0.0.1"
   pod "FreestarAds-AppLovinMax", "~> 11.0"
