@@ -66,11 +66,11 @@ PODS:
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Prebid-PreRelease (2.1.2.9-beta-9):
+  - FreestarAds-Prebid-PreRelease (2.1.2.9-beta-10):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
     - PrebidMobile-FSTRAds (= 2.1.2.0)
-  - FreestarAds-PreRelease (5.24.0-beta-5):
+  - FreestarAds-PreRelease (5.25.0-beta-1):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
   - FreestarAds-TAM-PreRelease (4.6.0.6-beta-1):
@@ -280,8 +280,8 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.1.2-beta)
-  - FreestarAds-PreRelease (~> 5.24.0-beta-5)
+  - FreestarAds-Prebid-PreRelease (~> 2.1.2.9-beta)
+  - FreestarAds-PreRelease (~> 5.25-beta)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.6-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1-beta)
@@ -379,8 +379,8 @@ SPEC CHECKSUMS:
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
-  FreestarAds-Prebid-PreRelease: c129b53a413f888b173e554f1cf36ba9e9c252ab
-  FreestarAds-PreRelease: fc3a6cfa96e09d47e5ab78ad7476118f7fc0e4e0
+  FreestarAds-Prebid-PreRelease: 08ecd432b47485389c80ec5c774d532d3bad3368
+  FreestarAds-PreRelease: 538ce91977b4894ea4ee12c37b270b4e0bd9f29f
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
@@ -427,6 +427,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: a789726ed4de5e3409579a0c55ddd3c3a37e2285
+PODFILE CHECKSUM: 403cd279f71a0acb3d7a8093759034870bb61767
 
 COCOAPODS: 1.12.1
