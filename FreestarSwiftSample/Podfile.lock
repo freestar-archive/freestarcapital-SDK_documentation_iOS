@@ -1,5 +1,12 @@
 PODS:
   - AdColony (4.7.2)
+  - Ads-Global (3.7.0.8):
+    - Ads-Global/BUAdSDK (= 3.7.0.8)
+  - Ads-Global/BUAdSDK (3.7.0.8):
+    - Ads-Global/BUFoundation
+    - Ads-Global/International
+  - Ads-Global/BUFoundation (3.7.0.8)
+  - Ads-Global/International (3.7.0.8)
   - AmazonPublisherServicesSDK (4.6.0)
   - AppLovinSDK (11.0.0)
   - CriteoPublisherSdk (4.3.1):
@@ -56,6 +63,9 @@ PODS:
     - OguryAds (= 3.2.0)
     - OguryChoiceManager (= 4.1.0)
     - OgurySdk (= 2.2.0)
+  - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
+    - Ads-Global (= 3.7.0.8)
+    - FreestarAds-PreRelease (~> 5.7)
   - FreestarAds-Prebid-PreRelease (2.1.2.9-beta-11):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
@@ -73,6 +83,9 @@ PODS:
   - FreestarAds-Unity-PreRelease (4.1.0.4-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - UnityAds (= 4.1.0)
+  - FreestarAds-Vungle-PreRelease (6.10.6.2-beta-2):
+    - FreestarAds-PreRelease (~> 5.10-beta)
+    - VungleSDK-iOS (= 6.10.6)
   - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-7):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Verizon-Ads-StandardEdition (= 1.14.2)
@@ -250,6 +263,7 @@ PODS:
     - Verizon-Ads-Core (~> 2.8)
     - Verizon-Ads-OMSDK (~> 1.10)
     - Verizon-Ads-Support (~> 1.15)
+  - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 4.7-beta)
@@ -265,11 +279,13 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
+  - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.1.2.9-beta-11)
   - FreestarAds-PreRelease (~> 5.25-beta-3)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.6-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.1-beta)
+  - FreestarAds-Vungle-PreRelease (~> 6.10.6.2-beta-2)
   - FreestarAds-Yahoo-PreRelease (~> 1.14-beta)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
@@ -277,6 +293,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AdColony
+    - Ads-Global
     - AmazonPublisherServicesSDK
     - AppLovinSDK
     - CriteoPublisherSdk
@@ -293,11 +310,13 @@ SPEC REPOS:
     - FreestarAds-Hyprmx-PreRelease
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-Ogury2-PreRelease
+    - FreestarAds-Pangle-PreRelease
     - FreestarAds-Prebid-PreRelease
     - FreestarAds-PreRelease
     - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Unity-PreRelease
+    - FreestarAds-Vungle-PreRelease
     - FreestarAds-Yahoo-PreRelease
     - FSLPromisesObjC
     - Fyber_Marketplace_SDK
@@ -338,9 +357,11 @@ SPEC REPOS:
     - Verizon-Ads-VideoPlayer
     - Verizon-Ads-WebController
     - Verizon-Ads-WebView
+    - VungleSDK-iOS
 
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
+  Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: 41b3adbf8bcf2f43ff909965c16bf1d8646c5508
   AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
@@ -357,11 +378,13 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
+  FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: 3ec053f39bf232b46c1ac44e098ead94fffc1a41
   FreestarAds-PreRelease: 49b9df1833489a74475c5a8b1f834bf4f72b5817
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
+  FreestarAds-Vungle-PreRelease: 85c99bc2b9f9285dd1ef2ec9c8e236f4ebe413c3
   FreestarAds-Yahoo-PreRelease: 94b790566e590ef495740a66277066b72e324e49
   FSLPromisesObjC: 294400f4bfac2c1d0fd64745c33caa0fc003d370
   Fyber_Marketplace_SDK: 0325c667dce841f2fabc3644c1a467978c3eed02
@@ -402,7 +425,8 @@ SPEC CHECKSUMS:
   Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
+  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 23bee84aaf46987e46733a50b0ae124bfc362ec0
+PODFILE CHECKSUM: fa6904955cdec6550c150b4803eb4e3d6754be06
 
 COCOAPODS: 1.12.1
