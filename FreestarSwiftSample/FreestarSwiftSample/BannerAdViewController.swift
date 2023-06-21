@@ -164,6 +164,10 @@ extension BannerAdViewController : FreestarBannerAdDelegate {
             largeBannerAdReady = true
         }
         setupConstraints(ad)
+        guard let responseInfo = ad.responseInfo else {
+            return
+        }
+        print("\(responseInfo)")
     }
     
     func freestarBannerFailed(_ ad: FreestarBannerAd, because reason: FreestarNoAdReason) {
