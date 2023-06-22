@@ -147,6 +147,10 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
             self.largeNativeAdReady = true
         }
         setupConstraints(ad)
+        guard let responseInfo = ad.responseInfo else {
+            return
+        }
+        print(responseInfo)
     }
     
     func freestarNativeFailed(_ ad: FreestarNativeAd, because reason: FreestarNoAdReason) {
