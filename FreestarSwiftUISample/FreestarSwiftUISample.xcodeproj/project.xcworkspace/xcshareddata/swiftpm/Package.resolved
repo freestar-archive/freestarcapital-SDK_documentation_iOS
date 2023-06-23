@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "9209b95a2593985569918e5e5ee2bf4ef8ff3640",
-        "version" : "10.9.0"
+        "revision" : "62e3a0c09a75e2637f5300d46f05a59313f1c286",
+        "version" : "10.11.0"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-admob.git",
       "state" : {
-        "revision" : "0154b6b0114e4e43fe9f67a4339dfda94787fcd1",
-        "version" : "10.0.0"
+        "revision" : "f9f304abb8e0f1e008c6d88c3bd6eb1eabd1fa24",
+        "version" : "10.0.1"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
       "state" : {
-        "revision" : "49ed19caae889515ccac65dfa831f2a7e2c783fe",
-        "version" : "5.23.0"
+        "revision" : "32d452bdae4ff65f2c1dc82867fe172c3d702229",
+        "version" : "5.25.0"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
       "state" : {
-        "revision" : "1e25c1b0e9e56b08d3ffa1c608cd620594a944bd",
-        "version" : "10.0.0"
+        "revision" : "493af0017b4cba3ac67d7fdad4912ee002367efa",
+        "version" : "10.0.1"
       }
     },
     {
