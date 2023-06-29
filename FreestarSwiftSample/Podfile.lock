@@ -66,10 +66,10 @@ PODS:
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Prebid-PreRelease (2.1.2.9-beta-11):
+  - FreestarAds-Prebid-PreRelease (2.1.2.10-beta-1):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - Google-Mobile-Ads-SDK (= 10.0.0)
-    - PrebidMobile-FSTRAds (= 2.1.2.0)
+    - PrebidMobile-FSTRAds (= 2.1.2.1)
   - FreestarAds-PreRelease (5.25.0-beta-3):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
@@ -182,7 +182,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.2.0):
     - OguryChoiceManager (= 4.1.0)
     - OguryCore (= 1.3.0)
-  - PrebidMobile-FSTRAds (2.1.2.0)
+  - PrebidMobile-FSTRAds (2.1.2.1)
   - PromisesObjC (2.2.0)
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
@@ -280,7 +280,7 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.1.2.9-beta-11)
+  - FreestarAds-Prebid-PreRelease (~> 2.1.2.10-beta)
   - FreestarAds-PreRelease (~> 5.25-beta-3)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.6-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
@@ -379,7 +379,7 @@ SPEC CHECKSUMS:
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
-  FreestarAds-Prebid-PreRelease: 3ec053f39bf232b46c1ac44e098ead94fffc1a41
+  FreestarAds-Prebid-PreRelease: 487d0149d4e0b0739e6fbcde5da647aba10e87f3
   FreestarAds-PreRelease: 49b9df1833489a74475c5a8b1f834bf4f72b5817
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
@@ -403,7 +403,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
   OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
   OgurySdk: ec5197dc468484c70bfee7125e867673764a9416
-  PrebidMobile-FSTRAds: 710da0fc8e1db4a890669d231dc19313c138137d
+  PrebidMobile-FSTRAds: 7d55ec2f2df3f2aff341c2e00be003ce3283c80a
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
@@ -427,6 +427,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: fa6904955cdec6550c150b4803eb4e3d6754be06
+PODFILE CHECKSUM: 548928ffbae79795cc178c82e77888e8d25e5fca
 
 COCOAPODS: 1.12.1
