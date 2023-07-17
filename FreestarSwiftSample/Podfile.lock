@@ -73,7 +73,7 @@ PODS:
   - FreestarAds-PreRelease (5.26.0-beta-3):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
-  - FreestarAds-Smaato-PreRelease (22.1.3.1-beta-3):
+  - FreestarAds-Smaato-PreRelease (22.1.3.1-beta-4):
     - FreestarAds-PreRelease (~> 5.26-beta)
     - smaato-ios-sdk (= 22.1.3)
   - FreestarAds-TAM-PreRelease (4.6.0.6-beta-1):
@@ -432,7 +432,7 @@ SPEC CHECKSUMS:
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
   FreestarAds-Prebid-PreRelease: 487d0149d4e0b0739e6fbcde5da647aba10e87f3
   FreestarAds-PreRelease: 71727b367fbc5cadb6caeb1268f77e4e3f05f785
-  FreestarAds-Smaato-PreRelease: 635baca25f1eed6041daa4ca4229e383f08bbd03
+  FreestarAds-Smaato-PreRelease: 6144475d5a8f3e6dd933c072198d511a306704fe
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 145ba25869fde7bed9ec88433f8850b06a0214d2
