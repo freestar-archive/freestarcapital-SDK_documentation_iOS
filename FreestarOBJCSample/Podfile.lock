@@ -9,7 +9,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.25.0):
+  - FreestarAds (5.26.0):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
   - FreestarAds-AdColony (4.7.2.1):
@@ -55,10 +55,13 @@ PODS:
     - OguryAds
     - OguryChoiceManager
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-Prebid (2.1.2.10):
+  - FreestarAds-Prebid (2.1.3.11):
     - FreestarAds (~> 5.24)
     - Google-Mobile-Ads-SDK (= 10.0.0)
-    - PrebidMobile-FSTRAds (= 2.1.2.1)
+    - PrebidMobile-FSTRAds (= 2.1.3.1)
+  - FreestarAds-Smaato (22.1.3.1):
+    - FreestarAds (~> 5.26)
+    - smaato-ios-sdk (= 22.1.3)
   - FreestarAds-TAM (4.6.0.6):
     - AmazonPublisherServicesSDK (= 4.6.0)
     - FMDB (= 2.7.5)
@@ -161,8 +164,53 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.1.0):
     - OguryChoiceManager (= 4.0.1)
     - OguryCore (= 1.2.0)
-  - PrebidMobile-FSTRAds (2.1.2.1)
+  - PrebidMobile-FSTRAds (2.1.3.1)
   - PromisesObjC (2.2.0)
+  - smaato-ios-sdk (22.1.3):
+    - smaato-ios-sdk/Full (= 22.1.3)
+  - smaato-ios-sdk/Banner (22.1.3):
+    - smaato-ios-sdk/Modules/Banner
+    - smaato-ios-sdk/Modules/Core
+    - smaato-ios-sdk/Modules/RichMedia
+  - smaato-ios-sdk/Full (22.1.3):
+    - smaato-ios-sdk/Banner
+    - smaato-ios-sdk/Interstitial
+    - smaato-ios-sdk/Native
+    - smaato-ios-sdk/Outstream
+    - smaato-ios-sdk/RewardedAds
+  - smaato-ios-sdk/Interstitial (22.1.3):
+    - smaato-ios-sdk/Modules/Interstitial
+    - smaato-ios-sdk/Modules/RichMedia
+    - smaato-ios-sdk/Modules/Video
+  - smaato-ios-sdk/Modules/Banner (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+  - smaato-ios-sdk/Modules/Core (22.1.3)
+  - smaato-ios-sdk/Modules/Interstitial (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+  - smaato-ios-sdk/Modules/Native (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+  - smaato-ios-sdk/Modules/OpenMeasurement (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+  - smaato-ios-sdk/Modules/Outstream (22.1.3):
+    - smaato-ios-sdk/Modules/Banner
+    - smaato-ios-sdk/Modules/Core
+    - smaato-ios-sdk/Modules/RichMedia
+  - smaato-ios-sdk/Modules/RewardedAds (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+  - smaato-ios-sdk/Modules/RichMedia (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+    - smaato-ios-sdk/Modules/OpenMeasurement
+  - smaato-ios-sdk/Modules/Video (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+    - smaato-ios-sdk/Modules/OpenMeasurement
+  - smaato-ios-sdk/Native (22.1.3):
+    - smaato-ios-sdk/Modules/Core
+    - smaato-ios-sdk/Modules/Native
+  - smaato-ios-sdk/Outstream (22.1.3):
+    - smaato-ios-sdk/Modules/Outstream
+  - smaato-ios-sdk/RewardedAds (22.1.3):
+    - smaato-ios-sdk/Modules/RewardedAds
+    - smaato-ios-sdk/Modules/Video
   - SnapKit (5.0.1)
   - TapjoySDK (12.8.0)
   - UnityAds (4.1.0)
@@ -244,7 +292,7 @@ PODS:
     - Verizon-Ads-Support (~> 1.15)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.25.0)
+  - FreestarAds (~> 5.26.0)
   - FreestarAds-AdColony (~> 4.7.2.1)
   - FreestarAds-AppLovin (~> 11.0.0.1)
   - FreestarAds-AppLovinMax (~> 11.0)
@@ -257,7 +305,8 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 2.1.2.4)
   - FreestarAds-Ogury (~> 2.1.0.3)
-  - FreestarAds-Prebid (~> 2.1.2.10)
+  - FreestarAds-Prebid (~> 2.1.3.11)
+  - FreestarAds-Smaato (~> 22.1.3.1)
   - FreestarAds-TAM (~> 4.6.0.6)
   - FreestarAds-Tapjoy (~> 12.8.0.1)
   - FreestarAds-Unity (~> 4.1.0.4)
@@ -286,6 +335,7 @@ SPEC REPOS:
     - FreestarAds-Nimbus
     - FreestarAds-Ogury
     - FreestarAds-Prebid
+    - FreestarAds-Smaato
     - FreestarAds-TAM
     - FreestarAds-Tapjoy
     - FreestarAds-Unity
@@ -308,6 +358,7 @@ SPEC REPOS:
     - OgurySdk
     - PrebidMobile-FSTRAds
     - PromisesObjC
+    - smaato-ios-sdk
     - SnapKit
     - TapjoySDK
     - UnityAds
@@ -336,7 +387,7 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 6a6aeca29dad2616f454649424e4f16c729a81e6
+  FreestarAds: 51c308412e74039b677fd1de4860c8fd1d86fce6
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
@@ -348,7 +399,8 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 8f13c8266c0d4124cc55fb96456a7526e04b54c1
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
-  FreestarAds-Prebid: 5ab4b85ba6d92e2caab6f358fa3bfc720963cc06
+  FreestarAds-Prebid: 4a87ded9695c10eae059ee8aeb3a5b016894410d
+  FreestarAds-Smaato: 09a08e5c60510e90374a83f77138bd1aedac84c5
   FreestarAds-TAM: 83146b7549588a0760c0cdd824cb3ef14537b72b
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: 52ad0b755f61ccd064b2a78055da473f34efe394
@@ -369,8 +421,9 @@ SPEC CHECKSUMS:
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
-  PrebidMobile-FSTRAds: 7d55ec2f2df3f2aff341c2e00be003ce3283c80a
+  PrebidMobile-FSTRAds: 75628785b7a9e6df71c09528e77d0df17c5be7a1
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  smaato-ios-sdk: 7fc6938847a3f102512b619370f01abb3cfaa9c9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TapjoySDK: eee3e1c96945a75028cc7572993a645a5f10adbe
   UnityAds: 840c036310722cc4b78abc97fe5031d3d1eb2b06
@@ -392,6 +445,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 59a6b2e0aee99ddeb544c14427f18babeb226ac6
+PODFILE CHECKSUM: b6ed2bcece602d8400c5beb8ef64420e137ec452
 
 COCOAPODS: 1.12.1
