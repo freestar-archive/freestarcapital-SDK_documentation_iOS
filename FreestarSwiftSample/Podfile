@@ -9,7 +9,7 @@ target 'FreestarSwiftSample' do
    pod "FreestarAds-AppLovin", "~> 11.0.0.1"
    pod "FreestarAds-AppLovinMax", "~> 11.0"
    pod "FreestarAds-Criteo", "~> 4.3.1.1"
-   pod "FreestarAds-Fyber2", "~> 8.1.6.1"
+   pod "FreestarAds-Fyber2", "~> 8.1.6.2"
    pod 'FreestarAds-GAM', '~> 10.0'
    pod 'FreestarAds-GAM/Facebook', '~> 10.0'
    pod 'FreestarAds-Googleadmob', '~> 10.0'

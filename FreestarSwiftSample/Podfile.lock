@@ -25,7 +25,7 @@ PODS:
   - FreestarAds-Criteo (4.3.1.1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds (~> 5.7)
-  - FreestarAds-Fyber2 (8.1.6.1):
+  - FreestarAds-Fyber2 (8.1.6.2):
     - FreestarAds (~> 5.17)
     - Fyber_Marketplace_SDK (= 8.1.6)
   - FreestarAds-GAM (10.0.0.6):
@@ -297,7 +297,7 @@ DEPENDENCIES:
   - FreestarAds-AppLovin (~> 11.0.0.1)
   - FreestarAds-AppLovinMax (~> 11.0)
   - FreestarAds-Criteo (~> 4.3.1.1)
-  - FreestarAds-Fyber2 (~> 8.1.6.1)
+  - FreestarAds-Fyber2 (~> 8.1.6.2)
   - FreestarAds-GAM (~> 10.0)
   - FreestarAds-GAM/Facebook (~> 10.0)
   - FreestarAds-Googleadmob (~> 10.0)
@@ -393,7 +393,7 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin: 9a350cc3c0b9f460bdf8ae3b9efbb95f6ebdab34
   FreestarAds-AppLovinMax: 0f77618557bfbae573cecdbe38cca8d81faa43db
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
-  FreestarAds-Fyber2: 64a850bf9cb4c5f1567cbb283346227da07d9840
+  FreestarAds-Fyber2: 1a8b9da7366d3f888c353b32bfee20112d7f3da4
   FreestarAds-GAM: 7e71a2aed8c68f25f49728e7ad7dd9a0b6d1ae0b
   FreestarAds-Googleadmob: 76fef2557cdc2c49d6688650e9f0eaeede81fb32
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
@@ -445,6 +445,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: 288a3232dc923219fd1a94026f2a10164f2f216a
+PODFILE CHECKSUM: 8af4c474e3ca034586ef98c2e06c98da2a711a1f
 
 COCOAPODS: 1.12.1
