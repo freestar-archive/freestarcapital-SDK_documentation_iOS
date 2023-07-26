@@ -55,10 +55,10 @@ PODS:
     - OguryAds
     - OguryChoiceManager
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-Prebid (2.1.3.11):
+  - FreestarAds-Prebid (2.1.4.12):
     - FreestarAds (~> 5.24)
     - Google-Mobile-Ads-SDK (= 10.0.0)
-    - PrebidMobile-FSTRAds (= 2.1.3.1)
+    - PrebidMobile-FSTRAds (= 2.1.4.1)
   - FreestarAds-Smaato (22.1.3.1):
     - FreestarAds (~> 5.26)
     - smaato-ios-sdk (= 22.1.3)
@@ -164,7 +164,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.1.0):
     - OguryChoiceManager (= 4.0.1)
     - OguryCore (= 1.2.0)
-  - PrebidMobile-FSTRAds (2.1.3.1)
+  - PrebidMobile-FSTRAds (2.1.4.1)
   - PromisesObjC (2.2.0)
   - smaato-ios-sdk (22.1.3):
     - smaato-ios-sdk/Full (= 22.1.3)
@@ -305,7 +305,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 2.1.2.4)
   - FreestarAds-Ogury (~> 2.1.0.3)
-  - FreestarAds-Prebid (~> 2.1.3.11)
+  - FreestarAds-Prebid (~> 2.1.4.12)
   - FreestarAds-Smaato (~> 22.1.3.1)
   - FreestarAds-TAM (~> 4.6.0.6)
   - FreestarAds-Tapjoy (~> 12.8.0.1)
@@ -399,7 +399,7 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 8f13c8266c0d4124cc55fb96456a7526e04b54c1
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
-  FreestarAds-Prebid: 4a87ded9695c10eae059ee8aeb3a5b016894410d
+  FreestarAds-Prebid: cfa1d4867df828e686b01f8b2bcf745b17467e38
   FreestarAds-Smaato: 09a08e5c60510e90374a83f77138bd1aedac84c5
   FreestarAds-TAM: 83146b7549588a0760c0cdd824cb3ef14537b72b
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
@@ -421,7 +421,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
-  PrebidMobile-FSTRAds: 75628785b7a9e6df71c09528e77d0df17c5be7a1
+  PrebidMobile-FSTRAds: b2bfe5fa29a34a68494c0c8d8667ccf0d3cd63a5
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   smaato-ios-sdk: 7fc6938847a3f102512b619370f01abb3cfaa9c9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -445,6 +445,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: b6ed2bcece602d8400c5beb8ef64420e137ec452
+PODFILE CHECKSUM: a298fc5e046dfaf6a9c045f2b8e41a0d66de7640
 
 COCOAPODS: 1.12.1
