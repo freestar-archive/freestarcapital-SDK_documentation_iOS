@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
       "state" : {
-        "revision" : "32d452bdae4ff65f2c1dc82867fe172c3d702229",
-        "version" : "5.25.0"
+        "revision" : "1a90045e2f5a02bd7a61935009b93bfa4d22c327",
+        "version" : "5.26.0"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-prebid.git",
       "state" : {
-        "revision" : "db23748987dc7c069f7a01b484060f3ff6ac7cbf",
-        "version" : "2.0.5"
+        "revision" : "c3c598b4a9612115867541f11e0c0a9975e8cd4c",
+        "version" : "2.1.4"
       }
     },
     {
