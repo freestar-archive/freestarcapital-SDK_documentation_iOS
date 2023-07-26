@@ -29,7 +29,7 @@ PODS:
   - FreestarAds-Criteo-PreRelease (4.3.1.2-beta-1):
     - CriteoPublisherSdk (= 4.3.1)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Fyber2-PreRelease (8.1.6.1-beta-1):
+  - FreestarAds-Fyber2-PreRelease (8.1.6.2-beta-2):
     - FreestarAds-PreRelease (~> 5.17-beta)
     - Fyber_Marketplace_SDK (= 8.1.6)
   - FreestarAds-GAM-PreRelease (10.0.0.6-beta-2):
@@ -318,7 +318,7 @@ DEPENDENCIES:
   - FreestarAds-AppLovin-PreRelease (~> 11.0-beta)
   - FreestarAds-AppLovinMax-PreRelease (~> 11.0-beta)
   - FreestarAds-Criteo-PreRelease (~> 4.3-beta)
-  - FreestarAds-Fyber2-PreRelease (~> 8.1-beta-1)
+  - FreestarAds-Fyber2-PreRelease (~> 8.1.6.2-beta-2)
   - FreestarAds-GAM-PreRelease (~> 10.0.0.6-beta-2)
   - FreestarAds-GAM-PreRelease/Facebook (~> 10.0.0.6-beta-2)
   - FreestarAds-Googleadmob-PreRelease (~> 10.0.0.6-beta-1)
@@ -423,7 +423,7 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovin-PreRelease: f847a0894848173e8b83364ab2c2a72739b0d102
   FreestarAds-AppLovinMax-PreRelease: 8e4022691cffd32a1a07f5342ea2c15fe823beb4
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
-  FreestarAds-Fyber2-PreRelease: 8862330bbdf13d9f28d793f21ff1f97765a046dc
+  FreestarAds-Fyber2-PreRelease: 715bd9c56a3d71f5782488df427bb145fd0dcebf
   FreestarAds-GAM-PreRelease: 0c74c34b809a2fe3913edd6f50526898e0579b13
   FreestarAds-Googleadmob-PreRelease: 376a3bc258e52a6fc916aabec579a07a555375fe
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
@@ -480,6 +480,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: b828d794c1580a0f62c5bb64103b54192aca8bf6
+PODFILE CHECKSUM: 842f263dc39ec80b828095526a1e0f35f889648c
 
 COCOAPODS: 1.12.1
