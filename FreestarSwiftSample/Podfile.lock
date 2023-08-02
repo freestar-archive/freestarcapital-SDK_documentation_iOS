@@ -66,10 +66,9 @@ PODS:
   - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
     - Ads-Global (= 3.7.0.8)
     - FreestarAds-PreRelease (~> 5.7)
-  - FreestarAds-Prebid-PreRelease (2.1.4.10-beta-3):
+  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-4):
     - FreestarAds-PreRelease (~> 5.24-beta)
-    - Google-Mobile-Ads-SDK (= 10.0.0)
-    - PrebidMobile-FSTRAds (= 2.1.4.1)
+    - PrebidMobile-FSTRAds (= 2.1.5.1)
   - FreestarAds-PreRelease (5.26.0-beta-4):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
@@ -185,7 +184,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.2.0):
     - OguryChoiceManager (= 4.1.0)
     - OguryCore (= 1.3.0)
-  - PrebidMobile-FSTRAds (2.1.4.1)
+  - PrebidMobile-FSTRAds (2.1.5.1)
   - PromisesObjC (2.2.0)
   - smaato-ios-sdk (22.1.3):
     - smaato-ios-sdk/Full (= 22.1.3)
@@ -328,7 +327,7 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
   - FreestarAds-Ogury2-PreRelease (= 2.2.0.1-beta-4)
   - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.1.4-beta)
+  - FreestarAds-Prebid-PreRelease (~> 2.1.5-beta)
   - FreestarAds-PreRelease (~> 5.26-beta)
   - FreestarAds-Smaato-PreRelease (~> 22.1.3-beta)
   - FreestarAds-TAM-PreRelease (~> 4.6.0.6-beta)
@@ -430,7 +429,7 @@ SPEC CHECKSUMS:
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 16e651efa70c8b3db1014f9cda6f477fffda75c8
   FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
-  FreestarAds-Prebid-PreRelease: 0c6fef24a2c2de11ae3f36b6fc02c4444597486d
+  FreestarAds-Prebid-PreRelease: d7b39c01126f4efef7ad06264980847237528b42
   FreestarAds-PreRelease: c156a818fae1442ed18d7cf39d3308c23a6e71c7
   FreestarAds-Smaato-PreRelease: 30cdeb86f38679c3a33e42ebd8bd018c264ede4c
   FreestarAds-TAM-PreRelease: 431d2691f70c0a2d5f09b420c1bccf415686616e
@@ -455,7 +454,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
   OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
   OgurySdk: ec5197dc468484c70bfee7125e867673764a9416
-  PrebidMobile-FSTRAds: b2bfe5fa29a34a68494c0c8d8667ccf0d3cd63a5
+  PrebidMobile-FSTRAds: dcbf7055192f978db068bafafd17b4e6db6878f6
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   smaato-ios-sdk: 7fc6938847a3f102512b619370f01abb3cfaa9c9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -480,6 +479,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 842f263dc39ec80b828095526a1e0f35f889648c
+PODFILE CHECKSUM: b129b06f93e1ee932d0370a46c4acf77c2988eef
 
 COCOAPODS: 1.12.1
