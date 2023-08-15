@@ -9,7 +9,7 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-PreRelease', '~> 5.26-beta'
 
   pod 'FreestarAds-Prebid-PreRelease', '~> 2.1.5-beta'
-  pod 'FreestarAds-Ogury2-PreRelease', '~> 4.2-beta'
+  pod 'FreestarAds-Ogury2-PreRelease', '~> 2.2-beta'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14-beta'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.9-beta'
   pod 'FreestarAds-AppLovin-PreRelease', '~> 11.9-beta'

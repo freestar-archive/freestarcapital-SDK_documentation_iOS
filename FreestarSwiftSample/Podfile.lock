@@ -1,12 +1,5 @@
 PODS:
   - AdColony (4.7.2)
-  - Ads-Global (3.7.0.8):
-    - Ads-Global/BUAdSDK (= 3.7.0.8)
-  - Ads-Global/BUAdSDK (3.7.0.8):
-    - Ads-Global/BUFoundation
-    - Ads-Global/International
-  - Ads-Global/BUFoundation (3.7.0.8)
-  - Ads-Global/International (3.7.0.8)
   - AmazonPublisherServicesSDK (4.7.5)
   - AppLovinSDK (11.9.0)
   - CriteoPublisherSdk (4.3.1):
@@ -58,14 +51,11 @@ PODS:
     - NimbusSDK (= 2.1.2)
     - NimbusSDK/NimbusRenderStaticKit (= 2.1.2)
     - NimbusSDK/NimbusRenderVideoKit (= 2.1.2)
-  - FreestarAds-Ogury2-PreRelease (4.2.0.1-beta-6):
+  - FreestarAds-Ogury2-PreRelease (2.2.0.1-beta-5):
     - FreestarAds-PreRelease (~> 5.15-beta)
-    - OguryAds (= 3.5.0)
-    - OguryChoiceManager (= 4.2.0)
-    - OgurySdk (= 4.2.0)
-  - FreestarAds-Pangle-PreRelease (3.7.0.2-beta-1):
-    - Ads-Global (= 3.7.0.8)
-    - FreestarAds-PreRelease (~> 5.7)
+    - OguryAds (= 3.2.0)
+    - OguryChoiceManager (= 4.1.0)
+    - OgurySdk (= 2.2.0)
   - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-4):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
@@ -82,12 +72,9 @@ PODS:
   - FreestarAds-Tapjoy-PreRelease (12.8.0.2-beta-1):
     - FreestarAds-PreRelease (~> 5.7)
     - TapjoySDK (= 12.8.0)
-  - FreestarAds-Unity-PreRelease (4.8.0.5-beta-1):
+  - FreestarAds-Unity-PreRelease (4.8.0.5-beta-2):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - UnityAds (= 4.8.0)
-  - FreestarAds-Vungle-PreRelease (6.10.6.2-beta-2):
-    - FreestarAds-PreRelease (~> 5.10-beta)
-    - VungleSDK-iOS (= 6.10.6)
   - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-7):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - Verizon-Ads-StandardEdition (= 1.14.2)
@@ -164,24 +151,24 @@ PODS:
     - NimbusSDK/NimbusRenderKit
   - NimbusSDK/NimbusRequestKit (2.1.2):
     - NimbusSDK/NimbusCoreKit
-  - OguryAds (3.5.0):
-    - OguryAds/OMID (= 3.5.0)
-    - OguryCore (= 1.4.0)
-  - OguryAds/OMID (3.5.0):
-    - OguryCore (= 1.4.0)
-  - OguryChoiceManager (4.2.0):
-    - OguryCore (= 1.4.0)
-  - OguryCore (1.4.0)
-  - OgurySdk (4.2.0):
-    - OguryCore (= 1.4.0)
-    - OgurySdk/OguryAds (= 4.2.0)
-    - OgurySdk/OguryChoiceManager (= 4.2.0)
-  - OgurySdk/OguryAds (4.2.0):
-    - OguryAds (= 3.5.0)
-    - OguryCore (= 1.4.0)
-  - OgurySdk/OguryChoiceManager (4.2.0):
-    - OguryChoiceManager (= 4.2.0)
-    - OguryCore (= 1.4.0)
+  - OguryAds (3.2.0):
+    - OguryAds/OMID (= 3.2.0)
+    - OguryCore (= 1.3.0)
+  - OguryAds/OMID (3.2.0):
+    - OguryCore (= 1.3.0)
+  - OguryChoiceManager (4.1.0):
+    - OguryCore (= 1.3.0)
+  - OguryCore (1.3.0)
+  - OgurySdk (2.2.0):
+    - OguryCore (= 1.3.0)
+    - OgurySdk/OguryAds (= 2.2.0)
+    - OgurySdk/OguryChoiceManager (= 2.2.0)
+  - OgurySdk/OguryAds (2.2.0):
+    - OguryAds (= 3.2.0)
+    - OguryCore (= 1.3.0)
+  - OgurySdk/OguryChoiceManager (2.2.0):
+    - OguryChoiceManager (= 4.1.0)
+    - OguryCore (= 1.3.0)
   - PrebidMobile-FSTRAds (2.1.5.1)
   - PromisesObjC (2.3.1)
   - smaato-ios-sdk (22.1.3):
@@ -308,7 +295,6 @@ PODS:
     - Verizon-Ads-Core (~> 2.8)
     - Verizon-Ads-OMSDK (~> 1.10)
     - Verizon-Ads-Support (~> 1.15)
-  - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 4.7-beta)
@@ -323,15 +309,13 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx-PreRelease (~> 6.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
-  - FreestarAds-Ogury2-PreRelease (~> 4.2-beta)
-  - FreestarAds-Pangle-PreRelease (~> 3.7-beta)
+  - FreestarAds-Ogury2-PreRelease (~> 2.2-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.1.5-beta)
   - FreestarAds-PreRelease (~> 5.26-beta)
   - FreestarAds-Smaato-PreRelease (~> 22.1.3-beta)
   - FreestarAds-TAM-PreRelease (~> 4.7.5-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.8-beta)
-  - FreestarAds-Vungle-PreRelease (~> 6.10.6.2-beta-2)
   - FreestarAds-Yahoo-PreRelease (~> 1.14-beta)
   - LoremIpsum (~> 1.0)
   - SnapKit (~> 5.0.0)
@@ -339,7 +323,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AdColony
-    - Ads-Global
     - AmazonPublisherServicesSDK
     - AppLovinSDK
     - CriteoPublisherSdk
@@ -356,14 +339,12 @@ SPEC REPOS:
     - FreestarAds-Hyprmx-PreRelease
     - FreestarAds-Nimbus-PreRelease
     - FreestarAds-Ogury2-PreRelease
-    - FreestarAds-Pangle-PreRelease
     - FreestarAds-Prebid-PreRelease
     - FreestarAds-PreRelease
     - FreestarAds-Smaato-PreRelease
     - FreestarAds-TAM-PreRelease
     - FreestarAds-Tapjoy-PreRelease
     - FreestarAds-Unity-PreRelease
-    - FreestarAds-Vungle-PreRelease
     - FreestarAds-Yahoo-PreRelease
     - FSLPromisesObjC
     - Fyber_Marketplace_SDK
@@ -405,11 +386,9 @@ SPEC REPOS:
     - Verizon-Ads-VideoPlayer
     - Verizon-Ads-WebController
     - Verizon-Ads-WebView
-    - VungleSDK-iOS
 
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
   AmazonPublisherServicesSDK: 35889640d3edabe3e0102366a47d20e46a82348c
   AppLovinSDK: 2022f21e5b713b2c04bb7c2f10bde0f2dea89f11
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
@@ -425,15 +404,13 @@ SPEC CHECKSUMS:
   FreestarAds-Googleadmob-PreRelease: a05eebc49ebdcff4404b710a2aa09ebd2494c24e
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
-  FreestarAds-Ogury2-PreRelease: 0c8dd222029f6d1ff5851b4fa24ad2f9d8d34a65
-  FreestarAds-Pangle-PreRelease: a6d8f91ca41f71e8de7e8cc0e6d8b1af88041706
+  FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
   FreestarAds-Prebid-PreRelease: d7b39c01126f4efef7ad06264980847237528b42
   FreestarAds-PreRelease: c156a818fae1442ed18d7cf39d3308c23a6e71c7
   FreestarAds-Smaato-PreRelease: 30cdeb86f38679c3a33e42ebd8bd018c264ede4c
   FreestarAds-TAM-PreRelease: a247120efc3c99d0dd09654b666c710b8b9120c1
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
-  FreestarAds-Unity-PreRelease: 8f07fd5f2443194efba1e3cac5e9c3c647b8b5e9
-  FreestarAds-Vungle-PreRelease: 85c99bc2b9f9285dd1ef2ec9c8e236f4ebe413c3
+  FreestarAds-Unity-PreRelease: 3d3550c0d06393261b8c5722262de9c6cbb6f328
   FreestarAds-Yahoo-PreRelease: 94b790566e590ef495740a66277066b72e324e49
   FSLPromisesObjC: 294400f4bfac2c1d0fd64745c33caa0fc003d370
   Fyber_Marketplace_SDK: c51474f63c016c9ff7eb32e3542528d08d456bc5
@@ -448,10 +425,10 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   NimbusSDK: 4aba63f8ea58aaf6ac2aeb04e79996466f063171
-  OguryAds: 214175d1a2b8939099d866b719cb39011dbdb46b
-  OguryChoiceManager: 37a3f1238d9cfeb614880663372a3aa24d6b8a60
-  OguryCore: f138e519916bdd4a428978d50e065e37c7b49fe6
-  OgurySdk: dc58d776e88fe67bf676a85d92b8f9fd4a2d9123
+  OguryAds: 20f9e7e4abffba383d2ab3b5974fa0105f48fc23
+  OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
+  OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
+  OgurySdk: ec5197dc468484c70bfee7125e867673764a9416
   PrebidMobile-FSTRAds: dcbf7055192f978db068bafafd17b4e6db6878f6
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   smaato-ios-sdk: 7fc6938847a3f102512b619370f01abb3cfaa9c9
@@ -475,8 +452,7 @@ SPEC CHECKSUMS:
   Verizon-Ads-VideoPlayer: f27d21c92a9961eb786e07b0b3cbd7ebfe23646b
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
-  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 7a008ba0ebc161af3821c2ab10684b3b89fc562e
+PODFILE CHECKSUM: 12750b5db36cba06273de263eed188b06cec5937
 
 COCOAPODS: 1.12.1
