@@ -56,7 +56,7 @@ PODS:
     - OguryAds (= 3.2.0)
     - OguryChoiceManager (= 4.1.0)
     - OgurySdk (= 2.2.0)
-  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-4):
+  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-5):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
   - FreestarAds-PreRelease (5.26.0-beta-4):
@@ -405,7 +405,7 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
-  FreestarAds-Prebid-PreRelease: d7b39c01126f4efef7ad06264980847237528b42
+  FreestarAds-Prebid-PreRelease: 3db501cfa656efa4d439a35867155ae568caefb1
   FreestarAds-PreRelease: c156a818fae1442ed18d7cf39d3308c23a6e71c7
   FreestarAds-Smaato-PreRelease: 30cdeb86f38679c3a33e42ebd8bd018c264ede4c
   FreestarAds-TAM-PreRelease: fa1135544d3f72367026c5b184be9e412cbf0bbb
