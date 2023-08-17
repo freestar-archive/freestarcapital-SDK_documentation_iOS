@@ -25,17 +25,17 @@ PODS:
   - FreestarAds-Fyber2-PreRelease (8.2.4.3-beta-1):
     - FreestarAds-PreRelease (~> 5.17-beta)
     - Fyber_Marketplace_SDK (= 8.2.4)
-  - FreestarAds-GAM-PreRelease (10.9.0.7-beta-1):
+  - FreestarAds-GAM-PreRelease (10.9.0.7-beta-2):
     - FreestarAds-PreRelease (~> 5.25-beta)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-GAM-PreRelease/Facebook (10.9.0.7-beta-1):
+  - FreestarAds-GAM-PreRelease/Facebook (10.9.0.7-beta-2):
     - FreestarAds-PreRelease (~> 5.25-beta)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob-PreRelease (10.9.0.7-beta-1):
+  - FreestarAds-Googleadmob-PreRelease (10.9.0.7-beta-2):
     - FreestarAds-PreRelease (~> 5.25-beta)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob-PreRelease/Facebook (10.9.0.7-beta-1):
+  - FreestarAds-Googleadmob-PreRelease/Facebook (10.9.0.7-beta-2):
     - FreestarAds-PreRelease (~> 5.25-beta)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
@@ -400,8 +400,8 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovinMax-PreRelease: a5affb9028c7b6f5285ef3e68ceaf6444f211774
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
   FreestarAds-Fyber2-PreRelease: 02ac3be75d2008bd6ee8a77716ba309ef10ff62c
-  FreestarAds-GAM-PreRelease: bd071a5f17e4d489edda65038cf223151c4eabfe
-  FreestarAds-Googleadmob-PreRelease: a05eebc49ebdcff4404b710a2aa09ebd2494c24e
+  FreestarAds-GAM-PreRelease: 1c8b9b6190a4627a301cb26416c5cd51bdc36bc0
+  FreestarAds-Googleadmob-PreRelease: ab7fcf92fc8b2a515485a1ababdb98b26ae6569e
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
