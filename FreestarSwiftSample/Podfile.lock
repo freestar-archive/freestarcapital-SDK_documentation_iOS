@@ -46,11 +46,11 @@ PODS:
     - FreestarAds-PreRelease (~> 5.10-beta)
     - HyprMX/Core (= 6.0.3)
     - HyprMX/MRAID (= 6.0.3)
-  - FreestarAds-Nimbus-PreRelease (2.1.2.4-beta-1):
+  - FreestarAds-Nimbus-PreRelease (2.15.0.5-beta-1):
     - FreestarAds-PreRelease (~> 5.10-beta)
-    - NimbusSDK (= 2.1.2)
-    - NimbusSDK/NimbusRenderStaticKit (= 2.1.2)
-    - NimbusSDK/NimbusRenderVideoKit (= 2.1.2)
+    - NimbusSDK (= 2.15.0)
+    - NimbusSDK/NimbusRenderStaticKit (= 2.15.0)
+    - NimbusSDK/NimbusRenderVideoKit (= 2.15.0)
   - FreestarAds-Ogury2-PreRelease (2.2.0.1-beta-5):
     - FreestarAds-PreRelease (~> 5.15-beta)
     - OguryAds (= 3.2.0)
@@ -86,7 +86,7 @@ PODS:
   - Google-Mobile-Ads-SDK (10.9.0):
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAds-IMA-iOS-SDK (3.16.3)
+  - GoogleAds-IMA-iOS-SDK (3.19.2)
   - GoogleAppMeasurement (10.13.0):
     - GoogleAppMeasurement/AdIdSupport (= 10.13.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
@@ -136,20 +136,20 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
-  - NimbusSDK (2.1.2):
-    - NimbusSDK/NimbusKit (= 2.1.2)
-  - NimbusSDK/NimbusCoreKit (2.1.2)
-  - NimbusSDK/NimbusKit (2.1.2):
+  - NimbusSDK (2.15.0):
+    - NimbusSDK/NimbusKit (= 2.15.0)
+  - NimbusSDK/NimbusCoreKit (2.15.0)
+  - NimbusSDK/NimbusKit (2.15.0):
     - NimbusSDK/NimbusRenderKit
     - NimbusSDK/NimbusRequestKit
-  - NimbusSDK/NimbusRenderKit (2.1.2):
+  - NimbusSDK/NimbusRenderKit (2.15.0):
     - NimbusSDK/NimbusCoreKit
-  - NimbusSDK/NimbusRenderStaticKit (2.1.2):
+  - NimbusSDK/NimbusRenderStaticKit (2.15.0):
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRenderVideoKit (2.1.2):
-    - GoogleAds-IMA-iOS-SDK (= 3.16.3)
+  - NimbusSDK/NimbusRenderVideoKit (2.15.0):
+    - GoogleAds-IMA-iOS-SDK (>= 3.16.3)
     - NimbusSDK/NimbusRenderKit
-  - NimbusSDK/NimbusRequestKit (2.1.2):
+  - NimbusSDK/NimbusRequestKit (2.15.0):
     - NimbusSDK/NimbusCoreKit
   - OguryAds (3.2.0):
     - OguryAds/OMID (= 3.2.0)
@@ -308,7 +308,7 @@ DEPENDENCIES:
   - FreestarAds-Googleadmob-PreRelease/Facebook (~> 10.9-beta)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
-  - FreestarAds-Nimbus-PreRelease (~> 2.1.2.4-beta)
+  - FreestarAds-Nimbus-PreRelease (~> 2.15-beta)
   - FreestarAds-Ogury2-PreRelease (~> 2.2-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.1.5-beta)
   - FreestarAds-PreRelease (~> 5.26-beta)
@@ -403,7 +403,7 @@ SPEC CHECKSUMS:
   FreestarAds-GAM-PreRelease: 1c8b9b6190a4627a301cb26416c5cd51bdc36bc0
   FreestarAds-Googleadmob-PreRelease: ab7fcf92fc8b2a515485a1ababdb98b26ae6569e
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
-  FreestarAds-Nimbus-PreRelease: b3c66fa04c32473e391937b5bc85e2c0085e25e2
+  FreestarAds-Nimbus-PreRelease: 28d228e99515959fd605d1d5a8311f633b0c01b8
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
   FreestarAds-Prebid-PreRelease: 3db501cfa656efa4d439a35867155ae568caefb1
   FreestarAds-PreRelease: c156a818fae1442ed18d7cf39d3308c23a6e71c7
@@ -416,7 +416,7 @@ SPEC CHECKSUMS:
   Fyber_Marketplace_SDK: c51474f63c016c9ff7eb32e3542528d08d456bc5
   GMA-Meta-Mediation: 041ae6d1b8733151ef3a8652a2a89fadfc8c0601
   Google-Mobile-Ads-SDK: e81e8b009a182dc8dd14951782efdbb30a5e4510
-  GoogleAds-IMA-iOS-SDK: 1aba71fa5b58dc463cc5b752f06e970ec7c739c1
+  GoogleAds-IMA-iOS-SDK: 0e817c05ab26f1b9285c80f4a75e1350a916d50b
   GoogleAppMeasurement: 3ae505b44174bcc0775f5c86cecc5826259fbb1e
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
@@ -424,7 +424,7 @@ SPEC CHECKSUMS:
   HyprMX-Mraid: 64abbe86bbe421b47c2435e9eb03df2ff3a789da
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  NimbusSDK: 4aba63f8ea58aaf6ac2aeb04e79996466f063171
+  NimbusSDK: 6f4237b5e3ffff43b25a91a6e05a265d1228f9bb
   OguryAds: 20f9e7e4abffba383d2ab3b5974fa0105f48fc23
   OguryChoiceManager: d343728017250c52d5a2adfabfff9f6f6489bb45
   OguryCore: ebf53e0b40de0980d028c45704a961213070c18e
@@ -453,6 +453,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebController: f6d92d648fbdb6c09339216dcd2773b16e8ec2a5
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
 
-PODFILE CHECKSUM: b332bec87fadc2840e00bd31337885813e34d967
+PODFILE CHECKSUM: 074d7f28013933913a6ed4f479d896dcb784b05e
 
 COCOAPODS: 1.12.1
