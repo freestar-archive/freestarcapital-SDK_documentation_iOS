@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "62e3a0c09a75e2637f5300d46f05a59313f1c286",
-        "version" : "10.11.0"
+        "revision" : "03b9beee1a61f62d32c521e172e192a1663a5e8b",
+        "version" : "10.13.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
       "state" : {
-        "revision" : "871d43135925cde39ef7421d8723ce47edfdcc39",
-        "version" : "7.11.1"
+        "revision" : "c38ce365d77b04a9a300c31061c5227589e5597b",
+        "version" : "7.11.5"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/promises.git",
       "state" : {
-        "revision" : "ec957ccddbcc710ccc64c9dcbd4c7006fcf8b73a",
-        "version" : "2.2.0"
+        "revision" : "e70e889c0196c76d22759eb50d6a0270ca9f1d9e",
+        "version" : "2.3.1"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-admob.git",
       "state" : {
-        "revision" : "f9f304abb8e0f1e008c6d88c3bd6eb1eabd1fa24",
-        "version" : "10.0.1"
+        "revision" : "72e97223f6dfb62148fb0eb6731cbe8e3da17aa6",
+        "version" : "10.9.0"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
       "state" : {
-        "revision" : "493af0017b4cba3ac67d7fdad4912ee002367efa",
-        "version" : "10.0.1"
+        "revision" : "779d7e150b77173fa4c7ff6d45337708b25461c0",
+        "version" : "10.9.0"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gma-dependencies.git",
       "state" : {
-        "revision" : "4af7663e4c4e1a9a9ba3a45233a83ac60bdf8259",
-        "version" : "10.0.0"
+        "revision" : "7c4e3d094c15791b5caf8d5253ae1390ae423129",
+        "version" : "10.9.0"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-prebid.git",
       "state" : {
-        "revision" : "c3c598b4a9612115867541f11e0c0a9975e8cd4c",
-        "version" : "2.1.4"
+        "revision" : "21b45320df42453766c1aabf4ec43868f79e51be",
+        "version" : "2.1.5"
       }
     },
     {
@@ -167,8 +167,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       "state" : {
-        "revision" : "e165216151b484e7135412f57d2b9328cc72481b",
-        "version" : "10.0.0"
+        "revision" : "1a6faf6b9b82ddf8780f678745381b8628711077",
+        "version" : "10.9.0"
       }
     },
     {
@@ -176,8 +176,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
       "state" : {
-        "revision" : "3b924ce3313a5fd2fc6a8dc889a8c38f76890fe3",
-        "version" : "2.0.0"
+        "revision" : "129fa838520cd02174f890ae0cfe0242e60714ae",
+        "version" : "2.1.0"
       }
     }
   ],
