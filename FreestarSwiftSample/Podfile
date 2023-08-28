@@ -23,9 +23,10 @@ target 'FreestarSwiftSample' do
    pod "FreestarAds-Yahoo", "~> 1.14.2.2"
    pod "FreestarAds-Nimbus", "~> 2.15.0.5"
    pod "FreestarAds-Smaato", "~> 22.1.3.1"
+   pod "FreestarAds-Vungle", "~> 7.0.1.3"
  
    # Not M1 compatible pods
-#   pod "FreestarAds-Vungle", "~> 6.10"
+
 #   pod "FreestarAds-Pangle", "~> 3.7"
    #   pod "FreestarAds-Google", "~> 3.13"
  
