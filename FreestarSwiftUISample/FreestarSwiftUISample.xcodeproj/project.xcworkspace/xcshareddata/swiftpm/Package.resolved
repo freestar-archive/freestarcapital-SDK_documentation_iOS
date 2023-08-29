@@ -64,6 +64,15 @@
       }
     },
     {
+      "identity" : "spm-freestarads-fyber",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/freestar/spm-freestarads-fyber.git",
+      "state" : {
+        "revision" : "a8e820d0c7220eb5a51273d1b42294d24d0595bf",
+        "version" : "8.2.5"
+      }
+    },
+    {
       "identity" : "spm-freestarads-gam",
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
@@ -86,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-nimbus.git",
       "state" : {
-        "revision" : "1cd380830460f06e3f8104d416b5fc25f1bb0dfe",
-        "version" : "2.1.4"
+        "revision" : "51c70dbd67031437678e728f2e955419acdc1c59",
+        "version" : "2.15.1"
       }
     },
     {
@@ -113,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-tam.git",
       "state" : {
-        "revision" : "6c93c6e8085b18de4d9bbd44588cc667bff892b4",
-        "version" : "4.6.1"
+        "revision" : "78424058d72a3a2e7933a9e453131878cda06904",
+        "version" : "4.7.5"
       }
     },
     {
@@ -122,8 +131,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-unity.git",
       "state" : {
-        "revision" : "84215b2b9abf009d1b9d5336c2252137450f05c4",
-        "version" : "4.1.0"
+        "revision" : "d03e3596555bae980a304698f44c362743de1a2f",
+        "version" : "4.8.0"
       }
     },
     {
@@ -131,8 +140,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-vungle.git",
       "state" : {
-        "revision" : "607adefbac969aeedc246eedd12c8808dd76dff0",
-        "version" : "6.10.7"
+        "revision" : "5ec99c78cfe89cb6a57d0d4898178442cd9496cd",
+        "version" : "7.0.3"
       }
     },
     {
