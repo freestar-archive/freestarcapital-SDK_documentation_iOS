@@ -1,7 +1,7 @@
 PODS:
   - AdColony (4.7.2)
   - AmazonPublisherServicesSDK (4.7.5)
-  - AppLovinSDK (11.9.0)
+  - AppLovinSDK (11.11.3)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -13,11 +13,11 @@ PODS:
     - AdColony (= 4.7.2)
     - FreestarAds-PreRelease (~> 5.10-beta)
   - FreestarAds-AdQualityKit (5.0.4)
-  - FreestarAds-AppLovin-PreRelease (11.9.0.2-beta-2):
-    - AppLovinSDK (= 11.9.0)
+  - FreestarAds-AppLovin-PreRelease (11.11.3.3-beta-1):
+    - AppLovinSDK (= 11.11.3)
     - FreestarAds-PreRelease (~> 5.10-beta)
-  - FreestarAds-AppLovinMax-PreRelease (11.9.0.7-beta-6):
-    - AppLovinSDK (= 11.9.0)
+  - FreestarAds-AppLovinMax-PreRelease (11.11.3.7-beta-7):
+    - AppLovinSDK (= 11.11.3)
     - FreestarAds-PreRelease (~> 5.10-beta)
   - FreestarAds-Criteo-PreRelease (4.3.1.2-beta-1):
     - CriteoPublisherSdk (= 4.3.1)
@@ -302,8 +302,8 @@ PODS:
 
 DEPENDENCIES:
   - FreestarAds-AdColony-PreRelease (~> 4.7-beta)
-  - FreestarAds-AppLovin-PreRelease (~> 11.9-beta)
-  - FreestarAds-AppLovinMax-PreRelease (~> 11.9-beta)
+  - FreestarAds-AppLovin-PreRelease (~> 11.11-beta)
+  - FreestarAds-AppLovinMax-PreRelease (~> 11.11-beta)
   - FreestarAds-Criteo-PreRelease (~> 4.3-beta)
   - FreestarAds-Fyber2-PreRelease (~> 8.2-beta)
   - FreestarAds-GAM-PreRelease (~> 10.9-beta)
@@ -397,14 +397,14 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   AmazonPublisherServicesSDK: 35889640d3edabe3e0102366a47d20e46a82348c
-  AppLovinSDK: 2022f21e5b713b2c04bb7c2f10bde0f2dea89f11
+  AppLovinSDK: 623ef78363c0dd2c3ff5446cde37e4920a96b7e0
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds-AdColony-PreRelease: 1a6b85cd6d47a0da2b9680c7f199eb2bfccf8550
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
-  FreestarAds-AppLovin-PreRelease: af5007f404de69715a74f865b7dce5de5c25ca2a
-  FreestarAds-AppLovinMax-PreRelease: a5affb9028c7b6f5285ef3e68ceaf6444f211774
+  FreestarAds-AppLovin-PreRelease: c992cf1408b810617b027669f610e13545cb0b3b
+  FreestarAds-AppLovinMax-PreRelease: 8e4490a2b43ce2b9789e53cc942e87bf5529b96a
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
   FreestarAds-Fyber2-PreRelease: 02ac3be75d2008bd6ee8a77716ba309ef10ff62c
   FreestarAds-GAM-PreRelease: 1c8b9b6190a4627a301cb26416c5cd51bdc36bc0
@@ -462,6 +462,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: 43272ff65c4a845d5889bdf1f740b79112261851
+PODFILE CHECKSUM: 2d897d35e22ec34a63331e24027df812cc2a48fb
 
 COCOAPODS: 1.12.1
