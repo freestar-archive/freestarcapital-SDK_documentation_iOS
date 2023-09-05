@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
       "state" : {
-        "revision" : "1a90045e2f5a02bd7a61935009b93bfa4d22c327",
-        "version" : "5.26.0"
+        "revision" : "f731a6ac0258e69cd6ac1e0bc197afac7d491843",
+        "version" : "5.27.0"
       }
     },
     {
