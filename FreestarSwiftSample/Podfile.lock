@@ -9,7 +9,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.26.0):
+  - FreestarAds (5.27.0):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
   - FreestarAds-AdColony (4.7.2.1):
@@ -293,7 +293,7 @@ PODS:
   - VungleAds (7.0.1)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.26.0)
+  - FreestarAds (~> 5.27.0)
   - FreestarAds-AdColony (~> 4.7.2.1)
   - FreestarAds-AppLovin (~> 11.9.0.2)
   - FreestarAds-AppLovinMax (~> 11.9.0.3)
@@ -391,7 +391,7 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 51c308412e74039b677fd1de4860c8fd1d86fce6
+  FreestarAds: de8684ecf062dae596e6dd47a7984fc7a344b19e
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
   FreestarAds-AppLovin: 4c82065d2229009b052fc98def708038010dba83
@@ -451,6 +451,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: fd3926119b1e7f9c603d7d20b70761eabf4d0b7a
+PODFILE CHECKSUM: cd3abfaa5b266cee2243476977b2a8438795b73a
 
 COCOAPODS: 1.12.1
