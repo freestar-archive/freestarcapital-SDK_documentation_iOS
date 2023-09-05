@@ -6,8 +6,8 @@ target 'FreestarSwiftSample' do
    # M1 compatible
    pod "FreestarAds", "~> 5.27.0"
    pod "FreestarAds-AdColony", "~> 4.7.2.1"
-   pod "FreestarAds-AppLovin", "~> 11.9.0.2"
-   pod "FreestarAds-AppLovinMax", "~> 11.9.0.3"
+   pod "FreestarAds-AppLovin", "~> 11.11.3.3"
+   pod "FreestarAds-AppLovinMax", "~> 11.11.3.4"
    pod "FreestarAds-Criteo", "~> 4.3.1.1"
    pod "FreestarAds-Fyber2", "~> 8.2.4.3"
    pod 'FreestarAds-GAM', '~> 10.9.0.7'

@@ -1,7 +1,7 @@
 PODS:
   - AdColony (4.7.2)
   - AmazonPublisherServicesSDK (4.7.5)
-  - AppLovinSDK (11.9.0)
+  - AppLovinSDK (11.11.3)
   - CriteoPublisherSdk (4.3.1):
     - CriteoPublisherSdk/Sdk (= 4.3.1)
   - CriteoPublisherSdk/Sdk (4.3.1)
@@ -16,11 +16,11 @@ PODS:
     - AdColony (= 4.7.2)
     - FreestarAds (~> 5.7)
   - FreestarAds-AdQualityKit (5.0.4)
-  - FreestarAds-AppLovin (11.9.0.2):
-    - AppLovinSDK (= 11.9.0)
+  - FreestarAds-AppLovin (11.11.3.3):
+    - AppLovinSDK (= 11.11.3)
     - FreestarAds (~> 5.10)
-  - FreestarAds-AppLovinMax (11.9.0.3):
-    - AppLovinSDK (= 11.9.0)
+  - FreestarAds-AppLovinMax (11.11.3.4):
+    - AppLovinSDK (= 11.11.3)
     - FreestarAds (~> 5.10)
   - FreestarAds-Criteo (4.3.1.1):
     - CriteoPublisherSdk (= 4.3.1)
@@ -295,8 +295,8 @@ PODS:
 DEPENDENCIES:
   - FreestarAds (~> 5.27.0)
   - FreestarAds-AdColony (~> 4.7.2.1)
-  - FreestarAds-AppLovin (~> 11.9.0.2)
-  - FreestarAds-AppLovinMax (~> 11.9.0.3)
+  - FreestarAds-AppLovin (~> 11.11.3.3)
+  - FreestarAds-AppLovinMax (~> 11.11.3.4)
   - FreestarAds-Criteo (~> 4.3.1.1)
   - FreestarAds-Fyber2 (~> 8.2.4.3)
   - FreestarAds-GAM (~> 10.9.0.7)
@@ -387,15 +387,15 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
   AmazonPublisherServicesSDK: 35889640d3edabe3e0102366a47d20e46a82348c
-  AppLovinSDK: 2022f21e5b713b2c04bb7c2f10bde0f2dea89f11
+  AppLovinSDK: 623ef78363c0dd2c3ff5446cde37e4920a96b7e0
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreestarAds: de8684ecf062dae596e6dd47a7984fc7a344b19e
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
-  FreestarAds-AppLovin: 4c82065d2229009b052fc98def708038010dba83
-  FreestarAds-AppLovinMax: f8158eacc4e3e4df7928559b67f16418782c2728
+  FreestarAds-AppLovin: 689f2e1bafed000b4b47e206ed5172393aafc383
+  FreestarAds-AppLovinMax: e4a80c46076a02aedaee8890e97eb4cdca49de3c
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-Fyber2: 62e3b7b087a4a63bc0608e532d0eeddc6b2c51fb
   FreestarAds-GAM: dad5709d39ad5dc8acb960b033de865775e59bca
@@ -451,6 +451,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: acbf745e5c7ff9560bbce2565cc213537be6f12d
+PODFILE CHECKSUM: f06f735dd6fb42c521e0034a5f6ec0067ad299fc
 
 COCOAPODS: 1.12.1
