@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        Freestar.setUserIdentityUsingEmail("user@domain.com")
         //
         updateUSPrivacyString(to: "1---")
         
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Freestar.setAdaptiveBannerEnabledIfAvailable(true)
 //        Freestar.setServingMode(.admobGam)
         Freestar.initWithAppKey(AppDelegate.FREESTAR_API_KEY)
-        Freestar.setUserID("User123")
+        Freestar.setUserID("user@domain.com")
 
         let tabVC = UITabBarController()
         
