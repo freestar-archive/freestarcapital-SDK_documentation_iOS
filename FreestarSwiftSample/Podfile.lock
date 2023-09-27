@@ -56,10 +56,10 @@ PODS:
     - OguryAds (= 3.2.0)
     - OguryChoiceManager (= 4.1.0)
     - OgurySdk (= 2.2.0)
-  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-6):
+  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-7):
     - FreestarAds-PreRelease (~> 5.24-beta)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
-  - FreestarAds-PreRelease (5.30.0-beta-2):
+  - FreestarAds-PreRelease (5.30.0-beta-4):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
     - FSTRAdsIdentity (= 1.0.0)
@@ -318,7 +318,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 2.15.0.6-beta)
   - FreestarAds-Ogury2-PreRelease (~> 2.2-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.1.5.10-beta-6)
+  - FreestarAds-Prebid-PreRelease (~> 2.1.5.10-beta)
   - FreestarAds-PreRelease (~> 5.30-beta)
   - FreestarAds-Smaato-PreRelease (~> 22.1.3-beta)
   - FreestarAds-TAM-PreRelease (~> 4.7-beta)
@@ -418,8 +418,8 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: 1606a59d4c71bd41ca0320eb6f0efa50d985327f
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
-  FreestarAds-Prebid-PreRelease: 5c6db055445981420204f474a9d15ba661c9ffba
-  FreestarAds-PreRelease: b4fb1c3e721efba7b6db4b42fb0f15b644b00fe9
+  FreestarAds-Prebid-PreRelease: 62cc9cd4a3477260fe9febbae444dec6bf0fad81
+  FreestarAds-PreRelease: 7505ad87df28b05cb590a6736bf5f283ea0df6c2
   FreestarAds-Smaato-PreRelease: 30cdeb86f38679c3a33e42ebd8bd018c264ede4c
   FreestarAds-TAM-PreRelease: fa1135544d3f72367026c5b184be9e412cbf0bbb
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
@@ -470,6 +470,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: e92e5276851b4e6f56ec576d08509a6aad714964
+PODFILE CHECKSUM: 4b1ff2f36f26458ba249e2b70b9023a4007bf495
 
 COCOAPODS: 1.12.1
