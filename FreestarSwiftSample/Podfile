@@ -6,9 +6,9 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '~> 5.30-beta'
+  pod 'FreestarAds-PreRelease', '~> 5.30.0-beta-8'
 
-  pod 'FreestarAds-Prebid-PreRelease', '~> 2.1.5.10-beta'
+  pod 'FreestarAds-Prebid-PreRelease', '~> 2.1.5.10-beta-9'
   pod 'FreestarAds-Ogury2-PreRelease', '~> 2.2-beta'
   pod 'FreestarAds-Yahoo-PreRelease', '~> 1.14-beta'
   pod 'FreestarAds-AppLovinMax-PreRelease', '~> 11.11-beta'
@@ -19,21 +19,21 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-TAM-PreRelease', '~> 4.7-beta'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0-beta'
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 10.9-beta'
-  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 10.9-beta'
-  pod 'FreestarAds-GAM-PreRelease', '~> 10.9-beta'
-  pod 'FreestarAds-GAM-PreRelease/Facebook', '~> 10.9-beta'
+  pod 'FreestarAds-Googleadmob-PreRelease', '~> 10.9.0.8-beta-1'
+  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 10.9.0.8-beta-1'
+  pod 'FreestarAds-GAM-PreRelease', '~>  10.9.0.8-beta-1'
+  pod 'FreestarAds-GAM-PreRelease/Facebook', '~>  10.9.0.8-beta-1'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.8-beta'
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.2-beta'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.15.0.6-beta'
-  pod 'FreestarAds-Smaato-PreRelease', '~> 22.1.3-beta'
-  pod 'FreestarAds-Vungle-PreRelease', '~> 7.0-beta'  
+  pod 'FreestarAds-Smaato-PreRelease', '~> 22.1.3.2-beta-2'
+  pod 'FreestarAds-Vungle-PreRelease', '~> 7.0-beta'
 
 #  pod 'Firebase'
 
 #  # Not M1 compatible
 
-#  pod 'FreestarAds-Pangle-PreRelease', '~> 3.7-beta'
+#  pod 'FreestarAds-Pangle-PreRelease', '~> 3.7.0.2-beta-2'
   # IMA SDK conflict with Nimbus adapter
 #  pod 'FreestarAds-Google-PreRelease', '~> 3.13-beta'
 

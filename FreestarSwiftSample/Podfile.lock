@@ -25,18 +25,18 @@ PODS:
   - FreestarAds-Fyber2-PreRelease (8.2.4.3-beta-1):
     - FreestarAds-PreRelease (~> 5.17-beta)
     - Fyber_Marketplace_SDK (= 8.2.4)
-  - FreestarAds-GAM-PreRelease (10.9.0.7-beta-2):
-    - FreestarAds-PreRelease (~> 5.25-beta)
+  - FreestarAds-GAM-PreRelease (10.9.0.8-beta-1):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-GAM-PreRelease/Facebook (10.9.0.7-beta-2):
-    - FreestarAds-PreRelease (~> 5.25-beta)
+  - FreestarAds-GAM-PreRelease/Facebook (10.9.0.8-beta-1):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob-PreRelease (10.9.0.7-beta-2):
-    - FreestarAds-PreRelease (~> 5.25-beta)
+  - FreestarAds-Googleadmob-PreRelease (10.9.0.8-beta-1):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob-PreRelease/Facebook (10.9.0.7-beta-2):
-    - FreestarAds-PreRelease (~> 5.25-beta)
+  - FreestarAds-Googleadmob-PreRelease/Facebook (10.9.0.8-beta-1):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
   - FreestarAds-Hyprmx-PreRelease (6.0.3.4-beta-3):
@@ -56,15 +56,15 @@ PODS:
     - OguryAds (= 3.2.0)
     - OguryChoiceManager (= 4.1.0)
     - OgurySdk (= 2.2.0)
-  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-7):
-    - FreestarAds-PreRelease (~> 5.24-beta)
+  - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-9):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
-  - FreestarAds-PreRelease (5.30.0-beta-4):
+  - FreestarAds-PreRelease (5.30.0-beta-8):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
     - FSTRAdsIdentity (= 1.0.0)
-  - FreestarAds-Smaato-PreRelease (22.1.3.1-beta-6):
-    - FreestarAds-PreRelease (~> 5.26-beta)
+  - FreestarAds-Smaato-PreRelease (22.1.3.2-beta-2):
+    - FreestarAds-PreRelease (~> 5.30-beta)
     - smaato-ios-sdk (= 22.1.3)
   - FreestarAds-TAM-PreRelease (4.7.5.7-beta-2):
     - AmazonPublisherServicesSDK (= 4.7.5)
@@ -76,8 +76,8 @@ PODS:
   - FreestarAds-Unity-PreRelease (4.8.0.5-beta-2):
     - FreestarAds-PreRelease (~> 5.10-beta)
     - UnityAds (= 4.8.0)
-  - FreestarAds-Vungle-PreRelease (7.0.1.3-beta-1):
-    - FreestarAds-PreRelease (~> 5.10-beta)
+  - FreestarAds-Vungle-PreRelease (7.0.1.3-beta-2):
+    - FreestarAds-PreRelease (~> 5.27-beta)
     - VungleAds (= 7.0.1)
   - FreestarAds-Yahoo-PreRelease (1.14.3.2-beta-7):
     - FreestarAds-PreRelease (~> 5.10-beta)
@@ -93,21 +93,21 @@ PODS:
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAds-IMA-iOS-SDK (3.19.2)
-  - GoogleAppMeasurement (10.13.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.13.0)
+  - GoogleAppMeasurement (10.15.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.13.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.13.0)
+  - GoogleAppMeasurement/AdIdSupport (10.15.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.13.0):
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.15.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
@@ -310,17 +310,17 @@ DEPENDENCIES:
   - FreestarAds-AppLovinMax-PreRelease (~> 11.11-beta)
   - FreestarAds-Criteo-PreRelease (~> 4.3-beta)
   - FreestarAds-Fyber2-PreRelease (~> 8.2-beta)
-  - FreestarAds-GAM-PreRelease (~> 10.9-beta)
-  - FreestarAds-GAM-PreRelease/Facebook (~> 10.9-beta)
-  - FreestarAds-Googleadmob-PreRelease (~> 10.9-beta)
-  - FreestarAds-Googleadmob-PreRelease/Facebook (~> 10.9-beta)
+  - FreestarAds-GAM-PreRelease (~> 10.9.0.8-beta-1)
+  - FreestarAds-GAM-PreRelease/Facebook (~> 10.9.0.8-beta-1)
+  - FreestarAds-Googleadmob-PreRelease (~> 10.9.0.8-beta-1)
+  - FreestarAds-Googleadmob-PreRelease/Facebook (~> 10.9.0.8-beta-1)
   - FreestarAds-Hyprmx-PreRelease (~> 6.0-beta)
   - FreestarAds-Hyprmx-PreRelease/MRAID (~> 6.0-beta)
   - FreestarAds-Nimbus-PreRelease (~> 2.15.0.6-beta)
   - FreestarAds-Ogury2-PreRelease (~> 2.2-beta)
-  - FreestarAds-Prebid-PreRelease (~> 2.1.5.10-beta)
-  - FreestarAds-PreRelease (~> 5.30-beta)
-  - FreestarAds-Smaato-PreRelease (~> 22.1.3-beta)
+  - FreestarAds-Prebid-PreRelease (~> 2.1.5.10-beta-9)
+  - FreestarAds-PreRelease (~> 5.30.0-beta-8)
+  - FreestarAds-Smaato-PreRelease (~> 22.1.3.2-beta-2)
   - FreestarAds-TAM-PreRelease (~> 4.7-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
   - FreestarAds-Unity-PreRelease (~> 4.8-beta)
@@ -413,18 +413,18 @@ SPEC CHECKSUMS:
   FreestarAds-AppLovinMax-PreRelease: 8e4490a2b43ce2b9789e53cc942e87bf5529b96a
   FreestarAds-Criteo-PreRelease: c2b7796c66445ad2a9eda9229cdf8569bb101101
   FreestarAds-Fyber2-PreRelease: 02ac3be75d2008bd6ee8a77716ba309ef10ff62c
-  FreestarAds-GAM-PreRelease: 1c8b9b6190a4627a301cb26416c5cd51bdc36bc0
-  FreestarAds-Googleadmob-PreRelease: ab7fcf92fc8b2a515485a1ababdb98b26ae6569e
+  FreestarAds-GAM-PreRelease: c0c93a3b43a81290a5d297fa9d85925e5f56cab1
+  FreestarAds-Googleadmob-PreRelease: 53e76a7695d3acee54d9f1dc722bcab8c89145ae
   FreestarAds-Hyprmx-PreRelease: 3fb1b38c28178cc3acdcf8db0e5052be27a00690
   FreestarAds-Nimbus-PreRelease: 1606a59d4c71bd41ca0320eb6f0efa50d985327f
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
-  FreestarAds-Prebid-PreRelease: 62cc9cd4a3477260fe9febbae444dec6bf0fad81
-  FreestarAds-PreRelease: 7505ad87df28b05cb590a6736bf5f283ea0df6c2
-  FreestarAds-Smaato-PreRelease: 30cdeb86f38679c3a33e42ebd8bd018c264ede4c
+  FreestarAds-Prebid-PreRelease: 6d26e5c5f0723ded7abee5986b5a2f747a9886b7
+  FreestarAds-PreRelease: 1848840af20adc1c56e843d3c209f8bff6be5c2d
+  FreestarAds-Smaato-PreRelease: 4335aa020e1fb8f657fbfabc3130ee511980c70f
   FreestarAds-TAM-PreRelease: fa1135544d3f72367026c5b184be9e412cbf0bbb
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
   FreestarAds-Unity-PreRelease: 3d3550c0d06393261b8c5722262de9c6cbb6f328
-  FreestarAds-Vungle-PreRelease: 7a93ca5cc53301329bb465e2b605c60ceeba4517
+  FreestarAds-Vungle-PreRelease: c515e53b7ca6f3b9c95e9e63381d4941f0f869b8
   FreestarAds-Yahoo-PreRelease: 94b790566e590ef495740a66277066b72e324e49
   FSLPromisesObjC: 294400f4bfac2c1d0fd64745c33caa0fc003d370
   FSTRAdsIdentity: 6c9ae80cc1b2012814d2a2edea5d12e4f2d18cc3
@@ -432,7 +432,7 @@ SPEC CHECKSUMS:
   GMA-Meta-Mediation: 041ae6d1b8733151ef3a8652a2a89fadfc8c0601
   Google-Mobile-Ads-SDK: e81e8b009a182dc8dd14951782efdbb30a5e4510
   GoogleAds-IMA-iOS-SDK: 0e817c05ab26f1b9285c80f4a75e1350a916d50b
-  GoogleAppMeasurement: 3ae505b44174bcc0775f5c86cecc5826259fbb1e
+  GoogleAppMeasurement: 722db6550d1e6d552b08398b69a975ac61039338
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   HyprMX: c4801c9f7b962a5d5bc5c6471d81c992e5a0bc3f
@@ -470,6 +470,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: 4b1ff2f36f26458ba249e2b70b9023a4007bf495
+PODFILE CHECKSUM: e4c6635069a2597d787623a884a95216420716b1
 
 COCOAPODS: 1.12.1

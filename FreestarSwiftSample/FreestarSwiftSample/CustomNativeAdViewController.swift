@@ -1,15 +1,16 @@
 //
-//  ViewController.swift
+//  CustomNativeViewController.swift
 //  FreestarSwiftSample
 //
-//  Copyright © 2020 Freestar. All rights reserved.
+//  Created by Dean Chang on 10/2/23.
+//  Copyright © 2023 Freestar. All rights reserved.
 //
 
 import UIKit
 import FreestarAds
 
-class NativeAdViewController: AdViewController {
-    
+class CustomNativeAdViewController: AdViewController {
+
     let nativeAdContainer = UIView()
     
     var smallNative: FreestarNativeAd?
@@ -31,7 +32,7 @@ class NativeAdViewController: AdViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
                 
-        setupNativeContainer()        
+        setupNativeContainer()
         self.enablePartnerSelection = false
     }
     
@@ -102,7 +103,7 @@ class NativeAdViewController: AdViewController {
     }
 }
 
-extension NativeAdViewController : FreestarNativeAdDelegate {
+extension CustomNativeAdViewController : FreestarNativeAdDelegate {
     func closeExistingNatives() {
         self.smallNative?.removeFromSuperview()
         self.smallNative = nil
@@ -113,7 +114,11 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
     func loadLargeNativeAd() {
         closeExistingNatives()
         self.largeNativeAdReady = false
-        largeNative = FreestarNativeAd(delegate: self, andSize: .medium)
+        largeNative = FreestarNativeAd(delegate: self,
+                                       andSize: .medium,
+                                       nibName: "Publisher-Native-Medium",
+                                       bundle: Bundle.main)
+        
         largeNative?.loadPlacement(placementField.text)
         largeNative?.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -121,13 +126,17 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
     func loadSmallNativeAd() {
         closeExistingNatives()
         self.smallNativeAdReady = false
-        smallNative = FreestarNativeAd(delegate: self, andSize: .small)
+        smallNative = FreestarNativeAd(delegate: self,
+                                       andSize: .small,
+                                       nibName: "Publisher-Native-Small",
+                                       bundle: Bundle.main)
+        
         smallNative?.loadPlacement(placementField.text)
         smallNative?.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func showLargeNativeAd() {
-        self.largeNativeAdReady = false        
+        self.largeNativeAdReady = false
         nativeAdContainer.addSubview(largeNative!)
         setupConstraints(largeNative!)
     }
@@ -146,7 +155,7 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
         } else {
             self.largeNativeAdReady = true
         }
-        setupConstraints(ad)        
+        setupConstraints(ad)
         guard let responseInfo = ad.responseInfo else {
             return
         }
@@ -177,4 +186,5 @@ extension NativeAdViewController : FreestarNativeAdDelegate {
         }
     }
     
+
 }

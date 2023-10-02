@@ -22,6 +22,9 @@
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
 		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
 		FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */; };
+		FDC0577D2ACB5D570085A4F7 /* Publisher-Native-Medium.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC0577B2ACB5D570085A4F7 /* Publisher-Native-Medium.xib */; };
+		FDC0577E2ACB5D570085A4F7 /* Publisher-Native-Small.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC0577C2ACB5D570085A4F7 /* Publisher-Native-Small.xib */; };
+		FDC057832ACB644D0085A4F7 /* CustomNativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC057822ACB644D0085A4F7 /* CustomNativeAdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
 		FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerAdViewController.xib; sourceTree = "<group>"; };
+		FDC0577B2ACB5D570085A4F7 /* Publisher-Native-Medium.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Publisher-Native-Medium.xib"; sourceTree = "<group>"; };
+		FDC0577C2ACB5D570085A4F7 /* Publisher-Native-Small.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Publisher-Native-Small.xib"; sourceTree = "<group>"; };
+		FDC057822ACB644D0085A4F7 /* CustomNativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNativeAdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				FDC0577B2ACB5D570085A4F7 /* Publisher-Native-Medium.xib */,
+				FDC0577C2ACB5D570085A4F7 /* Publisher-Native-Small.xib */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
@@ -111,6 +119,7 @@
 				FD1179A624CB935600547873 /* SpinnerViewController.swift */,
 				FD1179A824CB96F700547873 /* FeedConstants.swift */,
 				DF5A79DE256C5E2500A00182 /* NativeAdViewController.swift */,
+				FDC057822ACB644D0085A4F7 /* CustomNativeAdViewController.swift */,
 			);
 			path = FreestarSwiftSample;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 				TargetAttributes = {
 					96006407242EA20D00A3212E = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -178,6 +188,8 @@
 			files = (
 				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
 				FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */,
+				FDC0577D2ACB5D570085A4F7 /* Publisher-Native-Medium.xib in Resources */,
+				FDC0577E2ACB5D570085A4F7 /* Publisher-Native-Small.xib in Resources */,
 				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
 				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
 			);
@@ -250,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5A79DF256C5E2500A00182 /* NativeAdViewController.swift in Sources */,
+				FDC057832ACB644D0085A4F7 /* CustomNativeAdViewController.swift in Sources */,
 				960064262432F46A00A3212E /* FullscreenAdViewController.swift in Sources */,
 				FD1179A524CB8D7000547873 /* FeedAdViewController.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
@@ -395,6 +408,7 @@
 			baseConfigurationReference = 27E0ECD86A2C41488E183F8C /* Pods-FreestarSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -416,7 +430,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.ads.FreestarSwiftSample;
 				PRODUCT_NAME = "FreestarAds-Swift";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +462,7 @@
 			baseConfigurationReference = 562E41A2FE0A937BE8FB5E8F /* Pods-FreestarSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -468,7 +484,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FreestarSwiftSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
