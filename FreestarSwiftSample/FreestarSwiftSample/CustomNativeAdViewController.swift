@@ -116,8 +116,7 @@ extension CustomNativeAdViewController : FreestarNativeAdDelegate {
         self.largeNativeAdReady = false
         largeNative = FreestarNativeAd(delegate: self,
                                        andSize: .medium,
-                                       nibName: "Publisher-Native-Medium",
-                                       bundle: Bundle.main)
+                                       nibName: "Publisher-Native-Medium")
         
         largeNative?.loadPlacement(placementField.text)
         largeNative?.translatesAutoresizingMaskIntoConstraints = false

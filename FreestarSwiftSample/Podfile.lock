@@ -59,7 +59,7 @@ PODS:
   - FreestarAds-Prebid-PreRelease (2.1.5.10-beta-9):
     - FreestarAds-PreRelease (~> 5.30-beta)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
-  - FreestarAds-PreRelease (5.30.0-beta-8):
+  - FreestarAds-PreRelease (5.30.0-beta-9):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
     - FSTRAdsIdentity (= 1.0.0)
@@ -319,7 +319,7 @@ DEPENDENCIES:
   - FreestarAds-Nimbus-PreRelease (~> 2.15.0.6-beta)
   - FreestarAds-Ogury2-PreRelease (~> 2.2-beta)
   - FreestarAds-Prebid-PreRelease (~> 2.1.5.10-beta-9)
-  - FreestarAds-PreRelease (~> 5.30.0-beta-8)
+  - FreestarAds-PreRelease (~> 5.30.0-beta-9)
   - FreestarAds-Smaato-PreRelease (~> 22.1.3.2-beta-2)
   - FreestarAds-TAM-PreRelease (~> 4.7-beta)
   - FreestarAds-Tapjoy-PreRelease (~> 12.8-beta)
@@ -419,7 +419,7 @@ SPEC CHECKSUMS:
   FreestarAds-Nimbus-PreRelease: 1606a59d4c71bd41ca0320eb6f0efa50d985327f
   FreestarAds-Ogury2-PreRelease: 22f24e2fb988b21c7c81b1218719a2c10a3efdb9
   FreestarAds-Prebid-PreRelease: 6d26e5c5f0723ded7abee5986b5a2f747a9886b7
-  FreestarAds-PreRelease: 1848840af20adc1c56e843d3c209f8bff6be5c2d
+  FreestarAds-PreRelease: 1afa77b828eee0087c63012f2438d784d8a6856b
   FreestarAds-Smaato-PreRelease: 4335aa020e1fb8f657fbfabc3130ee511980c70f
   FreestarAds-TAM-PreRelease: fa1135544d3f72367026c5b184be9e412cbf0bbb
   FreestarAds-Tapjoy-PreRelease: 79b7a643909ae49a2e36523f76e8902f23b66b8e
@@ -470,6 +470,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: e4c6635069a2597d787623a884a95216420716b1
+PODFILE CHECKSUM: 98c4ba5eb6435c229485a825cd752a5781143c7a
 
 COCOAPODS: 1.12.1
