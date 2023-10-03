@@ -9,9 +9,10 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.29.0):
+  - FreestarAds (5.30.0):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
+    - FSTRAdsIdentity (= 1.0.0)
   - FreestarAds-AdColony (4.7.2.1):
     - AdColony (= 4.7.2)
     - FreestarAds (~> 5.7)
@@ -28,24 +29,24 @@ PODS:
   - FreestarAds-Fyber2 (8.2.4.3):
     - FreestarAds (~> 5.17)
     - Fyber_Marketplace_SDK (= 8.2.4)
-  - FreestarAds-GAM (10.9.0.7):
-    - FreestarAds (~> 5.25)
+  - FreestarAds-GAM (10.9.0.8):
+    - FreestarAds (~> 5.30)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-GAM/Facebook (10.9.0.7):
-    - FreestarAds (~> 5.25)
+  - FreestarAds-GAM/Facebook (10.9.0.8):
+    - FreestarAds (~> 5.30)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob (10.9.0.7):
-    - FreestarAds (~> 5.25)
+  - FreestarAds-Googleadmob (10.9.0.8):
+    - FreestarAds (~> 5.30)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob/Facebook (10.9.0.7):
-    - FreestarAds (~> 5.25)
+  - FreestarAds-Googleadmob/Facebook (10.9.0.8):
+    - FreestarAds (~> 5.30)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
   - FreestarAds-Hyprmx (6.0.3.4):
     - FreestarAds (~> 5.10)
     - HyprMX/Core (= 6.0.3)
-  - FreestarAds-Nimbus (2.15.0.5):
+  - FreestarAds-Nimbus (2.15.0.6):
     - FreestarAds (~> 5.10)
     - NimbusSDK (= 2.15.0)
     - NimbusSDK/NimbusRenderStaticKit (= 2.15.0)
@@ -55,11 +56,11 @@ PODS:
     - OguryAds
     - OguryChoiceManager
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-Prebid (2.1.5.13):
-    - FreestarAds (~> 5.24)
+  - FreestarAds-Prebid (2.1.5.14):
+    - FreestarAds (~> 5.30)
     - PrebidMobile-FSTRAds (= 2.1.5.1)
-  - FreestarAds-Smaato (22.1.3.1):
-    - FreestarAds (~> 5.26)
+  - FreestarAds-Smaato (22.1.3.2):
+    - FreestarAds (~> 5.30)
     - smaato-ios-sdk (= 22.1.3)
   - FreestarAds-TAM (4.7.5.7):
     - AmazonPublisherServicesSDK (= 4.7.5)
@@ -78,6 +79,8 @@ PODS:
     - FreestarAds (~> 5.10)
     - Verizon-Ads-StandardEdition (= 1.14.2)
   - FSLPromisesObjC (2.2.1)
+  - FSTRAdsIdentity (1.0.0):
+    - LRAtsSDK (= 2.2.0)
   - Fyber_Marketplace_SDK (8.2.4)
   - GMA-Meta-Mediation (6.12.0.2):
     - FBAudienceNetwork (= 6.12.0)
@@ -86,21 +89,21 @@ PODS:
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAds-IMA-iOS-SDK (3.19.2)
-  - GoogleAppMeasurement (10.14.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.14.0)
+  - GoogleAppMeasurement (10.16.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.16.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.14.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.14.0)
+  - GoogleAppMeasurement/AdIdSupport (10.16.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.16.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.14.0):
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.16.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
@@ -126,6 +129,7 @@ PODS:
     - GoogleUtilities/Logger
   - HyprMX/Core (6.0.3)
   - LoremIpsum (1.0.0)
+  - LRAtsSDK (2.2.0)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
@@ -293,21 +297,21 @@ PODS:
   - VungleAds (7.0.1)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.29.0)
+  - FreestarAds (~> 5.30.0)
   - FreestarAds-AdColony (~> 4.7.2.1)
   - FreestarAds-AppLovin (~> 11.11.3.3)
   - FreestarAds-AppLovinMax (~> 11.11.3.4)
   - FreestarAds-Criteo (~> 4.3.1.1)
   - FreestarAds-Fyber2 (~> 8.2.4.3)
-  - FreestarAds-GAM (~> 10.9.0.7)
-  - FreestarAds-GAM/Facebook (~> 10.9.0.7)
-  - FreestarAds-Googleadmob (~> 10.9.0.7)
-  - FreestarAds-Googleadmob/Facebook (~> 10.9.0.7)
+  - FreestarAds-GAM (~> 10.9.0.8)
+  - FreestarAds-GAM/Facebook (~> 10.9.0.8)
+  - FreestarAds-Googleadmob (~> 10.9.0.8)
+  - FreestarAds-Googleadmob/Facebook (~> 10.9.0.8)
   - FreestarAds-Hyprmx (~> 6.0.3.4)
-  - FreestarAds-Nimbus (~> 2.15.0.5)
+  - FreestarAds-Nimbus (~> 2.15.0.6)
   - FreestarAds-Ogury (~> 2.1.0.3)
-  - FreestarAds-Prebid (~> 2.1.5.13)
-  - FreestarAds-Smaato (~> 22.1.3.1)
+  - FreestarAds-Prebid (~> 2.1.5.14)
+  - FreestarAds-Smaato (~> 22.1.3.2)
   - FreestarAds-TAM (~> 4.7.5.7)
   - FreestarAds-Tapjoy (~> 12.8.0.1)
   - FreestarAds-Unity (~> 4.8.0.5)
@@ -344,6 +348,7 @@ SPEC REPOS:
     - FreestarAds-Vungle
     - FreestarAds-Yahoo
     - FSLPromisesObjC
+    - FSTRAdsIdentity
     - Fyber_Marketplace_SDK
     - GMA-Meta-Mediation
     - Google-Mobile-Ads-SDK
@@ -353,6 +358,7 @@ SPEC REPOS:
     - GoogleUtilities
     - HyprMX
     - LoremIpsum
+    - LRAtsSDK
     - nanopb
     - NimbusSDK
     - OguryAds
@@ -391,35 +397,37 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: d14cf3e04bdb4302ed96e6baf9d9ff4229c7551b
+  FreestarAds: 17bf673e244d23813a764ef56f630a41b515218f
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
   FreestarAds-AppLovin: 689f2e1bafed000b4b47e206ed5172393aafc383
   FreestarAds-AppLovinMax: e4a80c46076a02aedaee8890e97eb4cdca49de3c
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-Fyber2: 62e3b7b087a4a63bc0608e532d0eeddc6b2c51fb
-  FreestarAds-GAM: dad5709d39ad5dc8acb960b033de865775e59bca
-  FreestarAds-Googleadmob: 963720bd504d091e94986c50041640f741c8e2a0
+  FreestarAds-GAM: 39c962b75b9a33fb38aab21187828395968c4fd6
+  FreestarAds-Googleadmob: 253e0c7b91a0d29ec4f3d211123d635b9d5f0379
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
-  FreestarAds-Nimbus: d3abc680597351359ff4f9b202646cfc341e12e6
+  FreestarAds-Nimbus: 2c22d81590effa63c09322f8974bee21af295fb9
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
-  FreestarAds-Prebid: 46f1b2260369320e24999030e5868dfd57784228
-  FreestarAds-Smaato: 09a08e5c60510e90374a83f77138bd1aedac84c5
+  FreestarAds-Prebid: a44ec853bb0b4ceb6fcfdfab8f94ec080c118276
+  FreestarAds-Smaato: 77a10cf8dee2fe5561a9d4284f6828ee0123c30b
   FreestarAds-TAM: 2b52d3472a4ed341f7b463ce2fd4a730658eec11
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
   FreestarAds-Unity: c4969bbf005b8920bc5e865f4efc322dd2ee7d2c
   FreestarAds-Vungle: 07eeb180b36089a162c6f22c009bf11fda455359
   FreestarAds-Yahoo: 1cbb4305949f72ee7d14ff74d219b213f7faea89
   FSLPromisesObjC: 294400f4bfac2c1d0fd64745c33caa0fc003d370
+  FSTRAdsIdentity: 6c9ae80cc1b2012814d2a2edea5d12e4f2d18cc3
   Fyber_Marketplace_SDK: c51474f63c016c9ff7eb32e3542528d08d456bc5
   GMA-Meta-Mediation: 041ae6d1b8733151ef3a8652a2a89fadfc8c0601
   Google-Mobile-Ads-SDK: e81e8b009a182dc8dd14951782efdbb30a5e4510
   GoogleAds-IMA-iOS-SDK: 0e817c05ab26f1b9285c80f4a75e1350a916d50b
-  GoogleAppMeasurement: 7fee012a868315d418f365fbc8d394d8e020e749
+  GoogleAppMeasurement: 079d7632810e9d9704a99932547ba1554acc4342
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   HyprMX: c4801c9f7b962a5d5bc5c6471d81c992e5a0bc3f
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  LRAtsSDK: 4a4357b3f168f4f90439b85004a12bc9ce189932
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   NimbusSDK: 6f4237b5e3ffff43b25a91a6e05a265d1228f9bb
   OguryAds: 5ac1f23b2f96da3c5c5bb2a863e60c19c3031700
@@ -451,6 +459,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: be44db4119e205d39d8791e75bcee1cd80351b67
+PODFILE CHECKSUM: 0c662911fd9555389bff966d1063656593dfe969
 
 COCOAPODS: 1.12.1
