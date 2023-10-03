@@ -46,13 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nativeVC =  NativeAdViewController()
         nativeVC.title = "Native"
         
+        let customNativeVC =  CustomNativeAdViewController()
+        customNativeVC.title = "Custom Native"
+        
         tabVC.viewControllers = [
             UINavigationController(rootViewController: thumbVC),
             UINavigationController(rootViewController: fsVC),
             UINavigationController(rootViewController: bVC),
             UINavigationController(rootViewController: pVC),
             UINavigationController(rootViewController: feedVC),
-            UINavigationController(rootViewController: nativeVC)
+            UINavigationController(rootViewController: nativeVC),
+            UINavigationController(rootViewController: customNativeVC)
         ]
         
         window = UIWindow()

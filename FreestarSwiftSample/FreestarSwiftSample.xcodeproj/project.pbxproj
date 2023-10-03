@@ -27,6 +27,9 @@
 		FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A624CB935600547873 /* SpinnerViewController.swift */; };
 		FD1179A924CB96F700547873 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1179A824CB96F700547873 /* FeedConstants.swift */; };
 		FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */; };
+		FDC057862ACCDA890085A4F7 /* Publisher-Native-Small.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC057842ACCDA890085A4F7 /* Publisher-Native-Small.xib */; };
+		FDC057872ACCDA890085A4F7 /* Publisher-Native-Medium.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC057852ACCDA890085A4F7 /* Publisher-Native-Medium.xib */; };
+		FDC057892ACCDAD80085A4F7 /* CustomNativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC057882ACCDAD80085A4F7 /* CustomNativeAdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		FD1179A624CB935600547873 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		FD1179A824CB96F700547873 /* FeedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
 		FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerAdViewController.xib; sourceTree = "<group>"; };
+		FDC057842ACCDA890085A4F7 /* Publisher-Native-Small.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Publisher-Native-Small.xib"; sourceTree = "<group>"; };
+		FDC057852ACCDA890085A4F7 /* Publisher-Native-Medium.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Publisher-Native-Medium.xib"; sourceTree = "<group>"; };
+		FDC057882ACCDAD80085A4F7 /* CustomNativeAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNativeAdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 		9600640A242EA20D00A3212E /* FreestarSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				FDC057882ACCDAD80085A4F7 /* CustomNativeAdViewController.swift */,
+				FDC057852ACCDA890085A4F7 /* Publisher-Native-Medium.xib */,
+				FDC057842ACCDA890085A4F7 /* Publisher-Native-Small.xib */,
 				9600640F242EA20D00A3212E /* BannerAdViewController.swift */,
 				FD4F0E0D270234CB00DB730C /* BannerAdViewController.xib */,
 				96006414242EA20F00A3212E /* Assets.xcassets */,
@@ -192,8 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96006418242EA20F00A3212E /* LaunchScreen.storyboard in Resources */,
+				FDC057872ACCDA890085A4F7 /* Publisher-Native-Medium.xib in Resources */,
 				FD4F0E0E270234CB00DB730C /* BannerAdViewController.xib in Resources */,
 				96006415242EA20F00A3212E /* Assets.xcassets in Resources */,
+				FDC057862ACCDA890085A4F7 /* Publisher-Native-Small.xib in Resources */,
 				9600642E2435941B00A3212E /* bunny.mp4 in Resources */,
 				8421EE4628B0353F00254501 /* BlackViewController.xib in Resources */,
 			);
@@ -271,6 +282,7 @@
 				8415D7B928C96E3D009DFD4F /* ThumbnailOptions.swift in Sources */,
 				5601AEC428C240FF006646D9 /* FullscreenAdViewControllerPush.swift in Sources */,
 				9600642C2433E74700A3212E /* PrerollAdViewController.swift in Sources */,
+				FDC057892ACCDAD80085A4F7 /* CustomNativeAdViewController.swift in Sources */,
 				96006410242EA20D00A3212E /* BannerAdViewController.swift in Sources */,
 				84D21A1928A5D36600F68142 /* ThumbnailAdViewController.swift in Sources */,
 				FD1179A724CB935600547873 /* SpinnerViewController.swift in Sources */,
