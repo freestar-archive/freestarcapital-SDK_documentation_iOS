@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "03b9beee1a61f62d32c521e172e192a1663a5e8b",
-        "version" : "10.13.0"
+        "revision" : "56f681586ff006a7982b53dc94082eea31971acf",
+        "version" : "10.16.0"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-admob.git",
       "state" : {
-        "revision" : "72e97223f6dfb62148fb0eb6731cbe8e3da17aa6",
-        "version" : "10.9.0"
+        "revision" : "aa578672af181b95457e1612a0162cc974a6108a",
+        "version" : "10.9.1"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
       "state" : {
-        "revision" : "f731a6ac0258e69cd6ac1e0bc197afac7d491843",
-        "version" : "5.27.0"
+        "revision" : "635b0584b69e8212baf80e71fe1846656f28e347",
+        "version" : "5.30.0"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
       "state" : {
-        "revision" : "779d7e150b77173fa4c7ff6d45337708b25461c0",
-        "version" : "10.9.0"
+        "revision" : "1709c1d4a2f50f9f693c61e24c97df66787ce5b1",
+        "version" : "10.9.1"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-nimbus.git",
       "state" : {
-        "revision" : "51c70dbd67031437678e728f2e955419acdc1c59",
-        "version" : "2.15.1"
+        "revision" : "43266d07933d45b211024022ce4654c97c03f787",
+        "version" : "2.15.2"
       }
     },
     {
@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-prebid.git",
       "state" : {
-        "revision" : "21b45320df42453766c1aabf4ec43868f79e51be",
-        "version" : "2.1.5"
+        "revision" : "9a1a6e5ce79bdaab325e5bf2e6c65a71e20ab081",
+        "version" : "2.1.6"
       }
     },
     {
@@ -131,8 +131,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-smaato.git",
       "state" : {
-        "revision" : "67d49f5475fea307cb68bd6f2db629ee93c740a7",
-        "version" : "22.1.3"
+        "revision" : "3f2561dfa326af552e52b00ae41a0394b3b495f3",
+        "version" : "22.1.4"
       }
     },
     {
