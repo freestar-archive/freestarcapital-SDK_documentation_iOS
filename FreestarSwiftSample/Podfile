@@ -6,7 +6,7 @@ use_frameworks!
 target 'FreestarSwiftSample' do
 
   # M1 compatible
-  pod 'FreestarAds-PreRelease', '~> 5.30.0-beta-9'
+  pod 'FreestarAds-PreRelease', '~> 5.31.0-beta-1'
 
   pod 'FreestarAds-Prebid-PreRelease', '~> 2.1.5.10-beta-9'
   pod 'FreestarAds-Ogury2-PreRelease', '~> 2.2-beta'
@@ -19,10 +19,10 @@ target 'FreestarSwiftSample' do
   pod 'FreestarAds-TAM-PreRelease', '~> 4.7-beta'
   pod 'FreestarAds-Hyprmx-PreRelease', '~> 6.0-beta'
   pod 'FreestarAds-Hyprmx-PreRelease/MRAID', '~> 6.0-beta'
-  pod 'FreestarAds-Googleadmob-PreRelease', '~> 10.9.0.8-beta-1'
-  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 10.9.0.8-beta-1'
-  pod 'FreestarAds-GAM-PreRelease', '~>  10.9.0.8-beta-1'
-  pod 'FreestarAds-GAM-PreRelease/Facebook', '~>  10.9.0.8-beta-1'
+  pod 'FreestarAds-Googleadmob-PreRelease', '~> 10.9.0.9-beta-1'
+  pod 'FreestarAds-Googleadmob-PreRelease/Facebook', '~> 10.9.0.9-beta-1'
+  pod 'FreestarAds-GAM-PreRelease', '~>  10.9.0.9-beta-1'
+  pod 'FreestarAds-GAM-PreRelease/Facebook', '~>  10.9.0.9-beta-1'
   pod 'FreestarAds-Unity-PreRelease', '~> 4.8-beta'
   pod 'FreestarAds-Fyber2-PreRelease', '~> 8.2-beta'
   pod 'FreestarAds-Nimbus-PreRelease', '~> 2.15.0.6-beta'
