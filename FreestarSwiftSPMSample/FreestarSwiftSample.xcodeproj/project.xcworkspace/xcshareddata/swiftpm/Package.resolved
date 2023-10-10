@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-admob.git",
       "state" : {
-        "revision" : "aa578672af181b95457e1612a0162cc974a6108a",
-        "version" : "10.9.1"
+        "revision" : "bb1a35cdeafed158518e3a74e8a050eef3922208",
+        "version" : "10.9.2"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-core.git",
       "state" : {
-        "revision" : "635b0584b69e8212baf80e71fe1846656f28e347",
-        "version" : "5.30.0"
+        "revision" : "fafdbd90f40218a25d39084cb25766e39c47aac2",
+        "version" : "5.31.0"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-gam.git",
       "state" : {
-        "revision" : "1709c1d4a2f50f9f693c61e24c97df66787ce5b1",
-        "version" : "10.9.1"
+        "revision" : "380c4591627b9cb5de5d7efa501445da4daa8938",
+        "version" : "10.9.2"
       }
     },
     {
