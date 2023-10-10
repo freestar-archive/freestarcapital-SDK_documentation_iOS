@@ -9,7 +9,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - FreestarAds (5.30.0):
+  - FreestarAds (5.31.0):
     - FreestarAds-AdQualityKit (= 5.0.4)
     - FSLPromisesObjC (= 2.2.1)
     - FSTRAdsIdentity (= 1.0.0)
@@ -29,17 +29,17 @@ PODS:
   - FreestarAds-Fyber2 (8.2.4.3):
     - FreestarAds (~> 5.17)
     - Fyber_Marketplace_SDK (= 8.2.4)
-  - FreestarAds-GAM (10.9.0.8):
+  - FreestarAds-GAM (10.9.0.9):
     - FreestarAds (~> 5.30)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-GAM/Facebook (10.9.0.8):
+  - FreestarAds-GAM/Facebook (10.9.0.9):
     - FreestarAds (~> 5.30)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob (10.9.0.8):
+  - FreestarAds-Googleadmob (10.9.0.9):
     - FreestarAds (~> 5.30)
     - Google-Mobile-Ads-SDK (= 10.9.0)
-  - FreestarAds-Googleadmob/Facebook (10.9.0.8):
+  - FreestarAds-Googleadmob/Facebook (10.9.0.9):
     - FreestarAds (~> 5.30)
     - GMA-Meta-Mediation (= 6.12.0.2)
     - Google-Mobile-Ads-SDK (= 10.9.0)
@@ -297,16 +297,16 @@ PODS:
   - VungleAds (7.0.1)
 
 DEPENDENCIES:
-  - FreestarAds (~> 5.30.0)
+  - FreestarAds (~> 5.31.0)
   - FreestarAds-AdColony (~> 4.7.2.1)
   - FreestarAds-AppLovin (~> 11.11.3.3)
   - FreestarAds-AppLovinMax (~> 11.11.3.4)
   - FreestarAds-Criteo (~> 4.3.1.1)
   - FreestarAds-Fyber2 (~> 8.2.4.3)
-  - FreestarAds-GAM (~> 10.9.0.8)
-  - FreestarAds-GAM/Facebook (~> 10.9.0.8)
-  - FreestarAds-Googleadmob (~> 10.9.0.8)
-  - FreestarAds-Googleadmob/Facebook (~> 10.9.0.8)
+  - FreestarAds-GAM (~> 10.9.0.9)
+  - FreestarAds-GAM/Facebook (~> 10.9.0.9)
+  - FreestarAds-Googleadmob (~> 10.9.0.9)
+  - FreestarAds-Googleadmob/Facebook (~> 10.9.0.9)
   - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 2.15.0.6)
   - FreestarAds-Ogury (~> 2.1.0.3)
@@ -397,15 +397,15 @@ SPEC CHECKSUMS:
   CriteoPublisherSdk: 8b7a5a68f4b4fb754311018062f03b5cd6ba4ff1
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  FreestarAds: 17bf673e244d23813a764ef56f630a41b515218f
+  FreestarAds: efea54d493c2251aa94be2f03c75e91825c5ba3f
   FreestarAds-AdColony: 2f635a67359e34be8eef1cb25951b43978012e21
   FreestarAds-AdQualityKit: 0e927c22af01a45fbfc91ca0a83f129bb9fe129b
   FreestarAds-AppLovin: 689f2e1bafed000b4b47e206ed5172393aafc383
   FreestarAds-AppLovinMax: e4a80c46076a02aedaee8890e97eb4cdca49de3c
   FreestarAds-Criteo: 85d480471cb0af24b7d5f48106430b87e53d6b26
   FreestarAds-Fyber2: 62e3b7b087a4a63bc0608e532d0eeddc6b2c51fb
-  FreestarAds-GAM: 39c962b75b9a33fb38aab21187828395968c4fd6
-  FreestarAds-Googleadmob: 253e0c7b91a0d29ec4f3d211123d635b9d5f0379
+  FreestarAds-GAM: ec04f087bd25bcd03207a09f8a48fddae0955891
+  FreestarAds-Googleadmob: 9f6e2207521be1ea725f11403ad81e18b39f4b24
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 2c22d81590effa63c09322f8974bee21af295fb9
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
@@ -459,6 +459,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: 0c662911fd9555389bff966d1063656593dfe969
+PODFILE CHECKSUM: 484e9d1569866002a0b73ad1e2cf225c4fba906e
 
 COCOAPODS: 1.12.1

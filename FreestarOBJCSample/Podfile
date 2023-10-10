@@ -4,16 +4,16 @@ use_frameworks!
 
 target 'FreestarOBJCSample' do  
   # M1 compatible
-  pod "FreestarAds", "~> 5.30.0"
+  pod "FreestarAds", "~> 5.31.0"
   pod "FreestarAds-AdColony", "~> 4.7.2.1"
   pod "FreestarAds-AppLovin", "~> 11.11.3.3"
   pod "FreestarAds-AppLovinMax", "~> 11.11.3.4"
   pod "FreestarAds-Criteo", "~> 4.3.1.1"
   pod "FreestarAds-Fyber2", "~> 8.2.4.3"
-  pod 'FreestarAds-GAM', '~> 10.9.0.8'
-  pod 'FreestarAds-GAM/Facebook', '~> 10.9.0.8'
-  pod 'FreestarAds-Googleadmob', '~> 10.9.0.8'
-  pod 'FreestarAds-Googleadmob/Facebook', '~> 10.9.0.8'
+  pod 'FreestarAds-GAM', '~> 10.9.0.9'
+  pod 'FreestarAds-GAM/Facebook', '~> 10.9.0.9'
+  pod 'FreestarAds-Googleadmob', '~> 10.9.0.9'
+  pod 'FreestarAds-Googleadmob/Facebook', '~> 10.9.0.9'
   pod "FreestarAds-Hyprmx", "~> 6.0.3.4"
   pod "FreestarAds-Ogury", "~> 2.1.0.3"
   pod "FreestarAds-Prebid", "~> 2.1.5.14"
