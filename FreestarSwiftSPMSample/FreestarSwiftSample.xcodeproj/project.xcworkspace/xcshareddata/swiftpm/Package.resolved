@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://gitlab.com/freestar/spm-freestarads-prebid.git",
       "state" : {
-        "revision" : "9a1a6e5ce79bdaab325e5bf2e6c65a71e20ab081",
-        "version" : "2.1.6"
+        "revision" : "cbc54f37f1e254671d8eb8b2278d793f23fd4864",
+        "version" : "2.1.7"
       }
     },
     {
