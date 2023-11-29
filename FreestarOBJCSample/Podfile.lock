@@ -56,9 +56,9 @@ PODS:
     - OguryAds
     - OguryChoiceManager
     - OgurySdk (~> 2.1.0)
-  - FreestarAds-Prebid (2.1.5.15):
+  - FreestarAds-Prebid (2.1.5.16):
     - FreestarAds (~> 5.30)
-    - PrebidMobile-FSTRAds (= 2.1.5.4)
+    - PrebidMobile-FSTRAds (= 2.1.5.5)
   - FreestarAds-Smaato (22.1.3.2):
     - FreestarAds (~> 5.30)
     - smaato-ios-sdk (= 22.1.3)
@@ -168,7 +168,7 @@ PODS:
   - OgurySdk/OguryChoiceManager (2.1.0):
     - OguryChoiceManager (= 4.0.1)
     - OguryCore (= 1.2.0)
-  - PrebidMobile-FSTRAds (2.1.5.4)
+  - PrebidMobile-FSTRAds (2.1.5.5)
   - PromisesObjC (2.3.1)
   - smaato-ios-sdk (22.1.3):
     - smaato-ios-sdk/Full (= 22.1.3)
@@ -310,7 +310,7 @@ DEPENDENCIES:
   - FreestarAds-Hyprmx (~> 6.0.3.4)
   - FreestarAds-Nimbus (~> 2.15.0.6)
   - FreestarAds-Ogury (~> 2.1.0.3)
-  - FreestarAds-Prebid (~> 2.1.5.15)
+  - FreestarAds-Prebid (~> 2.1.5.16)
   - FreestarAds-Smaato (~> 22.1.3.2)
   - FreestarAds-TAM (~> 4.7.5.7)
   - FreestarAds-Tapjoy (~> 12.8.0.1)
@@ -409,7 +409,7 @@ SPEC CHECKSUMS:
   FreestarAds-Hyprmx: 8f6be4d38d200ea0ca54daf1081dd4bd545378ae
   FreestarAds-Nimbus: 2c22d81590effa63c09322f8974bee21af295fb9
   FreestarAds-Ogury: 99f1124164eac035be2c9d32dd0a523e3fa7e3cc
-  FreestarAds-Prebid: 5d57614ec2501afd267b8d3bd2ebe3346967f334
+  FreestarAds-Prebid: a26369c79bd6dca79b28e2a732c1ad6ba2a2350b
   FreestarAds-Smaato: 77a10cf8dee2fe5561a9d4284f6828ee0123c30b
   FreestarAds-TAM: 2b52d3472a4ed341f7b463ce2fd4a730658eec11
   FreestarAds-Tapjoy: a9d2b56f5a6878efdbcc360f3e4ca89ded040978
@@ -434,7 +434,7 @@ SPEC CHECKSUMS:
   OguryChoiceManager: c31d4028ace32f0d7da73c8dd33b53bb942a8491
   OguryCore: 51a06f5bffc34f94d6a8c1ed88e646acbbc59a63
   OgurySdk: 86b949726a3a0cf4f7324158f6928abbffd2599d
-  PrebidMobile-FSTRAds: a0e63aac9a7bf9079b9943d94ac3f898a5c09490
+  PrebidMobile-FSTRAds: 7e63aabe9c07beb944d8e14ad1c2296881d7e258
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   smaato-ios-sdk: 7fc6938847a3f102512b619370f01abb3cfaa9c9
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -459,6 +459,6 @@ SPEC CHECKSUMS:
   Verizon-Ads-WebView: 738858f96e10ac207ef008b0e51aa949c7363288
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
 
-PODFILE CHECKSUM: 2db20d65d28741c950c8a7d971e66d5b23e67ed4
+PODFILE CHECKSUM: a3fe099a854ca1ad3c0317a270a3d63dac14c925
 
 COCOAPODS: 1.12.1
